@@ -26,7 +26,7 @@ The `commander` MCP (server name `commander`, tools `mcp__commander__*`) is the 
 ## Hard rules of the server (refusals you will meet)
 
 - Planet count ≤ `1 + ceil(astrophysics / 2)`; colonisable positions depend on astrophysics level (`codex("astrophysics")` → `effect`). A colony ship arriving at a slot you are not allowed lands nothing and is wasted.
-- Attack refused when attacker score ≥ 5× defender effective score (ladder score + held resources/1000). Six attacks per planet per 24 h.
+- Attack refused when attacker score ≥ 5× defender **invested** score (resources spent on buildings/ships/research; held resources do NOT count — `docs/game/mechanics.md` → Protection). The refusal names both scores, so a refused launch is free intel. Six attacks per planet per 24 h.
 - Fleet slots = computer technology + 1.
 - Build queue: 5 items. Lab upgrade and research block each other on the same planet.
 
