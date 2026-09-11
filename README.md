@@ -55,3 +55,4 @@ Naming: coordinates are written `G5-S316-P12` in file names and `5:316:12` in te
 | `empire-lesson` | Lieutenant | record a lesson and propose the doctrine change it implies |
 | `empire-handover` | Lieutenant | rewrite `HANDOFF.md` for the next session |
 | `terminal-army` | any | the game's own MCP playbook (vendored; refresh with `tarmy commander`) |
+| `i-have-adhd` | `empire-handover` only | output-shape rules for HANDOFF.md (vendored, MIT) |

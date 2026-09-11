@@ -48,6 +48,10 @@ intel: scan G5:316 neighbours
 
 Prefixes: `intel:`, `ops:`, `empire:`, `report:`, `handoff:`, `strategy:`, `skills:`, `docs:`.
 
+## Output shape
+
+`HANDOFF.md` is written in the `i-have-adhd` shape (vendored under `.agents/skills/i-have-adhd/`, applied by `empire-handover`): next action first, numbered bounded steps, state restated, short lists. That shape is for the handoff document only; chat and every other file keep their normal style.
+
 ## Adding new skills
 
 Write skills with the `writing-for-agents` skill. Create the skill under `.agents/skills/<skill-name>/SKILL.md`, then add a symlink so Claude Code picks it up automatically:
