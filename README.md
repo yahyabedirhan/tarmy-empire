@@ -12,6 +12,7 @@ strategy/            WHY we play the way we do — changes need the Commander's 
   DOCTRINE.md          the standing rules: when to build, research, colonize, attack, fortify, wait
   ALLIANCE.md          diplomacy posture
   LESSONS.md           numbered lessons, each linked to the event that taught it
+  STANDING_QUESTIONS.md  live answers to the Commander's recurring questions, revised every cycle
   decisions/           one file per high-level decision: context, options considered, choice, reasoning, revisit-when
 
 docs/                reference — read on demand
