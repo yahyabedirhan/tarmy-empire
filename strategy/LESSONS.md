@@ -22,3 +22,10 @@ Five sessions wrote their live status into the strategy files; by session six no
 
 ## L7 - A soldier dies with the connection (2026-09-11)
 Both haiku soldiers were killed by the harness watchdog (600 s without progress) during an hour-long MCP hang, mid-mission. The colonize soldier had already dispatched; the ships soldier had queued 2 of 3 batches. Source: `ops/missions/2026-09-11T08-30_*.md`. Rule: after any soldier failure the Lieutenant re-reads state before redoing anything (a dead soldier may have acted); briefs must be idempotent (check before each spend). No doctrine change.
+
+## L8 — Protection is invested score, and our own growth closes targets (2026-09-11)
+Assumed the 5× rule counted held resources (our MCP doc said so) and planned raids on 5:316:8 / :5 / :7 for ~250k loot. All three launches were refused: attacker 1582→1685 vs invested 41 / 114 / 187 — the rule counts only resources *spent* (`docs/game/mechanics.md` → Protection). Between planning (score 712) and launch, 60 light fighters and four researches tripled our score and lifted the floor above every neighbour. Source: `ops/attacks/2026-09-11_G5-S316-P8_Saeed2.md`, `ops/attacks/2026-09-11_G5-S316-P7_nash1999.md`. Rule: DOCTRINE → Raid gains "target invested score ≥ our score ÷ 5, checked at planning *and* at launch; a refused launch is free intel — try it before any other check". Raid with the fleet you have before you grow the fleet or the score.
+
+## L9 — Above the floor, light fighters do not raid (2026-09-11)
+The only targets above our 5× floor (Kara6 5:310:8, yuxuanz4 5:311:7, hina_ito 5:312:10) sit behind 30–82 rocket launchers, 20–40 light lasers, heavy lasers, ion cannons and a small shield dome. 62 LF + cargo vs Kara6's wall: draw 10/10, 36 LF lost (~186k) for nothing. Source: `ops/attacks/2026-09-11_G5-S316-P7_nash1999.md` (debrief sim). Rule: no rule change yet — decision pending with the Commander: either build a cruiser force (impulse 4 → cruisers, `empire/research.md` row 5; rapid fire vs rocket launchers) to open the 337+ band, or park the raid arm and put the fleet budget into astro 5 and mines until the band moves.
+
