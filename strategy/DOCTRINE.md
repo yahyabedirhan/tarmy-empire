@@ -42,7 +42,7 @@ Roles (long-lived, set in the planet file, decision 002): `capital` (highest lab
 
 ## Cycle cadence
 
-One `empire-cycle` every 30 minutes while a session is open, or immediately on any `fleet.incoming` / `planet.attacked`. Watcher soldiers are spawned for one concrete wake each (a research finishing, a fleet returning) and end when it fires.
+Wake-driven, never a clock. The `empire-cycle` skill loops for as long as the session is open: after each cycle it sleeps on `next_event` until the earliest recorded wake (a queue completing, a fleet arriving, a resource ETA), capped at 2 h so no planet goes unlooked-at longer than that, and cycles at once on any `fleet.incoming` / `planet.attacked`. Watcher soldiers are spawned for one concrete wake each (a research finishing, a fleet returning) and end when it fires.
 
 ## Revisiting doctrine
 

@@ -1,6 +1,6 @@
 # tarmy-empire
 
-Command post for yabepa's terminal.army empire. Humans start at `AGENTS.md`; agents start at `HANDOFF.md`.
+Command post for yabepa's terminal.army empire. Humans start at `AGENTS.md`; agents start by invoking `empire-cycle` (which reads `HANDOFF.md`).
 
 ```
 AGENTS.md            chain of command, MCP rules, record and commit rules (CLAUDE.md is a symlink to it)
@@ -46,7 +46,7 @@ Naming: coordinates are written `G5-S316-P12` in file names and `5:316:12` in te
 
 | Skill | Invoked by | Does |
 |---|---|---|
-| `empire-cycle` | Lieutenant, on a loop | one heartbeat: read the empire, run every planet through its state, act, record, hand off |
+| `empire-cycle` | Lieutenant, first thing in every session | the loop: read the empire, run every planet through its state, act, record, hand off, sleep until the next wake, repeat |
 | `empire-status` | Commander or Lieutenant | write a status snapshot to `reports/status/` and summarise it |
 | `empire-farm` | `empire-cycle` | the build/research decision procedure for one planet |
 | `empire-colonize` | `empire-cycle` or Lieutenant | pick a slot, send the ship, bootstrap the colony, record it |

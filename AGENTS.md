@@ -14,9 +14,21 @@ Escalation: a soldier asks the Lieutenant; the Lieutenant asks the Commander **i
 
 A `state.changed` event this session did not cause is the Commander acting in the TUI: treat it as their decision and fold it into the records. Ask the Commander before: attacking an active player, sending a message to a non-ally, spending dark matter, changing `strategy/`, anything irreversible. Never abandon a planet.
 
+## The loop
+
+A session **is** the loop. The first thing a fresh context does is invoke the `empire-cycle` skill — before replying to anything — and that skill runs cycle after cycle until the Commander says stop or the session ends. Nothing outside the session wakes the Lieutenant (no cron, no `/loop`, no scheduled task): the Lieutenant keeps itself awake by sleeping on `next_event` inside the skill, so the loop also lives only as long as the chat is open.
+
+A Commander message arrives *inside* the loop and is handled there, then the loop resumes where it was:
+
+- a question → answer it in chat;
+- a direction → act on it, fold it into the records;
+- "stop" → run `empire-handover`, end.
+
+Cadence is wake-driven, never a clock: every planet, queue and mission carries a `wake` (`strategy/DOCTRINE.md`), the loop sleeps until the earliest one, and a `fleet.incoming` / `planet.attacked` event cycles at once. The sleep mechanics are in the skill.
+
 ## Where things are
 
-`README.md` maps the tree. Read `HANDOFF.md` first in every new session. Terms you do not recognise are in `GLOSSARY.md`. Rules of the game: `docs/game/` (verbatim manual). Rules of the MCP: `docs/mcp/COMMANDER.md`. Why we play the way we do: `strategy/DOCTRINE.md` and `strategy/decisions/`.
+`README.md` maps the tree. `HANDOFF.md` is where the last session stopped (the cycle skill reads it). Terms you do not recognise are in `GLOSSARY.md`. Rules of the game: `docs/game/` (verbatim manual). Rules of the MCP: `docs/mcp/COMMANDER.md`. Why we play the way we do: `strategy/DOCTRINE.md` and `strategy/decisions/`.
 
 ## Working the MCP
 
@@ -26,7 +38,7 @@ All game actions go through the `commander` MCP (`mcp__commander__*`). It acts a
 - One call per action, then read the result. `queued`, `stopped_after`, refusals and partial successes are in the response; a retry without reading it can spend twice.
 - Waiting is `next_event` (blocks up to 300 s, returns what happened), never repeated status calls.
 - When a call errors or behaves unexpectedly: (1) quote the exact error, (2) look it up in `docs/mcp/COMMANDER.md` → *Troubleshooting*, (3) then `docs/game/commander.md` and `.agents/skills/terminal-army/SKILL.md`, (4) retry once at most with the corrected call, (5) still failing → report up the chain with the exact call and error. Never work around a refusal.
-- Waiting for the next scheduled `/empire-cycle` is not a reason to leave a planet idle. If a queue slot frees up mid-session and the next step is already known and affordable, queue it immediately — don't defer a known action to "whenever the loop picks it up next." Only wait when there is a concrete reason: resources short, a fleet in transit, an energy/production constraint, or a question open with the Commander.
+- A freed queue slot is acted on the moment it is seen, whether that is mid-cycle or on the event that woke the loop. The only reasons to leave a slot empty: resources short (write the ETA as the wake), a fleet in transit, an energy/production constraint, or a question open with the Commander that the action depends on.
 
 ## Records
 
