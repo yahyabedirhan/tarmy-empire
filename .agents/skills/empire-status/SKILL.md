@@ -4,7 +4,7 @@ description: Write a status snapshot of the empire to reports/status/ and summar
 disable-model-invocation: true
 ---
 
-Write `reports/status/<YYYY-MM-DDTHH-MM>Z.md` from live data, then print its *Summary* section. Never edit an old report.
+Write `reports/status/<YYYY-MM-DDTHH-MM>Z.md` from live data, then print the whole report in chat (the Commander reads chat, not files). Never edit an old report.
 
 1. Read `empire_overview`, `standing`, `dark_matter`, `fleets`, `research_tree` (for `in_progress`), and `production_report` + `build_queue` for each planet beyond the first. Read every `empire/planets/*.md` frontmatter and every `ops/missions/*.md` with `status: running`.
 2. Fill the template below. Every cell filled; `unknown` where the tool did not say.

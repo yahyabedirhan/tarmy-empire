@@ -10,7 +10,7 @@ Workspace for playing terminal.army as commander **yabepa** (universe Genesis) t
 | Lieutenant | the main Claude session | runs the loop, decides everything reversible, spawns soldiers, is the only one who talks to the Commander |
 | Soldier | a sub-agent spawned with a mission brief (`empire-soldier` skill) | one narrow mission, reports back to the Lieutenant, never to the Commander |
 
-Escalation: a soldier asks the Lieutenant; the Lieutenant batches non-urgent questions into `HANDOFF.md` → *Questions for the Commander* and interrupts only for urgent ones (incoming attack, irreversible choice). While a question is open, keep doing everything that does not depend on it.
+Escalation: a soldier asks the Lieutenant; the Lieutenant asks the Commander **in chat** — the full question with the options and a recommendation, never a pointer to a file. `HANDOFF.md` → *Questions for the Commander* is the backlog for the next session, not the way to ask. Reports go the same way: after writing a status report, print its content in chat. Non-urgent questions are batched into one message; urgent ones (incoming attack, irreversible choice) interrupt at once. While a question is open, keep doing everything that does not depend on it.
 
 Ask the Commander before: attacking an active player, sending a message to a non-ally, spending dark matter, changing `strategy/`, anything irreversible. Never abandon a planet.
 
