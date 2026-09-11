@@ -2,7 +2,7 @@
 
 The standing rules. Every rule names the decision or lesson it comes from; a rule with no source is a guess and says so. Change this file only with the Commander's approval (`AGENTS.md` → Git). Numbers that a tool will tell you (prices, times, energy) are never written here: ask `codex` / `production_report`.
 
-Posture: **economy first, opportunistic raider, adequate defence** (decision 001). The empire grows by adding planets and deepening mines; raids are a supplement taken when a target is inactive and the simulation is clean; defence is sized to make raiding us unprofitable, not to win wars.
+Posture: **economy first, adequate defence, raiding parked** (decision 001; raiding parked by the Commander 2026-09-11T15:15Z, L9 — reopen only by the Commander). The empire grows by adding planets and deepening mines; raids are a supplement taken when a target is inactive and the simulation is clean; defence is sized to make raiding us unprofitable, not to win wars.
 
 ## Planet state machine
 
