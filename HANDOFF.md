@@ -1,32 +1,32 @@
-# Handoff — 2026-09-11T12:52Z
+# Handoff — 2026-09-11T15:10Z
 
 ## Do this first
-Run `/empire-cycle`. Earliest wake: 13:03:14Z — cargo fleet 55758 (2 LC + 4 SC) lands at 5:316:10 → `dispatch_fleet(transport, 5:316:12, origin 5288, crystal ≈ 70k)` for the astro push.
+Run `/empire-cycle`. Earliest wakes: 15:12:26Z crystal_mine 13 lands at the capital (robotics 4 follows 15:14:55Z → refill the capital queue: shipyard 6 is the ladder gate), ~15:20Z 5:316:10 crystal ≥ 6.6k → metal_mine 16.
 
 ## Where we are
-- 3 planets, all GROWING: capital 5:316:12 (research ion 4 → 13:04:53Z; ships light_fighter 60 → 13:50:31Z, large_cargo 3 → 14:19:19Z, recycler 2 → 14:44:55Z; buildings crystal 13 → 15:09:14Z, robotics 4 → 15:11:43Z), 5:316:10 (solar 16 → 13:31:02Z, metal 15 → 13:52:03Z, deut 8 → 13:56:58Z), 5:316:9 (solar 10, metal 11, solar 11, crystal 8 → 13:06:49Z).
-- In the air: fleet 55758 deploy capital → 5:316:10, lands 13:03:14Z. No hostiles, no running missions.
-- Goal: decision 002 (next slot 5:316:3, blocked on astrophysics 5: ~118k crystal, capital has 19k, 5:316:10 has 96k) + first raid income; rulebook `strategy/DOCTRINE.md`.
-- Loop procedure changed this session (wake-driven, autonomous) — edits uncommitted, see below.
+- 3 planets, all GROWING: capital 5:316:12 (research energy 6 → 15:39:17Z; buildings crystal 13 → 15:12:26Z, robotics 4 → 15:14:55Z; ship queue empty), 5:316:10 (fusion 1–3 → 15:10:51Z, then waiting on crystal for metal 16), 5:316:9 (solar 13 → 15:16:18Z, robotics 4, metal 14, crystal 10 → 15:37:31Z).
+- Fleet at the capital: 62 LF, 5 LC, 4 SC, 2 recyclers, 2 probes, 1 colony ship. Nothing in the air, no hostiles.
+- Astrophysics 4 done; astro 5 (planet 4 at 5:316:3, decision 002) needs 37.5k M / 75k C / 37.5k D — capital has ~48k crystal.
+- **Raiding is closed** (L8/L9): all three 5:316 neighbours are below the 5× invested-score floor (our 1685 ÷ 5 = 337 vs 41/114/187); the players above it have walls 62 LF cannot beat. Question open with the Commander.
+- Loop is autonomous and wake-driven (`AGENTS.md` → The loop), committed `ecd2b4c`.
 
 ## Next actions
-1. 13:03:14Z: transport crystal 5:316:10 → capital with fleet 55758 (cap 70k; leave 5:316:10 enough for its own crystal-priced builds).
-2. 13:04:53Z: ion 4 lands (rung pays 9k/8k/5k) → `research_tree`; queue shielding 5 (hyperspace gate, cheap) unless the crystal has landed, then astro 4 (21.4k/42.9k/21.4k).
-3. 13:06:49Z: 5:316:9 queue empties → metal 12, crystal 9, robotics 4 as crystal allows (`production_report` first).
-4. ~13:50:31Z: light_fighter 60 at the capital → fresh-scan 5:316:8 and 5:316:5, `empire-raid` Saeed2 (`ops/attacks/2026-09-11_G5-S316-P8_Saeed2.md`), then caioc. Espionage probes: none yet — build at the capital when the ship queue frees (14:44:55Z) or at 5:316:10's shipyard 2.
-5. 13:56:58Z: 5:316:10 queue empties → refill (`empire-farm`).
-Later: 5:316:10 has zero defence on ~250k resources — rocket launchers there (`strategy/STANDING_QUESTIONS.md`).
+1. 15:12–15:15Z: capital buildings land → `empire-farm`: shipyard 6 (ladder: gauss, large dome), then mines; research after energy 6: astro 5 when crystal ≥ 75k, else impulse 4 (row 5, 16k/32k/4.8k) if the Commander picks cruisers.
+2. ~15:20Z: 5:316:10 metal 16; 15:37Z: 5:316:9 queue empties → refill (it now has ~6k crystal; drop more from 5:316:10 on the next shuttle).
+3. Crystal logistics for astro 5: 5:316:10 makes 5.4k/h, capital 3.8k/h; shuttle (5 LC + 4 SC at the capital) when 5:316:10 holds ≥ 30k spare — ~20:00Z. Astro 5 realistic start ~20–22Z, colony ship to 5:316:3 after (~96 min research + 20 min flight).
+4. Defence gap: 5:316:10 has zero defence on ~100k; capital fleet is home now so risk is lower; rocket launchers there when metal allows (2k each, metal-only — good filler for its crystal waits).
+5. Neighbourhood watch: systems 314–322 unscanned (decision 005); 2 probes left, build 6 more (6k crystal) when crystal is not the constraint.
+Later: espionage tech 5 would cut probe losses (lost 2 to a 10 % counter roll today).
 
 ## Questions for the Commander
-- Approve the loop-procedure edits (four files below) for commit — asked in chat 12:43Z.
+- **Raid posture (L9):** (a) build a cruiser force — impulse 4 (16k/32k/4.8k) then 3+ cruisers (20k/7k/2k each, rapid fire vs rocket launchers) to open the 337+ band (Kara6 574k M, yuxuanz4 200k/200k, hina_ito 610k M — all behind 30–82 RL + lasers + dome); or (b) park the raid arm, put fleet budget into astro 5 + mines, revisit when the band moves. Recommendation: **(b) now, (a) after astro 5** — crystal is the bottleneck for both and the colony pays back forever.
 
 ## Uncommitted strategy changes awaiting approval
-- `AGENTS.md` — new *The loop* section: a session is the loop, `empire-cycle` is the first skill in a fresh context, wake-driven cadence, Commander messages handled inside the loop.
-- `.agents/skills/empire-cycle/SKILL.md` — step 0 (resume from HANDOFF) and step 8 (sleep on `next_event` until the earliest wake, cap 2 h, then repeat).
-- `strategy/DOCTRINE.md` — *Cycle cadence* rewritten from "every 30 min" to wake-driven.
-- `README.md` — two pointers updated.
+- none (L8/L9 and the doctrine 5× line committed on the Commander's "save the learnings" instruction, `strategy/LESSONS.md`).
 
 ## What changed this session
-- Loop made autonomous and wake-driven (the Commander's request from the 12:40Z handoff) — the four files above, awaiting approval.
-- Refilled both colony queues 2 min before they emptied; ion 4 queued the second shielding 4 landed — commit `8674457`.
-- Started the astro crystal shuttle: capital's 2 LC + 4 SC deployed to 5:316:10 (fleet 55758).
+- Loop made autonomous + wake-driven; scan freshness tightened to < 2 h (Commander) — `ecd2b4c` and after.
+- Three raid launches refused by the 5× invested-score rule (Saeed2 41, caioc 114, nash1999 187 vs our 1582→1685); the MCP doc was wrong about held resources counting — fixed. Lessons L8, L9. `ops/attacks/2026-09-11_*`.
+- Ship count corrected: 62 LF, not 101 (batches deliver progressively).
+- Research today: ion 4, shielding 5, astro 4 landed; energy 6 running. Rungs paid: ion, shielding 5, LC×3, recyclers, astro 4 (+45k/40k/23k).
+- 62k crystal shuttled 5:316:10 → capital; 15k crystal + 4k deut dropped on 5:316:9 (it was crystal-starved — colonies now get a drop on every shuttle run).
