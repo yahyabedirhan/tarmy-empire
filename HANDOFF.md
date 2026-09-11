@@ -1,7 +1,7 @@
 # Handoff — 2026-09-11T15:18Z
 
 ## Do this first
-Run `/empire-cycle`. The lab has been idle since 15:39:17Z (energy 6 landed; research cannot be queued ahead) → `research_tree`, then queue: astro 5 if crystal ≥ 75k at the capital, else armour 5 (16k metal, row 7) or computer 6 (12.8k C / 19.2k D, rung).
+Run `/empire-cycle`. The lab has been idle since 15:39:17Z (energy 6 landed; research cannot be queued ahead) → `research_tree`, then queue armour 5 (16k metal, row 7) or computer 6 (12.8k C / 19.2k D, rung). **Astro 5 is scheduled for tomorrow (Commander, 15:25Z)** — this evening spend crystal on mines normally; from the morning cycle on, hold capital crystal and shuttle from 5:316:10 until 75k is reached, then astro 5 → colony ship to 5:316:3.
 
 ## Where we are
 - Commander and Lieutenant went offline ~15:18Z for ~2 h; every queue was filled to cover it.
