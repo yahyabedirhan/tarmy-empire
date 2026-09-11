@@ -16,14 +16,11 @@ First cycle under the new structure: spend the idle stockpiles (done: both queue
 1. When astrophysics 3 lands: `queue_research(tech="computer")`.
 2. Close both missions with the soldiers' reports; create `empire/planets/G5-S316-P9.md` (BOOTSTRAP) if founded; commit.
 3. Bootstrap transports to 5:316:9 each cycle (`empire-colonize` skill).
-4. On the 60 LF finishing: re-scan 5:316:8 and 5:316:5, then the Saeed2 campaign if approved.
+4. On the 60 LF finishing (13:50Z): re-scan 5:316:8 and 5:316:5, then fly the Saeed2 campaign (approved).
 5. `/empire-cycle` every 30 min.
 
 ## Questions for the Commander
-- **Raid threshold wording.** DOCTRINE says "zero expected ship losses". Against the standard 10 RL + 5 LL wall, 60 LF lose on average half a fighter (2k) per sortie for ~114k loot. Proposed wording: "expected losses ≤ 5 % of expected loot". Approve, and approve the Saeed2 campaign (`ops/attacks/2026-09-11_G5-S316-P8_Saeed2.md`)?
-- **Second actor.** At 07:56–08:01Z something queued research lab 7, 2 light lasers and astrophysics 3 on the capital, and mines on the colony — before this session acted. Was that you in the TUI, or is another Claude session still running a loop? Two actors on one account will collide (shared event stream, shared queues).
-- **Push policy.** You asked for a public repo and a push; `AGENTS.md` still says "never push". Change it to "push after every commit"?
-- **Public repo exposure.** `intel/`, `ops/` and `strategy/` are now readable by anyone, including other players' assistants; the manual copies are kept local. Fine as is, or make it private?
+- none
 
 ## Uncommitted strategy changes awaiting approval
 - none (the skill rename was committed on your instruction)

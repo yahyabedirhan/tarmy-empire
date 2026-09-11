@@ -30,7 +30,7 @@ Roles (long-lived, set in the planet file, decision 002): `capital` (highest lab
 
 **Colonize** when all hold: astrophysics allows another planet; a colony ship exists; the slot is chosen per decision 002 and written into `ops/colonies/` *before* launch; the capital can spare the bootstrap cargo. Send the ship only after the research that allows the slot has *completed* (L3).
 
-**Raid** (decision 004) when all hold: target verdict `farm` in `intel/`; scan < 6 h old; `simulate_combat` shows zero expected ship losses; expected loot ≥ 30 000 resources and ≥ 15 000 per hour of round trip; a fleet slot stays free for emergencies. Active players: never without the Commander, and only after diplomacy (`strategy/ALLIANCE.md`).
+**Raid** (decision 004) when all hold: target verdict `farm` in `intel/`; scan < 6 h old; `simulate_combat` wins every run and expected losses ≤ 5 % of expected loot (decision 004); expected loot ≥ 30 000 resources and ≥ 15 000 per hour of round trip; a fleet slot stays free for emergencies. Active players: never without the Commander, and only after diplomacy (`strategy/ALLIANCE.md`).
 
 **Defend** (decision 006): defence value on a planet ≥ the resources normally sitting there ÷ 4, plus a small shield dome as soon as it is unlocked. Keep stockpiles low by spending; that is cheaper than any turret.
 

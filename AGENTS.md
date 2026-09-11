@@ -12,7 +12,7 @@ Workspace for playing terminal.army as commander **yabepa** (universe Genesis) t
 
 Escalation: a soldier asks the Lieutenant; the Lieutenant asks the Commander **in chat** — the full question with the options and a recommendation, never a pointer to a file. `HANDOFF.md` → *Questions for the Commander* is the backlog for the next session, not the way to ask. Reports go the same way: after writing a status report, print its content in chat. Non-urgent questions are batched into one message; urgent ones (incoming attack, irreversible choice) interrupt at once. While a question is open, keep doing everything that does not depend on it.
 
-Ask the Commander before: attacking an active player, sending a message to a non-ally, spending dark matter, changing `strategy/`, anything irreversible. Never abandon a planet.
+A `state.changed` event this session did not cause is the Commander acting in the TUI: treat it as their decision and fold it into the records. Ask the Commander before: attacking an active player, sending a message to a non-ally, spending dark matter, changing `strategy/`, anything irreversible. Never abandon a planet.
 
 ## Where things are
 
@@ -35,7 +35,7 @@ A lesson is not learned until it is in `strategy/LESSONS.md` with a link to the 
 
 ## Git and commits
 
-Commit immediately: `ops/`, `intel/`, `reports/`, `empire/`, `HANDOFF.md`. Edit freely but wait for the Commander's approval before committing: `strategy/`, `AGENTS.md`, `README.md`, `GLOSSARY.md`, `.agents/skills/`. Never push.
+Commit immediately: `ops/`, `intel/`, `reports/`, `empire/`, `HANDOFF.md`. Edit freely but wait for the Commander's approval before committing: `strategy/`, `AGENTS.md`, `README.md`, `GLOSSARY.md`, `.agents/skills/`. Push after every commit.
 
 Use lowercase multi-line commit messages with a semantic prefix:
 

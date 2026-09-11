@@ -13,7 +13,7 @@ Protection: attacks refused at ≥ 5× effective score either way; 6 attacks/pla
 3. Anything allowed.
 
 ## Decision
-Option 1 by default. Actives are a Commander decision, preceded by diplomacy (`strategy/ALLIANCE.md`): alliance players talk before hitting active players, and we do the same. Thresholds (tunable knobs in DOCTRINE → Raid): loot ≥ 30 000 and ≥ 15 000 per round-trip hour; zero expected ship losses; one fleet slot left free.
+Option 1 by default. Actives are a Commander decision, preceded by diplomacy (`strategy/ALLIANCE.md`): alliance players talk before hitting active players, and we do the same. Thresholds (tunable knobs in DOCTRINE → Raid): loot ≥ 30 000 and ≥ 15 000 per round-trip hour; 100 % win rate over 20 runs and expected losses ≤ 5 % of expected loot (a wall always fires some random shots, so "zero" would block every raid; at 5 % the raid keeps 95 % of its loot as profit); one fleet slot left free. Commander approved 2026-09-11.
 
 ## Revisit when
 - Ten campaigns are logged (recalibrate thresholds from real yields in `ops/attacks/`).
