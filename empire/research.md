@@ -1,17 +1,15 @@
 # Research plan
 
-Research is account-wide; the capital's lab (level 6) runs it. Order = quest ladder (`quests`) with the two doctrine overrides. Price the whole chain before starting (L5). Levels as of 2026-09-11T13:24Z: impulse 3, astro 3 (4 in progress → 15:00:40Z), energy 5, armour 4, computer 5, combustion 6, laser 5, ion 4, weapons 4, espionage 4, shielding 5, hyperspace 0 (unlocked).
+Research is account-wide; the capital's lab (level 7) runs it. One slot, never idle (DOCTRINE). Order = the astro clock (decision 009) with the quest ladder as tie-breaker; price the whole chain before starting (L5); price ladder rungs net of their reward. Levels as of 2026-09-11T18:10Z: energy 6, laser 5 (6 in progress → 18:24Z), ion 4, hyperspace 1, computer 5, astro 4, espionage 4, combustion 6, impulse 3, hyperspace drive 0, weapons 4, shielding 5, armour 6.
 
-| # | Tech → level | Why | Gate for |
-|---|---|---|---|
-| 1 | astrophysics 3 | planet 3 (decision 002) | colonize 5:316:9 |
-| 2 | computer 4, 5 | fleet slots 5, 6: transports + scans + one raid at once | everything with fleets |
-| 3 | shielding 1, 2, 3 | recycler needs shielding 2; small shield dome (006); ladder rung | recyclers, dome, hyperspace later |
-| 4 | energy 5, 6 | ladder; gauss cannon; fusion efficiency | gauss, plasma chain |
-| 5 | impulse 4 | cruiser (first real raider, rapid fire vs rocket launchers) | `a_squadron` rung |
-| 6 | ion 3, 4 | ladder; cruiser prerequisite | ion cannon, plasma |
-| 7 | weapons 4, armour 5 | +10 %/level on everything we own | cheapest combat power |
-| 8 | astrophysics 4, 5 | planet 4 (crystal-world at 5:316:3) | decision 002 |
-| 9 | research lab 7 (building) | hyperspace gate — build it between researches, the lab and research block each other | hyperspace 3 |
+| # | Tech → level | Cost (codex 18:08Z) | Why | Gate for |
+|---|---|---|---|---|
+| 1 | **astrophysics 5** | 37.5k / 75k / 37.5k, 2.8 h | planet 4 = crystal world at 5:316:3 | decision 002/009; colony ship already built |
+| 2 | computer 6 | 0 / 12.8k / 19.2k | rung `computer_science` (pays 9k/8k/5k → net 4.8k crystal); 7th fleet slot for sweep + trade + probe at once | fleet slots |
+| 3 | espionage 5 | 3.2k / 16k / 3.2k | halves every probe's loss; no rung → only when crystal is slack | neighbourhood watch |
+| 4 | astrophysics 6, 7 | 65.6k/131k/65.6k + 115k/230k/115k | planet 5 | deuterium is the gate (180k): synthesizers + trade (010) |
+| 5 | shielding 6 | 6.4k / 19.2k | rung `harder_shields` (net ~−10k crystal but opens large dome with shipyard 6) | large shield dome |
+| 6 | astrophysics 8, 9 | 201k/402k/201k + 352k/704k/352k | planet 6 | horizon (002) |
+| F | armour 7 (64k metal), combustion 7 (25.6k metal / 38.4k deut), weapons 5 (12.8k/3.2k) | fillers | zero-crystal: run one whenever the slot would otherwise idle while crystal is saved for a row above | — |
 
-Blocked / not yet: hyperspace (lab 7 + shielding 5 + energy 5), plasma (energy 8, laser 10, ion 5).
+Not before planet 5 unless the Commander reopens raiding: impulse 4 (cruiser), hyperspace 2–3 (hyperspace drive), energy 7+ (plasma chain). Blocked: plasma (energy 8, laser 10, ion 5), graviton (lab 12).

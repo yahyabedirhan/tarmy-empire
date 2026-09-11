@@ -29,3 +29,18 @@ Assumed the 5× rule counted held resources (our MCP doc said so) and planned ra
 ## L9 — Above the floor, light fighters do not raid (2026-09-11)
 The only targets above our 5× floor (Kara6 5:310:8, yuxuanz4 5:311:7, hina_ito 5:312:10) sit behind 30–82 rocket launchers, 20–40 light lasers, heavy lasers, ion cannons and a small shield dome. 62 LF + cargo vs Kara6's wall: draw 10/10, 36 LF lost (~186k) for nothing. Source: `ops/attacks/2026-09-11_G5-S316-P7_nash1999.md` (debrief sim). Rule (Commander, 2026-09-11T15:15Z): **raiding is parked**; growth first (astro 5, mines), defence second where a planet is exposed. No new warships until the Commander reopens raiding; `empire/research.md` row 5 (impulse 4 / cruisers) drops below rows 8–9. Revisit when astro 5 is done or a target ≥ our score ÷ 5 appears with a wall the current fleet beats.
 
+
+## L10 — The alliance channel is a measured playbook; read all of it (2026-09-11)
+BJACK's top members publish numbers, not opinions: the counter-espionage law, the 50 % loot cap, the mine-pricing rule, the energy comparison, the "expansion beats fleet" arithmetic. One full read (`ops/diplomacy/2026-09-11_BJACK-chat.md`) rewrote four doctrine rules that five of our own sessions had not found. Rule: `empire-cycle` step 1 reads the *whole* new chat, and anything with a number goes into the diplomacy file the same cycle.
+
+## L11 — A mine one level ahead is a third worse (2026-09-11)
+We took capital mines to 16/14/11 while 5:316:9 sat at crystal 10, where the next level costs 7.9k and pays back its crystal in 5 h; the capital's crystal 15 costs 51.9k and pays back in 18 h. Source: `codex` 2026-09-11T18:10Z, BJACK measurement (NeC: 37.8 vs 28.7 per 1 000). Rule: DOCTRINE → Lowest mine first (decision 008).
+
+## L12 — Hoarding is not a plan; the astro clock is (2026-09-11)
+Three planets sat with empty queues at 17:34–18:07Z holding crystal "for astro 5", while a 2.6k-crystal mine would have paid itself back before astro 5 could be afforded, and the capital's energy factor slipped to 0.94 unnoticed. Source: `HANDOFF.md` 18:00Z, `empire_overview` 18:07Z. Rule: DOCTRINE → The astro clock, Never an empty queue (decision 009).
+
+## L13 — Deuterium is the planet-5 gate, and the alliance is drowning in it (2026-09-11)
+Astro 6+7 need 180k deuterium; we make 2.8k/h (64 h) against 27 h for the crystal. NeC hit the same wall and solved it with an 80k 1:1 trade; aranella and merttoprak hold 500–600k idle. Source: `research_tree` 18:08Z, chat 547–551. Rule: decision 009 (synthesizers on cold worlds), decision 010 (trade metal for deuterium/crystal, pending Commander).
+
+## L14 — One probe, and know the counter before you send (2026-09-11)
+Our spy skill sent three probes per target; three probes triple the counter and add no information. The law `counter = units × probes × 2^(Δesp) / 100` predicted 17/17 readings in the channel. Source: chat 592–625. Rule: DOCTRINE → Spy; `empire-spy` skill step 2.

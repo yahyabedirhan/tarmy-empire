@@ -6,38 +6,35 @@ Each entry: the question, the current answer, the file(s) that are the source of
 
 ## What's the current plan, what are we focusing on right now?
 
-Posture is **economy first, opportunistic raider, adequate defence** (`strategy/DOCTRINE.md`, decision 001). Right now: growing all 3 planets (queues refilled every cycle per `empire-farm`), capital researching toward the quest ladder, saving toward astrophysics 5 to unlock a 4th planet (decision 002). No active raid campaign or open mission as of the last check.
+Posture unchanged: **economy first, raiding parked** (decision 001, L9). Engine (decision 009): planets before fleet — every queue filled with the best-returning mine in the empire (colonies' low mines first, decision 008), crystal before metal, and the astrophysics ladder as the clock: astro 5 → planet 4 at 5:316:3 (crystal world), then astro 6+7 → planet 5 (deuterium is the gate), then 8+9 → planet 6. Proposed and waiting on the Commander: 1:1 trades of surplus metal for crystal/deuterium inside BJACK (decision 010).
 
-Source of truth: `HANDOFF.md` → *Where we are* / *Next actions* (rewritten every cycle — always more current than this line).
-Last checked: 2026-09-11T12:10Z.
+Source of truth: `HANDOFF.md` → *Where we are* / *Next actions*; `strategy/decisions/009-*.md` forecast table.
+Last checked: 2026-09-11T18:20Z.
 
 ## When are we going to expand to a new planet?
 
-Not yet. Blocked on astrophysics: we're at level 3 (allows exactly the 3 planets we hold); level 5 is needed to unlock a 4th and to open the position-3 slot (decision 002 picks **5:316:3**, +20% crystal). Astro 4→5 together cost ~59k metal / 118k crystal / 59k deuterium — the capital only holds ~22k crystal, the rest (~104k) sits on 5:316:10. Plan: transport crystal 10 → capital, then queue astro 4 then 5 back-to-back (~4.4h combined build), then send the idle colony ship at the capital to 5:316:3.
+Astro 5 needs 37.5k / 75k / 37.5k on the capital. Empire crystal ~26k on hand, +13.2k/h → the sum exists in ~5–6 h if nothing else is bought, ~8–10 h while short-payback mines are still built (they pay back before the research lands). A 50k metal→crystal trade with aranella (decision 010) would bring it to ~2 h. Research takes 2.8 h; the colony ship is already parked at the capital; 5:316:3 is confirmed empty (18:00Z). Planet 5 (astro 6+7) is gated by 180k deuterium ≈ 64 h at today's 2.8k/h — synthesizers on 5:316:9 queued, a deuterium trade proposed.
 
-Source of truth: `strategy/decisions/002-expansion-six-planets.md`, `empire/research.md`, `research_tree` (live astro level), `empire/planets/G5-S316-P12.md` (capital resources).
-Last checked: 2026-09-11T12:10Z — no crystal transport queued yet.
+Source of truth: `research_tree`, `strategy/decisions/009-*.md`, `empire/research.md`.
+Last checked: 2026-09-11T18:20Z.
 
 ## When are we going to do our next attack?
 
-Not launched yet, no open `ops/attacks/` campaign. Blocked on: (1) light_fighter 60 finishing at the capital (13:50:31Z) to have a strike force, (2) a fresh scan of the two named targets — 5:316:8 (Saeed2) and 5:316:5 (caioc) — since scans older than 6h don't satisfy the raid rule. Plan per decision 004: scan → simulate → only launch if every run wins and expected losses ≤ 5% of loot, loot ≥ 30k and ≥ 15k/hour of round trip. Target order: Saeed2 first, then caioc.
+Not before planet 5 (decision 009) unless the Commander reopens it. Reason, measured by the alliance and by us: at our size 900k in cruisers returns one-off loot; the same 900k in a colony returns +24k/h forever. Our 5× floor is 428 invested and rises with every build; everything soft in 5:310–322 is already below it (L8), and everything above it carries the standard 216-unit wall (L9). When reopened, the target class is the "sleeping builder" (mines 18+, wall < 20 turrets, no fleet, score ≥ ours ÷ 5), found by leaderboard score, valued by production not vault, hit before we outgrow it.
 
-Source of truth: `strategy/DOCTRINE.md` → **Raid** rule (decision 004), `intel/targets/`, `ops/attacks/` (none open currently), `HANDOFF.md` → *Next actions*.
-Last checked: 2026-09-11T12:10Z.
+Source of truth: DOCTRINE → Raid, `strategy/decisions/009-*.md` revisit triggers.
+Last checked: 2026-09-11T18:20Z.
 
 ## Are we good on defence against a possible attack?
 
-**No — one clear gap.** `defence_summary` as of this check:
+Adequate for today's stockpiles, thin for the astro-5 hoard. Who can hit us: players with score 428–10.7k (5× band); BJACK members cannot; the big accounts cannot. Walls: capital 16 RL + 2 LL + 62 LF parked (~40k value) over ~110k resources; 5:316:10 20 RL over ~53k; 5:316:9 nothing over ~25k (rocket launchers are pure metal — added when its metal has no better mine to buy). Rule for the hoard (decision 006 amended): as astro crystal piles on the capital, add RL so wall value ≥ hoard ÷ 4 — 75k crystal + 37k metal + 37k deut ≈ 150k → ≥ 37k wall, which the capital already has; for astro 7's 460k the wall must reach ~115k (≈ 45 more RL, 90k metal, zero crystal). No hostile fleet seen this session.
 
-| Planet | Turrets | Ships at home | Total weapon / shield / armour | Resources sitting there |
-|---|---|---|---|---|
-| capital (5:316:12) | light_laser 2, rocket_launcher 6 | 36 light_fighter, 2 large_cargo, 4 small_cargo, 1 colony_ship | 3584 / 934 / 322000 | ~221k (moderate; fleet at home covers it) |
-| 5:316:10 | **none** | **none** | **0 / 0 / 0** | ~280k (metal+crystal+deut) |
-| 5:316:9 | none | 2 small_cargo | 14 / 26 / 11200 | ~72k |
+Source of truth: `fleets` (every cycle), `defence_summary`, DOCTRINE → Defend.
+Last checked: 2026-09-11T18:20Z.
 
-Decision 006's rule is defence value ≥ resources sitting there ÷ 4, plus a small shield dome per planet as soon as unlocked (`the_dome` quest is still open, progress 0/1 — no dome anywhere yet). The capital is carrying its own defence in its parked fleet. **5:316:10 is the outlier: zero defence of any kind against ~280k in resources**, and it's a same-system, easy-to-scan target. No hostile has been seen aimed at us this session (`fleets` empty), and the partial neighbourhood watch (10/31 scanned) found no active raider closer than "watch" verdicts — but that sweep isn't finished (systems 314–322 unscanned).
+## How long can we farm safely without attacking?
 
-Recommendation: queue at least a handful of rocket launchers at 5:316:10 next time its queue frees, and keep the_dome quest in mind for all three planets once shipyard/robotics levels allow it.
+Indefinitely, as far as the rules go: nobody needs to be attacked to grow, and raiding is a bonus not an engine (the #1 player has attacked nobody for days — everyone is below her floor). The risk is the other direction: being farmed. That is controlled by (1) stockpiles low — spend on landing, sweep to the capital only when the research is about to be queued, (2) wall ≥ stock ÷ 4, (3) `fleets` read every cycle and `fleet.incoming` waking the loop at once. If we are raided for more than an hour of production in a week, decision 009 says reopen the fleet-save routine.
 
-Source of truth: `mcp__commander__defence_summary` (live, re-check every cycle), `strategy/DOCTRINE.md` → **Defend** rule (decision 006), `intel/` (threat picture — currently partial).
-Last checked: 2026-09-11T12:10Z.
+Source of truth: DOCTRINE → Defend, decision 009.
+Last checked: 2026-09-11T18:20Z.

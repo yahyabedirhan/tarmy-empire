@@ -4,10 +4,10 @@ description: Scan foreign planets with espionage probes and record what was seen
 ---
 
 1. **Choose targets.** Neighbourhood watch (decision 005): every occupied slot in 5:310–322 whose target file is older than 12 h. Pre-raid: the named target. `galaxy` shows occupants (10 deut per foreign system).
-2. **Send.** `dispatch_fleet(mission="espionage", ships={"espionage_probe": 3})` per target; keep one fleet slot free. Note fleet ids.
+2. **Send one probe.** `dispatch_fleet(mission="espionage", ships={"espionage_probe": 1})` per target; keep one fleet slot free. Note fleet ids. One probe returns info 5/5 against anyone at or below our espionage level; extra probes only multiply the counter (`counter = (defences + domes + parked ships) × probes × 2^(their esp − ours) / 100`, L14). If a previous scan read counter ≥ 0.5, the wall is the standard 216-unit one — record it, do not re-probe.
 3. **Wait** on `next_event` for `fleet.returned`, then `reports(kind="espionage", since_hours=1)`.
 4. **Record** per target in `intel/targets/<G-S-P>_<owner>.md` (create from the template; otherwise replace the *Latest scan* block and append one *Scan history* row). Update or create `intel/players/<owner>.md`.
-5. **Verdict.** `empty` (nothing to take); `farm` (resources ≥ 30k, defence beatable at zero loss per `simulate_combat`, owner inactive: no change across ≥ 2 scans ≥ 12 h apart); `watch` (loot but defended or active); `avoid` (stronger than us or a BJACK member).
+5. **Verdict.** `empty` (nothing to take); `farm` (production ≥ 10k/h from the mine levels or resources ≥ 30k, defence beatable at zero loss per `simulate_combat`, owner inactive: no change across ≥ 2 scans ≥ 12 h apart); `watch` (loot but defended or active); `avoid` (stronger than us or a BJACK member).
 6. Commit `intel: …`.
 
 Done when every scanned target has a fresh *Latest scan* block, a history row and a verdict.
@@ -28,7 +28,7 @@ verdict: farm | watch | avoid | empty
 resources: M <n> · C <n> · D <n>
 fleet: <ship counts or "none seen" or "hidden (esp tech too low)">
 defence: <counts>
-buildings: <mines/solar/storage levels if shown>
+buildings: <mines/solar/storage levels if shown> → production estimate: rate(L) = ours(L0) × L/L0 × 1.1^(L−L0)
 research: <if shown>
 activity: <online/last change vs previous scan>
 ## Scan history
