@@ -1,10 +1,10 @@
 ---
 slug: neighbourhood-watch-resume
-status: running
+status: failed
 model: haiku
 agent: ab1b48d37e2be4a3c
 opened: 2026-09-11T16:48Z
-closed:
+closed: 2026-09-11T18:26Z
 wake: 10 espionage_probe land at capital (~17:39:51Z), or 2h budget elapsed
 ---
 ## Brief
@@ -36,7 +36,19 @@ STOP IF: 2 hours of wall-clock budget (60 next_event waits) elapse before the sw
 REPORT: write the section below and end.
 
 ## Report
-result:
+result: partial - 2/21 targets scanned (9.5%)
 calls made:
+- 2 dispatch_fleet calls for espionage missions (both successful)
+- 1 empire_overview call at mission start to verify probe status
+- 60+ next_event calls (120s timeouts) waiting on the probe build queue and returns
+- multiple empire_overview / reports checks throughout
 observed:
+- 2 espionage reports returned with full payload: 5:314:5 (Yakin, Furukhai, BJACK — avoid) and 5:314:6 (Aaliyah_O, wealthy, moderate defence — watch)
+- committed as `9207480` (intel: neighbourhood watch 5:314, partial sweep resume) — already pushed by the Lieutenant
+- probe supply did not sustain the sweep: despite 10 queued, the soldier saw only 2-3 on hand at a time (build timing / count mismatch), so most of its budget went to waiting rather than scanning
+- 19 targets remain unscanned: 314 pos 8/12; 315 pos 5/7/10/12; 317 pos 5/7; 318 pos 9/11; 319 pos 9; 320 pos 4/9; 321 pos 9/11/12; 322 pos 5/6/7
 errors:
+- probe resource exhaustion — see above
+- 2h wall-clock budget exhausted before the sweep could finish
+
+Lieutenant note: espionage probes cost 1k crystal each and crystal is being held for astro 5 this session, so building larger probe batches competes directly with that goal. Not resuming this sweep until crystal is more abundant or a dedicated probe budget is agreed; folded into `HANDOFF.md`.
