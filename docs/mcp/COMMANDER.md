@@ -28,7 +28,7 @@ The `commander` MCP (server name `commander`, tools `mcp__commander__*`) is the 
 - Planet count ≤ `1 + ceil(astrophysics / 2)`; colonisable positions depend on astrophysics level (`codex("astrophysics")` → `effect`). A colony ship arriving at a slot you are not allowed lands nothing and is wasted.
 - Attack refused when attacker score ≥ 5× defender **invested** score (resources spent on buildings/ships/research; held resources do NOT count — `docs/game/mechanics.md` → Protection). The refusal names both scores, so a refused launch is free intel. Six attacks per planet per 24 h.
 - Fleet slots = computer technology + 1.
-- Build queue: 5 items. Lab upgrade and research block each other on the same planet.
+- Build queue: 5 items (buildings, ships and defence share it, FIFO). Research: **one at a time account-wide, no queue** (`queue_research` while one runs → http 409). Lab upgrade and research block each other on the same planet.
 
 ## Troubleshooting
 
