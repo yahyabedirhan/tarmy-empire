@@ -4,7 +4,7 @@ status: failed
 model: haiku
 agent: ab1b48d37e2be4a3c
 opened: 2026-09-11T16:48Z
-closed: 2026-09-11T18:26Z
+closed: 2026-09-11T17:40Z
 wake: 10 espionage_probe land at capital (~17:39:51Z), or 2h budget elapsed
 ---
 ## Brief
