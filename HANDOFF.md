@@ -1,31 +1,31 @@
-# Handoff — 2026-09-11T10:35Z
+# Handoff — 2026-09-11T11:16Z
 
 ## Do this first
-Run `/empire-cycle`. Energy 5 lands 10:45:33Z at the capital → queue impulse 4, then ion 3.
+Run `/empire-cycle`. Research weapons 4 lands 11:26:38Z at the capital → queue ion 3 next (impulse 4 still needs 32k crystal, only ~20k on hand).
 
 ## Where we are
-- 3 planets: capital 5:316:12 GROWING, 5:316:10 GROWING (queue full to 11:39:44Z), 5:316:9 BOOTSTRAP (id 5587, queue to 10:35:49Z).
-- Capital: shielding 3 landed, energy 5 in progress; ship queue metal_mine14 (10:38:31Z) → 60 LF (13:50:31Z) → 3 LC (14:19:19Z) → 2 recyclers (14:44:55Z), one slot free.
-- 5:316:9: transport landed (60k/10k/5k on hand), building solar 6, metal 7, crystal 3; one slot free.
-- Score 970, rank 835. Saeed2 raid approved (decision 004, 5 % loss rule); flies after a fresh scan once the LF exist (~13:50Z).
+- 3 planets: capital 5:316:12 GROWING, 5:316:10 GROWING (queue to 11:39:44Z), 5:316:9 BOOTSTRAP (id 5587, queue to 11:29:07Z).
+- Capital: research weapons 4 running; ships light_fighter 60 (13:50:31Z) → large_cargo 3 (14:19:19Z) → recycler 2 (14:44:55Z), then buildings crystal_mine 13 → robotics_factory 4 (→15:11:43Z) — confirmed this cycle that building and ship queues share one construction slot per planet, not parallel.
+- 5:316:9: solar 7, metal 8, crystal 4–5, robotics 1 queued, lands 11:29:07Z; still needs metal_storage 2 to leave BOOTSTRAP.
+- Soldier running: decision-005 neighbourhood watch of 5:310–322 (`ops/missions/2026-09-11T11-15_neighbourhood-watch-5-310-322.md`, agent a7c6bd4b0af0a0252) — not yet reported back.
 - Goal: decision 002 (cluster expansion) + first raid income; rulebook `strategy/DOCTRINE.md`.
 
 ## Next actions
-1. 10:35:49Z: 5:316:9 queue empties — queue metal 8, crystal 4–5, robotics 2 (`empire/planets/G5-S316-P9.md`).
-2. 10:38:31Z: metal_mine 14 lands at capital — free build slot opens, nothing urgent queued yet.
-3. 10:45:33Z: energy 5 lands — queue impulse 4, then ion 3 (`empire/research.md`, ladder).
-4. Next transport to 5:316:9 — capital crystal ~22k, colony 10 crystal ~98k: build 2 small cargo on 5:316:10 (shipyard 2) and ship crystal 10 → 9 directly.
-5. ~13:50Z: `empire-spy` 5:316:8 and 5:316:5 → `empire-raid` Saeed2 (`ops/attacks/2026-09-11_G5-S316-P8_Saeed2.md`), then caioc.
-Later: neighbourhood-watch scans of 5:310–322 (decision 005) — none done yet beyond 5:316.
+1. When the neighbourhood-watch soldier reports: close its mission file, fold new `intel/targets/` verdicts into raid planning, push its commit.
+2. 11:26:38Z: weapons 4 lands at capital — queue ion 3 (cheap: 1.2k crystal, toward `ion_theory`/`ionised` quests).
+3. 11:29:07Z: 5:316:9 queue empties — queue metal_storage 2 (leaves BOOTSTRAP) and robotics 2 (`empire/planets/G5-S316-P9.md`).
+4. 11:39:44Z: 5:316:10 queue empties — check production_report, queue next per `empire-farm`.
+5. ~13:50Z: once light_fighter 60 exist, fresh-scan 5:316:8 and 5:316:5 → `empire-raid` Saeed2 (`ops/attacks/2026-09-11_G5-S316-P8_Saeed2.md`), then caioc.
+Later: 5:316:9 still needs a crystal transport (colony 10 crystal ~100k, capital lower) — build 2 small cargo on 5:316:10 and route crystal 10 → 9.
 
 ## Questions for the Commander
-- `.agents/skills/empire-handover/SKILL.md`, `.agents/skills/i-have-adhd/SOURCE.md`, `AGENTS.md`, `README.md` are showing as **modified in the working tree but not by this session** (git status was clean at session start; I made no edits to them). The uncommitted diff flips the documented rule — it now says `i-have-adhd` governs chat replies, when the version committed at `185cd46` says explicitly it governs `HANDOFF.md` only and chat keeps its normal style. I did not commit or revert this — left it as found, since it touches protected paths (`AGENTS.md`, `README.md`, `.agents/skills/`) that need your approval either way. Recommend: tell me whether this edit is yours/intentional (then I'll commit it) or unexpected (then I'll revert it to match `185cd46`).
+- none
 
 ## Uncommitted strategy changes awaiting approval
-- See the question above — `.agents/skills/empire-handover/SKILL.md`, `.agents/skills/i-have-adhd/SOURCE.md`, `AGENTS.md`, `README.md` (working-tree diff, not from this session, reversing the documented i-have-adhd scope).
+- none
 
 ## What changed this session
-- Queued shielding 3 (landed) and energy 5 at the capital; queued 2 recyclers for the `salvage_crew` quest.
-- 5:316:9 bootstrap: transport landed, queued solar 6 / metal 7 / crystal 3 keeping production factor at 1.
-- Score moved 843→970, rank 946→835 from quest payouts (third-world + lab-7 quests settled).
-- Found an unexplained uncommitted diff reversing the `i-have-adhd`/HANDOFF.md scoping rule — see *Questions for the Commander*.
+- Backend was unreachable (`http 530: error code: 1033`) for ~2 hours early this session; recovered on its own, no game-side fix needed.
+- Capital: energy 5 + shielding 3 landed, quests paid; queued research weapons 4, buildings crystal_mine 13 + robotics_factory 4.
+- 5:316:9: prior bootstrap queue landed; queued solar 7, metal 8, crystal 4–5, robotics 1.
+- Spawned a soldier for the first-ever decision-005 neighbourhood watch (5:310–322) — no scans of that range existed before this session.
