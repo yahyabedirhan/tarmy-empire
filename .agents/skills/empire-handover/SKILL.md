@@ -5,7 +5,7 @@ description: Rewrite HANDOFF.md so the next session resumes exactly here. Use at
 
 Rewrite `HANDOFF.md` in full from the template (never append). Facts only: whatever the next session can read from a file or a tool is a pointer, not a copy. Commit `handoff: <one line>` and push.
 
-Shape the document with the rules in `.agents/skills/i-have-adhd/SKILL.md` → *Rules* (lead with the next action, numbered bounded steps, state restated, ≤ 5 items per group, no preamble). Those rules apply to **HANDOFF.md only**; do not adopt them as the session's reply style.
+Shape the document with the template below (lead with the next action, numbered bounded steps, state restated, ≤ 5 items per group, no preamble). The `i-have-adhd` skill governs chat replies, not this file — do not invoke it here.
 
 ```markdown
 # Handoff — <ts>

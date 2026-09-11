@@ -50,7 +50,7 @@ Prefixes: `intel:`, `ops:`, `empire:`, `report:`, `handoff:`, `strategy:`, `skil
 
 ## Output shape
 
-`HANDOFF.md` is written in the `i-have-adhd` shape (vendored under `.agents/skills/i-have-adhd/`, applied by `empire-handover`): next action first, numbered bounded steps, state restated, short lists. That shape is for the handoff document only; chat and every other file keep their normal style.
+Chat replies to the Commander use the `i-have-adhd` shape (vendored under `.agents/skills/i-have-adhd/`): next action first, numbered bounded steps, state restated, short lists. That shape is for chat only; every outbound file — `HANDOFF.md`, reports, records, commit messages — keeps its own documented format.
 
 ## Adding new skills
 
