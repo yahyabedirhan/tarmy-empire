@@ -1,6 +1,6 @@
 # Research plan
 
-Research is account-wide; the capital's lab (level 6) runs it. Order = quest ladder (`quests`) with the two doctrine overrides. Price the whole chain before starting (L5). Levels as of 2026-09-11: impulse 3, astro 2, energy 4, armour 4, computer 3, combustion 6, laser 5, ion 2, weapons 3, espionage 4, shielding 0, hyperspace 0.
+Research is account-wide; the capital's lab (level 6) runs it. Order = quest ladder (`quests`) with the two doctrine overrides. Price the whole chain before starting (L5). Levels as of 2026-09-11T13:24Z: impulse 3, astro 3 (4 in progress → 15:00:40Z), energy 5, armour 4, computer 5, combustion 6, laser 5, ion 4, weapons 4, espionage 4, shielding 5, hyperspace 0 (unlocked).
 
 | # | Tech → level | Why | Gate for |
 |---|---|---|---|
