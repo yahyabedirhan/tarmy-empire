@@ -31,7 +31,7 @@ Option 1. Horizon **six planets** (astro 9 ≈ 1.4M total, affordable when incom
 Cross-galaxy: refused until we own a moon with a jump gate (hyperspace 7), which is the only mechanic that makes distance free.
 
 ## Consequences
-DOCTRINE → Colonize rule; `colonize` skill target list; planet roles: 12 capital, 10 metal-world, next metal-world, then crystal-world, then deut-world.
+DOCTRINE → Colonize rule; `empire-colonize` skill target list; planet roles: 12 capital, 10 metal-world, next metal-world, then crystal-world, then deut-world.
 
 ## Revisit when
 - A hostile active raider settles in 5:314–318 or hits us twice (cluster risk realised).

@@ -29,7 +29,7 @@ One line per term. If a term you meet is missing, add it here in the same commit
 
 **Ours**
 - **Commander / Lieutenant / Soldier** — user / main session / sub-agent. See `AGENTS.md`.
-- **cycle / heartbeat** — one iteration of the main loop (`cycle` skill).
+- **cycle / heartbeat** — one iteration of the main loop (`empire-cycle` skill).
 - **wake** — the condition a planet or mission is waiting for: an event name, a timestamp, or a resource threshold.
 - **state / sub-state** — a planet's high-level phase (`BOOTSTRAP GROWING STALLED STAGING THREATENED`) and the detail inside it. Defined in `strategy/DOCTRINE.md`.
 - **role** — what a planet is for (`capital`, `mine-world`, `forward-base`). Long-lived.
@@ -37,7 +37,7 @@ One line per term. If a term you meet is missing, add it here in the same commit
 - **sortie** — one fleet launch (out, fight/load, back).
 - **campaign** — all sorties against one target under one plan; one file in `ops/attacks/`.
 - **verdict** (intel) — what to do with a target: `farm` (raid repeatedly), `watch`, `avoid`, `empty`.
-- **mission brief** — the one-page order a soldier is spawned with (`soldier` skill).
+- **mission brief** — the one-page order a soldier is spawned with (`empire-soldier` skill).
 - **lesson** — a numbered entry in `strategy/LESSONS.md` linked to the event that taught it.
 - **decision record** — a file in `strategy/decisions/` with context, options, choice, reasoning, revisit-when.
 - **handoff** — `HANDOFF.md`, the state the next session resumes from.

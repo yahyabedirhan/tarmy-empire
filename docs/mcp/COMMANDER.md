@@ -19,7 +19,7 @@ The `commander` MCP (server name `commander`, tools `mcp__commander__*`) is the 
 - `queue_research(tech, planet_id?)` — the parameter is **`tech`** (not `key`, `research_key`, `target_level`). Research is account-wide; the lab used is the highest one you own.
 - `build_ships(key, count, planet_id?)` — ships *and* defence. Solar satellites and crawlers are buildings: `upgrade_building`.
 - `dispatch_fleet(mission, target_galaxy, target_system, target_position, ships, cargo?, speed_percent?, origin_planet_id?, target_moon?, hold_hours?)` — missions: `attack transport deploy colonize espionage recycle defend`. Say arrival time before sending; `galaxy` gives the reference flight time for one small cargo.
-- `next_event(timeout_seconds ≤ 300)` — returns immediately if events are queued, else blocks. Events: `queue.completed`, `fleet.incoming` (hostile launch, brief payload → read `fleets`), `fleet.returned`, `fleet.combat`, `planet.attacked`. Resource growth emits nothing: compute the ETA from `production_report` and check then.
+- `next_event(timeout_seconds ≤ 300)` — returns immediately if events are queued, else blocks. Events seen: `queue.completed`, `fleet.dispatched`, `fleet.incoming` (hostile launch, brief payload → read `fleets`), `fleet.returned`, `fleet.combat`, `planet.attacked`, `alliance.message.received`, `state.changed` (any POST by any session on this account — a way to notice a second actor). One stream per account: an event consumed by one agent is gone for the others, so soldiers treat `next_event` as a sleep and re-read state. Resource growth emits nothing: compute the ETA from `production_report` and check then.
 - `empire_overview` — `production` and `build_queue` inside it are for the **first planet only**; pass `planet_id` to `production_report` / `build_queue` / `planet_detail` for others.
 - `quests` — reading it pays finished rungs. Read it after any completion.
 
@@ -38,6 +38,8 @@ The `commander` MCP (server name `commander`, tools `mcp__commander__*`) is the 
 | colony ship arrived, no planet | astrophysics allowance full or position not allowed | check `codex("astrophysics")` before every colonize |
 | `upgrade_building` returns `stopped_after` < count | resources ran out mid-batch | read `queued`; do not re-send the same count |
 | attack refused with two scores | 5× protection rule | pick another target; log the refusal in the campaign file |
+| `queue_research` http 409 "already researching" | one research at a time, empire-wide | `research_tree` → `in_progress` for what and when |
+| `build_ships` http 409 "5 builds running" | buildings, ships and defence share one 5-slot queue per planet | wait for `queue.completed` or `cancel_build` |
 | `next_event` returns `[]` | nothing happened within the timeout | not a completion; compute the ETA and wait again |
 | tool absent from the list | tier not handed over (`tarmy commander --allow …`) | tell the Commander; do not keep calling it |
 | numbers in a stale espionage report | scan is old | re-scan before an attack |

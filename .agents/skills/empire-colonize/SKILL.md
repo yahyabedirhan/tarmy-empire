@@ -1,5 +1,5 @@
 ---
-name: colonize
+name: empire-colonize
 description: Found and bootstrap a new planet — check the astrophysics allowance, choose the slot per decision 002, send the colony ship after the licence exists, then feed and build the colony until it leaves BOOTSTRAP. Use when a colony ship can be sent or a planet is in BOOTSTRAP.
 ---
 
@@ -10,7 +10,7 @@ Two parts. **Found** runs once; **Bootstrap** runs every cycle while the planet 
 1. `codex("astrophysics")` → `effect.planets_allowed` and `colonisable_positions`. Owned planets must be **fewer** than allowed, and research must be *completed*, not in progress (L3). If not, stop: the wake is `queue.completed` for astrophysics.
 2. Pick the slot from `strategy/decisions/002-expansion-scope.md` → Decision list, skipping any position no longer empty in `galaxy`. Write `ops/colonies/<COORD>.md` from the template below with `status: planned` **before** launching.
 3. `dispatch_fleet(mission="colonize", ships={"colony_ship":1, "small_cargo":n}, cargo={...})`. Cargo for the first hour: ≥ 3 000 metal, 1 000 crystal, 500 deuterium (fits in the colony ship's hold + escorts). Record fleet id, ETA → `status: flying`.
-4. On `fleet.returned`/planet appearing in `empire_overview`: create `empire/planets/<COORD>.md` (copy an existing one; state `BOOTSTRAP / powering`, tags from its position bonus, temperature and fields; *Why this planet* from the decision), set the colony file `status: founded`. If no planet appeared: `status: failed`, reason, and a `lesson`.
+4. On `fleet.returned`/planet appearing in `empire_overview`: create `empire/planets/<COORD>.md` (copy an existing one; state `BOOTSTRAP / powering`, tags from its position bonus, temperature and fields; *Why this planet* from the decision), set the colony file `status: founded`. If no planet appeared: `status: failed`, reason, and a `empire-lesson`.
 
 ## Bootstrap (each cycle)
 

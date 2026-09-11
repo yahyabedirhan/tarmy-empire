@@ -8,7 +8,7 @@ Workspace for playing terminal.army as commander **yabepa** (universe Genesis) t
 |---|---|---|
 | Commander | the user (yabepa) | sets direction, approves irreversible or risky moves, reviews strategy |
 | Lieutenant | the main Claude session | runs the loop, decides everything reversible, spawns soldiers, is the only one who talks to the Commander |
-| Soldier | a sub-agent spawned with a mission brief (`soldier` skill) | one narrow mission, reports back to the Lieutenant, never to the Commander |
+| Soldier | a sub-agent spawned with a mission brief (`empire-soldier` skill) | one narrow mission, reports back to the Lieutenant, never to the Commander |
 
 Escalation: a soldier asks the Lieutenant; the Lieutenant batches non-urgent questions into `HANDOFF.md` → *Questions for the Commander* and interrupts only for urgent ones (incoming attack, irreversible choice). While a question is open, keep doing everything that does not depend on it.
 
@@ -31,7 +31,7 @@ All game actions go through the `commander` MCP (`mcp__commander__*`). It acts a
 
 Every event gets one short file from the template inside the skill that owns it (`ops/`, `intel/`, `reports/`). Fill every field; write `unknown` rather than guessing. Timestamps are UTC ISO-8601. Files are append-only after the event closes, except a `lessons:` line.
 
-A lesson is not learned until it is in `strategy/LESSONS.md` with a link to the event that taught it (`lesson` skill).
+A lesson is not learned until it is in `strategy/LESSONS.md` with a link to the event that taught it (`empire-lesson` skill).
 
 ## Git and commits
 

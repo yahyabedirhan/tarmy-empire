@@ -1,5 +1,5 @@
 ---
-name: lesson
+name: empire-lesson
 description: Record a lesson learned from an event and propose the doctrine change it implies.
 disable-model-invocation: true
 ---

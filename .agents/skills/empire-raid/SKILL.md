@@ -1,15 +1,15 @@
 ---
-name: raid
+name: empire-raid
 description: Plan, simulate, fly and record a raid campaign against one target — the attack rule of the doctrine, end to end, with one file per campaign in ops/attacks/. Lieutenant only.
 ---
 
 A campaign is every sortie against one target under one plan. One file per campaign, from the template below, written **before** the first launch.
 
-1. **Eligibility.** Target file in `intel/targets/` with `verdict: farm` and `last_scan` < 6 h (else `spy` first). Owner not in BJACK, not flagged active; if active, stop and take it to the Commander (decision 004, `strategy/ALLIANCE.md`).
+1. **Eligibility.** Target file in `intel/targets/` with `verdict: farm` and `last_scan` < 6 h (else `empire-spy` first). Owner not in BJACK, not flagged active; if active, stop and take it to the Commander (decision 004, `strategy/ALLIANCE.md`).
 2. **Plan.** Cargo needed = min(half of each pool, our capacity). Fleet = enough cargo hold + the escort `simulate_combat` says wins with **zero** ship losses. Round-trip time from `galaxy`. Check DOCTRINE thresholds: loot ≥ 30 000 and ≥ 15 000 per round-trip hour; one fleet slot stays free. Write the file with `status: planned` and the expected numbers.
 3. **Fly.** `dispatch_fleet(mission="attack", …)`. Row per sortie: launch, arrival, fleet id. `status: flying`.
 4. **Result.** On `fleet.combat` / `fleet.returned`: `reports(kind="combat", since_hours=1)` → loot, losses, debris, whether defences rebuilt. Fill the sortie row. Update the target's *Scan history* with what the report showed.
-5. **Repeat** up to 6 sorties/24 h while the yield stays above threshold and the last report shows no new defence or fleet. Any loss, any refusal, any surprise → stop, `status: closed`, and a `lesson`.
+5. **Repeat** up to 6 sorties/24 h while the yield stays above threshold and the last report shows no new defence or fleet. Any loss, any refusal, any surprise → stop, `status: closed`, and a `empire-lesson`.
 6. Close with `expected vs actual` and `lessons:`; commit `ops: raid <target>`.
 
 Done when the file is `closed` with every sortie row filled.

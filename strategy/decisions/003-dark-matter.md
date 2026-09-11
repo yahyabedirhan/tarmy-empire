@@ -13,7 +13,7 @@ Earned 0.02/min only while a session is open, 12 h max per unbroken session (~14
 3. Boost now.
 
 ## Decision
-Option 1. The Commander cannot see DM in the game dashboard and wants it kept for moments that matter (an emergency rush while THREATENED, or a boost when production is large enough that 25 % is meaningful). The `status` skill reports the balance so the choice stays visible.
+Option 1. The Commander cannot see DM in the game dashboard and wants it kept for moments that matter (an emergency rush while THREATENED, or a boost when production is large enough that 25 % is meaningful). The `empire-status` skill reports the balance so the choice stays visible.
 
 ## Revisit when
 - Balance ≥ 300, or capital production ≥ 30k metal/h (a boost would return ≥ 180k).

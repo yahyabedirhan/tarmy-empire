@@ -32,7 +32,7 @@ intel/               WHAT we know about others
   targets/<COORD>_<owner>.md   one file per foreign planet: latest scan block + scan history
   players/<name>.md            one file per player: activity pattern, alliance, planets, verdict
 
-reports/status/      snapshots written by the `status` skill, never hand-edited
+reports/status/      snapshots written by the `empire-status` skill, never hand-edited
 
 archive/             the pre-2026-09-11 files, kept for history, not for guidance
 
@@ -45,13 +45,13 @@ Naming: coordinates are written `G5-S316-P12` in file names and `5:316:12` in te
 
 | Skill | Invoked by | Does |
 |---|---|---|
-| `cycle` | Lieutenant, on a loop | one heartbeat: read the empire, run every planet through its state, act, record, hand off |
-| `status` | Commander or Lieutenant | write a status snapshot to `reports/status/` and summarise it |
-| `farm` | `cycle` | the build/research decision procedure for one planet |
-| `colonize` | `cycle` or Lieutenant | pick a slot, send the ship, bootstrap the colony, record it |
-| `spy` | `cycle` or Lieutenant | scan targets, update `intel/` |
-| `raid` | Lieutenant | plan, simulate, execute and record a raid campaign |
-| `soldier` | Lieutenant | write a mission brief and spawn a sub-agent on it |
-| `lesson` | Lieutenant | record a lesson and propose the doctrine change it implies |
-| `handover` | Lieutenant | rewrite `HANDOFF.md` for the next session |
+| `empire-cycle` | Lieutenant, on a loop | one heartbeat: read the empire, run every planet through its state, act, record, hand off |
+| `empire-status` | Commander or Lieutenant | write a status snapshot to `reports/status/` and summarise it |
+| `empire-farm` | `empire-cycle` | the build/research decision procedure for one planet |
+| `empire-colonize` | `empire-cycle` or Lieutenant | pick a slot, send the ship, bootstrap the colony, record it |
+| `empire-spy` | `empire-cycle` or Lieutenant | scan targets, update `intel/` |
+| `empire-raid` | Lieutenant | plan, simulate, execute and record a raid campaign |
+| `empire-soldier` | Lieutenant | write a mission brief and spawn a sub-agent on it |
+| `empire-lesson` | Lieutenant | record a lesson and propose the doctrine change it implies |
+| `empire-handover` | Lieutenant | rewrite `HANDOFF.md` for the next session |
 | `terminal-army` | any | the game's own MCP playbook (vendored; refresh with `tarmy commander`) |

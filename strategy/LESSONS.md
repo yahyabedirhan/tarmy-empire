@@ -1,6 +1,6 @@
 # Lessons
 
-Numbered, never deleted; a superseded lesson gets a `superseded-by:` line. Each links to the event that taught it. New entries through the `lesson` skill.
+Numbered, never deleted; a superseded lesson gets a `superseded-by:` line. Each links to the event that taught it. New entries through the `empire-lesson` skill.
 
 ## L1 — Energy before ore (2026-09-06)
 Queued MM6→7 and CM3→4 before the solar surplus existed; factor fell 0.97→0.83 and every mine on the planet slowed for hours. Source: `archive/STRATEGY.md`. Rule: DOCTRINE → Energy first.

@@ -1,5 +1,5 @@
 ---
-name: handover
+name: empire-handover
 description: Rewrite HANDOFF.md so the next session resumes exactly here.
 disable-model-invocation: true
 ---

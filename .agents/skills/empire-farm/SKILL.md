@@ -1,5 +1,5 @@
 ---
-name: farm
+name: empire-farm
 description: Decide and queue the next builds and research for one planet in GROWING state, following the doctrine order (energy, storage, mines by role, facilities, ladder). Use from the cycle skill or when asked to grow a planet.
 ---
 

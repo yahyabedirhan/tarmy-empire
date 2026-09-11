@@ -1,1 +1,4 @@
 .DS_Store
+# verbatim manual copies stay local (see docs/game/SOURCES.md); run docs/game/fetch.sh
+docs/game/*.md
+!docs/game/SOURCES.md

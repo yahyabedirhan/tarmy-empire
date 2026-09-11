@@ -6,17 +6,17 @@ Posture: **economy first, opportunistic raider, adequate defence** (decision 001
 
 ## Planet state machine
 
-Every planet file (`empire/planets/`) carries exactly one state, one sub-state, and one **wake** (what it is waiting for). The `cycle` skill runs each planet through this table top to bottom; the first row that matches is the state.
+Every planet file (`empire/planets/`) carries exactly one state, one sub-state, and one **wake** (what it is waiting for). The `empire-cycle` skill runs each planet through this table top to bottom; the first row that matches is the state.
 
 | State | Sub-states | Enter when | Do | Leave when |
 |---|---|---|---|---|
 | `THREATENED` | `incoming` `recovering` | `fleets` shows a hostile fleet aimed at it, or it was hit in the last 24 h | `incoming`: read the attacker; `simulate_combat`; if we lose, fleet-save (deploy ships + resources to another planet timed to return after arrival) and rush nothing; alert the Commander. `recovering`: rebuild defences per 006, read the combat report, write the lesson | no hostile fleet and 24 h since the hit |
 | `STALLED` | `energy` `storage` `fields` | production factor < 1; a pool ≥ 90 % of cap; fields ≤ 2 free | `energy`: solar plant, else fusion (compare with `codex`), before any mine. `storage`: spend (transport to a needing planet, queue builds) or storage level. `fields`: stop mines, plan terraformer | the trigger is gone |
-| `BOOTSTRAP` | `landing` `powering` `stocking` | planet age < 24 h or metal mine < 8 | follow the bootstrap order in the `colonize` skill; transports from the capital every cycle | metal mine ≥ 8, solar covers it, storage ≥ 2 |
+| `BOOTSTRAP` | `landing` `powering` `stocking` | planet age < 24 h or metal mine < 8 | follow the bootstrap order in the `empire-colonize` skill; transports from the capital every cycle | metal mine ≥ 8, solar covers it, storage ≥ 2 |
 | `STAGING` | `fortify` `fleet` | a named mission in `ops/missions/` or `ops/attacks/` needs this planet to build ships/defence | build exactly what the mission file lists, nothing else, until it is done | the mission file says `status: ready` |
-| `GROWING` | `building` `waiting` | everything else | the `farm` skill: keep ≥ 2 items in the build queue in doctrine order; research per `empire/research.md`; `waiting` when nothing affordable — write the wake as a resource threshold + ETA | never (default state) |
+| `GROWING` | `building` `waiting` | everything else | the `empire-farm` skill: keep ≥ 2 items in the build queue in doctrine order; research per `empire/research.md`; `waiting` when nothing affordable — write the wake as a resource threshold + ETA | never (default state) |
 
-Roles (long-lived, set in the planet file, decision 002): `capital` (highest lab, shipyard, fleet home), `metal-world`, `crystal-world`, `deut-world`, `forward-base`. The role picks which mine the `farm` skill favours when several are affordable.
+Roles (long-lived, set in the planet file, decision 002): `capital` (highest lab, shipyard, fleet home), `metal-world`, `crystal-world`, `deut-world`, `forward-base`. The role picks which mine the `empire-farm` skill favours when several are affordable.
 
 ## Standing rules
 
@@ -42,8 +42,8 @@ Roles (long-lived, set in the planet file, decision 002): `capital` (highest lab
 
 ## Cycle cadence
 
-One `cycle` every 30 minutes while a session is open, or immediately on any `fleet.incoming` / `planet.attacked`. Watcher soldiers are spawned for one concrete wake each (a research finishing, a fleet returning) and end when it fires.
+One `empire-cycle` every 30 minutes while a session is open, or immediately on any `fleet.incoming` / `planet.attacked`. Watcher soldiers are spawned for one concrete wake each (a research finishing, a fleet returning) and end when it fires.
 
 ## Revisiting doctrine
 
-A rule changes through the `lesson` skill: the event → the lesson → the proposed edit → Commander approval. Decision records list their `revisit-when` triggers; the `status` skill reports any that have fired.
+A rule changes through the `empire-lesson` skill: the event → the lesson → the proposed edit → Commander approval. Decision records list their `revisit-when` triggers; the `empire-status` skill reports any that have fired.

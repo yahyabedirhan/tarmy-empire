@@ -9,7 +9,7 @@ Workspace just rebuilt (see README.md). First cycle about to run: spend the idle
 | nothing yet | | |
 
 ## Next actions (in order)
-1. `/cycle`
+1. `/empire-cycle`
 
 ## Questions for the Commander
 - none

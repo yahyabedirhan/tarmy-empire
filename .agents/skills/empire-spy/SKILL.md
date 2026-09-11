@@ -1,5 +1,5 @@
 ---
-name: spy
+name: empire-spy
 description: Scan foreign planets with espionage probes and record what was seen in intel/ (one file per target planet, one per player). Use for neighbourhood watch rounds, before any raid, or when asked to look at a coordinate.
 ---
 
