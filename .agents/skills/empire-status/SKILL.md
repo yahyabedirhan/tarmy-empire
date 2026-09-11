@@ -1,14 +1,14 @@
 ---
 name: empire-status
-description: Write a status snapshot of the empire to reports/empire-status/ and summarise it for the Commander.
+description: Write a status snapshot of the empire to reports/status/ and summarise it for the Commander.
 disable-model-invocation: true
 ---
 
-Write `reports/empire-status/<YYYY-MM-DDTHH-MM>Z.md` from live data, then print its *Summary* section. Never edit an old report.
+Write `reports/status/<YYYY-MM-DDTHH-MM>Z.md` from live data, then print its *Summary* section. Never edit an old report.
 
 1. Read `empire_overview`, `standing`, `dark_matter`, `fleets`, `research_tree` (for `in_progress`), and `production_report` + `build_queue` for each planet beyond the first. Read every `empire/planets/*.md` frontmatter and every `ops/missions/*.md` with `status: running`.
 2. Fill the template below. Every cell filled; `unknown` where the tool did not say.
-3. Compare with the previous report in `reports/empire-status/`: note score delta, production delta, planets gained/lost. List any decision record whose *Revisit when* trigger has fired.
+3. Compare with the previous report in `reports/status/`: note score delta, production delta, planets gained/lost. List any decision record whose *Revisit when* trigger has fired.
 4. Commit: `report: status <timestamp>`.
 
 ```markdown
