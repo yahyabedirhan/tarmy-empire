@@ -1,34 +1,32 @@
-# Handoff — 2026-09-11T10:15Z
+# Handoff — 2026-09-11T10:20Z
 
-## Goal right now
-Cycle 1 of the rebuilt workspace is mid-flight. Three planets; the third (5:316:9, id 5587) is in BOOTSTRAP and needs feeding every cycle. The first raid fleet (60 LF) lands 13:50Z; the Saeed2 campaign is approved and flies after a fresh scan. Run `/empire-cycle` on a 30-min loop; every report and every question goes to the Commander in chat (AGENTS.md).
+## Do this first
+Run `/empire-cycle`. Shielding 2 landed ~10:13Z → `queue_research(tech="shielding")` then `build_ships(key="recycler", count=2)` at the capital (planet 5080).
 
-## In flight
-| what | wake | file |
-|---|---|---|
-| shielding 2 → then queue `recycler` ×2 at capital + shielding 3 | 10:13Z | empire/research.md (recycler needs shielding 2) |
-| transport 55k M / 8k C / 4k D → 5:316:9 (fleet 55318) | 10:25Z → then queue metal 6–8, crystal 2–5, metal storage 1, solar to keep factor 1 | empire/planets/G5-S316-P9.md, ops/colonies/G5-S316-P9.md |
-| colony 9 queue: solar 4, MM4, MM5, CM1 | done by ~10:14Z | empire/planets/G5-S316-P9.md |
-| capital queue: solar 16 (10:21Z), MM14 (10:38Z), LF 60 (13:50Z), LC 3 (14:19Z) | one slot free now | empire/planets/G5-S316-P12.md |
-| colony 10 queue: MM13 (10:25Z), CM12 (10:45Z), solar 15 (11:34Z), robotics 3, DS7 (11:39Z) | full | empire/planets/G5-S316-P10.md |
+## Where we are
+- 3 planets: capital 5:316:12 GROWING, 5:316:10 GROWING (queue full to 11:39Z), **5:316:9 BOOTSTRAP** (id 5587, 169 fields, founded 09:22Z).
+- Transport 55k M / 8k C / 4k D lands on 5:316:9 at 10:25Z (fleet 55318).
+- Capital queue: solar 16 10:21Z, MM14 10:38Z, **60 LF 13:50Z**, 3 LC 14:19Z. One slot free.
+- Score 843, rank 946. Saeed2 raid approved (decision 004, 5 % loss rule); flies after a fresh scan once the LF exist.
+- Goal: decision 002 (cluster expansion) + first raid income; rulebook `strategy/DOCTRINE.md`.
 
-## Next actions (in order)
-1. `queue_research(tech="shielding")` when shielding 2 lands (10:13Z); then `build_ships(key="recycler", count=2)` at the capital.
-2. 10:26Z: colony 9 builds from the landed cargo (`empire-colonize` bootstrap order); next transport from the capital — capital crystal is only ~37k, so route crystal via 5:316:10 (113k C, no ships: send the capital's cargo fleet 12→10→9, or transport 10→9 once it has a shipyard... it has shipyard 2: build 2 small cargo there).
-3. Research after shielding 3: energy 5, impulse 4 (cruisers), ion 3–4 (empire/research.md).
-4. 13:50Z: 60 LF ready → `empire-spy` 5:316:8 and 5:316:5 → `empire-raid` Saeed2 (approved, ops/attacks/2026-09-11_G5-S316-P8_Saeed2.md), then caioc.
-5. Neighbourhood watch scans (5:310–322) are due — none done beyond 5:316 yet.
+## Next actions
+1. 10:13Z+: shielding 3 + 2 recyclers at the capital (`empire/research.md`, ladder `salvage_crew`).
+2. 10:26Z: 5:316:9 builds from the landed cargo — metal 6–8, crystal 2–5, metal storage 1, solar to keep factor 1 (`empire-colonize` bootstrap order; `empire/planets/G5-S316-P9.md`).
+3. Next transport to 5:316:9 — capital crystal is ~37k, so build 2 small cargo on 5:316:10 (shipyard 2, 113k C there) and ship crystal 10 → 9 directly.
+4. Research after shielding 3: energy 5 → impulse 4 → ion 3 (`empire/research.md`).
+5. 13:50Z: `empire-spy` 5:316:8 and 5:316:5 → `empire-raid` Saeed2 (`ops/attacks/2026-09-11_G5-S316-P8_Saeed2.md`), then caioc.
+Later: neighbourhood-watch scans of 5:310–322 (decision 005) — none done yet beyond 5:316.
 
 ## Questions for the Commander
-- none open. (Answered today: raid loss threshold 5 % ✔, TUI actions are the Commander's ✔, push after every commit ✔, repo stays public ✔.)
+- none (answered today: 5 % loss rule, TUI actions are the Commander's, push after every commit, repo public).
 
 ## Uncommitted strategy changes awaiting approval
-- none — note: L7 (soldier watchdog lesson) went out in a data commit (`3b0…`, "ops: planet 3 founded"); it is a lessons-file edit and should have waited. Revert if you disagree with it.
+- none. Note: L7 (soldier watchdog lesson) went out inside a data commit ("ops: planet 3 founded"); revert if unwanted.
 
-## Last cycle notes
-- MCP hung ~09:10–10:08Z; both haiku soldiers were killed by the 600 s watchdog mid-mission (L7). Re-read state after any soldier failure before redoing work; soldier briefs must check before each spend.
-- Soldiers cannot rely on `next_event` contents (one shared stream per account); they sleep on it and re-read state.
-- Early colony levels finish in seconds (redesigned-universe speed-up through level 5); the limiter is cargo, not time.
-- Buildings, ships and defence share one 5-slot queue per planet; `recycler` needs shielding 2.
-- Colonize soldier worked as designed: dispatched 20 s after astrophysics 3 landed; planet 5587 has 169 fields.
-- BJACK chat (Turkish, mostly assistants) digested in ops/diplomacy/; slot temperature bands in intel/notes.md.
+## What changed this session
+- Workspace rebuilt: `README.md`, `AGENTS.md`, `strategy/`, `empire/`, `ops/`, `intel/`, 9 `empire-*` skills; public repo pushed.
+- Planet 3 founded by a haiku soldier 20 s after astrophysics 3 landed (`ops/missions/2026-09-11T08-30_colonize-5-316-9.md`).
+- Both soldiers later died in a ~1 h MCP hang (harness 600 s watchdog) → L7: re-read state after any soldier failure; briefs check before each spend.
+- `next_event` is one shared stream per account; soldiers sleep on it and re-read state. Buildings/ships/defence share one 5-slot queue. Recycler needs shielding 2.
+- Neighbours scanned: Saeed2 and caioc inactive farms (~240k loot), nash1999 idle but fleeted (`intel/targets/`); BJACK chat digest and slot temperatures in `ops/diplomacy/`, `intel/notes.md`.
