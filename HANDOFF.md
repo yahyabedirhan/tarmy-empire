@@ -1,35 +1,32 @@
-# Handoff — 2026-09-11T18:00Z
+# Handoff — 2026-09-11T18:25Z
 
 ## Do this first
-Run `/empire-cycle`. Capital armour 6 (research) lands 18:06:19Z — queue the next research then (crystal is thin at the capital, ~6.8k; pick metal-only techs like armour/weapons until it recovers). All three build queues are otherwise empty and were left that way deliberately — see *Where we are*. **Before doing anything else, read the field-budget question below and put it to the Commander in chat** — it changes how you should pick builds this cycle.
+Run `/empire-cycle`. Then read `strategy/decisions/009-growth-engine-expansion-first.md` (the engine and the forecast) and `010-alliance-trading.md` (waiting on the Commander). The astro-5 clock is the plan: fill every queue with the best-returning mine in the empire (colonies first), sweep crystal to the capital when 75k exists, queue astro 5, send the colony ship to 5:316:3 when it lands.
 
 ## Where we are
-- Capital (5080): ~25k metal / ~6.8k crystal / ~69k deuterium. 12 espionage probes on hand, fleet otherwise unchanged (62 LF, 5 LC, 4 SC, 2 recyclers, 1 colony ship). Building/ship queues intentionally empty: nothing affordable doesn't eat into the crystal reserve held for astro 5.
-- 5:316:10: ~3.4k metal / ~4.9k crystal / ~36k deuterium. Idle — accumulating toward the ≥30k crystal astro-5 shuttle threshold.
-- 5:316:9: ~10.7k metal / ~7.9k crystal / 6k deuterium, factor 1 but only 10 energy headroom. Solar 14 not yet affordable (needs 14.6k metal); crystal_mine 11 would drop factor below 1 (needs +54 energy) so deliberately not queued. Idle.
-- Posture unchanged (Commander 15:15Z): raiding parked, growth first, defence where exposed. Goal: astro 5 → planet 4 at 5:316:3 (decision 002) once crystal ≥ 75k at the capital. Position 3 confirmed still empty this session (`galaxy(5,316)`, 18:00Z).
-- Neighbourhood-watch-resume mission closed partial (`ops/missions/2026-09-11T16-48_neighbourhood-watch-resume.md`): only 2/21 remaining targets scanned — probe supply (1k crystal each) competes with the astro-5 crystal hold, so the sweep isn't worth resuming until crystal is more abundant. 19 targets still unscanned (see file for the list).
+- Capital (5080): fusion 5 + satellite 6 landed 18:18Z → factor back to 1 (was 0.94 unnoticed). Laser 6 lands 18:24:18Z — research slot must be refilled at once (computer 6 if astro clock allows, else armour 7 / combustion 7 as metal-only fillers). ~20k metal / ~3k crystal / ~68k deut after the fixes. Fleet unchanged: 62 LF, 5 LC, 4 SC, 2 recyclers, 10 probes, 1 colony ship. Wall 16 RL + 2 LL.
+- 5:316:10 (5288): fusion 4 + satellite landed 18:17Z (headroom ~145). Waiting for 39.4k metal → metal_mine 17 (~20:30Z). ~4k crystal left.
+- 5:316:9 (5587): solar 14 lands 18:29:46Z, deut synth 1–4 by 18:30:42Z. Next: crystal_mine 11 (5.3k M / 2.6k C) at ~18:45Z when metal allows — best mine in the empire (5 h crystal payback) — then crystal 12, 13.
+- Empire production 35.3k / 13.2k / 2.8k per hour. Score 2 141, rank 416. No hostile fleets. Astro 5: 37.5k/75k/37.5k; empire crystal ~26k.
+- Strategy rewritten this session under the Commander's delegated authority (commit `strategy: expansion-first engine…`): decisions 008/009/010, five new doctrine rules, L10–L14, research order, both skills. The full BJACK chat (419–663) is digested in `ops/diplomacy/2026-09-11_BJACK-chat.md`.
 
 ## Next actions
-1. Ask the Commander the field-budget question below (chat, not a file pointer), then act on the answer.
-2. On armour 6 landing (18:06:19Z), queue the next capital research — favour metal-only or crystal-light options while crystal rebuilds (`research_tree` for current costs).
-3. Once capital crystal climbs back past ~15-20k, resume queueing buildings there — but see the open question first, since it changes what "the ladder" means for the capital specifically.
-4. 5:316:10: once crystal ≥ 30k, shuttle it to the capital with the capital's LC/SC fleet (5 LC + 4 SC currently idle at home) for the astro-5 push.
-5. 5:316:9: once metal ≥ ~15k, queue solar 14 first (adds energy headroom), then crystal 11.
-Later: neighbourhood watch (19 targets left, listed in the closed mission file) once crystal is no longer being hoarded. `.plans/remote-24-7-lieutenant.md` — the Commander researches a 24/7 remote runner.
+1. 18:24Z laser 6 lands → `queue_research`: computer 6 (0/12.8k/19.2k) **only if** capital crystal ≥ 12.8k without delaying astro 5 past its ETA; otherwise armour 7 (64k metal — not yet affordable) or combustion 7 (25.6k metal / 38.4k deut) as the zero-crystal filler.
+2. 18:30Z 5:316:9 queue empties → crystal_mine 11 as soon as metal ≥ 5.3k (≈18:45Z); keep queuing crystal 12/13 while payback < astro ETA.
+3. ~20:30Z 5:316:10 metal ≥ 39.4k → metal_mine 17.
+4. Astro clock: every cycle write ETA(astro 5) = max((75k − empire crystal) ÷ 13.2k/h, (37.5k − capital deut) ÷ …). When empire crystal ≥ 75k: sweep 5:316:10 and :9 crystal to the capital with the 5 LC (13 min flights), then `queue_research(astrophysics)`. Colony ship to 5:316:3 only after it *lands* (L3), per `empire-colonize`.
+5. Capital wall: as the astro hoard grows past 150k on the capital, add rocket launchers (2k metal each) so wall value ≥ hoard ÷ 4.
+6. If the Commander approves decision 010: post `[TAKAS]` in alliance chat (Turkish), 50k metal → 50k crystal with aranella (deliver to 5:273:9 after she names it), then 50k metal → 50k deuterium with DenizYoldas; one `ops/diplomacy/` file per trade.
+7. Neighbourhood watch resumes with **one probe per target** (L14) once crystal is slack — 19 targets listed in `ops/missions/2026-09-11T16-48_neighbourhood-watch-resume.md`.
 
 ## Questions for the Commander
-- **Field budget: should we formalize per-planet roles now, before the capital's facility ladder eats its remaining headroom?** Researched this session: this server's field mechanic isn't stock OGame — it's **1 field per building level, cumulative, across every structure** (confirmed exactly against all three planets' `fields_used`; ships/defence/research/solar-satellites are free). That makes total fields a hard, permanent budget, not a one-time cost per building.
-  Current state: capital 90/139 used (49 free) and carries the *entire* facility ladder alone (only planet with a lab) — quests still ask for robotics 5→10, shipyard 6→12, lab 7→12, missile silo 0→4, nanite factory 0→1, which is ~21 more fields already committed, leaving only ~28 free afterward for anything else, including further mine growth. 5:316:9 has the most slack (169 total, 124 free, +17% metal) and no facility burden; 5:316:10 is in between (150 total, 77 free, +17% metal). The terraformer is the real long-term fix for the capital specifically (+5 fields/level, codex-confirmed) but needs nanite factory (1M metal/500k crystal/100k deuterium — at current capital production that's ~90h of metal alone) which itself needs robotics 10 + computer 10 (we're at 5/5 today) — genuinely many sessions away, not a near-term lever.
-  **Recommendation**: write a decision doc (`strategy/decisions/`) formalizing: (a) capital slows further mine leveling and prioritizes the facility ladder with its remaining ~49 fields; (b) 5:316:9 becomes the designated deep-mine world going forward, favoured for metal/crystal growth over the other two; (c) the astro-5 target at 5:316:3 (position 3, confirmed empty, +20% crystal bonus per decision 002's own numbers) becomes our **first dedicated crystal-world** — this also directly fixes the crystal shortage that's driven most of this session's stalls. Field count at 5:316:3 is unknown until settled (decision 002 already flags <120 fields there as a reconsider trigger).
-  Options if not full formalization: (1) approve as written above; (2) approve but pick a different crystal-world candidate; (3) skip role formalization, keep deciding field allocation ad hoc each cycle; (4) something else.
+- **Decision 010 — trades** (put to the Commander in chat 18:25Z, answer pending): approve 50k metal → 50k crystal with aranella and 50k metal → 50k deuterium with DenizYoldas? Resources leave the empire and a message goes to the alliance channel — Commander-tier per AGENTS.md.
+- Confirm or amend decisions 008 and 009 (edited and committed under the authority granted 18:05Z).
 
 ## Uncommitted strategy changes awaiting approval
-- A decision doc for the field-budget question above, if the Commander says yes — not yet drafted, pending their answer.
+None — everything is committed under the delegated authority; the Commander's reply may reverse any of it.
 
 ## What changed this session
-- Prior evening queue (shipyard 6, metal 15/16, fusion 4, RL ×30 across two colonies) landed in full; six more quest rungs paid.
-- Research un-stalled: armour 5 → hyperspace 1 → armour 6 queued in sequence, all crystal-light, preserving crystal for astro 5.
-- Neighbourhood-watch-resume soldier ran ~48 min, scanned 2/21 remaining targets (`intel/targets/5-314-5_Furukhai.md`, `5-314-6_Aaliyah_O.md`), then closed partial — probe cost (1k crystal each) conflicts with the astro-5 crystal hold; deferred rather than resumed.
-- All three planets deliberately left with empty build queues at points this cycle where every affordable item would have spent crystal earmarked for astro 5, or (5:316:9) dropped the energy factor below 1.
-- Researched and confirmed the field-cost mechanic (1 field per building level, cumulative) and raised the field-budget question above for the Commander.
+- Read the entire BJACK chat (200 messages) and every strategy/doc file; rewrote the growth strategy around the measured rules (lowest mine first, priced energy, astro clock, one-probe spy law, trade the metal surplus).
+- Fixed the capital's energy factor (0.94 → 1), refilled the research slot, queued fusion/satellite at 5:316:10 for metal 17, solar 14 + deut 1–4 at 5:316:9.
+- Formalized planet roles (008), forecast to planets 4/5/6 (009), proposed alliance trades (010).
