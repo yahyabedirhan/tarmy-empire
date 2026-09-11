@@ -6,7 +6,7 @@ Research is account-wide; the capital's lab (level 6) runs it. Order = quest lad
 |---|---|---|---|
 | 1 | astrophysics 3 | planet 3 (decision 002) | colonize 5:316:9 |
 | 2 | computer 4, 5 | fleet slots 5, 6: transports + scans + one raid at once | everything with fleets |
-| 3 | shielding 2, 3 | small shield dome (006), ladder rung | dome, hyperspace later |
+| 3 | shielding 1, 2, 3 | recycler needs shielding 2; small shield dome (006); ladder rung | recyclers, dome, hyperspace later |
 | 4 | energy 5, 6 | ladder; gauss cannon; fusion efficiency | gauss, plasma chain |
 | 5 | impulse 4 | cruiser (first real raider, rapid fire vs rocket launchers) | `a_squadron` rung |
 | 6 | ion 3, 4 | ladder; cruiser prerequisite | ion cannon, plasma |

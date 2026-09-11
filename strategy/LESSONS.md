@@ -19,3 +19,6 @@ Seven researches in 46 minutes took crystal from 214k to 8k and cascaded every c
 
 ## L6 — Session snapshots are not doctrine (2026-09-11)
 Five sessions wrote their live status into the strategy files; by session six nobody could tell rule from snapshot. Rule: `AGENTS.md` → Records (one file per event, doctrine separate from state).
+
+## L7 - A soldier dies with the connection (2026-09-11)
+Both haiku soldiers were killed by the harness watchdog (600 s without progress) during an hour-long MCP hang, mid-mission. The colonize soldier had already dispatched; the ships soldier had queued 2 of 3 batches. Source: `ops/missions/2026-09-11T08-30_*.md`. Rule: after any soldier failure the Lieutenant re-reads state before redoing anything (a dead soldier may have acted); briefs must be idempotent (check before each spend). No doctrine change.

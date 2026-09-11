@@ -1,10 +1,10 @@
 ---
 slug: capital-ships
-status: running
+status: done
 model: haiku
 agent: 
 opened: 2026-09-11T08:30Z
-closed: 
+closed: 2026-09-11T10:08Z
 wake: capital (planet 5080) build queue drops below 5 items, expected 08:46Z and 08:49Z
 ---
 ## Brief
@@ -16,7 +16,7 @@ STOP IF: a `build_ships` call errors twice in a row (report the exact error); or
 REPORT: fill the section below and end — list each batch with the queue id and `finished_at` the server returned.
 
 ## Report
-result: 
-calls made: 
-observed: 
-errors: 
+result: light_fighter 60 queued (finishes 13:50Z) and large_cargo 3 (id 155005, 14:19Z). Recyclers not queued: soldier killed by the harness watchdog during the same MCP hang; the Lieutenant tried at 10:09Z and the server refused - recycler needs shielding 2 (shielding 1 queued 10:09Z).
+calls made: build_queue loop, build_ships x2
+observed: two slots freed 08:46Z/08:49Z as expected
+errors: none from the game; harness stall
