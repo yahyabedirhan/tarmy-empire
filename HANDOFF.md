@@ -16,11 +16,11 @@ Run `/empire-cycle`. Then read `strategy/decisions/009-growth-engine-expansion-f
 3. ~20:30Z 5:316:10 metal ≥ 39.4k → metal_mine 17.
 4. Astro clock: every cycle write ETA(astro 5) = max((75k − empire crystal) ÷ 13.2k/h, (37.5k − capital deut) ÷ …). When empire crystal ≥ 75k: sweep 5:316:10 and :9 crystal to the capital with the 5 LC (13 min flights), then `queue_research(astrophysics)`. Colony ship to 5:316:3 only after it *lands* (L3), per `empire-colonize`.
 5. Capital wall: as the astro hoard grows past 150k on the capital, add rocket launchers (2k metal each) so wall value ≥ hoard ÷ 4.
-6. If the Commander approves decision 010: post `[TAKAS]` in alliance chat (Turkish), 50k metal → 50k crystal with aranella (deliver to 5:273:9 after she names it), then 50k metal → 50k deuterium with DenizYoldas; one `ops/diplomacy/` file per trade.
+6. No trades, no alliance chat messages (Commander 18:30Z). Deuterium for planet 5 comes from synthesizers on 5:316:9 and the capital only.
 7. Neighbourhood watch resumes with **one probe per target** (L14) once crystal is slack — 19 targets listed in `ops/missions/2026-09-11T16-48_neighbourhood-watch-resume.md`.
 
 ## Questions for the Commander
-- **Decision 010 — trades** (put to the Commander in chat 18:25Z, answer pending): approve 50k metal → 50k crystal with aranella and 50k metal → 50k deuterium with DenizYoldas? Resources leave the empire and a message goes to the alliance channel — Commander-tier per AGENTS.md.
+- Decision 010 (trades): **rejected** 18:30Z. Closed.
 - Confirm or amend decisions 008 and 009 (edited and committed under the authority granted 18:05Z).
 
 ## Uncommitted strategy changes awaiting approval

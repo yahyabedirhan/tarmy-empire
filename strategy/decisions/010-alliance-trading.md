@@ -1,6 +1,6 @@
 # 010 — Trade surplus metal for crystal and deuterium inside BJACK
 
-- **status:** proposed — needs the Commander's yes (resources leave the empire; a message to allies)
+- **status:** REJECTED by the Commander 2026-09-11T18:30Z — no trades in alliance chat; use the members' strategies, contribute only when an alliance fight needs our action, otherwise stay silent. Kept for the record.
 - **date:** 2026-09-11
 - **decided by:** Lieutenant proposes; Commander decides
 

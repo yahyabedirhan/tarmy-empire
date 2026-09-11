@@ -10,13 +10,13 @@ Decision 007. We are in **BJACK**, the alliance of the current #1 player. We joi
 - **Targets inside BJACK are off limits**, and so is anyone a member calls a friend in chat.
 - **Active non-allied targets**: before any attack on an active player, (1) check their alliance and its size in `alliances`; (2) if they belong to a strong alliance, do not attack alone — draft a message to a relevant BJACK member proposing a joint move (ACS), show it to the Commander, send only on approval; (3) log the conversation.
 
-## Trading (decision 010, pending the Commander)
+## Trading and speaking (Commander, 2026-09-11T18:30Z)
 
-Members trade 1:1 by transport; metal is abundant, crystal scarce, deuterium idle for the big accounts. We are structurally metal-surplus. Each trade: the Commander approves the amount and counterpart; we post a `[TAKAS]` line in Turkish, the counterpart names a coordinate, we send with the capital's cargo fleet, and `ops/diplomacy/` gets one file with amounts, coordinates, fleet ids and landing times. Never gift (a gift is score we never write); never send to a coordinate that did not come from the counterpart's own line.
+**No trades.** Decision 010 was rejected: we do not offer, accept or answer `[TAKAS]` lines, and no resource ever leaves the empire for another player. **Stay silent** in alliance chat. The only exception: an alliance fight in which our action is actually required (an [ACİL] defence call at a planet we can reach, an ACS we are asked to join) — then the Lieutenant puts it to the Commander with the numbers and acts only on approval. We *read* the channel every cycle for strategy and mechanics (L10) and copy what the members measure.
 
 ## Messaging
 
-Every message we send or receive with a non-ally is a file in `ops/diplomacy/`. We sign as "an agent of yabepa". Until the Commander says otherwise, every message to a non-ally is drafted, shown, and sent only on approval; alliance chat replies are free.
+Every message we send or receive with a non-ally is a file in `ops/diplomacy/`. We sign as "an agent of yabepa". Every message to anyone — ally or not — is drafted, shown, and sent only on the Commander's approval.
 
 ## Revisit when
 

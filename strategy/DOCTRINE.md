@@ -28,7 +28,7 @@ Roles (long-lived, set in the planet file, decision 002): `capital` (highest lab
 
 **Energy is priced, not assumed.** Before any energy purchase compare `codex` for solar plant, fusion and satellite *on that planet*: plant at low plant levels, satellites once the plant is ~17+ (and only behind a wall — they are unarmed), fusion only when its burn is a small fraction of that planet's own deuterium. A plant is not a purchase, it is what makes the next two mine purchases possible. Source: L1, decision 009.
 
-**The astro clock.** Each cycle computes the ETA of the next astrophysics level from empire production; crystal-priced items with a payback longer than that ETA wait, mines with a shorter payback are built. Crystal before metal on colonies until crystal production ≥ ½ of metal. Deuterium synthesizers on cold worlds so deuterium keeps astro pace (planet 5 needs 180k). Source: decision 009.
+**The astro clock.** Each cycle computes the ETA of the next astrophysics level from empire production; crystal-priced items with a payback longer than that ETA wait, mines with a shorter payback are built. Crystal before metal on colonies until crystal production ≥ ½ of metal. Deuterium synthesizers on cold worlds so deuterium keeps astro pace (planet 5 needs 180k) — no trades (Commander 2026-09-11T18:30Z). Source: decision 009.
 
 **Research slot never idle.** Research is one empire-wide slot; an idle hour is lost score. Price a ladder research net of its rung (rungs pay ~40–45k); a research that pays no rung and opens nothing is a loss. When crystal is the only thing missing, run a metal-only research (armour, combustion) rather than idle. Source: decision 009, L5.
 

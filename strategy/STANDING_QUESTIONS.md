@@ -6,14 +6,14 @@ Each entry: the question, the current answer, the file(s) that are the source of
 
 ## What's the current plan, what are we focusing on right now?
 
-Posture unchanged: **economy first, raiding parked** (decision 001, L9). Engine (decision 009): planets before fleet — every queue filled with the best-returning mine in the empire (colonies' low mines first, decision 008), crystal before metal, and the astrophysics ladder as the clock: astro 5 → planet 4 at 5:316:3 (crystal world), then astro 6+7 → planet 5 (deuterium is the gate), then 8+9 → planet 6. Proposed and waiting on the Commander: 1:1 trades of surplus metal for crystal/deuterium inside BJACK (decision 010).
+Posture unchanged: **economy first, raiding parked** (decision 001, L9). Engine (decision 009): planets before fleet — every queue filled with the best-returning mine in the empire (colonies' low mines first, decision 008), crystal before metal, and the astrophysics ladder as the clock: astro 5 → planet 4 at 5:316:3 (crystal world), then astro 6+7 → planet 5 (deuterium is the gate), then 8+9 → planet 6. Trades inside BJACK: rejected by the Commander (010) — we stay silent in the channel and read it for strategy.
 
 Source of truth: `HANDOFF.md` → *Where we are* / *Next actions*; `strategy/decisions/009-*.md` forecast table.
 Last checked: 2026-09-11T18:20Z.
 
 ## When are we going to expand to a new planet?
 
-Astro 5 needs 37.5k / 75k / 37.5k on the capital. Empire crystal ~26k on hand, +13.2k/h → the sum exists in ~5–6 h if nothing else is bought, ~8–10 h while short-payback mines are still built (they pay back before the research lands). A 50k metal→crystal trade with aranella (decision 010) would bring it to ~2 h. Research takes 2.8 h; the colony ship is already parked at the capital; 5:316:3 is confirmed empty (18:00Z). Planet 5 (astro 6+7) is gated by 180k deuterium ≈ 64 h at today's 2.8k/h — synthesizers on 5:316:9 queued, a deuterium trade proposed.
+Astro 5 needs 37.5k / 75k / 37.5k on the capital. Empire crystal ~26k on hand, +13.2k/h → the sum exists in ~5–6 h if nothing else is bought, ~8–10 h while short-payback mines are still built (they pay back before the research lands). Research takes 2.8 h; the colony ship is already parked at the capital; 5:316:3 is confirmed empty (18:00Z). Planet 5 (astro 6+7) is gated by 180k deuterium ≈ 64 h at today's 2.8k/h — synthesizers on 5:316:9 queued; no trades (Commander).
 
 Source of truth: `research_tree`, `strategy/decisions/009-*.md`, `empire/research.md`.
 Last checked: 2026-09-11T18:20Z.

@@ -21,7 +21,7 @@
 Option 1, with these knobs:
 - **The astro ladder is the clock.** Each cycle computes ETA(astro N) = max over resources of (needed − on hand) ÷ empire production, and everything crystal-priced that is not a mine with payback < ETA(astro N) waits. Mines whose payback is shorter than the ETA are *always* built — they arrive before the research would anyway.
 - **Crystal before metal** on every colony until crystal production ≥ ½ metal production empire-wide (today 0.37). Deuterium synthesizers on the cold worlds (5:316:9, capital) until deuterium ≥ astro pace (planet 5 needs ~4k/h to keep up with crystal).
-- **Trade the structural surplus** (decision 010): we produce metal:crystal 2.7:1 and spend ~2:1; metal above what the queues can use becomes crystal or deuterium at 1:1 through BJACK.
+- ~~Trade the structural surplus (decision 010)~~ — rejected by the Commander 18:30Z. Surplus metal goes to rocket launchers (wall, pure metal), metal-only research (armour/combustion) and metal storage; deuterium comes only from our own synthesizers on the cold worlds.
 - **Fleet**: cargo for sweeps and bootstraps, probes for watch, nothing else until planet 5 or a Commander order. Defence per 006, rocket launchers as the metal sink when crystal is the only thing missing.
 - **Horizon** stays six planets (002). Reassess at astro 9.
 
