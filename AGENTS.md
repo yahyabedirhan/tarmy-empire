@@ -26,6 +26,7 @@ All game actions go through the `commander` MCP (`mcp__commander__*`). It acts a
 - One call per action, then read the result. `queued`, `stopped_after`, refusals and partial successes are in the response; a retry without reading it can spend twice.
 - Waiting is `next_event` (blocks up to 300 s, returns what happened), never repeated status calls.
 - When a call errors or behaves unexpectedly: (1) quote the exact error, (2) look it up in `docs/mcp/COMMANDER.md` → *Troubleshooting*, (3) then `docs/game/commander.md` and `.agents/skills/terminal-army/SKILL.md`, (4) retry once at most with the corrected call, (5) still failing → report up the chain with the exact call and error. Never work around a refusal.
+- Waiting for the next scheduled `/empire-cycle` is not a reason to leave a planet idle. If a queue slot frees up mid-session and the next step is already known and affordable, queue it immediately — don't defer a known action to "whenever the loop picks it up next." Only wait when there is a concrete reason: resources short, a fleet in transit, an energy/production constraint, or a question open with the Commander.
 
 ## Records
 
