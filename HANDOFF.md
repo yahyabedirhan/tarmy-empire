@@ -1,29 +1,32 @@
-# Handoff — 2026-09-11T12:40Z
+# Handoff — 2026-09-11T12:52Z
 
 ## Do this first
-Run `/empire-cycle`. First: **AGENTS.md needs the autonomy-language edit** — the Commander asked (this session) for explicit language making the Lieutenant act autonomously, running the loop until interrupted, once a session starts; that edit was deferred to a fresh agent and never made. Use the `writing-for-agents` skill, then get the Commander's approval before committing (`AGENTS.md` → Git rules) since it changes standing behaviour.
+Run `/empire-cycle`. Earliest wake: 13:03:14Z — cargo fleet 55758 (2 LC + 4 SC) lands at 5:316:10 → `dispatch_fleet(transport, 5:316:12, origin 5288, crystal ≈ 70k)` for the astro push.
 
 ## Where we are
-- 3 planets, all GROWING: capital 5:316:12 (research shielding 4 → 12:49:13Z; ships light_fighter 60→13:50:31Z, large_cargo 3→14:19:19Z, recycler 2→14:44:55Z; buildings crystal_mine 13→15:09:14Z, robotics_factory 4→15:11:43Z), 5:316:10 (crystal_mine 13 → 12:46:54Z), 5:316:9 (solar 9, metal_mine 10, crystal_mine 7 → 12:47:14Z).
-- No hostiles, no fleets in the air, no running missions.
-- Goal: decision 002 (cluster expansion, next slot 5:316:3, blocked on astrophysics 5) + first raid income; rulebook `strategy/DOCTRINE.md`.
+- 3 planets, all GROWING: capital 5:316:12 (research ion 4 → 13:04:53Z; ships light_fighter 60 → 13:50:31Z, large_cargo 3 → 14:19:19Z, recycler 2 → 14:44:55Z; buildings crystal 13 → 15:09:14Z, robotics 4 → 15:11:43Z), 5:316:10 (solar 16 → 13:31:02Z, metal 15 → 13:52:03Z, deut 8 → 13:56:58Z), 5:316:9 (solar 10, metal 11, solar 11, crystal 8 → 13:06:49Z).
+- In the air: fleet 55758 deploy capital → 5:316:10, lands 13:03:14Z. No hostiles, no running missions.
+- Goal: decision 002 (next slot 5:316:3, blocked on astrophysics 5: ~118k crystal, capital has 19k, 5:316:10 has 96k) + first raid income; rulebook `strategy/DOCTRINE.md`.
+- Loop procedure changed this session (wake-driven, autonomous) — edits uncommitted, see below.
 
 ## Next actions
-1. AGENTS.md autonomy edit (see *Do this first*) — the actual trigger: this cycle found both the capital's research queue (idle ~23 min after ion 3 landed) and 5:316:9's build queue (idle ~20 min) sitting empty with nobody watching between cycles. Concrete case for why the loop needs to run itself.
-2. 12:46–12:47Z: both colonies' queues empty — `production_report` + `empire-farm` for each.
-3. ~13:50:31Z: light_fighter 60 exist at the capital — fresh-scan 5:316:8 and 5:316:5, then `empire-raid` Saeed2 (`ops/attacks/2026-09-11_G5-S316-P8_Saeed2.md`), then caioc.
-4. Astrophysics push: build cargo capacity and transport crystal 5:316:10 → capital (capital has ~23k, need ~118k total for astro 4+5) — see `strategy/STANDING_QUESTIONS.md` → *When are we going to expand to a new planet?* for the full numbers.
-5. Resume the neighbourhood watch (systems 314–322) once espionage probes exist — build at 5:316:10's shipyard once free.
-Later: 5:316:10 has zero defence sitting on ~280k in resources — queue rocket launchers there (`strategy/STANDING_QUESTIONS.md` → defence answer).
+1. 13:03:14Z: transport crystal 5:316:10 → capital with fleet 55758 (cap 70k; leave 5:316:10 enough for its own crystal-priced builds).
+2. 13:04:53Z: ion 4 lands (rung pays 9k/8k/5k) → `research_tree`; queue shielding 5 (hyperspace gate, cheap) unless the crystal has landed, then astro 4 (21.4k/42.9k/21.4k).
+3. 13:06:49Z: 5:316:9 queue empties → metal 12, crystal 9, robotics 4 as crystal allows (`production_report` first).
+4. ~13:50:31Z: light_fighter 60 at the capital → fresh-scan 5:316:8 and 5:316:5, `empire-raid` Saeed2 (`ops/attacks/2026-09-11_G5-S316-P8_Saeed2.md`), then caioc. Espionage probes: none yet — build at the capital when the ship queue frees (14:44:55Z) or at 5:316:10's shipyard 2.
+5. 13:56:58Z: 5:316:10 queue empties → refill (`empire-farm`).
+Later: 5:316:10 has zero defence on ~250k resources — rocket launchers there (`strategy/STANDING_QUESTIONS.md`).
 
 ## Questions for the Commander
-- none
+- Approve the loop-procedure edits (four files below) for commit — asked in chat 12:43Z.
 
 ## Uncommitted strategy changes awaiting approval
-- none (AGENTS.md autonomy edit not yet made — see *Do this first*, not "uncommitted" since it doesn't exist yet)
+- `AGENTS.md` — new *The loop* section: a session is the loop, `empire-cycle` is the first skill in a fresh context, wake-driven cadence, Commander messages handled inside the loop.
+- `.agents/skills/empire-cycle/SKILL.md` — step 0 (resume from HANDOFF) and step 8 (sleep on `next_event` until the earliest wake, cap 2 h, then repeat).
+- `strategy/DOCTRINE.md` — *Cycle cadence* rewritten from "every 30 min" to wake-driven.
+- `README.md` — two pointers updated.
 
 ## What changed this session
-- Added [`strategy/STANDING_QUESTIONS.md`](strategy/STANDING_QUESTIONS.md): live answers to the Commander's recurring questions (current focus, next expansion, next attack, defence readiness), to be revised every cycle. Commit `827d6c2`.
-- Confirmed the research queue runs independent of the build/ship queue (queued ion 3 while the ship queue was mid-build) — see [G5-S316-P12.md](empire/planets/G5-S316-P12.md), commit `434f07c`.
-- Found and fixed two idle queues on a pre-handoff check rather than leaving them for the next cycle: capital research (idle ~23 min) and 5:316:9 build queue (idle ~20 min) — commits `7284c66`, `7e2243b`. This is the concrete case behind the Commander's autonomy request below.
-- Commander asked to make the Lieutenant act autonomously (run the loop until interrupted) once a session starts, with the rule made explicit in AGENTS.md via `writing-for-agents` — deferred to the next session, see *Do this first*.
+- Loop made autonomous and wake-driven (the Commander's request from the 12:40Z handoff) — the four files above, awaiting approval.
+- Refilled both colony queues 2 min before they emptied; ion 4 queued the second shielding 4 landed — commit `8674457`.
+- Started the astro crystal shuttle: capital's 2 LC + 4 SC deployed to 5:316:10 (fleet 55758).
