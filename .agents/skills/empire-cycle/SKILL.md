@@ -1,7 +1,6 @@
 ---
 name: empire-cycle
-description: One heartbeat of the empire loop. Reads the empire, runs every planet through its state, acts, records, hands off.
-disable-model-invocation: true
+description: One heartbeat of the empire loop: read the empire, run every planet through its state, act, record, hand off. Use at the start of a session, on a /loop, and after any fleet.incoming or planet.attacked event.
 ---
 
 One cycle. Run it every 30 minutes (`/loop 30m /empire-cycle`) and immediately after any `fleet.incoming` or `planet.attacked` event. `strategy/DOCTRINE.md` is the rulebook; this file is the order of operations.

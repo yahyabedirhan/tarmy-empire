@@ -1,7 +1,6 @@
 ---
 name: empire-handover
-description: Rewrite HANDOFF.md so the next session resumes exactly here.
-disable-model-invocation: true
+description: Rewrite HANDOFF.md so the next session resumes exactly here. Use at the end of every cycle, before a session ends, and when the Commander asks for a handoff.
 ---
 
 Rewrite `HANDOFF.md` in full from the template (never append). Facts only: whatever the next session can read from a file or a tool is a pointer, not a copy. Commit `handoff: <one line>` and push.

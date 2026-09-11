@@ -1,7 +1,6 @@
 ---
 name: empire-status
-description: Write a status snapshot of the empire to reports/status/ and summarise it for the Commander.
-disable-model-invocation: true
+description: Write a status snapshot of the empire to reports/status/ and show it in chat. Use when the Commander asks how things stand, every 4th cycle, or after any notable change.
 ---
 
 Write `reports/status/<YYYY-MM-DDTHH-MM>Z.md` from live data, then print the whole report in chat (the Commander reads chat, not files). Never edit an old report.

@@ -1,7 +1,6 @@
 ---
 name: empire-lesson
-description: Record a lesson learned from an event and propose the doctrine change it implies.
-disable-model-invocation: true
+description: Record a lesson learned from an event and propose the doctrine change it implies. Use after any raid, colonisation, soldier mission or attack that surprised us.
 ---
 
 1. Find the event file (`ops/`, `intel/`, `reports/`) and add a `lessons:` line to it.
