@@ -1,21 +1,22 @@
-# Handoff — 2026-09-12T19:40Z
+# Handoff — 2026-09-12T19:56Z
 
 ## Do this first
-Run `/empire-cycle`. Capital gauss_cannon lands **19:48:17Z** (1/2 of `gauss_line`, defense-queue slot free after) → price the next capital facility/research with `codex`; crystal was ~10k after the cannon, so pick a metal- or deut-priced item first (`empire/research.md` row F, or a mine per decision 008 if it beats every colony).
+Run `/empire-cycle`. 5:316:3's queue empties **19:59:02Z** (metal 9 lands) — re-farm it (`empire-farm`); it's young enough to still need frequent small refills (headroom is only ~20-40 at a time on this planet).
 
 ## Where we are
-- 4 planets, all queues full/running: capital → gauss_cannon 19:48:17Z, research armour 7 → 21:02:03Z (zero-crystal filler). 5:316:10 → robotics 6 (19:45:49Z), 2 satellites, metal 18 (20:39:13Z). 5:316:9 → crystal 14 (19:43:09Z), metal 17 (20:22:33Z), robotics 6 (20:35:51Z). 5:316:3 (new, founded 18:41:04Z) left BOOTSTRAP at 19:37Z → GROWING; queue: solar 8/crystal 6/metal 9 → 19:59:02Z.
-- Score 2885 as of 18:45Z status report (`reports/status/2026-09-12T18-45Z.md`); rank 352/4320. No hostile fleets.
-- This cycle recovered from an ~8.7h idle gap (astro 5 landed 09:37Z, colony ship unsent until 18:17Z) — lesson L15 written, awaiting Commander approval (see below).
-- 5:316:3's founding cargo (3k/1k/0.5k) drained faster than its own production on the first few cheap levels; a 8k/4k/0.5k top-up from the capital (fleet 60799) fixed it. Worth remembering for the next colony: send a bigger founding cargo or a same-cycle follow-up transport.
+- 4 planets, all queues running: capital → rocket_launcher x9 (20:05:50Z, metal filler — crystal down to 6.1k), research armour 7 (21:02:03Z, zero-crystal). 5:316:10 → metal 18 (20:39:13Z). 5:316:9 → metal 17 (20:22:33Z) → robotics 6 (20:35:51Z). 5:316:3 → metal 9 (19:59:02Z).
+- Score 2885 as of 18:45Z (`reports/status/2026-09-12T18-45Z.md`), rank 352/4320. No hostile fleets, nothing running in `ops/missions/`.
+- 5:316:3 founded 18:41:04Z, left BOOTSTRAP 19:37Z → GROWING (`empire/planets/G5-S316-P3.md`, `ops/colonies/G5-S316-P3.md` closed). Its founding cargo (3k/1k/0.5k) drained too fast on cheap early levels; a capital top-up (fleet 60799, 8k/4k/0.5k) fixed it — send more on the next founding, or plan a same-cycle follow-up transport.
+- This cycle fixed an ~8.7h idle gap (astro 5 landed 09:37Z, colony ship unsent until 18:17Z) — see L15 below.
+- Capital is crystal-thin (6.1k) after the shipyard/robotics/gauss-cannon run; it'll need a cycle or two of pure accumulation (or a crystal shuttle from 5:316:10, which sits on ~40k+) before the next crystal-priced item.
 
 ## Next actions
-1. 19:43:09Z–20:35:51Z 5:316:9 queue lands in stages → re-farm when empty (`empire-farm`).
-2. 19:45:49Z–20:39:13Z 5:316:10 queue lands in stages → re-farm when empty.
-3. 19:48:17Z capital gauss_cannon lands → price next item; 21:02:03Z armour 7 research lands → next per `empire/research.md` (astro 6 if crystal ≥131k, else espionage/laser/ion fillers).
-4. 19:59:02Z 5:316:3 queue lands → continue bootstrap-adjacent farm (metal→9+, crystal→6+, robotics 1-2, deut 1-3 per `empire-colonize` bootstrap order, it's young enough this still applies loosely even though it's formally GROWING).
-5. `gauss_line` quest needs a 2nd gauss cannon (20k/15k/2k) once crystal allows.
-Later: neighbourhood watch resume (2/21 scanned); decide astro 6 timing once crystal rebuilds past 131k.
+1. 19:59:02Z 5:316:3 queue lands → re-farm (small headroom, check energy gate every time).
+2. 20:05:50Z capital RL x9 lands → crystal check; if still short, consider a crystal transport from 5:316:10 (has more C than it can spend right now) rather than more metal-only filler.
+3. 20:22:33Z–20:35:51Z 5:316:9 queue lands in stages → re-farm when empty.
+4. 20:39:13Z 5:316:10 metal 18 lands → re-farm.
+5. 21:02:03Z capital armour 7 research lands → next research (astro 6 if crystal ≥131k, else another zero/low-crystal filler per `empire/research.md` row F).
+Later: neighbourhood watch resume (2/21 scanned); 2nd gauss_cannon for `gauss_line` once crystal allows.
 
 ## Questions for the Commander
 - Approve L15 (`strategy/LESSONS.md`) — no doctrine change, just flags that HANDOFF's plan is only as good as how soon the next session opens (two idle gaps now: 9h, then 8.7h).
@@ -26,7 +27,7 @@ Later: neighbourhood watch resume (2/21 scanned); decide astro 6 timing once cry
 - `strategy/LESSONS.md` — L15 added (session-continuity idle-gap lesson, no doctrine rule change).
 
 ## What changed this session
-- Founded 5:316:3 (planet_id 5755, 178 fields, hot 110-150) — the 4th planet, closing decision 002/008's crystal-world slot. Bootstrapped to GROWING in under an hour.
-- Refilled all empty queues empire-wide after the idle gap; capital picked up shipyard 7 and robotics 7 (2 quest rungs paid: `a_deep_yard`, `the_dome` was already paid before this session, `hands_of_many` still open at 7/10).
+- Founded 5:316:3 (planet_id 5755, 178 fields, hot 110-150) — the 4th planet; bootstrapped to GROWING inside ~1h.
+- Refilled every empty queue empire-wide after the idle gap; capital cleared shipyard 7 and robotics 7, gained 1 gauss cannon (`gauss_line` 1/2).
 - Status report written (`reports/status/2026-09-12T18-45Z.md`).
-- L15 recorded: astro 5 → colony ship gap, second idle-gap incident this chain.
+- L15 recorded: astro-5-to-colony-ship idle gap, second incident this chain.
