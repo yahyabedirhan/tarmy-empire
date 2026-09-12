@@ -1,31 +1,33 @@
-# Handoff — 2026-09-12T08:45Z
+# Handoff — 2026-09-12T18:22Z
 
 ## Do this first
-Run `/empire-cycle`. Astrophysics 5 lands **09:37:15Z** → `ops/colonies/G5-S316-P3.md` is written (`planned`); send the colony ship from the capital to 5:316:3 with the bootstrap cargo (≥ 3k M / 1k C / 0.5k D, `empire-colonize`). Only after the research has *landed* (L3). Then fill the research slot (shielding 6 rung, or computer 7).
+Run `/empire-cycle`. Colony fleet 60721 lands at 5:316:3 **18:41:02Z** → `empire-colonize` skill, Found step 4: create `empire/planets/G5-S316-P3.md`, close `ops/colonies/G5-S316-P3.md` (`status: founded`). Then bootstrap it each cycle.
 
 ## Where we are
-- Capital (5080): astro 5 researching (→ 09:37:15Z). Queue: small_shield_dome (08:56Z, rung). 62.9k M / 3.3k C / 4.4k D. Wall 26 RL + 10 LL (+ dome). Fleet: 62 LF, 4 SC, 2 recyclers, 10 probes, 1 colony ship. **5 LC are parked at 5:316:10** (shuttle base). Next: shipyard 7 (25.6k/12.8k/6.4k, rung) when crystal + deut allow (~09:40Z).
-- 5:316:10 (5288): deut 10 (08:52Z). 65k M / 12k C / 45k D, headroom 80 after. Crystal 16 (55.3k/27.7k) at ~11:10Z.
-- 5:316:9 (5587): solar 16 (09:19Z) → crystal 13 (09:35Z) → deut 5 → deut 6 (09:38Z). ~55k M / ~5k C / ~8k D; headroom ~73 after the queue → metal 17 needs 9.9k crystal.
-- Empire sat idle ~9 h overnight (21:00–06:20Z, L2) — every queue and the lab were empty. Score 2 141 → check. No hostile fleets.
-- **Planet limit = 1 + ceil(astro/2)** (alliance chat, `ops/diplomacy/2026-09-12_BJACK-chat-planet-limit.md`): astro 5 → 4 planets (fine), planet 5 needs **astro 7** (not 6). Decision 009 forecast must be corrected (lesson pending).
+- Capital (5080): shipyard 7 → 18:44:37Z (rung a_deep_yard), robotics 7 → 19:07:26Z (rung hands_of_many 6→7). Research: shielding 6 → 18:56:42Z (rung harder_shields, opens large dome). 144.4k M / 30.1k C / 17.9k D after queuing. Fleet: 62 LF, 4 SC, 2 recyclers, 10 probes, 0 colony ships (sent). Wall 26 RL + 10 LL + dome.
+- 5:316:10 (5288): 4× solar_satellite (headroom fix, +124) → crystal_mine 16 → 19:32:07Z. robotics_factory 6 refused (5-build cap) — queue it the moment a slot frees.
+- 5:316:9 (5587): solar 17 → deut 7 → crystal 14 → metal 17 → robotics 6, full 5-item queue → 20:35:51Z.
+- Colony ship + 3k M/1k C/0.5k D flying to 5:316:3 (fleet 60721, colonize), arrives 18:41:02Z. Planet limit 4 (astro 5), we hold 3 — room for this one only; planet 5 needs astro 7.
+- Empire had sat idle 14:45Z→18:16Z (~3.5 h) with all three queues empty and the colony ship unsent since astro 5 landed 09:37Z — lesson L15 recorded (`strategy/LESSONS.md`, no doctrine change; flagged below).
 
 ## Next actions
-1. 08:56Z dome lands (rung pays 9k/8k/4k) → `quests`; shipyard 7 when 12.8k C + 6.4k D are there.
-2. 09:37Z astro 5 lands → colony ship to 5:316:3 (see *Do this first*); research slot → shielding 6 (rung) or computer 7 per `empire/research.md`.
-3. 09:19Z–09:38Z 5:316:9 queue lands → metal 17 when crystal ≥ 9.9k; ~11:10Z 5:316:10 crystal 16.
-4. `empire-lesson`: planet-limit formula → correct decision 009 (astro 7 for planet 5; astro 6 is ladder-only). Needs Commander approval to commit `strategy/`.
-5. Capital wall: hoard is spent; no more RL until the next hoard.
-Later: neighbourhood watch (one probe per target, L14) once crystal is slack; espionage 5.
+1. 18:41:02Z fleet 60721 lands → found 5:316:3 (see *Do this first*).
+2. 18:44:37Z–19:07:26Z capital queue lands → next: lab idle after shielding 6, price astro 6 (65.6k/131k/65.6k) vs espionage 5 (3.2k/16k/3.2k) per `empire/research.md`; likely espionage 5 first (astro 6 needs more crystal than we'll have).
+3. 19:32:07Z 5:316:10 crystal 16 lands → queue robotics_factory 6 (refused this cycle on the 5-build cap) + next mine per `codex`.
+4. 20:35:51Z 5:316:9 queue empties → re-farm (`empire-farm`).
+5. Once 5:316:3 is founded and fed once: `empire-status` skill (this is cycle 7, due next status write).
+Later: neighbourhood watch resume (crystal is slack again); decide gauss_cannon ×2 for the `gauss_line` quest (defense, all metal-heavy).
 
 ## Questions for the Commander
-- tarla's agent (05:56Z) offers idle metal and deuterium 1:1, "or direct support without expecting a return". Decision 010 is rejected — stay silent, or reopen for deuterium only (the planet-5 gate)? Recommendation: stay silent until astro 5 lands, then decide with the astro-7 bill in view (98.5k/197k/98.5k).
-- Confirm or amend decisions 008 and 009 (edited under the authority granted 09-11 18:05Z); 009 needs the astro-7 correction.
+- tarla's agent (05:56Z) still offers idle metal/deuterium 1:1; decision 010 stays rejected. Recommendation: reopen for deuterium only once the astro-7 bill (98.5k/197k/98.5k) is in view — not yet, astro 6 isn't queued.
+- Confirm or amend decisions 008/009 (edited under authority granted 09-11 18:05Z); 009 needs the astro-7-for-planet-5 correction (aranella's measurement, `ops/diplomacy/2026-09-12_BJACK-chat-planet-limit.md`).
+- Approve strategy change: L15 (`strategy/LESSONS.md`) — no doctrine edit, just flags that HANDOFF's "Do this first" is only as good as how soon the next session opens; two idle gaps now (9 h, then 3.5 h). Worth a Commander habit (open a session sooner after a wake) more than a rule change.
 
 ## Uncommitted strategy changes awaiting approval
-None.
+- `strategy/LESSONS.md` — L15 added (session-continuity idle-gap lesson, no doctrine rule change).
 
 ## What changed this session
-- 08:42Z: queues found empty for 1 h (capital since 07:04Z, 5:316:9 since 07:41Z, 5:316:10 since 08:38Z) — refilled; dome queued; colony 5:316:3 planned.
-- Chat digest `ops/diplomacy/2026-09-12_BJACK-chat-0730-0842.md`: aranella measured the planet limit (astro 9 → planet 6, so astro 7 → planet 5); aranella sells deuterium 1:1, tarla only sells metal.
-- Previous session (06:23Z–07:04Z): empire idle 9 h refilled; astro-5 shuttle; weapons 5, a_wall_of_light rung; planet-limit digest.
+- Colony ship dispatched to 5:316:3 after astro 5 confirmed landed (fleet 60721, `ops/colonies/G5-S316-P3.md`).
+- All three planets' empty build queues refilled (capital: shipyard 7 + robotics 7 + shielding 6 research; 5:316:10: satellites + crystal 16; 5:316:9: solar/deut/crystal/metal/robotics). Commit `9aa3200`.
+- L15 recorded: ~8.7 h between astro 5 landing and the colony ship's launch, because no session was open. `strategy/LESSONS.md`.
+- Read alliance chat since 08:42Z: all trade talk between other members (aranella/tarla/NeC/zgr), nothing addressed to us or actionable.
