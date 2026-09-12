@@ -1,6 +1,6 @@
 # Research plan
 
-Research is account-wide; the capital's lab (level 7) runs it. One slot, never idle (DOCTRINE). Order = the astro clock (decision 009) with the quest ladder as tie-breaker; price the whole chain before starting (L5); price ladder rungs net of their reward. Levels as of 2026-09-11T18:10Z: energy 6, laser 5 (6 in progress → 18:24Z), ion 4, hyperspace 1, computer 5, astro 4, espionage 4, combustion 6, impulse 3, hyperspace drive 0, weapons 4, shielding 5, armour 6.
+Research is account-wide; the capital's lab (level 7) runs it. One slot, never idle (DOCTRINE). Order = the astro clock (decision 009) with the quest ladder as tie-breaker; price the whole chain before starting (L5); price ladder rungs net of their reward. Levels as of 2026-09-12T21:29Z (`research_levels`): energy 6, laser 6, ion 4, hyperspace 1, computer 6, astro 5, espionage 5, combustion 7, impulse 3, hyperspace drive 0, weapons 5 (6 in progress → 22:17:07Z), shielding 6, armour 7.
 
 | # | Tech → level | Cost (codex 18:08Z) | Why | Gate for |
 |---|---|---|---|---|
@@ -10,6 +10,6 @@ Research is account-wide; the capital's lab (level 7) runs it. One slot, never i
 | 4 | astrophysics 6, 7 | 65.6k/131k/65.6k + 115k/230k/115k | planet 5 | deuterium is the gate (180k): synthesizers + trade (010) |
 | 5 | shielding 6 | 6.4k / 19.2k | rung `harder_shields` (net ~−10k crystal but opens large dome with shipyard 6) | large shield dome |
 | 6 | astrophysics 8, 9 | 201k/402k/201k + 352k/704k/352k | planet 6 | horizon (002) |
-| F | armour 7 (64k metal), combustion 7 (25.6k metal / 38.4k deut), weapons 5 (12.8k/3.2k) | fillers | zero-crystal: run one whenever the slot would otherwise idle while crystal is saved for a row above | — |
+| F | weapons 6 (25.6k M / 6.4k C, running), armour 8 (128k M), combustion 8 (51.2k M / 76.8k D) | fillers (rows 1–3 done: astro 5, computer 6, espionage 5) | zero-crystal: run one whenever the slot would otherwise idle while crystal is saved for a row above | — |
 
 Not before planet 5 unless the Commander reopens raiding: impulse 4 (cruiser), hyperspace 2–3 (hyperspace drive), energy 7+ (plasma chain). Blocked: plasma (energy 8, laser 10, ion 5), graviton (lab 12).
