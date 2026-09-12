@@ -1,24 +1,25 @@
-# Handoff — 2026-09-12T20:38Z
+# Handoff — 2026-09-12T20:44Z
 
 ## Do this first
-Run `/empire-cycle`. 5:316:3's crystal_mine 7 lands **20:40:00Z** and 5:316:9's metal_storage 4 lands **20:40:02Z** — both queues will be empty again immediately; re-farm both (`empire-farm`). Capital's RL x4 lands 20:41:56Z.
+Run `/empire-cycle`. Capital research armour 7 lands **21:02:03Z** → queue weapons 5 (12.8k M / 3.2k C, zero-crystal-heavy filler) if metal allows, else the slot waits; gauss_cannon #2 (20k/15k/2k) at ~21:35Z.
 
 ## Where we are
-- 4 planets. Capital: 35 rocket launchers, 10 light lasers, 1 gauss cannon, dome; research armour 7 → 21:02:03Z (zero-crystal filler). Crystal is thin empire-wide right now (capital ~10k, 5:316:9 ~14k, 5:316:3 ~11k) after a busy cycle of shipyard/robotics/gauss-cannon/mine spending — everything crystal-priced is waiting on a rebuild.
-- 5:316:10 (5288): richest planet, 105k M / 22.5k C / 49.5k D — a good source for the next crystal shuttle to a crystal-short planet. metal_mine 18 lands 20:39:13Z.
-- 5:316:3 (5755): founded 18:41:04Z, left BOOTSTRAP 19:37Z. Needed two transports (3k/1k/0.5k at founding, then 15k/8k/2k top-up) because it drains its cargo fast on cheap early levels — plan bigger founding cargo next time.
-- No hostile fleets, nothing running in `ops/missions/`.
-- **This session had two operational events worth flagging**: (1) recovered from an ~8.7h idle gap (astro 5 landed 09:37Z, colony ship unsent until 18:17Z) — L15 recorded, awaiting Commander approval; (2) `next_event` hung silently for ~30 min mid-cycle (harness aborted with "no response for 1802s"), recovered cleanly on retry with no lost fleets or resources — matches the L7 pattern (MCP hangs) but no new lesson written since L7 already covers the recovery procedure.
+- 4 planets, all GROWING, no hostile fleets, nothing in the air, no running missions. Crystal thin empire-wide (capital 10k, 5:316:10 ~5k after this cycle's spend, 5:316:9 12k, 5:316:3 ~9k); metal drained on the capital (1.9k) by the RL fillers.
+- 5:316:10 (5288): fusion 5 → sat → deut 11 → robotics 7, ends 21:22:40Z; crystal 17 needs 44.3k C (~23:50Z).
+- 5:316:9 (5587): fusion 1–3 landing 20:43:38Z as the cheap energy step (19 C/energy vs 3 h of crystal for solar 18); crystal 15 at 17.3k C ≈ 21:30Z.
+- 5:316:3 (5755): full queue (solar 9–10, crystal 8, metal 10, robotics 2) to 21:09:33Z.
+- Alliance chat: BJACK members (necati, NeC, merttoprak) working an ACS on 1:58:9 (Ddunmore) — nothing addressed to us, no fleet to contribute; not recorded.
 
 ## Next actions
-1. 20:39-20:42Z: three queue completions land close together (5288 metal 18, 5755 crystal 7, 5587 metal_storage 4, capital RL x4) — re-farm each.
-2. Once crystal rebuilds past ~17k on 5:316:9: crystal_mine 15. Past ~15k on capital: shipyard 8 (an_industrial_yard rung) or a 2nd gauss_cannon (gauss_line quest).
-3. 21:02:03Z capital armour 7 research lands → next per `empire/research.md` (astro 6 if crystal ≥131k empire-wide and worth shuttling, else another filler).
-4. Consider a crystal shuttle from 5:316:10 (22.5k C, richest) to whichever planet needs it most next cycle.
-Later: neighbourhood watch resume (2/21 scanned); 2nd gauss_cannon for `gauss_line`.
+1. 21:02:03Z armour 7 lands → research (`empire/research.md`): weapons 5 when metal ≥ 12.8k, else astro 6 stays crystal-blocked (131k C).
+2. ~21:30Z 5:316:9 crystal ≥ 17.3k → crystal_mine 15 (`empire/planets/G5-S316-P9.md`); metal 18 after the next energy step there.
+3. ~21:35Z capital 20k M / 15k C → gauss_cannon #2 via `build_defense` (gauss_line 2/2 pays 9k/8k/5k).
+4. 21:09Z / 21:22Z queues empty on 5:316:3 and 5:316:10 → re-farm; 5:316:10 crystal 17 at 44.3k C (~23:50Z).
+5. Consider shuttling crystal from 5:316:9 (84k M idle) — no: it is the crystal-short one; the empire has no crystal-rich planet this cycle.
+Later: neighbourhood watch resume (2/21 scanned); shipyard 8 (25.6k C) after gauss #2.
 
 ## Questions for the Commander
-- Approve L15 (`strategy/LESSONS.md`) — no doctrine change, flags that HANDOFF's plan is only as good as how soon the next session opens (two idle gaps now: 9h, then 8.7h).
+- Approve L15 (`strategy/LESSONS.md`) — session-continuity idle-gap lesson, no doctrine change.
 - tarla's idle metal/deuterium 1:1 offer (decision 010) — still staying silent until astro 6 is in view.
 - Confirm/amend decisions 008/009 (astro-7-for-planet-5 correction, aranella's measurement).
 
@@ -26,7 +27,4 @@ Later: neighbourhood watch resume (2/21 scanned); 2nd gauss_cannon for `gauss_li
 - `strategy/LESSONS.md` — L15 added (session-continuity idle-gap lesson, no doctrine rule change).
 
 ## What changed this session
-- Founded 5:316:3 (planet_id 5755, 178 fields, hot 110-150) — the 4th planet; bootstrapped to GROWING inside ~1h.
-- Refilled every empty queue empire-wide, twice (once after the initial 8.7h idle gap, again after a 30-min MCP hang). Capital cleared shipyard 7, robotics 7, gained 1 gauss cannon (`gauss_line` 1/2), landed the `harder_shields` quest rung.
-- Status report written (`reports/status/2026-09-12T18-45Z.md`).
-- L15 recorded: astro-5-to-colony-ship idle gap, second incident this chain.
+- Cycle 8 (20:39–20:44Z): three landed queues refilled (`empire/planets/`), fusion chosen over solar on both metal-worlds as the crystal-cheapest energy step.
