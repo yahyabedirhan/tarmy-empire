@@ -25,6 +25,7 @@ Later: neighbourhood watch resume (2/21, decision 005) when probes are idle; sta
 - none
 
 ## What changed this session
+- Cycle 14 (12:18Z → 12:58Z): status report 12:19Z (rank 220, 4753); sweep legs 64046/64069/64113 landed; armour 8 landed 12:54:15Z → astro 6 queued (17:49:44Z); satellites queued at the capital (3) and 5:316:9 (4) for deut 12 / deut 10; 2k D sent to 5:316:3 (fleet 64351) for its satellites. Alliance chat: tweisdorf membership request routed to officers; necati closed trading for good — nothing for us.
 - Cycles 9–14 (04:08Z → 12:12Z): research laser 8, hyperspace 2, armour 8 (running); capital robotics 8; 5:316:9 crystal 16, satellites 3–8, deut 8–9 (deut 514 → 1023/h); 5:316:3 crystal 15–16, metal 16–17, satellites 6–12 (`empire/planets/`).
 - Commander: no deuterium trade (07:52Z); decisions 008/009 confirmed, L15 approved (09:45Z) — `strategy/` committed; question backlog cleared.
 - Astro clock engaged 08:05Z: mines parked, ~110k M swept to the capital for armour 8, then the astro-6 sweep 11:42–12:22Z (~107k C + ~56k D + ~30k M in 7 legs).
