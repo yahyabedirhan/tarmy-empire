@@ -1,22 +1,23 @@
-# Handoff — 2026-09-13T12:12Z
+# Handoff — 2026-09-13T12:58Z
 
 ## Do this first
-Run `/empire-cycle`. Armour 8 lands **12:54:12Z** → queue research **astro 6** (65.6k/131k/65.6k) at the capital — the sweep put ~135k C / ~68k D / ~60k M there by 12:22Z (fleets 64046/64069/64113); metal reaches 65.6k from production before 12:54Z. If astro 6 is refused, `planet_detail` the capital and top up from 5:316:10 (~50k M).
+Run `/empire-cycle`. **Astro 6 is running → 17:49:44Z.** Until then: release the parked builds as crystal arrives (order below), price everything with `codex` first, satellites are `upgrade_building`. At 17:49:44Z: build a colony ship (10k/20k/10k) at the capital and pick the planet-5 slot from `galaxy` (`empire-colonize`, decision 008: cold deut world 5:316:13/14 or crystal world 5:316:1/2); research slot after astro 6 = zero-crystal filler or idle (crystal is astro 7's).
 
 ## Where we are
-- 4 planets GROWING, no hostile fleets, nothing in `ops/missions/`. In the air: 64069 (4 SC, 11k C/3k D/6k M) → capital 12:15:30Z, 64113 (2 LC, 24k M/26k D) → capital 12:22:00Z; 64046 returns to 5:316:3, 63965 to 5:316:9. Rank 220 / score 4645 at 07:44Z (`reports/status/2026-09-13T07-44Z.md`).
-- Goal: **planet 5 by the astro clock** (decision 009, confirmed 09:45Z; no deuterium trade, Commander 07:52Z). Astro 6 lands ~17:50Z; astro 7 (115k/230k/115k) is deut-gated: ~65k D empire-wide after astro 6, ~4.5k/h → ~2026-09-14 11:00–14:00Z → planet 5 ~2026-09-14 20:00Z–09-15 00:00Z.
-- All build queues are empty on purpose (crystal saved); research armour 8 → 12:54:12Z.
-- Ships: capital 62 LF, 2 recyclers, 10 probes; 5:316:3 now home-ports 1 LC + 4 SC; 5:316:9 2 LC + 2 SC; 5:316:10 2 LC.
-- Per-planet stocks after the sweep: capital as above; 5:316:10 ~50k M / ~3k C / ~4k D; 5:316:9 ~50k M / ~5k C / ~2k D; 5:316:3 ~55k M / ~2k C / ~1k D.
+- 4 planets GROWING, no hostile fleets, nothing in `ops/missions/`. Rank 220 / score 4753 at 12:19Z (`reports/status/2026-09-13T12-19Z.md`).
+- Research: astrophysics 6 queued 12:54:18Z → **17:49:44Z** (armour 8 landed 12:54:15Z).
+- Goal: planet 5 by the astro clock (009). Astro 7 (115k/230k/115k) is deut-gated: empire ~13k D after astro 6, ~4.3k/h + new synthesizers → ~2026-09-14 11:00–14:00Z → planet 5 ~2026-09-14 20:00Z–09-15 00:00Z.
+- Capital 14.4k M / 6.6k C / 4.6k D at 12:55Z (minus 6k C / 1.5k D for 3 satellites landing 12:58:20Z). 5:316:10 65.6k M / 9.2k C / 2.6k D. 5:316:9 67.5k M / 1.5k C / 1.5k D after 4 satellites (land 13:00:38Z). 5:316:3 66.6k M / 9.0k C / 0.6k D.
+- In the air: fleet 64351 (1 LC, 2k D) 5:316:10 → 5:316:3 lands 13:08:22Z, back ~13:21Z. Ships home: capital 62 LF, 2 recyclers, 10 probes; 5:316:3 1 LC + 4 SC; 5:316:9 2 LC + 2 SC; 5:316:10 1 LC (+1 in the air).
 
 ## Next actions
-1. 12:54:12Z armour 8 lands → queue astro 6 (`empire/planets/G5-S316-P12.md`). Then release the parked mines with incoming crystal, cheapest payback first: 5:316:3 metal 18 (59.1k/14.8k), 5:316:9 metal 19 (88.7k/22.2k + ~155 energy), 5:316:10 metal 19 (88.7k/22.2k) — each only if its payback beats ETA(astro 7).
-2. Deuterium for astro 7: capital deut 12 (19.5k/6.5k, +423 D/h, needs +126 energy → 5 satellites) and 5:316:9 deut 10 (8.6k/2.9k, +94 energy) — queue once astro 6 is running (`empire/research.md`).
-3. ~17:50Z astro 6 lands → colony ship (10k/20k/10k) at the capital before astro 7; choose the planet-5 slot from `galaxy` (008: cold deut world 5:316:13/14 or crystal world 5:316:1/2) — `empire-colonize` skill.
-4. Research slot after astro 6: only zero-crystal fillers (armour 9 256k M, combustion 8 51.2k M / 76.8k D) or idle; crystal is astro 7's.
-5. Every threshold: check BOTH metal and crystal against the codex price; satellites are `upgrade_building`, not `build_ships`.
-Later: neighbourhood watch resume (2/21, decision 005) when probes are idle; status report every 4th cycle.
+1. Capital: deut 12 (19.5k/6.5k, +423 D/h) when M ≥ 19.5k and C ≥ 6.5k (~14:10Z). Energy covered by satellites 10–12.
+2. 5:316:9: deut 10 (8.6k/2.9k) when C ≥ 2.9k (~13:05Z); then metal 19 (88.7k/22.2k) + 6 satellites (12k C / 3k D, +162 energy) when C ≥ 34k (~16:30Z).
+3. 5:316:10: 5 satellites (10k C / 2.5k D) when C ≥ 10k (~13:05Z); metal 19 (88.7k/22.2k) when C ≥ 22.2k (~16:00Z).
+4. 5:316:3: after fleet 64351 lands 13:08:22Z → 3 satellites (6k C / 1.5k D, +144 energy); metal 18 (59.1k/14.8k) when C ≥ 14.8k (~14:15Z). It makes 46 D/h: every satellite there needs deut brought in.
+5. 17:49:44Z astro 6 lands → colony ship + planet-5 slot (see *Do this first*); research slot: zero-crystal filler (armour 9, 256k M) or idle — combustion 8 costs 76.8k D, which is astro 7's.
+6. Every threshold: check BOTH metal and crystal against the codex price.
+Later: neighbourhood watch resume (2/21, decision 005) when probes are idle; status report every 4th cycle (last 12:19Z).
 
 ## Questions for the Commander
 - none (chat times are shown in GMT+3 from now on; files stay UTC)
