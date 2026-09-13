@@ -1,12 +1,12 @@
 # Handoff — 2026-09-13T18:55Z (cycle 19, credit-limited)
 
 ## Do this first
-Run `/empire-cycle`. Colony ship **docked at the capital** (landed 18:50:37Z). Crystal is NOT the astro-7 gate (empire ~29k C/h → 230k in ~5 h; deut ~23k of 115k at ~5.5k/h → ~2026-09-14 13:00Z), so crystal slack is released per next-actions 3: (a) 5:316:10 satellites 19–23 land 18:59:54Z → queue **deut 12** (19.5k/6.5k); (b) 5:316:3 solar plant 15 lands 19:18:28Z → **crystal 17** (88.5k/44.3k) ~20:15Z; (c) 5:316:9 crystal 17 ~23:30Z after 4 satellites. Research slot is idle (armour 9 needs 256k M at the capital — capital had 48k M at 18:34Z; leave idle or sweep metal). Next: pick the planet-5 slot from `galaxy 5 316` per decision 008 (cold deut world 5:316:13/14 preferred, else crystal world 5:316:1/2) — `empire-colonize` skill; the colony ship flies only after **astro 7** lands (planet limit = 1 + ceil(astro ÷ 2): astro 6 still allows 4). Research slot after astro 6: idle or a zero-crystal filler (armour 9, 256k M) — crystal and deuterium are astro 7's (115k/230k/115k).
+Run `/empire-cycle`. Colony ship **docked at the capital** (landed 18:50:37Z). Crystal is NOT the astro-7 gate (empire ~29k C/h → 230k in ~5 h; deut ~23k of 115k at ~5.5k/h → ~2026-09-14 13:00Z), so crystal slack is released per next-actions 3: (a) 5:316:10 deut 12 queued → 19:15:28Z; (b) 5:316:3 solar plant 15 lands 19:18:28Z → **crystal 17** (88.5k/44.3k) ~20:15Z; (c) 5:316:9 crystal 17 ~23:30Z after 4 satellites. Research slot is idle (armour 9 needs 256k M at the capital — capital had 48k M at 18:34Z; leave idle or sweep metal). Next: pick the planet-5 slot from `galaxy 5 316` per decision 008 (cold deut world 5:316:13/14 preferred, else crystal world 5:316:1/2) — `empire-colonize` skill; the colony ship flies only after **astro 7** lands (planet limit = 1 + ceil(astro ÷ 2): astro 6 still allows 4). Research slot after astro 6: idle or a zero-crystal filler (armour 9, 256k M) — crystal and deuterium are astro 7's (115k/230k/115k).
 
 ## Where we are
 - 4 planets GROWING, no hostile fleets, nothing in the air, nothing in `ops/missions/`. Rank 207 / score 5030 at 16:16Z (`reports/status/2026-09-13T16-16Z.md`).
 - Research: astro 6 landed; slot idle. Goal: planet 5 (009). Astro 7 is deuterium-gated: empire ~25k D at 17:26Z, ~5.1k D/h → 115k D ~2026-09-14 10:00–12:00Z; crystal 230k needs ~7 h of empire crystal with nothing else queued → astro 7 ~2026-09-14 12:00–14:00Z → planet 5 ~2026-09-14 20:00Z.
-- Queues: 5:316:10 satellites 19–23 → 18:59:54Z; 5:316:3 solar plant 15 → 19:18:28Z; capital and 5:316:9 empty (capital crystal-priced, 5:316:9 waits on crystal).
+- Queues: 5:316:10 satellites 19–23 → 18:59:54Z then deut 12 → 19:15:28Z; 5:316:3 solar plant 15 → 19:18:28Z; capital and 5:316:9 empty (capital crystal-priced, 5:316:9 waits on crystal).
 - Stocks 18:53Z (after queueing): capital 52k M / 6.3k C / 5.3k D; 5:316:10 88k M / 11k C / 7k D; 5:316:9 82k M / 10.8k C / 6.9k D; 5:316:3 71k M / 32.7k C / 1.3k D. Empire ~21k D → 115k D for astro 7 ~2026-09-14 13:00Z.
 - Ships home: capital 1 colony ship, 62 LF, 2 recyclers, 10 probes; 5:316:3 1 LC + 4 SC; 5:316:9 2 LC + 2 SC; 5:316:10 2 LC.
 - Chat times to the Commander are GMT+3; files stay UTC.
@@ -26,7 +26,8 @@ Later: neighbourhood watch resume (2/21, decision 005) when probes are idle — 
 - none
 
 ## What changed this session
-- Cycle 19 (18:53Z → 18:55Z): colony ship docked; 5:316:10 satellites 19–23 queued (deut 12 next); 5:316:3 solar plant 15 queued for crystal 17. Crystal slack judged not the astro-7 gate.
+- 18:45Z Commander (TUI): espionage probe 5:316:12 → 5:315:10 (fleet 65717, info level 5), returned 18:46Z — report not yet filed in `intel/`.
+- Cycle 19 (18:53Z → 18:55Z): colony ship docked; 5:316:10 satellites 19–23 queued then deut 12 (19:15:28Z); 5:316:3 solar plant 15 queued for crystal 17. Crystal slack judged not the astro-7 gate.
 - Cycle 18 (18:34Z → 18:36Z, credits nearly out): astro 6 confirmed landed; colony ship queued at the capital (192786 → 18:50:37Z). No other spending; queues at capital/5:316:10/5:316:3 left empty on purpose (crystal reserved for astro 7).
 - 2026-09-13T17:35Z Commander: BTC non-aggression pact written into `strategy/ALLIANCE.md` → *Standing pacts* (approved in chat).
 - Cycle 17 (16:18Z → 17:28Z): 5:316:9 satellites 13–17 + metal 19 queued (18:42Z); 5:316:10 metal 19 landed 17:07Z. Session stopped by the Commander at 17:28Z.
