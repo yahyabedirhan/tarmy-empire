@@ -1,10 +1,10 @@
-# Plan — next 24 h from 2026-09-13T20:13Z
+# Plan — next 24 h from 2026-09-13T23:06Z
 
 Rolling plan, rewritten at every hand-off (`empire-cycle` step 7). Times UTC; each line is a wake with the action that fires on it. Done lines are dropped, not kept.
 
 | when | where | action | gate |
 |---|---|---|---|
-| 23:05:32Z | 5:316:3 | crystal 17 lands (queued 21:19Z); then metal 19 (88.7k/22.2k) ~04:30Z after 2 satellites | M ≥ 88.7k |
+| ~04:30Z 09-14 | 5:316:3 | 2 satellites (4k C / 1k D) then metal 19 (88.7k/22.2k) | M ≥ 88.7k, D ≥ 1k |
 | ~01:00Z 09-14 | 5:316:9 | 4 satellites (8k C / 2k D) then crystal 17 (88.5k/44.3k) | C ≥ 52.3k |
 | ~01:15Z 09-14 | 5:316:10 | 4 satellites then crystal 17 (88.5k/44.3k) | C ≥ 52.3k |
 | 03:00–10:00Z | capital, 5:316:9 | metal-only sinks: deut 13 / deut 11 only if `codex` payback beats astro-7 delay; else rocket launchers (decision 006 floor) | no crystal spent after ~06:00Z |
