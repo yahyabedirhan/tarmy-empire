@@ -18,15 +18,15 @@ Run `/empire-cycle`. Capital robotics 8 lands **07:30:24Z** (research idle — l
 Later: neighbourhood watch resume (2/21); astro 6 (131k C) when crystal is slack; deut trade (question below).
 
 ## Decisions this session
+- 2026-09-13T09:45Z Commander: decisions 008 and 009 **confirmed**, L15 **approved**, raiding stays parked.
 - 2026-09-13T07:52Z Commander: **no deuterium trade** (necati 2:1 declined; tarla 1:1 moot). Planet 5 is deut-gated: 180k D at ~4k/h → astro 7 ~2026-09-14 14:00Z, planet 5 ~2026-09-15 00:00Z. Doctrine 009 response: deuterium synthesizers on the cold worlds (5:316:9 deut 7, capital deut 11) whenever affordable.
 
 ## Questions for the Commander
 - **Donor policy for 5:316:10**: its own metal 19 (88.7k/22.2k, ≈ +2.6k M/h) pays back ~2× better per resource than 5:316:3's crystal 16 (78k for ≈ +0.7k C/h). Recommend: 5:316:10 keeps metal for metal 19 and sends 5:316:3 only surplus crystal. Until answered, the donor runs continue.
 - Approve L15 (`strategy/LESSONS.md`, no doctrine change).
-- Confirm/amend decisions 008/009.
 
 ## Uncommitted strategy changes awaiting approval
-- `strategy/LESSONS.md` — L15 added (session-continuity idle-gap lesson, no doctrine rule change).
+- none
 
 ## What changed this session
 - Cycles 9–11 (04:08Z → 06:51Z): laser 8 landed; 5:316:9 crystal 16 + 3 satellites; 5:316:3 crystal 15, satellites 6–10, metal 16, metal 17; capital robotics 8 queued 06:50Z. Four cargo runs from 5:316:10 (21k M/4k C → 5:316:9; 17k/7.6k, 30k/6k/5k D, 20k/10k → 5:316:3). Research idle since 04:09Z (crystal).

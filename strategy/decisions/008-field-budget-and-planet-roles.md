@@ -1,6 +1,6 @@
 # 008 — Field budget: the capital builds facilities, the colonies dig
 
-- **status:** accepted (Commander granted the Lieutenant authority to revise strategy, 2026-09-11T18:05Z)
+- **status:** confirmed by the Commander 2026-09-13T09:45Z (accepted under delegated authority 2026-09-11T18:05Z)
 - **date:** 2026-09-11
 - **decided by:** Lieutenant under delegated authority; Commander to confirm or amend
 

@@ -44,3 +44,6 @@ Astro 6+7 need 180k deuterium; we make 2.8k/h (64 h) against 27 h for the crysta
 
 ## L14 — One probe, and know the counter before you send (2026-09-11)
 Our spy skill sent three probes per target; three probes triple the counter and add no information. The law `counter = units × probes × 2^(Δesp) / 100` predicted 17/17 readings in the channel. Source: chat 592–625. Rule: DOCTRINE → Spy; `empire-spy` skill step 2.
+
+## L15 — The loop only runs while a session is open (2026-09-12, approved 2026-09-13)
+Astrophysics 5 landed 09:37:15Z with a written "Do this first" (colonize 5:316:3), but no session was open to act on it; the colony ship and all three planets' build queues sat idle until cycle 7 opened at 18:16Z (~8.7 h gap). This is the second such gap this chain (previous ~9 h overnight, 2026-09-11). `empire-cycle` already caps the in-session wake at 2 h, so the gap is not a doctrine bug — it happens between sessions, when nobody has opened a chat to run the loop. Source: `ops/colonies/G5-S316-P3.md`, `HANDOFF.md` history (08:45Z entry vs cycle-7 read). Rule: no DOCTRINE change (the 2 h cap already does its job inside a running session); flagged to the Commander as a session-continuity gap — HANDOFF's "Do this first" is only as good as how soon the next session opens.

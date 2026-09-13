@@ -1,6 +1,6 @@
 # 009 — Growth engine: planets before fleet, crystal before metal, the astro ladder as the clock
 
-- **status:** accepted (Commander granted the Lieutenant authority to revise strategy, 2026-09-11T18:05Z)
+- **status:** confirmed by the Commander 2026-09-13T09:45Z (accepted under delegated authority 2026-09-11T18:05Z); deuterium trade declined by the Commander 2026-09-13T07:52Z — synthesizers only
 - **date:** 2026-09-11
 - **decided by:** Lieutenant under delegated authority; Commander to confirm or amend
 
