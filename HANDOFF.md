@@ -1,7 +1,7 @@
 # Handoff — 2026-09-13T18:55Z (cycle 19, credit-limited)
 
 ## Do this first
-Run `/empire-cycle`. Colony ship **docked at the capital** (landed 18:50:37Z). Crystal is NOT the astro-7 gate (empire ~29k C/h → 230k in ~5 h; deut ~23k of 115k at ~5.5k/h → ~2026-09-14 13:00Z), so crystal slack is released per next-actions 3: (a) 5:316:10 deut 12 queued → 19:15:28Z; (b) 5:316:3 solar plant 15 lands 19:18:28Z → **crystal 17** (88.5k/44.3k) ~20:15Z; (c) 5:316:9 crystal 17 ~23:30Z after 4 satellites. Research slot is idle (armour 9 needs 256k M at the capital — capital had 48k M at 18:34Z; leave idle or sweep metal). Planet-5 slot (checked `galaxy 5 316` at 19:26Z: 1, 2, 4, 6, 11, 13, 14, 15 free): **5:316:14** (coldest free slot, deut-world per 008), fallback 5:316:13 — re-check `galaxy` right before launch — `empire-colonize` skill; the colony ship flies only after **astro 7** lands (planet limit = 1 + ceil(astro ÷ 2): astro 6 still allows 4). Research slot after astro 6: idle or a zero-crystal filler (armour 9, 256k M) — crystal and deuterium are astro 7's (115k/230k/115k).
+Run `/empire-cycle`. `PLAN.md` holds the next 24 h. Colony ship **docked at the capital** (landed 18:50:37Z). Crystal is NOT the astro-7 gate (empire ~29k C/h → 230k in ~5 h; deut ~23k of 115k at ~5.5k/h → ~2026-09-14 13:00Z), so crystal slack is released per next-actions 3: (a) 5:316:10 deut 12 queued → 19:15:28Z; (b) 5:316:3 solar plant 15 lands 19:18:28Z → **crystal 17** (88.5k/44.3k) ~20:15Z; (c) 5:316:9 crystal 17 ~23:30Z after 4 satellites. Research slot is idle (armour 9 needs 256k M at the capital — capital had 48k M at 18:34Z; leave idle or sweep metal). Planet-5 slot (checked `galaxy 5 316` at 19:26Z: 1, 2, 4, 6, 11, 13, 14, 15 free): **5:316:14** (coldest free slot, deut-world per 008), fallback 5:316:13 — re-check `galaxy` right before launch — `empire-colonize` skill; the colony ship flies only after **astro 7** lands (planet limit = 1 + ceil(astro ÷ 2): astro 6 still allows 4). Research slot after astro 6: idle or a zero-crystal filler (armour 9, 256k M) — crystal and deuterium are astro 7's (115k/230k/115k).
 
 ## Where we are
 - 4 planets GROWING, no hostile fleets, nothing in the air, nothing in `ops/missions/`. Rank 181 / score 5616 at 19:24Z (`reports/status/2026-09-13T19-24Z.md`).
@@ -23,7 +23,7 @@ Later: neighbourhood watch resume (2/21, decision 005) when probes are idle — 
 - none
 
 ## Uncommitted strategy changes awaiting approval
-- none
+- `CLAUDE.md` + `.agents/skills/empire-cycle/SKILL.md`: `PLAN.md` (rolling 24 h plan) rewritten at every hand-off — Commander requirement 19:45Z; asked for commit approval in chat.
 
 ## What changed this session
 - 19:25:36Z Commander (TUI): colony ship 5:316:12 → 5:316:14 colonize (fleet 65851, arrives 19:48:48Z) with astro 6 — tests the planet-cap formula; `ops/colonies/G5-S316-P14.md`.
