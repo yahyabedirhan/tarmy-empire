@@ -1,6 +1,6 @@
 # Research plan
 
-Research is account-wide; the capital's lab (level 7) runs it. One slot, never idle (DOCTRINE). Order = the astro clock (decision 009) with the quest ladder as tie-breaker; price the whole chain before starting (L5); price ladder rungs net of their reward. Levels as of 2026-09-12T21:29Z (`research_levels`): energy 6, laser 6, ion 4, hyperspace 1, computer 6, astro 5, espionage 5, combustion 7, impulse 3, hyperspace drive 0, weapons 6, ion 5, laser 7, shielding 6, armour 7.
+Research is account-wide; the capital's lab (level 7) runs it. One slot, never idle (DOCTRINE). Order = the astro clock (decision 009) with the quest ladder as tie-breaker; price the whole chain before starting (L5); price ladder rungs net of their reward. Levels as of 2026-09-12T21:29Z (`research_levels`): energy 6, laser 6, ion 4, hyperspace 1, computer 6, astro 5, espionage 5, combustion 7, impulse 3, hyperspace drive 0, weapons 6, ion 5, laser 7 (8 in progress → 04:09:54Z), shielding 6, armour 7.
 
 | # | Tech → level | Cost (codex 18:08Z) | Why | Gate for |
 |---|---|---|---|---|
