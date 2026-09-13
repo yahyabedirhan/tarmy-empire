@@ -1,20 +1,21 @@
-# Handoff — 2026-09-13T06:51Z
+# Handoff — 2026-09-13T09:43Z
 
 ## Do this first
-Run `/empire-cycle`. Capital robotics 8 lands **07:30:24Z** (research idle — laser 9 needs 25.6k C). 5:316:3 crystal 16 (52k/26k + 2 satellites 4k C/1k D) at ~08:00Z. 5:316:9 metal 19 (88.7k/22.2k, needs +~60 energy first: fusion 6 17k/6.8k/3.4k) at ~09:00Z. 5:316:10 (~8k M / ~1k C / 37k D) idle — see the question below before the next donor run.
+Run `/empire-cycle`. **Astro clock is on**: at ~12:15Z sweep every planet's crystal to the capital (3 LC at 5:316:9, 2 LC at 5:316:10; 5:316:3 has no ships — fetch with the capital's 4 SC or 5:316:10's LC) and queue **astro 6** (65.6k/131k/65.6k) as soon as armour 8 lands 12:54:12Z. Until then all build queues stay empty on purpose (crystal saved); metal-only builds are fine.
 
 ## Where we are
-- 4 planets GROWING, no hostile fleets, nothing in `ops/missions/`, nothing in the air (2 LC at 5:316:10, 3 LC + 2 SC at 5:316:9, 4 SC at the capital). Rank 248 / score 4065 at 02:27Z (`reports/status/2026-09-13T02-27Z.md`).
-- Capital: robotics 8 → 07:30:24Z; ~0 M / ~5k C / ~8k D after the spend; research idle since 04:09Z.
-- 5:316:9: crystal 16 + satellites 3–5 done; ~50k M / ~13k C / ~9k D, headroom ~95; makes 18.6k M / 7.4k C per hour.
-- 5:316:10: ~8k M / ~1k C / ~37k D, headroom 8; ten donor runs to 5:316:3 so far.
-- 5:316:3: mines 17/15, solar 14, 10 satellites, robotics 5; ~40k M / ~18k C / ~4k D, headroom 34; makes 10.5k M / 7k C per hour, 46 D/h.
+- 4 planets GROWING, no hostile fleets, nothing in `ops/missions/`, nothing in the air (LC 63386 returns to 5:316:9 ~09:54Z). Rank 220 / score 4645 at 07:44Z (`reports/status/2026-09-13T07-44Z.md`).
+- Capital: research armour 8 → 12:54:12Z; ~2k M / ~10k C / ~7k D; build queue empty (facilities-only per 008, all crystal-priced).
+- 5:316:10: ~25k M / ~10k C / ~40k D, headroom 8; queue empty.
+- 5:316:9: metal 18 / crystal 16 / deut 9, 8 satellites; ~10k M / ~25k C / ~10k D, headroom 24; deut now 1023/h; queue empty (metal 19 parked by the astro clock).
+- 5:316:3: mines 17/16, solar 14, 12 satellites; ~28k M / ~14k C / ~3k D, headroom ~30; queue empty.
+- Empire: ~58k M / ~27k C / ~4.5k D per hour. Astro 6 crystal (131k) ~12:15Z; astro 7 (230k C, 115k D) deut-gated ~2026-09-14 11:00–14:00Z → planet 5 ~2026-09-14 20:00Z–09-15 00:00Z.
 
 ## Next actions
-1. 07:30:24Z capital robotics 8 lands → queue empty; robotics 9 (102k/30.7k/51.2k) and shipyard 9 (rung `a_vast_yard`, 102k/51.2k/25.6k) are hours away; research laser 9 when 25.6k C spare (`empire/planets/G5-S316-P12.md`).
-2. ~08:00Z 5:316:3 metal ≥ 52k, crystal ≥ 30k → 2 satellites then crystal 16 (`empire/planets/G5-S316-P3.md`).
-3. ~09:00Z 5:316:9 metal ≥ 88.7k → fusion 6 (+84) first, then metal 19 (`empire/planets/G5-S316-P9.md`).
-4. Every threshold: check BOTH metal and crystal against the codex price (robotics 8 was called crystal-gated and was metal-gated).
+1. ~12:15Z crystal sweep → capital; 12:54:12Z armour 8 lands → queue astro 6 (lands ~17:50Z). Then the parked mines resume: 5:316:9 metal 19 (88.7k/22.2k + energy), 5:316:3 metal 18 (59.1k/14.8k), 5:316:10 metal 19.
+2. Deuterium for astro 7 (180k total, ~65k held): capital deut 12 (19.5k/6.5k + 5 satellites) and 5:316:9 deut 10 (8.6k/2.9k, +94 energy) once astro 6 is queued.
+3. After astro 6 lands: colony ship (10k/20k/10k) at the capital before astro 7 lands; planet-5 slot chosen from `galaxy` (008: cold deut world 5:316:13/14 or crystal world 5:316:1/2).
+4. Every threshold: check BOTH metal and crystal against the codex price.
 Later: neighbourhood watch resume (2/21); astro 6 (131k C) when crystal is slack; deut trade (question below).
 
 ## Decisions this session
@@ -29,7 +30,7 @@ Later: neighbourhood watch resume (2/21); astro 6 (131k C) when crystal is slack
 - none
 
 ## What changed this session
-- Cycles 9–11 (04:08Z → 06:51Z): laser 8 landed; 5:316:9 crystal 16 + 3 satellites; 5:316:3 crystal 15, satellites 6–10, metal 16, metal 17; capital robotics 8 queued 06:50Z. Four cargo runs from 5:316:10 (21k M/4k C → 5:316:9; 17k/7.6k, 30k/6k/5k D, 20k/10k → 5:316:3). Research idle since 04:09Z (crystal).
+- Cycles 9–13 (04:08Z → 09:43Z): laser 8, hyperspace 2 (research); 5:316:9 crystal 16, satellites 3–8, deut 8–9; 5:316:3 crystal 15–16, metal 16–17, satellites 6–12; capital robotics 8, armour 8 running. Seven cargo runs (5:316:10 → 5:316:3/9, then 110k M swept to the capital for armour 8). Status report 07:44Z (rank 248 → 220). Commander: no deuterium trade; 008/009 confirmed; L15 approved.
 - Cycles 8–9 (20:39Z → 04:06Z): every landed queue refilled within minutes; rungs paid: `ionised`, `gauss_line`, `an_industrial_yard`; research armour 7, weapons 6, ion 5, laser 7 (8 running).
 - Cargo logistics (~200k M / 60k C / 7k D moved): 60k M 5:316:9 → capital; 8k C 5:316:10 → 5:316:9; six runs 5:316:10 → 5:316:3 (mines 9/6 → 15/15, solar 8→14, robotics 1→5).
 - `empire/research.md` levels refreshed; status report `reports/status/2026-09-13T02-27Z.md` (rank 352 → 248).
