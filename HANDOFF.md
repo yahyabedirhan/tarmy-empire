@@ -26,6 +26,7 @@ Later: neighbourhood watch resume (2/21, decision 005) when probes are idle — 
 - none
 
 ## What changed this session
+- 19:25:36Z Commander (TUI): colony ship 5:316:12 → 5:316:14 colonize (fleet 65851, arrives 19:48:48Z) with astro 6 — tests the planet-cap formula; `ops/colonies/G5-S316-P14.md`.
 - 18:45Z Commander (TUI): espionage probe 5:316:12 → 5:315:10 (fleet 65717, info level 5), returned 18:46Z — report not yet filed in `intel/`.
 - Cycle 19 (18:53Z → 18:55Z): colony ship docked; 5:316:10 satellites 19–23 queued then deut 12 (19:15:28Z); 5:316:3 solar plant 15 queued for crystal 17. Crystal slack judged not the astro-7 gate.
 - Cycle 18 (18:34Z → 18:36Z, credits nearly out): astro 6 confirmed landed; colony ship queued at the capital (192786 → 18:50:37Z). No other spending; queues at capital/5:316:10/5:316:3 left empty on purpose (crystal reserved for astro 7).
