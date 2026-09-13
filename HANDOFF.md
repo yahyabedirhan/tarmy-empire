@@ -17,11 +17,12 @@ Run `/empire-cycle`. Capital robotics 8 lands **07:30:24Z** (research idle — l
 4. Every threshold: check BOTH metal and crystal against the codex price (robotics 8 was called crystal-gated and was metal-gated).
 Later: neighbourhood watch resume (2/21); astro 6 (131k C) when crystal is slack; deut trade (question below).
 
+## Decisions this session
+- 2026-09-13T07:52Z Commander: **no deuterium trade** (necati 2:1 declined; tarla 1:1 moot). Planet 5 is deut-gated: 180k D at ~4k/h → astro 7 ~2026-09-14 14:00Z, planet 5 ~2026-09-15 00:00Z. Doctrine 009 response: deuterium synthesizers on the cold worlds (5:316:9 deut 7, capital deut 11) whenever affordable.
+
 ## Questions for the Commander
 - **Donor policy for 5:316:10**: its own metal 19 (88.7k/22.2k, ≈ +2.6k M/h) pays back ~2× better per resource than 5:316:3's crystal 16 (78k for ≈ +0.7k C/h). Recommend: 5:316:10 keeps metal for metal 19 and sends 5:316:3 only surplus crystal. Until answered, the donor runs continue.
-- **necati (BJACK) sells deuterium at 1 D : 2 M continuously** (26.7k D/h, 40k tranches, delivered to aranella). Planet-5 gate 180k D (we hold ~80k, make 3.9k/h); ~100k metal idles. Recommend a 40k-deut tranche for 80k metal. Needs your yes.
 - Approve L15 (`strategy/LESSONS.md`, no doctrine change).
-- tarla's 1:1 offer (decision 010) — superseded by necati's 2:1 if approved.
 - Confirm/amend decisions 008/009.
 
 ## Uncommitted strategy changes awaiting approval
