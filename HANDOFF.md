@@ -20,12 +20,13 @@ Run `/empire-cycle`. **Astro 6 lands 17:49:44Z** (may already have landed) → a
 Later: neighbourhood watch resume (2/21, decision 005) when probes are idle — exclude BTC-tagged planets; status report every 4th cycle (last 16:16Z).
 
 ## Questions for the Commander
-- Approve adding to `strategy/ALLIANCE.md` → standing pacts: "BTC: non-aggression (BJACK-wide, 2026-09-13). Never attack a BTC-tagged planet." (`ops/diplomacy/2026-09-13_BJACK-chat-btc-pact.md`). Not urgent: raiding is parked.
+- none
 
 ## Uncommitted strategy changes awaiting approval
 - none
 
 ## What changed this session
+- 2026-09-13T17:35Z Commander: BTC non-aggression pact written into `strategy/ALLIANCE.md` → *Standing pacts* (approved in chat).
 - Cycle 17 (16:18Z → 17:28Z): 5:316:9 satellites 13–17 + metal 19 queued (18:42Z); 5:316:10 metal 19 landed 17:07Z. Session stopped by the Commander at 17:28Z.
 - Cycles 15–16 (12:58Z → 16:18Z): capital deut 12 (14:15Z); 5:316:9 deut 10 (13:13Z) + satellites 9–17; 5:316:10 satellites 14–18 + metal 19 running (17:07Z); 5:316:3 satellites 13–15 + metal 18 (15:26Z); 2k D run 5:316:10 → 5:316:3 (fleet 64351). Status reports 12:19Z (rank 220) and 16:16Z (rank 207). Alliance: BTC non-aggression pact recorded; tarla buys deuterium 3–4:1; no-trade stands.
 - Cycle 14 (12:18Z → 12:58Z): status report 12:19Z (rank 220, 4753); sweep legs 64046/64069/64113 landed; armour 8 landed 12:54:15Z → astro 6 queued (17:49:44Z); satellites queued at the capital (3) and 5:316:9 (4) for deut 12 / deut 10; 2k D sent to 5:316:3 (fleet 64351) for its satellites. Alliance chat: tweisdorf membership request routed to officers; necati closed trading for good — nothing for us.
