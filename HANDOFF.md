@@ -1,18 +1,18 @@
-# Handoff — 2026-09-13T17:28Z (session stopped by the Commander)
+# Handoff — 2026-09-13T18:36Z (credit-limited session: colony ship queued, then stopped)
 
 ## Do this first
-Run `/empire-cycle`. **Astro 6 lands 17:49:44Z** (may already have landed) → at the capital: (1) `codex colony_ship` then `build_ships colony_ship 1` (10k/20k/10k; capital had ~32k M / ~12k C / ~9.7k D at 16:15Z and makes 5.4k C/h → 20k C ~17:45Z), (2) pick the planet-5 slot from `galaxy 5 316` per decision 008 (cold deut world 5:316:13/14 preferred, else crystal world 5:316:1/2) — `empire-colonize` skill; the colony ship flies only after **astro 7** lands (planet limit = 1 + ceil(astro ÷ 2): astro 6 still allows 4). Research slot after astro 6: idle or a zero-crystal filler (armour 9, 256k M) — crystal and deuterium are astro 7's (115k/230k/115k).
+Run `/empire-cycle`. Astro 6 **landed**; colony ship queued at the capital 18:34Z (queue 192786, lands **18:50:37Z**). Research slot is idle (armour 9 needs 256k M at the capital — capital had 48k M at 18:34Z; leave idle or sweep metal). Next: pick the planet-5 slot from `galaxy 5 316` per decision 008 (cold deut world 5:316:13/14 preferred, else crystal world 5:316:1/2) — `empire-colonize` skill; the colony ship flies only after **astro 7** lands (planet limit = 1 + ceil(astro ÷ 2): astro 6 still allows 4). Research slot after astro 6: idle or a zero-crystal filler (armour 9, 256k M) — crystal and deuterium are astro 7's (115k/230k/115k).
 
 ## Where we are
 - 4 planets GROWING, no hostile fleets, nothing in the air, nothing in `ops/missions/`. Rank 207 / score 5030 at 16:16Z (`reports/status/2026-09-13T16-16Z.md`).
-- Research: astrophysics 6 → 17:49:44Z. Goal: planet 5 (009). Astro 7 is deuterium-gated: empire ~25k D at 17:26Z, ~5.1k D/h → 115k D ~2026-09-14 10:00–12:00Z; crystal 230k needs ~7 h of empire crystal with nothing else queued → astro 7 ~2026-09-14 12:00–14:00Z → planet 5 ~2026-09-14 20:00Z.
+- Research: astro 6 landed; slot idle. Goal: planet 5 (009). Astro 7 is deuterium-gated: empire ~25k D at 17:26Z, ~5.1k D/h → 115k D ~2026-09-14 10:00–12:00Z; crystal 230k needs ~7 h of empire crystal with nothing else queued → astro 7 ~2026-09-14 12:00–14:00Z → planet 5 ~2026-09-14 20:00Z.
 - Queues: 5:316:9 metal 19 → 18:42:30Z (queued 17:26Z). Capital, 5:316:10 (metal 19 landed 17:07Z) and 5:316:3 (metal 18 landed 15:26Z) are empty on purpose: their next builds are crystal-priced.
-- Stocks 17:26Z: 5:316:9 54k M / 0 C / 5k D (143k M before metal 19). Others as of 16:15Z: capital 32k M / 12k C / 9.7k D; 5:316:10 36k M / 1.9k C / 5.4k D; 5:316:3 53k M / 18k C / 1.2k D — re-read with `empire_overview`.
+- Stocks 18:34Z (after colony ship): capital 48k M / 4.6k C / 4.6k D; 5:316:10 81k M / 19k C / 9k D; 5:316:9 76k M / 8.5k C / 6.5k D (metal 19 → 18:42Z); 5:316:3 88k M / 39k C / 1.3k D. Empire ~21k D → 115k D for astro 7 still ~2026-09-14 12:00Z.
 - Ships home: capital 62 LF, 2 recyclers, 10 probes; 5:316:3 1 LC + 4 SC; 5:316:9 2 LC + 2 SC; 5:316:10 2 LC.
 - Chat times to the Commander are GMT+3; files stay UTC.
 
 ## Next actions
-1. 17:49:44Z astro 6 lands → colony ship at the capital + slot choice (see *Do this first*). Research: idle or armour 9.
+1. 18:50:37Z colony ship lands at the capital → stays docked until astro 7; slot choice per decision 008. 18:42:30Z 5:316:9 metal 19 lands → queue stays empty (crystal-priced next).
 2. Crystal sweep for astro 7 (230k C at the capital) once deuterium is within ~2 h of 115k: 5:316:3 and 5:316:9/10 crystal → capital (3 LC at 5:316:9/10, 1 LC + 4 SC at 5:316:3). Deuterium sweep at the same time (capital makes 2.1k/h, colonies 1.3–1.6k/h each).
 3. Metal is slack everywhere: zero-crystal sinks only — metal storage where a cap is near (5:316:9 cap 700k, fine), rocket launchers per decision 006 floor, armour 9 research. Do not spend crystal on mines before astro 7 is queued unless crystal ETA(astro 7) is not the gate.
 4. 5:316:3 makes 46 D/h: every satellite there needs deuterium brought in (2k D per run from 5:316:10).
@@ -26,6 +26,7 @@ Later: neighbourhood watch resume (2/21, decision 005) when probes are idle — 
 - none
 
 ## What changed this session
+- Cycle 18 (18:34Z → 18:36Z, credits nearly out): astro 6 confirmed landed; colony ship queued at the capital (192786 → 18:50:37Z). No other spending; queues at capital/5:316:10/5:316:3 left empty on purpose (crystal reserved for astro 7).
 - 2026-09-13T17:35Z Commander: BTC non-aggression pact written into `strategy/ALLIANCE.md` → *Standing pacts* (approved in chat).
 - Cycle 17 (16:18Z → 17:28Z): 5:316:9 satellites 13–17 + metal 19 queued (18:42Z); 5:316:10 metal 19 landed 17:07Z. Session stopped by the Commander at 17:28Z.
 - Cycles 15–16 (12:58Z → 16:18Z): capital deut 12 (14:15Z); 5:316:9 deut 10 (13:13Z) + satellites 9–17; 5:316:10 satellites 14–18 + metal 19 running (17:07Z); 5:316:3 satellites 13–15 + metal 18 (15:26Z); 2k D run 5:316:10 → 5:316:3 (fleet 64351). Status reports 12:19Z (rank 220) and 16:16Z (rank 207). Alliance: BTC non-aggression pact recorded; tarla buys deuterium 3–4:1; no-trade stands.
