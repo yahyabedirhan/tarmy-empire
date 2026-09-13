@@ -4,7 +4,7 @@
 Run `/empire-cycle`. Colony ship **docked at the capital** (landed 18:50:37Z). Crystal is NOT the astro-7 gate (empire ~29k C/h → 230k in ~5 h; deut ~23k of 115k at ~5.5k/h → ~2026-09-14 13:00Z), so crystal slack is released per next-actions 3: (a) 5:316:10 deut 12 queued → 19:15:28Z; (b) 5:316:3 solar plant 15 lands 19:18:28Z → **crystal 17** (88.5k/44.3k) ~20:15Z; (c) 5:316:9 crystal 17 ~23:30Z after 4 satellites. Research slot is idle (armour 9 needs 256k M at the capital — capital had 48k M at 18:34Z; leave idle or sweep metal). Next: pick the planet-5 slot from `galaxy 5 316` per decision 008 (cold deut world 5:316:13/14 preferred, else crystal world 5:316:1/2) — `empire-colonize` skill; the colony ship flies only after **astro 7** lands (planet limit = 1 + ceil(astro ÷ 2): astro 6 still allows 4). Research slot after astro 6: idle or a zero-crystal filler (armour 9, 256k M) — crystal and deuterium are astro 7's (115k/230k/115k).
 
 ## Where we are
-- 4 planets GROWING, no hostile fleets, nothing in the air, nothing in `ops/missions/`. Rank 207 / score 5030 at 16:16Z (`reports/status/2026-09-13T16-16Z.md`).
+- 4 planets GROWING, no hostile fleets, nothing in the air, nothing in `ops/missions/`. Rank 181 / score 5616 at 19:24Z (`reports/status/2026-09-13T19-24Z.md`).
 - Research: astro 6 landed; slot idle. Goal: planet 5 (009). Astro 7 is deuterium-gated: empire ~25k D at 17:26Z, ~5.1k D/h → 115k D ~2026-09-14 10:00–12:00Z; crystal 230k needs ~7 h of empire crystal with nothing else queued → astro 7 ~2026-09-14 12:00–14:00Z → planet 5 ~2026-09-14 20:00Z.
 - Queues: 5:316:10 satellites 19–23 → 18:59:54Z then deut 12 → 19:15:28Z; 5:316:3 solar plant 15 → 19:18:28Z; capital and 5:316:9 empty (capital crystal-priced, 5:316:9 waits on crystal).
 - Stocks 18:53Z (after queueing): capital 52k M / 6.3k C / 5.3k D; 5:316:10 88k M / 11k C / 7k D; 5:316:9 82k M / 10.8k C / 6.9k D; 5:316:3 71k M / 32.7k C / 1.3k D. Empire ~21k D → 115k D for astro 7 ~2026-09-14 13:00Z.
@@ -17,7 +17,7 @@ Run `/empire-cycle`. Colony ship **docked at the capital** (landed 18:50:37Z). C
 3. Metal is slack everywhere: zero-crystal sinks only — metal storage where a cap is near (5:316:9 cap 700k, fine), rocket launchers per decision 006 floor, armour 9 research. Do not spend crystal on mines before astro 7 is queued unless crystal ETA(astro 7) is not the gate.
 4. 5:316:3 makes 46 D/h: every satellite there needs deuterium brought in (2k D per run from 5:316:10).
 5. Every threshold: check BOTH metal and crystal (and deuterium) against the codex price; satellites are `upgrade_building`; the build queue holds 5.
-Later: neighbourhood watch resume (2/21, decision 005) when probes are idle — exclude BTC-tagged planets; status report every 4th cycle (last 16:16Z).
+Later: neighbourhood watch resume (2/21, decision 005) when probes are idle — exclude BTC-tagged planets; status report every 4th cycle (last 19:24Z).
 
 ## Questions for the Commander
 - none
