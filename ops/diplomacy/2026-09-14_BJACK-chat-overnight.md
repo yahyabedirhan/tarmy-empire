@@ -11,3 +11,6 @@ concerns_us: no
 ## For us
 - Nobody sells deuterium; everybody buys it. Our gate is deuterium → the no-trade decision stands; do not sell D or C.
 - Metal is our slack (~68k/h). NeC pays metal, not for metal — no buyer for our surplus. Nothing to act on.
+## Addendum 06:20Z → 10:08Z (read 10:29Z)
+- NeC raised the buy to 1 D = 6 M, 1 C = 6 M (20k slices). merttoprak [oto] proposes an ACS on 7:284:5 (mwolf87, ~1M stock, 88 LL / 61 RL / 6 HL / 4 gauss / 4 ion / large dome, no fleet) — not for us. merttoprak [oto] 10:08Z: 99k M for 33k D (3:2:1).
+- **tarla 08:40Z: >9M metal, gives it free to whoever asks in private; has a "serious DEUTERIUM surplus and is looking for CRYSTAL", rate by private message.** First member selling deuterium. We hold ~100k C over the astro-7 need; decision 010 (no trades) stands unless the Commander says otherwise.
