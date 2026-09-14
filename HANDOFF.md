@@ -21,13 +21,14 @@ Run `/empire-cycle`. `PLAN.md` holds the next 24 h. **Astrophysics 7 is research
 Later: neighbourhood watch resume (2/21, decision 005) when probes are idle — exclude BTC-tagged planets; file the 5:315:10 probe report in `intel/`; status report at cycle 27 (last 08:12Z) with the alliance-chat skim.
 
 ## Questions for the Commander
-- none
+- Research round 1 proposals P1–P5 (asked in chat 16:50Z): adopt deut-world bootstrap for planet 5, gate-resource pricing in DOCTRINE, fusion freeze, no deut-priced research until planet 6; boost 5:316:9 with 100 DM (COMMANDER-ONLY). Also: run `tarmy commander` to refresh the MCP bundle (v1.4 → v1.5.3).
 
 ## Uncommitted strategy changes awaiting approval
 - `AGENTS.md` + `.agents/skills/empire-cycle/SKILL.md`: `PLAN.md` rewritten at every hand-off (Commander requirement 2026-09-13T19:45Z).
 - `strategy/ALLIANCE.md`, `strategy/DOCTRINE.md`, `strategy/decisions/011-alliance-is-an-umbrella.md`, `.agents/skills/empire-cycle/SKILL.md`: alliance de-emphasised, no trades (Commander direction 2026-09-14T10:40Z) — awaiting "commit".
 
 ## What changed this session
+- 15:58–16:50Z: `empire-research` skill written (uncommitted, awaiting approval); round 1 run — docs/mcp/COMMANDER.md, GLOSSARY.md, empire/research.md corrected (committed). Key facts: astro 8 adds no planet (9 does; planet 6 = 553k D), two build lines per planet, deuterium gates the ladder 2.4×.
 - Cycle 25 (12:38Z → 13:02Z): deut sweep 56.1k D (69037/69038) landed 12:52–12:55Z; astro 7 queued 12:58:45Z (two 409 refusals, 19 D short) → 21:35:45Z; colonies released: :10 solar 18 + deut 14, :3 solar 16 + shipyard 1; RL x20 more at :9 (40 total).
 - 10:40Z Commander direction: alliance is an umbrella only, no trades until further notice → decision 011, `strategy/ALLIANCE.md` rewritten (uncommitted).
 - Cycle 24 (10:27Z → 10:32Z): crystal sweep away (140k C + 15k D, 3 legs); RL x20 at 5:316:9; codex astro 7 = 31,020 s.
