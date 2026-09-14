@@ -6,7 +6,7 @@ Run `/empire-cycle`. `PLAN.md` holds the next 24 h. Colony ship **docked at the 
 ## Where we are
 - 4 planets GROWING, no hostile fleets, nothing in the air, nothing in `ops/missions/`. Rank 181 / score 5616 at 19:24Z (`reports/status/2026-09-13T19-24Z.md`).
 - Research: astro 6 landed; slot idle. Goal: planet 5 (009). Astro 7 is deuterium-gated: empire ~25k D at 17:26Z, ~5.1k D/h → 115k D ~2026-09-14 10:00–12:00Z; crystal 230k needs ~7 h of empire crystal with nothing else queued → astro 7 ~2026-09-14 12:00–14:00Z → planet 5 ~2026-09-14 20:00Z.
-- Queues: 5:316:10 deut 13 → 04:00:22Z; others empty (crystal-priced next; 5:316:3 metal 19 ~05:00Z) (each next build is minutes to hours from affordable — see `PLAN.md`).
+- Queues: 5:316:3 satellites 16–17 + metal 19 → 06:25:42Z; others empty (crystal-priced next) (each next build is minutes to hours from affordable — see `PLAN.md`).
 - Stocks 00:58Z (before queueing): capital 120k M / 39k C / 18k D; 5:316:10 185k M / 50k C / 18.8k D; 5:316:9 206k M / 52k C / 15k D; 5:316:3 55k M / 42k C / 1.6k D. Empire 53.6k D (+5.5k/h) → 115k D for astro 7 ~2026-09-14 12:15Z (satellites cost 4k D → ~13:00Z).
 - Ships home: capital 1 colony ship, 62 LF, 2 recyclers, 10 probes; 5:316:3 1 LC + 4 SC; 5:316:9 2 LC + 2 SC; 5:316:10 2 LC.
 - Chat times to the Commander are GMT+3; files stay UTC.
