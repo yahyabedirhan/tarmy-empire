@@ -6,7 +6,7 @@ Rolling plan, rewritten at every hand-off (`empire-cycle` step 7). Times UTC; ea
 |---|---|---|---|
 | ~04:30Z 09-14 | 5:316:3 | 2 satellites (4k C / 1k D) then metal 19 (88.7k/22.2k) | M ≥ 88.7k, D ≥ 1k |
 | 02:34:40Z | 5:316:9 | crystal 17 lands (queued 00:58Z); then deut 11 or metal 20 per `codex` | — |
-| ~01:20Z | 5:316:10 | crystal 17 (88.5k/44.3k) — satellites already queued | C ≥ 44.3k |
+| 02:38:58Z | 5:316:10 | crystal 17 lands (queued 01:19Z); next per `codex` | — |
 | 03:00–10:00Z | capital, 5:316:9 | metal-only sinks: deut 13 / deut 11 only if `codex` payback beats astro-7 delay; else rocket launchers (decision 006 floor) | no crystal spent after ~06:00Z |
 | ~10:00–12:00Z | colonies → capital | sweep crystal + deuterium (3 LC at 5:316:9/10, 1 LC + 4 SC at 5:316:3) | deut within ~2 h of 115k |
 | ~12:15Z | capital | queue astrophysics 7 (115k/230k/115k); `codex` for the exact landing time | 115k D empire-wide |
