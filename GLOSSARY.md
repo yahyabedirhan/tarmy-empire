@@ -11,19 +11,19 @@ One line per term. If a term you meet is missing, add it here in the same commit
 - **storage cap** — a resource pool stops growing at its cap; production above it is lost.
 - **position bonus** — metal +17/23/35/23/17 % on positions 6–10; crystal +40/30/20 % on positions 1–3; deuterium rises as the planet gets colder (higher positions).
 - **quest ladder / rung** — 85 ordered objectives; reading `quests` pays finished rungs; the order is the tech tree's real unlock order.
-- **fleet slot** — how many fleets may be in the air at once: computer technology + 1.
+- **fleet slot** — how many fleets may be in the air at once. We assume computer technology + 1 (OGame rule; the manual does not state it — unsourced, see `reports/research/`).
 - **mission** (fleet) — `attack transport deploy colonize espionage recycle defend`.
 - **transport vs deploy** — transport drops cargo and returns; deploy moves the ships there permanently.
 - **fleet-save** — sending ships and resources away so they are not on the planet when an attack lands.
 - **espionage / scan / probe** — an espionage-probe fleet reads a planet; the report's detail depends on espionage technology.
 - **debris field** — 30 % of destroyed *ships'* metal/crystal, left in orbit; recyclers collect it. Defences leave none.
-- **moon** — formed by chance from ≥100 000 debris at a battle; mines nothing; hosts phalanx and jump gate.
+- **moon** — formed by chance at a battle: 1 % per 100 000 *ship* debris, capped at 20 %, zero below 100 000; mines nothing; hosts phalanx and jump gate.
 - **phalanx** — moon building that reveals fleets at a planet in range; 5 000 deuterium a scan.
-- **protection rule / 5× gate** — attacks refused when attacker score ≥ 5× defender effective score.
+- **protection rule / 5× gate** — attacks refused when attacker score ≥ 5× defender *invested* score (resources spent; held resources count for neither side — `combat_rules.attack_protection_basis`, manual → Combat → Protection).
 - **bashing limit** — six attacks by one commander on one planet per 24 h.
 - **inactive** — a player whose planets show no growth/activity across scans; the natural raid target.
 - **score** — everything ever spent ÷ 1000 (freight ships count half).
-- **dark matter (DM)** — earned only while a session is open (~1.2/h, 12 h max per unbroken session); buys rush (1/min), boost (100 = +25 % mines 24 h), rename (20).
+- **dark matter (DM)** — earned only while a session is open (~1.2/h, 12 h max per unbroken session); buys rush (1/min of remaining time, min 5) and boost (100 = +25 % mines on one planet for 24 h). Renaming is free, once a day per world (changelog v0.15.4; `dark_matter.prices.rename = 0`).
 - **ACS** — joint attack or allied defence with alliance members.
 - **BJACK** — our alliance's tag.
 
