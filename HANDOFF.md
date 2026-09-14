@@ -1,23 +1,25 @@
-# Handoff — 2026-09-14T08:12Z (session stopped by the Commander)
+# Handoff — 2026-09-14T10:32Z (cycle 24, sleeping)
 
 ## Do this first
-Run `/empire-cycle`. `PLAN.md` holds the next 24 h. The one job: **astro 7**. At ~12:00Z sweep every colony's crystal + deuterium to the capital (5:316:9 2 LC + 2 SC, 5:316:10 2 LC, 5:316:3 1 LC + 4 SC crystal only); when the capital holds 115k M / 230k C / 115k D (~12:40Z) `queue_research astrophysics`, read its landing time from the response, then release the colonies' crystal-priced builds (metal 20 at :9/:10, crystal 18 at :3 — `codex` first). When astro 7 lands (~18:15Z) send the colony ship to **5:316:14** (re-check `galaxy 5 316`; fallback 13) and bootstrap it (`empire-colonize`).
+Run `/empire-cycle`. `PLAN.md` holds the next 24 h. The one job: **astro 7**. Crystal is already at the capital (3 legs landed 10:42–10:45Z → 230.3k C). At ~12:40Z send all deuterium from 5:316:9 (2 LC + 2 SC) and 5:316:10 (2 LC) to the capital; when it holds ≥ 114,891 D (~12:55Z) `queue_research astrophysics`, read the landing time from the response (codex: 31,020 s ≈ 8.6 h → ~21:30Z), then release the colonies' crystal-priced builds (`codex` first; doctrine says crystal 18 before metal 20 at :9/:10 while C < ½ M; crystal 18 at :3). When astro 7 lands send the colony ship to **5:316:14** (re-check `galaxy 5 316`; fallback 13) and bootstrap it (`empire-colonize`).
 
 ## Where we are
-- 4 planets GROWING, no hostile fleets, nothing in the air, nothing in `ops/missions/`. Rank 158 / score 6270 at 08:12Z (`reports/status/2026-09-14T08-12Z.md`).
-- Research: idle. Astro 7 gate is deuterium: 87k of 115k empire-wide at 08:10Z, +6.3k/h → ~12:40Z; crystal 255k already banked. Planet 5 ~18:40Z.
-- Queues: all empty on purpose until astro 7 is queued.
-- Stocks 08:10Z: capital 200k M / 78k C / 33.5k D; 5:316:10 216k / 40k / 31k; 5:316:9 260k / 46k / 22k; 5:316:3 80k / 90k / 1.0k. Rates 70.9k M / 33.1k C / 6.3k D per hour.
-- Ships home: capital 1 colony ship, 62 LF, 2 recyclers, 10 probes; 5:316:3 1 LC + 4 SC; 5:316:9 2 LC + 2 SC; 5:316:10 2 LC.
+- 4 planets GROWING, no hostile fleets, nothing in `ops/missions/`. Rank 158 / score 6270 at 08:12Z (`reports/status/2026-09-14T08-12Z.md`).
+- In the air 10:30Z: crystal sweep 68453 (5:316:3, 45k C, lands 10:45:31Z), 68454 (5:316:9, 60k C, 10:45:21Z), 68455 (5:316:10, 35k C + 15k D, 10:42:29Z); cargos home by ~11:02Z.
+- Research: idle. Astro 7 gate is deuterium: 101.7k empire-wide at 10:28Z, +6.2k/h → 114.9k ~12:50Z. Crystal done after the sweep.
+- Queues: 5:316:9 RL x20 (202308) → 11:34:07Z; the other three empty on purpose until astro 7 is queued.
+- Stocks 10:28Z (before the sweep): capital 226k M / 90k C / 38k D; 5:316:10 263k / 60k / 36k; 5:316:9 310k / 66k / 26k; 5:316:3 121k / 114k / 1.1k. Rates 70.9k M / 33.1k C / 6.3k D per hour.
+- Ships: capital 1 colony ship, 62 LF, 2 recyclers, 10 probes; cargos in flight (see above).
+- Alliance: tarla (BJACK) offers deuterium for crystal by private message (08:40Z) — first D seller; decision 010 (no trades) stands; flagged to the Commander.
 - Chat times to the Commander are GMT+3; files stay UTC.
 
 ## Next actions
-1. Colony ship docked until astro 7; slot choice per decision 008 (`galaxy 5 316`). Deut mines are the astro-7 lever: after 5:316:10 deut 12, consider capital deut 13 and 5:316:9 deut 11 (codex first, energy first).
-2. Crystal sweep for astro 7 (230k C at the capital) once deuterium is within ~2 h of 115k: 5:316:3 and 5:316:9/10 crystal → capital (3 LC at 5:316:9/10, 1 LC + 4 SC at 5:316:3). Deuterium sweep at the same time (capital makes 2.1k/h, colonies 1.3–1.6k/h each).
-3. Metal is slack everywhere: zero-crystal sinks only — metal storage where a cap is near (5:316:9 cap 700k, fine), rocket launchers per decision 006 floor, armour 9 research. Do not spend crystal on mines before astro 7 is queued unless crystal ETA(astro 7) is not the gate.
-4. 5:316:3 makes 46 D/h: every satellite there needs deuterium brought in (2k D per run from 5:316:10).
-5. Every threshold: check BOTH metal and crystal (and deuterium) against the codex price; satellites are `upgrade_building`; the build queue holds 5.
-Later: neighbourhood watch resume (2/21, decision 005) when probes are idle — exclude BTC-tagged planets; status report every 4th cycle (last 08:12Z).
+1. ~12:40Z deut sweep :9 + :10 → capital (all D, LC 25k / SC 5k); queue astro 7 the moment capital D ≥ 114,891.
+2. After astro 7 is queued: colonies' crystal-priced builds — `codex` crystal_mine and metal_mine at :9/:10, crystal 18 at :3; every mine needs satellites (2k C / 500 D each; :3 makes 46 D/h so bring 2k D from :10). Capital idle (008).
+3. Colony ship docked until astro 7 lands (~21:30Z); slot per decision 008 (`galaxy 5 316`, 14 then 13).
+4. Metal is slack: zero-crystal sinks only (RL floor 006: :3 has no shipyard and 0 defence — shipyard 1 costs 400/200/100, cheap once deut is unblocked).
+5. Every threshold: check metal, crystal AND deuterium against the codex price; build queue holds 5.
+Later: neighbourhood watch resume (2/21, decision 005) when probes are idle — exclude BTC-tagged planets; file the 5:315:10 probe report in `intel/`; status report every 4th cycle (last 08:12Z, next at cycle 27).
 
 ## Questions for the Commander
 - none
@@ -26,6 +28,7 @@ Later: neighbourhood watch resume (2/21, decision 005) when probes are idle — 
 - `CLAUDE.md` + `.agents/skills/empire-cycle/SKILL.md`: `PLAN.md` (rolling 24 h plan) rewritten at every hand-off — Commander requirement 19:45Z; asked for commit approval in chat.
 
 ## What changed this session
+- Cycle 24 (10:27Z → 10:32Z): crystal sweep away (140k C + 15k D, 3 legs); RL x20 at 5:316:9; alliance chat read (tarla sells D for C); codex astro 7 = 31,020 s.
 - 08:12Z: status report (rank 158). Session stopped by the Commander after cycle 23.
 - 06:26Z: 5:316:3 metal 19 landed. Alliance chat read (`ops/diplomacy/2026-09-14_BJACK-chat-overnight.md`): everyone buys deuterium, nobody sells; nothing for us.
 - Cycle 22 (02:39Z → 03:37Z): crystal 17 landed at 5:316:9 (02:34Z) and 5:316:10 (02:39Z); satellites 22–26 + deut 11 at 5:316:9 (03:23Z); satellites 28–31 + deut 13 at 5:316:10 (04:00Z). Alliance chat: 7 unread (merttoprak, necati, zgr, NeC) — not read, credits.
