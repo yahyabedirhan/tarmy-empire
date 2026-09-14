@@ -11,6 +11,6 @@ Rolling plan, rewritten at every hand-off (`empire-cycle` step 7). Times UTC; ea
 | 13:00Z → | colonies | release crystal-priced builds: `codex` crystal 18 / metal 20 at :9 and :10 (crystal first while C < ½ M), crystal 18 at :3 (+ 2k D from :10 for its satellites); satellites before each mine | astro 7 queued |
 | ~21:30Z | capital → 5:316:14 | colony ship colonize (re-check `galaxy 5 316`; fallback 5:316:13); founded ~21:55Z → BOOTSTRAP: feed 3k M / 1k C / 500 D from 5:316:10, first mines (`empire-colonize`) | astro 7 landed |
 | ~22:00Z → | 5:316:14 | bootstrap builds every wake; planet file `empire/planets/G5-S316-P14.md` | founded |
-| cycle 27 | — | status report (`empire-status`); read alliance chat; file the 5:315:10 probe report in `intel/` | — |
+| cycle 27 | — | status report (`empire-status`); skim alliance chat (ALLIANCE.md, four things only); file the 5:315:10 probe report in `intel/` | — |
 
-Idle on purpose: research slot until astro 7; capital build queue (crystal-priced, worse return than colonies — decision 008). Open with the Commander: tarla's deuterium-for-crystal offer (decision 010 says no trades).
+Idle on purpose: research slot until astro 7; capital build queue (crystal-priced, worse return than colonies — decision 008).

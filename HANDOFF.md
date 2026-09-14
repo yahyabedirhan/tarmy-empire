@@ -10,7 +10,7 @@ Run `/empire-cycle`. `PLAN.md` holds the next 24 h. The one job: **astro 7**. Cr
 - Queues: 5:316:9 RL x20 (202308) → 11:34:07Z; the other three empty on purpose until astro 7 is queued.
 - Stocks 10:28Z (before the sweep): capital 226k M / 90k C / 38k D; 5:316:10 263k / 60k / 36k; 5:316:9 310k / 66k / 26k; 5:316:3 121k / 114k / 1.1k. Rates 70.9k M / 33.1k C / 6.3k D per hour.
 - Ships: capital 1 colony ship, 62 LF, 2 recyclers, 10 probes; cargos in flight (see above).
-- Alliance: tarla (BJACK) offers deuterium for crystal by private message (08:40Z) — first D seller; decision 010 (no trades) stands; flagged to the Commander.
+- Alliance: umbrella only (decision 011, 10:40Z) — chat skimmed every 4th cycle for threats/pacts/mentions/mechanics; trades never considered.
 - Chat times to the Commander are GMT+3; files stay UTC.
 
 ## Next actions
@@ -25,10 +25,12 @@ Later: neighbourhood watch resume (2/21, decision 005) when probes are idle — 
 - none
 
 ## Uncommitted strategy changes awaiting approval
-- `CLAUDE.md` + `.agents/skills/empire-cycle/SKILL.md`: `PLAN.md` (rolling 24 h plan) rewritten at every hand-off — Commander requirement 19:45Z; asked for commit approval in chat.
+- `AGENTS.md` + `.agents/skills/empire-cycle/SKILL.md`: `PLAN.md` rewritten at every hand-off (Commander requirement 2026-09-13T19:45Z).
+- `strategy/ALLIANCE.md`, `strategy/DOCTRINE.md`, `strategy/decisions/011-alliance-is-an-umbrella.md`, `.agents/skills/empire-cycle/SKILL.md`: alliance de-emphasised, no trades (Commander direction 2026-09-14T10:40Z) — awaiting "commit".
 
 ## What changed this session
-- Cycle 24 (10:27Z → 10:32Z): crystal sweep away (140k C + 15k D, 3 legs); RL x20 at 5:316:9; alliance chat read (tarla sells D for C); codex astro 7 = 31,020 s.
+- 10:40Z Commander direction: alliance is an umbrella only, no trades until further notice → decision 011, `strategy/ALLIANCE.md` rewritten (uncommitted).
+- Cycle 24 (10:27Z → 10:32Z): crystal sweep away (140k C + 15k D, 3 legs); RL x20 at 5:316:9; codex astro 7 = 31,020 s.
 - 08:12Z: status report (rank 158). Session stopped by the Commander after cycle 23.
 - 06:26Z: 5:316:3 metal 19 landed. Alliance chat read (`ops/diplomacy/2026-09-14_BJACK-chat-overnight.md`): everyone buys deuterium, nobody sells; nothing for us.
 - Cycle 22 (02:39Z → 03:37Z): crystal 17 landed at 5:316:9 (02:34Z) and 5:316:10 (02:39Z); satellites 22–26 + deut 11 at 5:316:9 (03:23Z); satellites 28–31 + deut 13 at 5:316:10 (04:00Z). Alliance chat: 7 unread (merttoprak, necati, zgr, NeC) — not read, credits.
