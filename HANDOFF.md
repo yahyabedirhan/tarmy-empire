@@ -1,25 +1,24 @@
-# Handoff — 2026-09-14T10:32Z (cycle 24, sleeping)
+# Handoff — 2026-09-14T13:02Z (cycle 25, sleeping)
 
 ## Do this first
-Run `/empire-cycle`. `PLAN.md` holds the next 24 h. The one job: **astro 7**. Crystal is already at the capital (3 legs landed 10:42–10:45Z → 230.3k C). At ~12:40Z send all deuterium from 5:316:9 (2 LC + 2 SC) and 5:316:10 (2 LC) to the capital; when it holds ≥ 114,891 D (~12:55Z) `queue_research astrophysics`, read the landing time from the response (codex: 31,020 s ≈ 8.6 h → ~21:30Z), then release the colonies' crystal-priced builds (`codex` first; doctrine says crystal 18 before metal 20 at :9/:10 while C < ½ M; crystal 18 at :3). When astro 7 lands send the colony ship to **5:316:14** (re-check `galaxy 5 316`; fallback 13) and bootstrap it (`empire-colonize`).
+Run `/empire-cycle`. `PLAN.md` holds the next 24 h. **Astrophysics 7 is researching (203992) and lands 21:35:45Z.** The minute it lands: `galaxy 5 316` (slot 14 free? else 13) → `dispatch_fleet colonize` colony ship from the capital → bootstrap per `empire-colonize`. Until then, grow the colonies energy-first (solar plants before mines, `codex` every time) and keep deuterium for satellites and the planet-5 feed.
 
 ## Where we are
 - 4 planets GROWING, no hostile fleets, nothing in `ops/missions/`. Rank 158 / score 6270 at 08:12Z (`reports/status/2026-09-14T08-12Z.md`).
-- In the air 10:30Z: crystal sweep 68453 (5:316:3, 45k C, lands 10:45:31Z), 68454 (5:316:9, 60k C, 10:45:21Z), 68455 (5:316:10, 35k C + 15k D, 10:42:29Z); cargos home by ~11:02Z.
-- Research: idle. Astro 7 gate is deuterium: 101.7k empire-wide at 10:28Z, +6.2k/h → 114.9k ~12:50Z. Crystal done after the sweep.
-- Queues: 5:316:9 RL x20 (202308) → 11:34:07Z; the other three empty on purpose until astro 7 is queued.
-- Stocks 10:28Z (before the sweep): capital 226k M / 90k C / 38k D; 5:316:10 263k / 60k / 36k; 5:316:9 310k / 66k / 26k; 5:316:3 121k / 114k / 1.1k. Rates 70.9k M / 33.1k C / 6.3k D per hour.
-- Ships: capital 1 colony ship, 62 LF, 2 recyclers, 10 probes; cargos in flight (see above).
+- Research: astrophysics 7 → 21:35:45Z. Colony ship docked at the capital.
+- Queues: 5:316:10 solar 18 (14:01Z) + deut 14 (14:36Z); 5:316:3 solar 16 + shipyard 1 (13:36Z); capital and 5:316:9 empty, waiting on crystal for solar 17 / solar 18 (~13:58Z / ~13:32Z).
+- Stocks ~13:00Z: capital ~139k M / ~14k C / 0 D; 5:316:10 ~190k / ~0 / ~1k; 5:316:9 277k / 25k / ~1k; 5:316:3 126k / 79k / 1.1k. Rates 70.9k M / 33.1k C / 6.3k D per hour. Deuterium is empty everywhere — satellites (500 D) wait on production.
+- Ships: capital 1 colony ship, 62 LF, 2 recyclers, 10 probes; :9 2 LC + 2 SC and :10 2 LC home ~13:05–13:11Z; :3 1 LC + 4 SC.
 - Alliance: umbrella only (decision 011, 10:40Z) — chat skimmed every 4th cycle for threats/pacts/mentions/mechanics; trades never considered.
 - Chat times to the Commander are GMT+3; files stay UTC.
 
 ## Next actions
-1. ~12:40Z deut sweep :9 + :10 → capital (all D, LC 25k / SC 5k); queue astro 7 the moment capital D ≥ 114,891.
-2. After astro 7 is queued: colonies' crystal-priced builds — `codex` crystal_mine and metal_mine at :9/:10, crystal 18 at :3; every mine needs satellites (2k C / 500 D each; :3 makes 46 D/h so bring 2k D from :10). Capital idle (008).
-3. Colony ship docked until astro 7 lands (~21:30Z); slot per decision 008 (`galaxy 5 316`, 14 then 13).
-4. Metal is slack: zero-crystal sinks only (RL floor 006: :3 has no shipyard and 0 defence — shipyard 1 costs 400/200/100, cheap once deut is unblocked).
+1. 21:35:45Z astro 7 lands → colony ship → 5:316:14 (fallback 13); feed 3k M / 1k C / 500 D from :10 (`empire-colonize`).
+2. Capital 13:58Z: solar 17 (49k/19.7k) → crystal 15 (34.6k/17.3k, best crystal return in the empire) → deut 13 (29k/9.7k). Decision 008's "capital idle" note is overridden by the doctrine's lowest-mine-first rule — codex shows the capital's level-15 crystal mine pays back in 55 h vs 125–160 h for the colonies' level 18.
+3. 5:316:9 13:32Z: solar 18 → deut 12 → metal 20. 5:316:10 14:36Z: metal 20 vs crystal 18 (codex). 5:316:3 13:50Z: crystal 18, then RL floor.
+4. Zero-crystal sinks for slack metal: RL floor (006) — :9 done (40), :10 has 20, :3 gets a shipyard 13:36Z.
 5. Every threshold: check metal, crystal AND deuterium against the codex price; build queue holds 5.
-Later: neighbourhood watch resume (2/21, decision 005) when probes are idle — exclude BTC-tagged planets; file the 5:315:10 probe report in `intel/`; status report every 4th cycle (last 08:12Z, next at cycle 27).
+Later: neighbourhood watch resume (2/21, decision 005) when probes are idle — exclude BTC-tagged planets; file the 5:315:10 probe report in `intel/`; status report at cycle 27 (last 08:12Z) with the alliance-chat skim.
 
 ## Questions for the Commander
 - none
@@ -29,6 +28,7 @@ Later: neighbourhood watch resume (2/21, decision 005) when probes are idle — 
 - `strategy/ALLIANCE.md`, `strategy/DOCTRINE.md`, `strategy/decisions/011-alliance-is-an-umbrella.md`, `.agents/skills/empire-cycle/SKILL.md`: alliance de-emphasised, no trades (Commander direction 2026-09-14T10:40Z) — awaiting "commit".
 
 ## What changed this session
+- Cycle 25 (12:38Z → 13:02Z): deut sweep 56.1k D (69037/69038) landed 12:52–12:55Z; astro 7 queued 12:58:45Z (two 409 refusals, 19 D short) → 21:35:45Z; colonies released: :10 solar 18 + deut 14, :3 solar 16 + shipyard 1; RL x20 more at :9 (40 total).
 - 10:40Z Commander direction: alliance is an umbrella only, no trades until further notice → decision 011, `strategy/ALLIANCE.md` rewritten (uncommitted).
 - Cycle 24 (10:27Z → 10:32Z): crystal sweep away (140k C + 15k D, 3 legs); RL x20 at 5:316:9; codex astro 7 = 31,020 s.
 - 08:12Z: status report (rank 158). Session stopped by the Commander after cycle 23.
