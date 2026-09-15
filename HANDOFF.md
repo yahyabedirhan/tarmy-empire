@@ -21,6 +21,7 @@ Run `/empire-cycle`. `PLAN.md` holds the next 24 h. **Planet 5 (5:316:14, id 592
 Later: neighbourhood watch resume (2/21, decision 005) when probes are idle — exclude BTC-tagged planets; file the 5:315:10 probe report in `intel/`; status report at cycle 32 (last 23:20Z); research round 2 when the Commander asks.
 
 ## Questions for the Commander
+- (answered 08:40Z) Raids stay parked until planet 6 is founded — Commander. Neighbours 5:316:5/7/8 re-scanned 08:18Z (`intel/targets/G5-S316-P*`): all below the 5× protection floor (need score ≥ 1613 vs our 8067), so targets must come from other systems anyway.
 - Research round 1 proposals P1–P5 (asked in chat 16:50Z): adopt deut-world bootstrap for planet 5, gate-resource pricing in DOCTRINE, fusion freeze, no deut-priced research until planet 6; boost 5:316:9 with 100 DM (COMMANDER-ONLY). Also: run `tarmy commander` to refresh the MCP bundle (v1.4 → v1.5.3).
 
 ## Uncommitted strategy changes awaiting approval
