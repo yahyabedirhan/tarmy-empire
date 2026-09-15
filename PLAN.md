@@ -15,4 +15,4 @@ Rolling plan, rewritten at every hand-off (`empire-cycle` step 7). Times UTC; ea
 | cycle 32 | — | status report; skim alliance chat (four things only); file the 5:315:10 probe report | — |
 | open | Commander | round 1 proposals P1–P5; commit bundle (011, PLAN rule, output rules, empire-research skill); `tarmy commander` refresh | approval |
 
-Idle on purpose: crystal mines on colonies (crystal is not the gate); raids; alliance chat.
+Idle on purpose: crystal mines on colonies (crystal is not the gate); raids (Commander 2026-09-15T08:40Z: parked until planet 6 is founded; the 5× rule blocks every same-system target anyway); alliance chat.
