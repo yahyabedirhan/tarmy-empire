@@ -34,6 +34,7 @@ intel/               WHAT we know about others
   players/<name>.md            one file per player: activity pattern, alliance, planets, verdict
 
 reports/status/      snapshots written by the `empire-status` skill, never hand-edited
+reports/research/    one file per research round (`empire-research` skill): claims audited, gaps, ranked proposals
 
 archive/             the pre-2026-09-11 files, kept for history, not for guidance
 
@@ -55,5 +56,6 @@ Naming: coordinates are written `G5-S316-P12` in file names and `5:316:12` in te
 | `empire-soldier` | Lieutenant | write a mission brief and spawn a sub-agent on it |
 | `empire-lesson` | Lieutenant | record a lesson and propose the doctrine change it implies |
 | `empire-handover` | Lieutenant | rewrite `HANDOFF.md` for the next session |
+| `empire-research` | Commander or Lieutenant | one research round as a sub-agent: audit our docs against the manual and live rule tools, fix docs, propose strategies |
 | `terminal-army` | any | the game's own MCP playbook (vendored; refresh with `tarmy commander`) |
 | `i-have-adhd` | chat only | output-shape rules for chat replies to the Commander (vendored, MIT) |

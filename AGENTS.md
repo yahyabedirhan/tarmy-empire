@@ -28,7 +28,7 @@ Cadence is wake-driven, never a clock: every planet, queue and mission carries a
 
 ## Where things are
 
-`README.md` maps the tree. `HANDOFF.md` is where the last session stopped (the cycle skill reads it). Terms you do not recognise are in `GLOSSARY.md`. Rules of the game: `docs/game/` (verbatim manual). Rules of the MCP: `docs/mcp/COMMANDER.md`. Why we play the way we do: `strategy/DOCTRINE.md` and `strategy/decisions/`.
+`README.md` maps the tree. `HANDOFF.md` is where the last session stopped (the cycle skill reads it). `PLAN.md` is the rolling next-24-hours plan, rewritten at every hand-off (Commander requirement, 2026-09-13). Terms you do not recognise are in `GLOSSARY.md`. Rules of the game: `docs/game/` (verbatim manual). Rules of the MCP: `docs/mcp/COMMANDER.md`. Why we play the way we do: `strategy/DOCTRINE.md` and `strategy/decisions/`.
 
 ## Working the MCP
 
@@ -48,7 +48,7 @@ A lesson is not learned until it is in `strategy/LESSONS.md` with a link to the 
 
 ## Git and commits
 
-Commit immediately: `ops/`, `intel/`, `reports/`, `empire/`, `HANDOFF.md`. Edit freely but wait for the Commander's approval before committing: `strategy/`, `AGENTS.md`, `README.md`, `GLOSSARY.md`, `.agents/skills/`. Push after every commit.
+Commit immediately: `ops/`, `intel/`, `reports/`, `empire/`, `HANDOFF.md`, `PLAN.md`. Edit freely but wait for the Commander's approval before committing: `strategy/`, `AGENTS.md`, `README.md`, `GLOSSARY.md`, `.agents/skills/`. Push after every commit.
 
 Use lowercase multi-line commit messages with a semantic prefix:
 
@@ -64,6 +64,8 @@ Prefixes: `intel:`, `ops:`, `empire:`, `report:`, `handoff:`, `strategy:`, `skil
 ## Output shape
 
 Chat replies to the Commander use the `i-have-adhd` shape (vendored under `.agents/skills/i-have-adhd/`): next action first, numbered bounded steps, state restated, short lists. That shape is for chat only; every outbound file — `HANDOFF.md`, reports, records, commit messages — keeps its own documented format.
+
+Times in chat are **GMT+3** (the Commander's clock), written like `15:45 (+3)`; files, records and commits stay UTC. Visuals in chat (`show-me` skill or any diagram): **never Mermaid** — the Commander's terminal and UI cannot render it. Draw with plain-text `text` blocks instead: ASCII/box-drawing timelines (`─┬┼┴│`), progress bars (`████░░░░`), aligned tables and trees.
 
 ## Adding new skills
 

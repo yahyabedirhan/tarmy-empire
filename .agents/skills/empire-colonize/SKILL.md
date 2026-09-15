@@ -14,7 +14,9 @@ Two parts. **Found** runs once; **Bootstrap** runs every cycle while the planet 
 
 ## Bootstrap (each cycle)
 
-Order, each level only when `codex` says it is affordable *on the colony*: solar plant 1–2 → metal mine 1–4 → crystal mine 1–2 → metal storage 1 → solar to keep factor 1 → metal mine to 8, crystal to 5, deut 1–3 → robotics 2 → storage 2. Transport from the capital every cycle whatever the next two levels need (`dispatch_fleet mission=transport`), logged as a row in the colony file. Leave `BOOTSTRAP` when metal mine ≥ 8, factor = 1, storage ≥ 2 → planet state `GROWING`, colony file `status: closed`.
+Order by the planet's role, each level only when `codex` says it is affordable *on the colony*. **Storage first when a feed will exceed 50k of any resource** (level-0 caps are 50k; a feed may land over the cap but the planet's own production stops there): metal storage 1–2 and crystal storage 1 before the first large feed, deuterium tank 1–2 before synth 8.
+- `metal-world` / `crystal-world`: solar 1–2 → metal 1–4 → crystal 1–2 → metal storage 1 → solar to keep factor 1 → metal to 8, crystal to 5, deut 1–3 → robotics 2 → storage 2.
+- `deut-world` (cold slot): solar 1–2 → metal 1–2 → robotics 1–2 → deuterium synthesizer and solar plant alternating (read `energy_after` in `planet_detail` before each synth) → tank 1–2 by synth 8 → metal to 6, crystal to 2 → storage 1–2 → keep alternating synth/solar. 5:316:14 reached synth 10 in 2 h 14 min this way (`ops/colonies/G5-S316-P14.md`). Transport from the nearest stocked planet every cycle whatever the next two levels need (crystal from the crystal-world, metal from a metal-world) (`dispatch_fleet mission=transport`), logged as a row in the colony file. Leave `BOOTSTRAP` when the role's target is met (metal ≥ 8 / synth ≥ 10), factor = 1, storage or tank ≥ 2 → planet state `GROWING`, colony file `status: closed`.
 
 ## Template — `ops/colonies/<COORD>.md`
 
