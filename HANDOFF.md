@@ -1,31 +1,35 @@
-# Handoff — 2026-09-15T19:30Z (cycle 33 closed: astro 8 running)
+# Handoff — 2026-09-16T18:25Z (session stopped by the Commander)
 
 ## Do this first
-Run `/empire-cycle`. **Astrophysics 8 is running → lands 2026-09-16T08:50:04Z** (220995). Until then: shuttle crystal from :3 / :9 / :10 to the capital whenever ≥ 20k sits on a colony, and deuterium from planet 5 (1 LC there, 25k per trip) — astro 9 (352k M / 704k C / 352k D) is crystal-gated, ETA ~14:45Z 09-16. Queue nothing crystal-priced anywhere.
+Run `/empire-cycle`. At **18:37:27Z** the last crystal hop lands at the capital (cap raised to 1.275M at 18:29:13Z) → `codex astrophysics` then `queue_research astrophysics` (level 9: 351 855 M / 703 711 C / 351 855 D, 84 445 s at lab 8 → lands ~18:00Z 09-17). If it refuses, read the error: the capital should hold ~777k C / 340k M / 375k D.
 
 ## Where we are
-- 5 planets GROWING, factor 1 everywhere, no hostile fleets. Research: astro 8 → 08:50:04Z 09-16; then astro 9 (~23.5 h) → planet 6 (`empire/research.md`, decision 009).
-- Capital after paying astro 8: ~100k M / ~6k C / ~17k D; RL x20 landing 19:47Z (79 RL). Empire crystal ~10k, +36k/h → 704k ≈ 14:45Z 09-16 (**crystal gates**); deuterium ~165k, +18k/h → 352k ≈ 05:50Z; metal ✓ (colonies hold ~490k).
-- Cargos: :3 1 LC + 4 SC, :9 2 LC + 2 SC, :10 1 LC, planet 5 1 LC (deployed 19:39Z). Same-system LC trip = 13 min each way (SC 16).
-- Raids parked until planet 6 (Commander 08:40Z). Alliance chat busy (~40 messages today, unread) — skim at cycle 36 with the status report (decision 011).
-- Chat times GMT+3; files UTC.
+- 5 planets GROWING, factor 1 everywhere, no hostile fleets. Rank 83 / score 10 927 at 10:50Z (`reports/status/2026-09-16T10-50Z.md`).
+- Astro 8 landed 08:50Z. Astro 9 is fully funded once the 115k C in the air lands (78615/78616/78618, 18:34–18:37Z). Capital build line: crystal_storage 5 → 18:29:13Z, deuterium_tank 4 → 18:33:29Z.
+- **Cap miss (Commander, 14:50Z)**: capital deuterium sat at 375k cap ~6 h; astro 9's crystal price was above the 700k crystal cap and nobody checked. Lesson L16 proposed in `strategy/LESSONS.md` (uncommitted, needs approval): script the `stock / cap` check every cycle, and check the receiving planet's cap before any sweep.
+- Metal glut: 2.2M metal idle (:10 745k / 1.275M cap, :3 582k, :9 465k) — no legal sink under the crystal gate; options put to the Commander in the 10:50Z report, no answer yet. Caps are 1.275M on the colonies now; :10 fills in ~22 h.
+- Chat times GMT+3; files UTC. Alliance chat ~100 messages unread (decision 011: skim at the next status cycle only).
 
 ## Next actions
-1. Crystal shuttles: 1 LC per colony whenever crystal ≥ 20k (every ~2 h: :3 12k/h, :9 and :10 8.7k/h). Deuterium: planet 5 → capital 25k per LC trip, every ~4 h. Metal: :9 → capital ~110k before 08:50Z 09-16.
-2. 08:50Z 09-16 astro 8 lands → slot stays empty until 704k C at the capital (~14:45Z) → `queue_research astrophysics` 9. Record in `empire/planets/G5-S316-P12.md` and `PLAN.md`.
-3. Storage caps each cycle: planet 5 deut 97k on 200k (fills ~11:30Z 09-16 if not shipped); :10 metal 190k / 700k; :3 metal 176k / 700k.
-4. Capital wall: RL as metal allows (79 after 19:47Z) — keep 352k M in view for astro 9.
-5. Cycle 36: status report + alliance skim (four things only).
-Later: status report at cycle 36 (last 10:57Z, cycle 32); neighbourhood watch when raids reopen; research round 2 on request.
+1. 18:37Z → queue astrophysics 9. Record in `empire/planets/G5-S316-P12.md`, rewrite `PLAN.md`.
+2. Then recompute the gate for what comes after astro 9 (colony ship 10k/20k/10k at the capital; planet 6 bootstrap ~300k M / 100k C / 50k D per `empire-colonize`) and for astro 11 if the Commander wants a 7th planet (1.08M / 2.15M / 1.08M). Crystal still gates; release synth 17s / planet 5 solar 18 only if deuterium gates again.
+3. Every cycle: print `stock / cap` for all 15 pools (script in scratch: overview → flag ≥ 80 %). :10 metal hits 80 % of 1.275M at ~1.02M (~11 h).
+4. Capital wall 139 RL / 10 LL / 2 gauss / dome ≥ hoard ÷ 4 — recheck when crystal passes 800k again.
+5. Choose planet 6's slot per decision 002/008 (`galaxy` 5:316 positions 1/15 now allowed by astro 8; prefer a cold slot for deuterium or a hot one for crystal — decide with the Commander) and write `ops/colonies/` before the colony ship launches.
+Later: status report at cycle 38; alliance skim; research round 2 on request; `tarmy commander` refresh.
 
 ## Questions for the Commander
-- Commit approval for the strategy/skill bundle below (asked several times on 09-14/15).
-- Research round 1 proposals P1–P5 (`reports/research/2026-09-14T15-58Z_round-1.md`); P5 (100 DM boost) is COMMANDER-ONLY.
+- Approve lesson L16 (`strategy/LESSONS.md`, uncommitted) and its doctrine line.
+- Idle metal (2.2M): bank for planet 6 (recommended) / release colony crystal mines / colony RL walls.
+- 7th planet after planet 6 (decision 002 trigger fired: astro 9 affordable) — yes/no.
+- Planet 6 slot preference: cold (deuterium) or hot (crystal, the gate)?
+- Strategy bundle approval (committed 973d9c9, never approved in chat); round-1 proposals P1–P5.
 
 ## Uncommitted strategy changes awaiting approval
-- none in the tree (last session's bundle was committed in 973d9c9) — but the Commander has not explicitly approved it in chat; confirm.
+- `strategy/LESSONS.md` — L16 (cap of the receiving planet before a sweep; scripted cap check).
 
 ## What changed this session
-- Weapons 8 landed 12:23Z; lab 8 12:38→13:19Z; **astro 8 queued 19:25:50Z → 08:50:04Z 09-16** (`empire/planets/G5-S316-P12.md`).
-- ~410k crystal, 190k metal and 103k deuterium shuttled to the capital over 7 h (planet files, cycle 33 rows); astro 8 came 2 h later than the 17:30Z estimate because the lab's 51k C was not in it.
-- 1 LC deployed to planet 5 (74811) so its deuterium can reach the capital for astro 9.
+- Astro 8 queued 09-15 19:25Z, landed 09-16 08:50Z; ~560k crystal and ~200k deuterium shuttled to the capital over 30 h (planet files, cycles 33–34).
+- Capital wall 59 → 139 RL; metal storages 5 on :3/:9/:10; 1 LC deployed to planet 5 for deuterium hops.
+- Two cap misses on the capital (deuterium 375k, crystal price > 700k cap) caught by the Commander 14:50Z; storages queued 18:20Z; lesson L16.
+- Status report `reports/status/2026-09-16T10-50Z.md` (rank 83, +1 419 score / 24 h).
