@@ -1,35 +1,33 @@
-# Handoff — 2026-09-16T18:25Z (session stopped by the Commander)
+# Handoff — 2026-09-16T19:05Z (cycle 35, session running)
 
 ## Do this first
-Run `/empire-cycle`. At **18:37:27Z** the last crystal hop lands at the capital (cap raised to 1.275M at 18:29:13Z) → `codex astrophysics` then `queue_research astrophysics` (level 9: 351 855 M / 703 711 C / 351 855 D, 84 445 s at lab 8 → lands ~18:00Z 09-17). If it refuses, read the error: the capital should hold ~777k C / 340k M / 375k D.
+Run `/empire-cycle`. Astrophysics 9 is running (232790) → **2026-09-17T18:28:15Z**. When it lands: `codex astrophysics` must say `planets_allowed 6`, then launch the colony ship (built 19:17Z at the capital) to the slot written in `ops/colonies/` — if no slot file exists yet, the Commander has not chosen; ask in chat (cold slot = deuterium, hot = crystal; positions 1–15 open).
 
 ## Where we are
-- 5 planets GROWING, factor 1 everywhere, no hostile fleets. Rank 83 / score 10 927 at 10:50Z (`reports/status/2026-09-16T10-50Z.md`).
-- Astro 8 landed 08:50Z. Astro 9 is fully funded once the 115k C in the air lands (78615/78616/78618, 18:34–18:37Z). Capital build line: crystal_storage 5 → 18:29:13Z, deuterium_tank 4 → 18:33:29Z.
-- **Cap miss (Commander, 14:50Z)**: capital deuterium sat at 375k cap ~6 h; astro 9's crystal price was above the 700k crystal cap and nobody checked. Lesson L16 proposed in `strategy/LESSONS.md` (uncommitted, needs approval): script the `stock / cap` check every cycle, and check the receiving planet's cap before any sweep.
-- Metal glut: 2.2M metal idle (:10 745k / 1.275M cap, :3 582k, :9 465k) — no legal sink under the crystal gate; options put to the Commander in the 10:50Z report, no answer yet. Caps are 1.275M on the colonies now; :10 fills in ~22 h.
-- Chat times GMT+3; files UTC. Alliance chat ~100 messages unread (decision 011: skim at the next status cycle only).
+- 5 planets GROWING, factor 1, no hostile fleet. Rank 91 / score 10 967 at 18:45Z (rank slipped from 83: neighbours grew, we sat on a hoard).
+- Astro 9 queued 19:00:50Z after a 25k-metal top-up from :10 (the deuterium tank 4 had eaten the metal margin; refusal read at 18:40Z, fixed by 19:00Z). Colony ship queued 19:01Z → 19:17:12Z. Capital left with ~16k M / 56k C / 14k D — hoard gone, raid bait gone.
+- **albaycasey (BTC, rank 25, 6 planets in 5:305) probed :3/:9/:10/:12 at 18:40Z** — all caught; the :14 probe probably succeeded. No fleet followed. BTC is the alliance-wide non-aggression partner (`strategy/ALLIANCE.md`); reported to the Commander 18:45Z, no reply yet. `intel/players/albaycasey.md`.
+- Colonies hold 4k–26k crystal after the sweep: nothing crystal-priced is affordable until ~19:00Z + 2–3 h. Metal glut 2.2M continues (:10 storage 6 → 2.35M cap at 19:21Z).
+- Gate after astro 9: planet-6 bootstrap (~300k M / 100k C / 50k D — 3 h of empire crystal, metal banked, deuterium on :14) is not a gate. Astro 11 (7th planet: 1.08M / 2.15M / 1.08M) would be crystal-gated ~58 h; Commander has not said yes. Crystal mine 18 on :10 pays back in 50 h — passes the clock either way, so crystal mines go as soon as affordable (lowest first).
+- Chat times GMT+3; files UTC. Alliance chat unread (~107 messages; skim at cycle 38 with the status report).
 
 ## Next actions
-1. 18:37Z → queue astrophysics 9. Record in `empire/planets/G5-S316-P12.md`, rewrite `PLAN.md`.
-2. Then recompute the gate for what comes after astro 9 (colony ship 10k/20k/10k at the capital; planet 6 bootstrap ~300k M / 100k C / 50k D per `empire-colonize`) and for astro 11 if the Commander wants a 7th planet (1.08M / 2.15M / 1.08M). Crystal still gates; release synth 17s / planet 5 solar 18 only if deuterium gates again.
-3. Every cycle: print `stock / cap` for all 15 pools (script in scratch: overview → flag ≥ 80 %). :10 metal hits 80 % of 1.275M at ~1.02M (~11 h).
-4. Capital wall 139 RL / 10 LL / 2 gauss / dome ≥ hoard ÷ 4 — recheck when crystal passes 800k again.
-5. Choose planet 6's slot per decision 002/008 (`galaxy` 5:316 positions 1/15 now allowed by astro 8; prefer a cold slot for deuterium or a hot one for crystal — decide with the Commander) and write `ops/colonies/` before the colony ship launches.
-Later: status report at cycle 38; alliance skim; research round 2 on request; `tarmy commander` refresh.
+1. 19:17Z colony ship lands — nothing to do until astro 9 lands; keep it parked at the capital.
+2. Colonies: as crystal reaches ~85k on :10/:9/:3, queue crystal_mine (18/18/19) + the energy it needs (satellites, 31 E each on :10/:9). Price with `codex` first.
+3. Deuterium: :14 has 51k D; one LC hop (25k) to the capital when the capital is < 50k D and the bootstrap date nears (from 09-17 ~12:00Z).
+4. Write `ops/colonies/G5-S316-P<slot>.md` once the Commander picks the slot (decision 002/008; `galaxy 5:316` for free positions — 1, 2, 4, 5, 6, 7, 8, 11, 13, 15 were empty at last look, verify).
+5. Every cycle: `capcheck.py` (scratchpad; recreate from the overview JSON if lost — prints stock/cap for 15 pools, flags ≥ 80 %). Nothing flagged at 19:00Z.
+6. Cycle 38: status report + alliance skim.
 
 ## Questions for the Commander
-- Approve lesson L16 (`strategy/LESSONS.md`, uncommitted) and its doctrine line.
-- Idle metal (2.2M): bank for planet 6 (recommended) / release colony crystal mines / colony RL walls.
-- 7th planet after planet 6 (decision 002 trigger fired: astro 9 affordable) — yes/no.
-- Planet 6 slot preference: cold (deuterium) or hot (crystal, the gate)?
-- Strategy bundle approval (committed 973d9c9, never approved in chat); round-1 proposals P1–P5.
+- albaycasey probing (BTC pact partner): ignore / raise in alliance chat via necati / ask them directly? Recommend: note it, no message — the hoard is spent.
+- 7th planet (astro 11, 2.15M crystal): recommend **not now** — colony crystal mines pay back in ~50 h at levels 18–19, astro 11 only after mines reach ~20 (payback then ~100 h). Revisit at planet 6 bootstrap end.
+- Planet 6 slot: cold (positions 13–15: deuterium) or hot (1–3: crystal)? Recommend hot — crystal is the gate for everything.
+- Idle metal 2.2M: bank for planet 6 (recommended) / RL walls on colonies.
+- L16 approval (`strategy/LESSONS.md`, uncommitted); strategy bundle 973d9c9; P1–P5.
 
 ## Uncommitted strategy changes awaiting approval
-- `strategy/LESSONS.md` — L16 (cap of the receiving planet before a sweep; scripted cap check).
+- `strategy/LESSONS.md` — L16.
 
-## What changed this session
-- Astro 8 queued 09-15 19:25Z, landed 09-16 08:50Z; ~560k crystal and ~200k deuterium shuttled to the capital over 30 h (planet files, cycles 33–34).
-- Capital wall 59 → 139 RL; metal storages 5 on :3/:9/:10; 1 LC deployed to planet 5 for deuterium hops.
-- Two cap misses on the capital (deuterium 375k, crystal price > 700k cap) caught by the Commander 14:50Z; storages queued 18:20Z; lesson L16.
-- Status report `reports/status/2026-09-16T10-50Z.md` (rank 83, +1 419 score / 24 h).
+## What changed this session (from 18:39Z)
+- Astro 9 queued 19:00:50Z; colony ship built; metal_storage 6 on :10; albaycasey intel file; five planet files updated (cycle 35).
