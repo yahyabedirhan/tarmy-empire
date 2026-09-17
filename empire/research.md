@@ -1,6 +1,6 @@
 # Research plan
 
-Research is account-wide; the capital's lab (level 7) runs it. One slot, never idle (DOCTRINE). Order = the astro clock (decision 009) with the quest ladder as tie-breaker; price the whole chain before starting (L5); price ladder rungs net of their reward. Levels as of 2026-09-14T16:00Z (`research_tree`, research round 1): energy 6, laser 8, ion 5, hyperspace 2, computer 6, astro 6 (7 in progress → 2026-09-14T21:35:45Z), espionage 5, combustion 7, impulse 3, hyperspace drive 0, weapons 6, shielding 6, armour 8. Lab 7 (capital; the highest lab in the empire is the one that counts — manual → Build & research time).
+Research is account-wide; the capital's lab (level 8) runs it. One slot, never idle (DOCTRINE). Order = the astro clock (decision 009) with the quest ladder as tie-breaker; price the whole chain before starting (L5); price ladder rungs net of their reward. Levels as of 2026-09-17T19:35Z (`research_tree`, research round 2): energy 6, laser 9 (10 in progress → 2026-09-17T22:06:38Z), ion 5, hyperspace 2, plasma 0, computer 6, astro 9, espionage 5, combustion 7, impulse 3, hyperspace drive 0, weapons 8, shielding 7, armour 9, graviton 0. Lab 8 (capital; the highest lab in the empire is the one that counts — manual → Build & research time). Rows 1, 4 and 6 are done (astro 9 landed; planet 6 founded 2026-09-17); the post-014 order is proposed in `reports/research/2026-09-17T19-35Z_round-2.md` and replaces this table once decision 014 is accepted.
 
 | # | Tech → level | Cost (codex 18:08Z) | Why | Gate for |
 |---|---|---|---|---|
