@@ -1,11 +1,11 @@
-# Plan — next 24 h from 2026-09-17T20:10Z, in lanes
+# Plan — next 24 h from 2026-09-17T23:16Z, in lanes
 
-Rolling plan, rewritten at every hand-off (`empire-cycle` step 7). Times UTC. One lane per row group (Commander 2026-09-17T19:45Z); each line is a wake → action → gate. Done lines are dropped. Sources: decisions 013 (roles), 014 (roadmap, proposed), 015 (walls, proposed) — the Commander's crystal-split answer (A/B/C, asked 20:00Z) sets the pace of the defence lane; until it arrives: metal-only wall parts go, crystal-priced ones (gauss, LSD) wait.
+Rolling plan, rewritten at every hand-off (`empire-cycle` step 7). Times UTC. One lane per row group (Commander 2026-09-17T19:45Z); each line is a wake → action → gate. Done lines are dropped. Sources: decisions 013 (roles), 014 (roadmap, proposed), 015 (walls, proposed) — **standing priority (Commander 20:55Z): planet 6 + crystal mining first, defence second** — crystal-priced wall parts only from what is left after :1's levels and the research lane.
 
 ## Mining (on-role only, 013)
 | when | where | action | gate |
 |---|---|---|---|
-| 20:47:54Z | :1 | queue lands (crystal 12–13, solar 11, robotics 5, shipyard 1) → crystal 14–16 + solar 12–13 (`codex`); feed M/C from :3/:10 each cycle | energy spare ≥ 0 |
+| 23:50:00Z | :1 | crystal 16 lands → crystal 17 (88.5k/44.3k), solar 15, robotics 8; then 18 (141.7k/70.8k), 19 (226.7k/113.3k) — feed every cycle: :3 crystal, :10 metal+crystal, :14 deut | feeds; energy spare ≥ 0 |
 | 23:46:51Z | :3 | crystal_mine 20 lands → robotics 6–8 first (idle metal), crystal 21 (290k C) when the defence lane leaves crystal | crystal |
 | every cycle | :10, :9 | **no crystal or metal mines** (crystal frozen 19/18; metal over-stocked → stock rule) | — |
 | every cycle | :14 | synths only if deuterium gates a plan (it does not) | — |
@@ -14,11 +14,9 @@ Rolling plan, rewritten at every hand-off (`empire-cycle` step 7). Times UTC. On
 ## Research (014 order — always busy)
 | when | action | gate |
 |---|---|---|
-| 22:06:38Z | laser 10 lands → `queue_research energy` 7 (51.2k C / 25.6k D, 1.1 h) | crystal at the capital (ship from :3/:1) |
-| ~23:20Z | energy 8 (102.4k C / 51.2k D, 2.3 h) | crystal |
-| ~01:40Z | plasma 1 → 2 → 3 → 4 (2k/4k/1k … 16k/32k/8k; < 1 h each) — P4 test: lab 1 on :10 (200/400/200) and start plasma 1 from there | ion 5 ✓ laser 10 ✓ energy 8 |
-| ~05:00Z | hyperspace 3 (16k C / 8k D) → computer 7 (25.6k C / 38.4k D, 8th slot) → plasma 5 | — |
-| ~08:00Z | armour 10 (512k M, 11.4 h) — the metal sink runs while the walls are bought | 512k M at the capital |
+| 23:36:32Z | hyperspace 3 lands → computer 7 (25.6k C / 38.4k D, 8th slot) | 25.6k C at the capital |
+| ~00:10Z | armour 10 (512k M, 11.4 h) — runs overnight while all crystal feeds :1 | 512k M at the capital |
+| ~12:00Z 09-18 | energy 8 (102.4k C / 51.2k D) → plasma 1–4 (< 1 h each) → plasma 5 — P4 test: lab 1 on :10 and start plasma 1 from there | :1 past crystal ~18; crystal slack |
 
 ## Advanced tech (014 H1)
 | when | where | action | gate |
