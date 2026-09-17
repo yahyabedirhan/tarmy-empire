@@ -1,17 +1,18 @@
-# Plan — next 24 h from 2026-09-16T19:05Z
+# Plan — next 24 h from 2026-09-17T18:35Z
 
 Rolling plan, rewritten at every hand-off (`empire-cycle` step 7). Times UTC; each line is a wake with the action that fires on it. Done lines are dropped, not kept.
 
 | when | where | action | gate |
 |---|---|---|---|
-| 19:17Z | capital | colony ship lands (232793) — park it | — |
-| 19:21Z | :10 | metal_storage 6 lands (cap 2.35M) | — |
-| ~21:00Z, then every ≤ 2 h | :10 / :9 / :3 | crystal ≥ ~85k → `codex` crystal_mine + satellites → queue (payback ~50 h < 58 h clock) | crystal on hand |
-| every cycle | all | `capcheck.py` stock/cap, flag ≥ 80 % (L16) | — |
-| from 09-17 ~12:00Z | :14 → capital | 1 LC × 25k D hop so the capital holds ≥ 50k D for the planet-6 bootstrap | :14 deut ≥ 25k |
-| before 09-17 18:28Z | Commander | pick planet 6 slot → write `ops/colonies/G5-S316-P<slot>.md` | Commander answer |
-| 09-17 18:28:15Z | capital | astro 9 lands → `codex astrophysics` = 6 planets → `dispatch_fleet colonize` (colony ship, speed 100 %) → bootstrap cargo from :10/:3 (metal) + :14 (deut) per `empire-colonize` | slot file exists |
-| after colonize | research | slot idle → next research per `empire/research.md` (fillers: laser 9, weapons 7, armour 9; astro 11 only on a Commander yes) | — |
-| cycle 38 | — | status report; alliance skim (four things only) | — |
+| 18:41:44Z | capital | 25k M lands (82760) → `queue_research laser` 10 (102.4k M / 51.2k C) | — |
+| on answer | capital | colony ship → 5:316:1 (crystal) or 5:316:6 (metal, 002 letter) — colony file first | Commander's slot answer (default 6 after one cycle) |
+| +13 min after launch | planet 6 | founded → `empire-colonize` bootstrap; feed every cycle from :10/:9 (metal), :3 (crystal), capital/:14 (deut) | ship landed |
+| 20:03:58Z | :9 | crystal_mine 19 lands; next level at 181k C (~13:00Z 09-18) | crystal |
+| 23:46:51Z | :3 | crystal_mine 20 lands; mine 21 at 290k C | crystal |
+| ~06:00Z 09-18 | :10 | crystal ≥ 181k → 5 satellites + crystal_mine 20 | crystal, bootstrap fed first |
+| after laser 10 (~22:10Z) | research | next filler: weapons 9 (204.8k M / 51.2k C) or armour 10 (512k M, ship metal) unless astro 11 is opened | Commander (astro 11) |
+| every cycle | all | `capcheck.py` stock/cap ≥ 80 % (L16); energy spare ≥ 0 before any mine | — |
+| cycle 52 | — | status report; alliance skim (four things) | — |
+| open | Commander | slot; albaycasey note; astro 11; idle metal / :10 wall (006); L16; bundle; P1–P5 | approval |
 
-Idle on purpose: raids (parked until planet 6, Commander 09-15 08:40Z); alliance chat; astro 11 (no Commander yes); RL walls on colonies (idle-metal question open).
+Idle on purpose: raids (parked until planet 6 is up); alliance trades (decision 011); astro 11.
