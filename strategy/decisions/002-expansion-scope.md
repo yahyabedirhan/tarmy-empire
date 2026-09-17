@@ -38,3 +38,8 @@ DOCTRINE → Colonize rule; `empire-colonize` skill target list; planet roles: 1
 - Astro 9 is affordable (decide 7th+ or stop).
 - We build a jump gate (cross-galaxy becomes free).
 - Any chosen slot turns out to have < 120 fields (too small for a mine-world).
+
+## Amendment 2026-09-17T18:40Z (Commander, in chat)
+- Planet 6 → **5:316:1, crystal-world** (+40 % crystal), not the metal slot of item 4: "crystal boost, this planet is crystal focused, we already have tons of metal". Launched 18:35:14Z (fleet 82788).
+- **No 7th planet for now**: "let's grow existing planets before pushing to 7th planet". Astro 11 stays parked; revisit when the colonies' crystal mines pass ~21 and the empire's crystal rate is ≥ 80k/h (astro 11's 1.23M C ≤ 16 h of production).
+- Metal policy: "utilize metal with the most efficient way possible without wasting the fields per planet" → pure-metal, zero-field sinks first (armour research, rocket launchers per 006), colony mines over capital mines; terraformer priced 2026-09-17 (≈ 1.3M M / 4.3M C / 2.5M D to the first net +4 fields because of energy 12) — not before the plasma/hyperspace era.
