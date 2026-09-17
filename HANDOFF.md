@@ -35,12 +35,10 @@ Goal: leave BOOTSTRAP within ~12 h with metal 8 / crystal 5 / solar covering it 
 - Chat times GMT+3; files UTC.
 
 ## Questions for the Commander
-- none blocking. Open from before: L16 approval; strategy bundle 973d9c9; P1–P5; approve committing the 002 amendment and the COMMANDER.md fix.
+- none. (002 amendment, L16 and the COMMANDER.md fix approved and committed 18:45Z; still unconfirmed from earlier sessions: strategy bundle 973d9c9, round-1 proposals P1–P5.)
 
 ## Uncommitted strategy/doc changes awaiting approval
-- `strategy/decisions/002-expansion-scope.md` — amendment (slot 1 crystal-world; no 7th planet; metal policy; terraformer verdict).
-- `strategy/LESSONS.md` — L16.
-- `docs/mcp/COMMANDER.md` — `build_defense` note.
+- none.
 
 ## What changed this session (09-16 18:39Z → 09-17 18:40Z, cycles 35–48)
 Astro 9 queued and landed; colony ship built and launched to 5:316:1 (Commander's slot); 8 crystal mine levels, 42 satellites, 3 metal storages, 3 deut tanks (crystal 36.1k → 46.2k/h); 100 RL on :10; status reports 01:05Z and 18:30Z; intel on albaycasey (BTC scouting) and pmaulana; terraformer priced.
