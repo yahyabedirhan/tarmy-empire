@@ -1,6 +1,6 @@
 # 015 — Defence plan: a wall per planet class that makes a 60-cruiser raid lose money
 
-- **status:** proposed
+- **status:** accepted — walls are bought with the crystal left after planet 6 and the crystal mines (Commander 20:55Z: "top priority is to boost the new colony and maximize our crystal mining, then defence is the second priority"); metal-only parts first, RL capped as written
 - **date:** 2026-09-17
 - **decided by:** Lieutenant (pending approval); drafted by research round 2 (`reports/research/2026-09-17T19-35Z_round-2.md`); Commander direction 2026-09-17T19:40Z: "defence is more important than attack growth… otherwise we'd be farming for others"
 
