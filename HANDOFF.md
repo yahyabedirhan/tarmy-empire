@@ -1,44 +1,33 @@
-# Handoff — 2026-09-17T18:40Z (session stopped by the Commander after cycle 48)
+# Handoff — 2026-09-17T20:10Z (cycle 49, session running)
 
 ## Do this first
 Run `/empire-cycle`. In this order:
-1. **Research slot idle since 18:28Z.** 25k M (82760) landed at the capital 18:41:44Z → `queue_research(tech="laser")` (level 10: 102 400 M / 51 200 C, 12 288 s). Refused twice at 18:36Z for metal; it is funded now.
-2. **Colony ship 82788 lands at 5:316:1 at 18:58:57Z.** On `fleet.returned` / the planet appearing in `empire_overview`: create `empire/planets/G5-S316-P1.md` (copy `G5-S316-P3.md`, role `crystal-world`, state `BOOTSTRAP / powering`, tags `+crystal+40%`, temperature and fields from the overview), set `ops/colonies/G5-S316-P1.md` → `status: founded`, then start the feed (below). If no planet appeared → `status: failed`, read `messages`, `empire-lesson`.
-3. **100 RL on :10** (245558) land 23:56Z — nothing to do, just do not cancel.
+1. **Open question with the Commander (asked 20:00Z): crystal split for the walls — A (40 % walls / 30 % plasma+research / 30 % mines, recommended), B (70 % walls), C (walls only on :10/:9 floor).** Until answered: metal-only wall parts go (RL, SSD partly, HL/LL are cheap in crystal), gauss/LSD wait. On the answer: set decisions 014 and 015 `status: accepted`, apply their DOCTRINE/skill diffs (015 → *Defend* rule, 006 amendment; 014 → `empire/research.md` order), commit `strategy:`.
+2. **20:18:37Z :10 shipyard 6 / 20:23:47Z :9 shipyard 6** → wall batches (`PLAN.md` → Defence). `build_defense(key, count, planet_id)`; shipyard line holds 5 batches.
+3. **20:47:54Z :1 queue** → next crystal levels + solar (`codex`), feed from :3 (C) / :10 (M).
+4. **22:06:38Z laser 10** → `queue_research(tech="energy")` (014 order). Ship ~55k C to the capital before then (it holds ~22k).
+5. **08:00Z** leaderboard snapshot (`intel/leaderboard/`, `growth.py`).
 
-## Planet 6 bootstrap — priorities (crystal-world, hot slot, `empire-colonize`)
-Goal: leave BOOTSTRAP within ~12 h with metal 8 / crystal 5 / solar covering it / storage 2, then run it as the empire's second crystal world (its +40 % beats :3's +20 %: every crystal level here returns 1.17× :3's).
-1. **First feed at founding** (planet holds 3k/1k/0.5k): 20k M / 5k C / 2k D from :10 (1 LC) — solar 1–2, metal 1–3.
-2. **Every cycle**: `codex` the next two levels on the colony, ship exactly that plus 20 % from the nearest stocked planet (metal :10/:9, crystal :3 — but :3's crystal is the mine-19/20 money, so crystal feeds come from :10/:9's crystal first; deuterium from the capital, 98k, or :14, 203k). Log each flight as a row in the colony file.
-3. **Order**: solar 1–2 → metal 1–4 → crystal 1–2 → **metal storage 1 + crystal storage 1 before any feed > 50k** → solar to keep factor 1 → metal to 8 → crystal to 5 → deut synth 1–3 → robotics 2 → storage 2 → `GROWING`. Satellites are cheap energy on a hot slot (48 E each at :3's temperature; check `codex solar_satellite` there) — prefer them over solar plant from ~solar 12.
-4. **After BOOTSTRAP**: crystal mine every level the payback beats the other colonies (it will, by 17 %), metal to ~12 for its own building costs, no lab/shipyard beyond 2, RL 20 as soon as it holds > 80k of anything.
-5. Budget: ~300k M / 100k C / 50k D over the first 12 h (the :14 pattern used 425k / 200k / 10k in 12 h). Metal is free; crystal is the constraint — feed crystal in small lots, never let the colony hold more than its next two levels.
+## What changed this session (cycles 49, 18:40Z → 20:10Z)
+- **Planet 6 founded 18:59:01Z at 5:316:1 (id 6147, 158 fields, 209..249)** and left BOOTSTRAP at 19:38Z — 39 min, on 48k M / 13k C / 6k D of feeds. Now crystal 11 → 13 queued, solar 11, robotics 5, shipyard 1. Metal capped at 6 (Commander).
+- **Decision 013 accepted and committed** (planets produce on-role, ship the rest; stock rule; logistics is a product; bootstrap exit by role). DOCTRINE, `empire-colonize`, `empire-farm`, `empire/research.md`, AGENTS.md updated (15cf3c3).
+- **Research round 2 done** (`reports/research/2026-09-17T19-35Z_round-2.md`): decisions **014 (advanced roadmap in lanes)** and **015 (class walls, 9 simulations)** written as *proposed*; GLOSSARY/SOURCES/research.md fixed. Verdict: no 10× facility; plasma is the compounding %; walls are the urgent gap (:10 today is a free farm for 60 cruisers).
+- Walls started: RL batches on :10/:9 cancelled (26 / 10 built, refunds 148k / 86k) for shipyard 3–6 on both (HL/ion/gauss/LSD need 4/4/6/6); capital RL ×45 → 20:49Z; :3 RL ×22 → 21:13Z; :14 shipyard 1 + RL ×40 → 22:40Z.
+- Robotics: :10 → 8 (20:58Z), :9 → 7 (20:46Z), :1 → 5; :3 gets 25k D (20:15Z) for 6–8.
+- Logistics: 3 LC built at the capital; 125k M shipped to the capital; :14 spent down (metal 0, deut 179k reserve).
+- Leaderboard snapshot 19:41Z: **rank 48, 14 194** (#1 aranella 111 911). `intel/leaderboard/growth.py` compares snapshots.
+- AGENTS.md now records how the Commander wants to be asked (high-level trade-offs only, short, drawn; push-backs are checked, not obeyed; nothing idles; keep AGENTS.md current). Memory file saved too.
 
-## Short-term strategy (next 24 h)
-- **Crystal is the gate.** Every colony crystal mine that pays back < ~90 h goes, satellites bought first (energy spare ≥ 0 always). Next: :10 mine 20 (181k C, ~06:00Z 09-18), :9 mine 20 (~13:00Z), capital 19 (113k C + 6 sats, when the bootstrap is fed), :3 mine 21 (290k C).
-- **Metal goes to zero-field sinks** (Commander 18:40Z): laser 10 now → **armour 10 (512k M, 11.4 h, no crystal)** next in the research slot — ship 5 LC-loads to the capital before it; rocket launchers per decision 006 on any colony whose stock ÷ 4 exceeds its wall.
-- Bootstrap planet 6 (above). Deuterium is fine (676k banked).
-- Alliance: read only, nothing sent (Commander: "no alliance chat yet"). Skim at cycle 52 with the status report.
-
-## Long-term strategy (Commander 2026-09-17T18:40Z)
-- **Six planets, grow them; no 7th until the colonies are deep.** Revisit astro 11 when empire crystal ≥ 80k/h (now 46k, ~52k once :9/:3 land) — then 1.23M C is ≤ 16 h.
-- **Fields**: the capital (29 free) keeps them for the ladder (robotics 10, lab 9+, shipyard 9+, silo, nanite). Colonies dig (:3 108 free, :14 111, :9 73, :10 51). Terraformer is not a field source before the plasma era (≈ 4.3M crystal because of energy 12; see decision 002 amendment).
-- **Research ladder after the fillers**: computer 7 (fleet slots — 5 planets of cargo traffic + bootstrap already crowd 7 slots), energy 7 (fusion/laser gates), then espionage 6, impulse 4 (cruisers) only if raids are reopened after planet 6.
-- **Defence** tracks stocks (006): capital wall 139 RL / 10 LL / 2 gauss / dome; :10 130 RL after 23:56Z; :9 40 RL, :3 30 RL, :14 none (its probe got through — 20 RL there when it holds > 80k).
-
-## Where we are
-- Rank 75 / 12 727 (18:28Z). 5 planets GROWING, factor 1, no hostile fleets. Colony ship in the air; LC 82760 returning to :10 (18:54Z).
-- Queues: :9 crystal 19 → 20:03:58Z; :3 crystal 20 → 23:46:51Z; :10 RL ×100 → 23:56:15Z. Capital, :10, :14 construction queues empty (crystal-starved; fillers are metal-only and the capital's metal goes to research).
-- Stocks 18:28Z: capital 87k/72k/98k (+25k M at 18:41Z); :10 814k/46k/194k; :9 536k/24k/180k; :3 385k/29k/1k; :14 104k/17k/203k. Caps fine (max 54 %).
+## Where we are (20:05Z)
+- 6 planets GROWING, factor 1, no hostile fleets. Fleets: 83027 (25k M → capital 20:07Z), 83055 (25k D → :3 20:15Z).
+- Queues: :1 → 20:47:54Z; :10 shipyard 6 → 20:18:37Z then robotics 8 → 20:58:33Z; :9 shipyard 6 → 20:23:47Z then robotics 7 → 20:46:36Z; :3 crystal 20 → 23:46:51Z + RL ×22 → 21:13:46Z; :14 RL ×40 → 22:40:55Z; capital RL ×45 → 20:49:40Z; research laser 10 → 22:06:38Z.
+- Stocks ~20:00Z: capital ~100k M / 22k C / 98k D; :10 ~700k M / 48k C / 190k D (after refund); :9 ~560k M / 25k C / 180k D; :3 ~290k M / 17k C / 1k D (+25k D inbound); :14 ~0 M / 17k C / 179k D; :1 ~35k M / 20k C / 3k D.
+- MCP: `http 429 error code 1015` twice at 19:16Z (rate limit) — cleared on the third try. `build_ships` refuses without metal (409 "not enough resources"). Shipyard upgrade refused while a batch runs → cancel the batch (refund = unbuilt share) first.
 - `capcheck.py` in the scratchpad (recreate if lost: parse `planet_detail[]`, print stock/cap per pool, flag ≥ 80 %).
-- MCP: defence is `build_defense(key, count, planet_id)` — `build_ships` refuses it (`docs/mcp/COMMANDER.md` fixed, uncommitted). `queue_research`/`upgrade_building` refuse when a few hundred short — subtract satellite crystal from ETAs. One `http 429 error code 1015` (rate limit) at 18:28Z, cleared on retry.
-- Chat times GMT+3; files UTC.
 
 ## Questions for the Commander
-- none. (002 amendment, L16 and the COMMANDER.md fix approved and committed 18:45Z; still unconfirmed from earlier sessions: strategy bundle 973d9c9, round-1 proposals P1–P5.)
+- Crystal split for walls A/B/C (above, asked in chat 20:00Z).
+- From round 2 (`reports/research/…round-2.md` → Open questions): moon attempts (Commander-only, recommend not now); dark matter — boost :3 (100 DM) vs rush nanite vs hoard (recommend hoard until nanite).
 
 ## Uncommitted strategy/doc changes awaiting approval
-- none.
-
-## What changed this session (09-16 18:39Z → 09-17 18:40Z, cycles 35–48)
-Astro 9 queued and landed; colony ship built and launched to 5:316:1 (Commander's slot); 8 crystal mine levels, 42 satellites, 3 metal storages, 3 deut tanks (crystal 36.1k → 46.2k/h); 100 RL on :10; status reports 01:05Z and 18:30Z; intel on albaycasey (BTC scouting) and pmaulana; terraformer priced.
+- none (014 and 015 are committed as `proposed`; their DOCTRINE diffs are applied on the Commander's answer).
