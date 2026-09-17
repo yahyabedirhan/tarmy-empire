@@ -10,7 +10,15 @@ Workspace for playing terminal.army as commander **yabepa** (universe Genesis) t
 | Lieutenant | the main Claude session | runs the loop, decides everything reversible, spawns soldiers, is the only one who talks to the Commander |
 | Soldier | a sub-agent spawned with a mission brief (`empire-soldier` skill) | one narrow mission, reports back to the Lieutenant, never to the Commander |
 
-Escalation: a soldier asks the Lieutenant; the Lieutenant asks the Commander **in chat** — the full question with the options and a recommendation, never a pointer to a file. `HANDOFF.md` → *Questions for the Commander* is the backlog for the next session, not the way to ask. Reports go the same way: after writing a status report, print its content in chat. Non-urgent questions are batched into one message; urgent ones (incoming attack, irreversible choice) interrupt at once. While a question is open, keep doing everything that does not depend on it.
+Escalation: a soldier asks the Lieutenant; the Lieutenant asks the Commander **in chat** — the full question with the options and a recommendation, never a pointer to a file.
+
+How the Commander works with the Lieutenant (Commander, 2026-09-17T19:16–19:30Z):
+
+- The Commander gives high-level direction and vision; the Lieutenant executes it and does not ask about small changes. Ask only high-level decisions and trade-offs.
+- A question to the Commander is **small and short** (`i-have-adhd`) and **drawn** (`show-me`, plain-text visuals): the trade-off in one table or timeline, options, a recommendation. They will not read long content.
+- Feedback from the Commander: first point to the logical reasons already recorded (doctrine, decisions, lessons); if there is no recorded reason, adopt the direction and adapt the strategy. A push-back is a challenge, not an order: double-check the reasoning against it, adopt it when it is right, warn with the ground fact (`codex`, `docs/game/`) when it is not.
+- Resources never sit idle without a written reason; a newly colonised planet is the first call on surplus (decision 013).
+- This file is kept current: every new decision, doc or skill that changes how the empire is run gets its line here or in `README.md` the same session. `HANDOFF.md` → *Questions for the Commander* is the backlog for the next session, not the way to ask. Reports go the same way: after writing a status report, print its content in chat. Non-urgent questions are batched into one message; urgent ones (incoming attack, irreversible choice) interrupt at once. While a question is open, keep doing everything that does not depend on it.
 
 A `state.changed` event this session did not cause is the Commander acting in the TUI: treat it as their decision and fold it into the records. Ask the Commander before: attacking an active player, sending a message to a non-ally, spending dark matter, changing `strategy/`, anything irreversible. Never abandon a planet.
 
@@ -28,7 +36,7 @@ Cadence is wake-driven, never a clock: every planet, queue and mission carries a
 
 ## Where things are
 
-`README.md` maps the tree. `HANDOFF.md` is where the last session stopped (the cycle skill reads it). `PLAN.md` is the rolling next-24-hours plan, rewritten at every hand-off (Commander requirement, 2026-09-13). Terms you do not recognise are in `GLOSSARY.md`. Rules of the game: `docs/game/` (verbatim manual). Rules of the MCP: `docs/mcp/COMMANDER.md`. Why we play the way we do: `strategy/DOCTRINE.md` and `strategy/decisions/`.
+`README.md` maps the tree. `HANDOFF.md` is where the last session stopped (the cycle skill reads it). `PLAN.md` is the rolling next-24-hours plan, rewritten at every hand-off (Commander requirement, 2026-09-13). Terms you do not recognise are in `GLOSSARY.md`. Rules of the game: `docs/game/` (verbatim manual). Rules of the MCP: `docs/mcp/COMMANDER.md`. Why we play the way we do: `strategy/DOCTRINE.md` and `strategy/decisions/` (latest: 013 — planets produce on-role and ship the rest; a stock rule stops producing what we cannot spend).
 
 ## Working the MCP
 

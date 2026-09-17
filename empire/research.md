@@ -10,6 +10,7 @@ Research is account-wide; the capital's lab (level 7) runs it. One slot, never i
 | 4 | astrophysics 6, 7 | 65.6k/131k/65.6k + 115k/230k/115k | planet 5 | deuterium is the gate (180k): synthesizers + trade (010) |
 | 5 | shielding 6 | 6.4k / 19.2k | rung `harder_shields` (net ~−10k crystal but opens large dome with shipyard 6) | large shield dome |
 | 6 | astrophysics 8, 9 | 201k/402k/201k (15.1 h at lab 7) + 352k/704k/352k (26.4 h at lab 7) | planet 6 — **astro 8 alone adds no planet** (`codex`: level 8 → `planets_allowed 5`, positions 1–15; level 9 → 6). Deuterium is the gate: 553k at 7.2k/h net ≈ 76 h vs 1.1M crystal at 33k/h ≈ 33 h (research round 1, 2026-09-14) | horizon (002) |
+| 7 | computer 7 (25.6k C / 38.4k D) | 8th fleet slot — the 6-planet supply network (decision 013) runs on slots; deuterium no longer gates | after armour 10 |
 | F | laser 9–10 (51.2k/25.6k, 102k/51.2k — rung `focused_light`), weapons 7 (51.2k/12.8k), armour 9 (256k M) | fillers (rows 1–3 done: astro 5, computer 6, espionage 5) | run one whenever the slot would otherwise idle while crystal *and deuterium* are saved for a row above. **Not** combustion 8 (51.2k M / 76.8k D) or computer 7 (25.6k C / 38.4k D) while deuterium gates the astro ladder: 76.8k D is 10.6 h of empire deuterium (research round 1) | — |
 
 Not before planet 5 unless the Commander reopens raiding: impulse 4 (cruiser), hyperspace 2–3 (hyperspace drive), energy 7+ (plasma chain). Blocked: plasma (energy 8, laser 10, ion 5), graviton (lab 12).
