@@ -36,7 +36,7 @@ Cadence is wake-driven, never a clock: every planet, queue and mission carries a
 
 ## Where things are
 
-`README.md` maps the tree. `HANDOFF.md` is where the last session stopped (the cycle skill reads it). `PLAN.md` is the rolling next-24-hours plan, rewritten at every hand-off (Commander requirement, 2026-09-13). Terms you do not recognise are in `GLOSSARY.md`. Rules of the game: `docs/game/` (verbatim manual). Rules of the MCP: `docs/mcp/COMMANDER.md`. Why we play the way we do: `strategy/DOCTRINE.md` and `strategy/decisions/` (latest: 013 — planets produce on-role and ship the rest; a stock rule stops producing what we cannot spend).
+`README.md` maps the tree. `HANDOFF.md` is where the last session stopped (the cycle skill reads it). `PLAN.md` is the rolling next-24-hours plan, rewritten at every hand-off (Commander requirement, 2026-09-13). Terms you do not recognise are in `GLOSSARY.md`. Rules of the game: `docs/game/` (verbatim manual). Rules of the MCP: `docs/mcp/COMMANDER.md`. Why we play the way we do: `strategy/DOCTRINE.md` and `strategy/decisions/` (latest: 013 — planets produce on-role and ship the rest; 014 — the advanced roadmap in lanes; 015 — class walls per planet. Standing priority, Commander 2026-09-17T20:55Z: planet 6 and crystal mining first, defence second).
 
 ## Working the MCP
 

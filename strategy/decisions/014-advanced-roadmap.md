@@ -1,6 +1,6 @@
 # 014 — Advanced roadmap: plasma and robotics compound, nanite serves the capital, moons and terraformer wait
 
-- **status:** proposed
+- **status:** accepted — crystal mining and planet 6 first, defence second (Commander 20:55Z); research lane as written (plasma path is a crystal multiplier)
 - **date:** 2026-09-17
 - **decided by:** Lieutenant (pending approval); drafted by research round 2 (`reports/research/2026-09-17T19-35Z_round-2.md`)
 
