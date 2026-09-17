@@ -6,7 +6,7 @@ One line per term. If a term you meet is missing, add it here in the same commit
 - **coord / slot / position** — `galaxy:system:position`, e.g. `5:316:12`. 9 galaxies × 499 systems × 15 positions in Genesis.
 - **homeworld / capital** — the first planet; if abandoned the oldest colony becomes it. We call our research/fleet home the capital.
 - **colony** — any planet after the first. Allowed count `1 + ceil(astrophysics/2)`.
-- **fields** — building slots on a planet; fixed at birth, only the terraformer adds more.
+- **fields** — building slots on a planet; fixed at birth, only the terraformer adds more (+5 per level, the level itself takes one → net +4; needs nanite 1 on that planet and energy 12 — `codex`). A moon starts with 1 field and the lunar base adds +3 per level (occupying one).
 - **production factor** — energy produced ÷ energy used, capped at 1. Below 1 every mine on that planet runs at that fraction.
 - **storage cap** — a resource pool stops growing at its cap; production above it is lost.
 - **position bonus** — metal +17/23/35/23/17 % on positions 6–10; crystal +40/30/20 % on positions 1–3; deuterium rises as the planet gets colder (higher positions).
@@ -18,7 +18,10 @@ One line per term. If a term you meet is missing, add it here in the same commit
 - **espionage / scan / probe** — an espionage-probe fleet reads a planet; the report's detail depends on espionage technology.
 - **debris field** — 30 % of destroyed *ships'* metal/crystal, left in orbit; recyclers collect it. Defences leave none.
 - **moon** — formed by chance at a battle: 1 % per 100 000 *ship* debris, capped at 20 %, zero below 100 000; mines nothing; hosts phalanx and jump gate.
-- **phalanx** — moon building that reveals fleets at a planet in range; 5 000 deuterium a scan.
+- **phalanx** — moon building that reveals fleets at a planet in range; range = level² − 1 systems in the same galaxy (level 1 = own system only, 2 = 3, 4 = 15); 5 000 deuterium a scan; moons cannot be scanned (manual → Moons).
+- **jump gate** — moon building (2M/4M/2M, lunar base 1 + hyperspace 7) that moves ships between two of our moons instantly, no fuel, no cargo; both gates rest 60 min (manual → Moons).
+- **IPM / ABM** — interplanetary missile (12.5k/2.5k/10k, silo 4): 12 000 damage to turrets only, ignores domes, nothing it kills rebuilds, range 5 × impulse − 1 systems; anti-ballistic missile (8k/0/2k, silo 2) destroys exactly one incoming IPM. A silo level holds 5 IPM and 10 ABM (manual → Missiles, `codex`).
+- **nanite factory** — capital-class facility (1M/500k/100k; robotics 10 + computer 10) that halves build time of buildings, ships and turrets *on that planet only* (`2^nanite` in the build-time formula).
 - **protection rule / 5× gate** — attacks refused when attacker score ≥ 5× defender *invested* score (resources spent; held resources count for neither side — `combat_rules.attack_protection_basis`, manual → Combat → Protection).
 - **bashing limit** — six attacks by one commander on one planet per 24 h.
 - **inactive** — a player whose planets show no growth/activity across scans; the natural raid target.
