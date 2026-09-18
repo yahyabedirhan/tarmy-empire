@@ -1,11 +1,12 @@
-# Plan — next 24 h from 2026-09-17T23:16Z, in lanes
+# Plan — next 24 h from 2026-09-18T17:05Z, in lanes
 
 Rolling plan, rewritten at every hand-off (`empire-cycle` step 7). Times UTC. One lane per row group (Commander 2026-09-17T19:45Z); each line is a wake → action → gate. Done lines are dropped. Sources: decisions 013 (roles), 014 (roadmap, proposed), 015 (walls, proposed) — **standing priority (Commander 20:55Z): planet 6 + crystal mining first, defence second** — crystal-priced wall parts only from what is left after :1's levels and the research lane.
 
 ## Mining (on-role only, 013)
 | when | where | action | gate |
 |---|---|---|---|
-| 23:50:00Z | :1 | crystal 16 lands → crystal 17 (88.5k/44.3k), solar 15, robotics 8; then 18 (141.7k/70.8k), 19 (226.7k/113.3k) — feed every cycle: :3 crystal, :10 metal+crystal, :14 deut | feeds; energy spare ≥ 0 |
+| ~19:30Z | :1 | crystal 21 (580.3k M / 290.1k C, 7.7 h) after 4 more satellites — metal shuttles hourly from :3/:10/:9/capital | metal |
+| after 21 | :1 | crystal 22 priced then (≈ 930k M / 465k C); compare with :3 crystal 21 (290k C) and plasma 6 (128k C) | payback |
 | 23:46:51Z | :3 | crystal_mine 20 lands → robotics 6–8 first (idle metal), crystal 21 (290k C) when the defence lane leaves crystal | crystal |
 | every cycle | :10, :9 | **no crystal or metal mines** (crystal frozen 19/18; metal over-stocked → stock rule) | — |
 | every cycle | :14 | synths only if deuterium gates a plan (it does not) | — |
@@ -14,9 +15,9 @@ Rolling plan, rewritten at every hand-off (`empire-cycle` step 7). Times UTC. On
 ## Research (014 order — always busy)
 | when | action | gate |
 |---|---|---|
-| 23:36:32Z | hyperspace 3 lands → computer 7 (25.6k C / 38.4k D, 8th slot) | 25.6k C at the capital |
-| ~00:10Z | armour 10 (512k M, 11.4 h) — runs overnight while all crystal feeds :1 | 512k M at the capital |
-| ~12:00Z 09-18 | energy 8 (102.4k C / 51.2k D) → plasma 1–4 (< 1 h each) → plasma 5 — P4 test: lab 1 on :10 and start plasma 1 from there | :1 past crystal ~18; crystal slack |
+| 19:12:25Z | plasma 5 lands → weapons 9 (204.8k M / 51.2k C, 5.7 h) | 51k C at the capital |
+| ~01:00Z 09-19 | computer 8 (51.2k C / 76.8k D) → 9 → 10 (nanite gate, 11 fleet slots) | crystal slack |
+| when crystal allows | lab 9 (51k/102k/51k) — start research from :10's lab while it builds (P4 confirmed) | crystal |
 
 ## Advanced tech (014 H1)
 | when | where | action | gate |
