@@ -1,9 +1,9 @@
-# Handoff — 2026-09-18T17:05Z (cycle 58, session running)
+# Handoff — 2026-09-18T21:05Z (cycle 61, session running)
 
 ## Do this first
 Run `/empire-cycle`. Standing priority (Commander 20:55Z): **planet 6 + crystal mining first, defence second.** Commander is away until 09-18 and trusts the Lieutenant to decide alone. In this order:
-1. **Research: plasma 5 → 19:12:25Z (258562).** Next per 014: weapons 9 (204.8k M / 51.2k C, 5.7 h — walls) unless crystal is slack, then computer 8 (51.2k C / 76.8k D) → 9 → 10 (nanite gate). Plasma 1–4 landed 14:41–16:34Z (+4 % M / +2.6 % C empire-wide). **Colony-lab trick confirmed (P4):** research can be started from :10's lab 1 while the capital lab is busy/idle — lab 9 at the capital no longer idles the slot.
-2. **:1 (crystal 20 since 13:37Z, ~19k C/h): crystal 21 = 580.3k M / 290.1k C** — metal is the gate: :1 holds ~470k M (est.) after rounds 9–10; two more shuttle rounds (:3 45k, :10 25k, :9 20k, capital 25k per round) then queue it. Crystal on :1 accumulates on its own (needs ~290k; holds ~130k est.). Energy: 3 satellites bought (64 E each, 31 C/E); crystal 21 needs +209 E → 4 more satellites before it.
+1. **Research: weapons 9 → 02:44:05Z 09-19 (260888).** Then computer 8 (51.2k C / 76.8k D) → 9 → 10 (nanite gate). Done today: plasma 1–5 (19:12Z), hyperspace 4 (20:46Z). **Keep ≥ 60k C and ≥ 200k M at the capital** before draining planets into a colony level — the slot idled 51 min at 19:12Z for want of it. Plasma 1–4 landed 14:41–16:34Z (+4 % M / +2.6 % C empire-wide). **Colony-lab trick confirmed (P4):** research can be started from :10's lab 1 while the capital lab is busy/idle — lab 9 at the capital no longer idles the slot.
+2. **:1 crystal 21 → 03:47:25Z 09-19 (260370).** 7 satellites (+448 E). After 21: `codex` crystal 22 (≈ 930k M / 465k C) — compare with :3 crystal 21 (290k C) and plasma 6 (128k C) before feeding again; no shuttles to :1 until then.
 3. **23:46:51Z :3 crystal 20 lands** → robotics 6–7 queued behind it (→ 00:23Z); robotics 8 needs 15.4k C; crystal 21 (290k C) only when :1's levels cost more per C/h than it.
 4. Walls (second priority, metal-only parts): :10 has 150 RL / 5 HL / SSD; :9 150 RL; capital 200 RL; :3 52; :14 40. Next crystal-priced batches (LL/HL/ion/gauss/LSD) only from crystal left after :1 and research — none tonight.
 5. **08:00Z** leaderboard snapshot (`intel/leaderboard/`, run `growth.py`).
@@ -19,6 +19,7 @@ Run `/empire-cycle`. Standing priority (Commander 20:55Z): **planet 6 + crystal 
 - Planet 6 fed 11 flights (~250k M / 90k C / 55k D): crystal 15 landed 22:48Z, 16 → 23:50Z, solar 14, robotics 7, storage 3/3 (cap 375k). Crystal 6.4k → ~8.5k C/h there.
 - Research: laser 10 landed 22:06Z, energy 7 landed 23:15Z, hyperspace 3 → 23:36Z. Metal for armour 10 gathering at the capital (~330k of 512k by 23:18Z).
 - Walls (metal only): :10 150 RL + SSD + 5 HL; :9 150 RL; capital 200 RL; :14 40 RL; :3 52 RL. Shipyard 6 on :10 and :9; robotics 8 on :10, 7 on :9, 6 on :14.
+- 20:04Z leaderboard snapshot 3: rank 29, 19 565, +1 892 in 12 h (3 763/day, growth rank 36/491) — the afternoon was spent on long builds (crystal 21) that count only when queued.
 - 12:16Z armour 10 landed; energy 8 14:33Z; plasma 1–4 by 16:34Z; plasma 5 → 19:12Z. :10/:9 walls from their own crystal: +5 HL, +20 LL, +5 ion each (10:28–12:44Z). :3 robotics 8 (09:41Z), :14 robotics 7 (09:10Z).
 - 08:00Z leaderboard snapshot 2: **rank 29, 17 673, +3 479 in 12 h = 6 779/day, growth rank 12 of 485**; band players grow 2–5k/day; necati (#3) 28k/day.
 - 00:58Z status report: rank 30, score 16 850. Cycle 52 alliance skim: 18 messages, all trade offers, no threats.
