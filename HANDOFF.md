@@ -1,9 +1,9 @@
-# Handoff — 2026-09-17T23:16Z (cycle 51, session running; Commander away until 2026-09-18)
+# Handoff — 2026-09-18T01:31Z (cycle 52, session running; Commander away until 2026-09-18 daytime)
 
 ## Do this first
 Run `/empire-cycle`. Standing priority (Commander 20:55Z): **planet 6 + crystal mining first, defence second.** Commander is away until 09-18 and trusts the Lieutenant to decide alone. In this order:
-1. **23:36:32Z hyperspace 3 lands** → `queue_research(tech="computer")` 7 (25.6k C / 38.4k D) if the capital holds 25.6k C, else `armour` 10 (512k M) if it holds 512k M, else the first that becomes affordable (capital gets 10k C/h; metal lands 23:18Z 75k, then :9/:10 shuttles). Energy 8 + plasma wait until :1 is past crystal ~18 (crystal goes to :1 first).
-2. **23:50:00Z :1 crystal 16 lands** → crystal 17 (88.5k M / 44.3k C) + solar 15 + robotics 8 (51.2k/15.4k/25.6k) as feeds allow. Feed pattern every cycle: :3 → :1 (its 14k C/h, 1 LC + 4 SC), :10 → :1 (metal + its 11.7k C/h, 3 LC), :14 → :1 deut (1 LC, 25k). :1 holds ~120k M / 30k C / 10k D at 23:15Z.
+1. **Research slot busy: armour 10 → 12:16:36Z.** Then energy 8 (102.4k C / 51.2k D) if crystal is slack (:1 past crystal 19), else weapons 9 (204.8k M / 51.2k C).
+2. **:1 queue: robotics 8 → 02:09Z, crystal 18 → 04:02:43Z, solar 16 → 04:27Z.** Then crystal 19 (226.7k M / 113.3k C): shuttle crystal from :3 (16k C/h), :9 and :10 (11.7k C/h each) every ~1.5 h — :1 holds ~90k M / 20k C after the 18 spend. Nothing else on :1 until 19 is paid.
 3. **23:46:51Z :3 crystal 20 lands** → robotics 6–7 queued behind it (→ 00:23Z); robotics 8 needs 15.4k C; crystal 21 (290k C) only when :1's levels cost more per C/h than it.
 4. Walls (second priority, metal-only parts): :10 has 150 RL / 5 HL / SSD; :9 150 RL; capital 200 RL; :3 52; :14 40. Next crystal-priced batches (LL/HL/ion/gauss/LSD) only from crystal left after :1 and research — none tonight.
 5. **08:00Z** leaderboard snapshot (`intel/leaderboard/`, run `growth.py`).
@@ -19,6 +19,7 @@ Run `/empire-cycle`. Standing priority (Commander 20:55Z): **planet 6 + crystal 
 - Planet 6 fed 11 flights (~250k M / 90k C / 55k D): crystal 15 landed 22:48Z, 16 → 23:50Z, solar 14, robotics 7, storage 3/3 (cap 375k). Crystal 6.4k → ~8.5k C/h there.
 - Research: laser 10 landed 22:06Z, energy 7 landed 23:15Z, hyperspace 3 → 23:36Z. Metal for armour 10 gathering at the capital (~330k of 512k by 23:18Z).
 - Walls (metal only): :10 150 RL + SSD + 5 HL; :9 150 RL; capital 200 RL; :14 40 RL; :3 52 RL. Shipyard 6 on :10 and :9; robotics 8 on :10, 7 on :9, 6 on :14.
+- 00:58Z status report: rank 30, score 16 850. Cycle 52 alliance skim: 18 messages, all trade offers, no threats.
 - Leaderboard snapshot 19:41Z: **rank 48, 14 194** (#1 aranella 111 911). `intel/leaderboard/growth.py` compares snapshots.
 - AGENTS.md now records how the Commander wants to be asked (high-level trade-offs only, short, drawn; push-backs are checked, not obeyed; nothing idles; keep AGENTS.md current). Memory file saved too.
 
