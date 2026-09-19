@@ -1,41 +1,33 @@
-# Handoff — 2026-09-19T03:55Z (cycle 64, session running)
+# Handoff — 2026-09-19T08:12Z (session stopped by the Commander after cycle 66)
 
 ## Do this first
-Run `/empire-cycle`. Standing priority (Commander 20:55Z): **planet 6 + crystal mining first, defence second.** Commander is away until 09-18 and trusts the Lieutenant to decide alone. In this order:
-1. **Research: computer 8 → 04:06:03Z (263972).** Then computer 9 (102.4k C / 153.6k D — deut from :14/:9/:10 tanks, ~600k banked) → 10 (nanite gate). Done: weapons 9 (02:44Z), hyperspace 4, plasma 1–5, armour 10.
-2. **Crystal lane, ranked by payback (013 clarification, 03:50Z):** capital crystal 19 (113.3k C + 6 satellites, 80 h, 1 field) → :10 crystal 20 (181.3k C, 95 h) → :9 crystal 20 (same) → :3 crystal 21 (290k C, 120 h) → :1 crystal 22 (928k M / 464k C, 135 h). **:1 is now the crystal exporter** (~22k C/h, nothing to spend on): 2 LC built at 04:13Z, 2 more when 45k M lands (87851, 04:06Z); 50k C per LC pair per trip. Walls on :10/:9 pause at 6 gauss each until their crystal 20s are bought (mining first).
-3. **23:46:51Z :3 crystal 20 lands** → robotics 6–7 queued behind it (→ 00:23Z); robotics 8 needs 15.4k C; crystal 21 (290k C) only when :1's levels cost more per C/h than it.
-4. Walls (second priority, metal-only parts): :10 has 150 RL / 5 HL / SSD; :9 150 RL; capital 200 RL; :3 52; :14 40. Next crystal-priced batches (LL/HL/ion/gauss/LSD) only from crystal left after :1 and research — none tonight.
-5. **08:00Z** leaderboard snapshot (`intel/leaderboard/`, run `growth.py`).
+Run `/empire-cycle`. **08:39:31Z espionage 6 lands (266826)** → `queue_research(tech="computer")` 10 (204.8k C / 307.2k D; nanite gate). Crystal is there (125k C landing 08:15:08Z, fleet 88685); deuterium ~234k of 307k — ship 60k D from :9 (2 LC + 2 SC, home ~08:20Z) and 25k from :14 first. Then capital crystal 19 (226.7k M / 113.3k C + 6 satellites): 60k M from :9/:10 when their fleets are home.
 
-## What changed this session (cycles 49–51, 18:40Z → 23:16Z)
-- **Planet 6 founded 18:59:01Z at 5:316:1 (id 6147, 158 fields, 209..249)** and left BOOTSTRAP at 19:38Z — 39 min, on 48k M / 13k C / 6k D of feeds. Now crystal 11 → 13 queued, solar 11, robotics 5, shipyard 1. Metal capped at 6 (Commander).
-- **Decision 013 accepted and committed** (planets produce on-role, ship the rest; stock rule; logistics is a product; bootstrap exit by role). DOCTRINE, `empire-colonize`, `empire-farm`, `empire/research.md`, AGENTS.md updated (15cf3c3).
-- **Research round 2 done** (`reports/research/2026-09-17T19-35Z_round-2.md`): decisions **014 (advanced roadmap in lanes)** and **015 (class walls, 9 simulations)** written as *proposed*; GLOSSARY/SOURCES/research.md fixed. Verdict: no 10× facility; plasma is the compounding %; walls are the urgent gap (:10 today is a free farm for 60 cruisers).
-- Walls started: RL batches on :10/:9 cancelled (26 / 10 built, refunds 148k / 86k) for shipyard 3–6 on both (HL/ion/gauss/LSD need 4/4/6/6); capital RL ×45 → 20:49Z; :3 RL ×22 → 21:13Z; :14 shipyard 1 + RL ×40 → 22:40Z.
-- Robotics: :10 → 8 (20:58Z), :9 → 7 (20:46Z), :1 → 5; :3 gets 25k D (20:15Z) for 6–8.
-- Logistics: 3 LC built at the capital; 125k M shipped to the capital; :14 spent down (metal 0, deut 179k reserve).
-- 20:55Z Commander: planet 6 + crystal mining first, defence second; "send lots of resources to the new colony"; away until 09-18. 014 and 015 set `accepted` with that priority.
-- Planet 6 fed 11 flights (~250k M / 90k C / 55k D): crystal 15 landed 22:48Z, 16 → 23:50Z, solar 14, robotics 7, storage 3/3 (cap 375k). Crystal 6.4k → ~8.5k C/h there.
-- Research: laser 10 landed 22:06Z, energy 7 landed 23:15Z, hyperspace 3 → 23:36Z. Metal for armour 10 gathering at the capital (~330k of 512k by 23:18Z).
-- Walls (metal only): :10 150 RL + SSD + 5 HL; :9 150 RL; capital 200 RL; :14 40 RL; :3 52 RL. Shipyard 6 on :10 and :9; robotics 8 on :10, 7 on :9, 6 on :14.
-- 20:04Z leaderboard snapshot 3: rank 29, 19 565, +1 892 in 12 h (3 763/day, growth rank 36/491) — the afternoon was spent on long builds (crystal 21) that count only when queued.
-- 12:16Z armour 10 landed; energy 8 14:33Z; plasma 1–4 by 16:34Z; plasma 5 → 19:12Z. :10/:9 walls from their own crystal: +5 HL, +20 LL, +5 ion each (10:28–12:44Z). :3 robotics 8 (09:41Z), :14 robotics 7 (09:10Z).
-- 08:00Z leaderboard snapshot 2: **rank 29, 17 673, +3 479 in 12 h = 6 779/day, growth rank 12 of 485**; band players grow 2–5k/day; necati (#3) 28k/day.
-- 00:58Z status report: rank 30, score 16 850. Cycle 52 alliance skim: 18 messages, all trade offers, no threats.
-- Leaderboard snapshot 19:41Z: **rank 48, 14 194** (#1 aranella 111 911). `intel/leaderboard/growth.py` compares snapshots.
-- AGENTS.md now records how the Commander wants to be asked (high-level trade-offs only, short, drawn; push-backs are checked, not obeyed; nothing idles; keep AGENTS.md current). Memory file saved too.
+## Where we are
+- Six planets GROWING, factor 1, no hostile fleets. **engin (BTC, rank 5, 96k) probed :10 and the capital 07:03Z — both probes caught**; he can attack us until his score passes 5× ours (108.7k). `intel/players/engin.md`.
+- Rank 28, 21 734 (08:02Z; +4 350/day, growth rank 19/484). Empire ~72k C/h; planet 6 at crystal 21 (22.5k C/h) and exporting.
+- Research: espionage 6 → 08:39Z. Done since 09-17: laser 10, energy 7–8, plasma 1–5, hyperspace 3–4, computer 7–9, armour 10, weapons 9, impulse 4.
+- Walls: capital 200 RL / 10 LL / 2 gauss / SSD; :10 149 RL / 20 LL / 10 HL / 5 ion / **9 gauss** / SSD; :9 150 RL / 20 LL / 5 HL / 5 ion / 6 gauss; :3 52 RL; :14 40 RL; :1 none (shipyard 4).
+- In the air: 88685 (125k C :3 → capital, 08:15Z). Fleets home: :10 3 LC, :9 2 LC + 2 SC, :3 1 LC + 4 SC **+ 5 LC deployed from :1**, :14 1 LC, capital 1 LC, :1 none.
+- Goal served: decision 013 (produce on-role, ship the rest) + 014 lanes + Commander priority 20:55Z 09-18 (planet 6 + crystal mining first, defence second).
 
-## Where we are (20:05Z)
-- 6 planets GROWING, factor 1, no hostile fleets. Fleets: 83027 (25k M → capital 20:07Z), 83055 (25k D → :3 20:15Z).
-- Queues: :1 → 20:47:54Z; :10 shipyard 6 → 20:18:37Z then robotics 8 → 20:58:33Z; :9 shipyard 6 → 20:23:47Z then robotics 7 → 20:46:36Z; :3 crystal 20 → 23:46:51Z + RL ×22 → 21:13:46Z; :14 RL ×40 → 22:40:55Z; capital RL ×45 → 20:49:40Z; research laser 10 → 22:06:38Z.
-- Stocks ~20:00Z: capital ~100k M / 22k C / 98k D; :10 ~700k M / 48k C / 190k D (after refund); :9 ~560k M / 25k C / 180k D; :3 ~290k M / 17k C / 1k D (+25k D inbound); :14 ~0 M / 17k C / 179k D; :1 ~35k M / 20k C / 3k D.
-- MCP: `http 429 error code 1015` twice at 19:16Z (rate limit) — cleared on the third try. `build_ships` refuses without metal (409 "not enough resources"). Shipyard upgrade refused while a batch runs → cancel the batch (refund = unbuilt share) first.
-- `capcheck.py` in the scratchpad (recreate if lost: parse `planet_detail[]`, print stock/cap per pool, flag ≥ 80 %).
+## Next actions
+1. **Research lane**: computer 10 (08:39Z) → then computer 10 done means nanite gate open (robotics 10 at the capital next: 9 = 102k/31k/51k, 10 = 205k/61k/102k). Keep ≥ 60k C and ≥ 200k M at the capital before draining planets — `empire/research.md`.
+2. **Crystal lane, by payback** (013 clarification 03:50Z 09-19): capital crystal 19 (80 h) → :10 crystal 20 (181k C — :10 holds ~188k C but only ~130k M; needs 363k M) → :9 crystal 20 → :3 crystal 21 (290k C, has 274k−125k) → :1 crystal 22. **Metal is the gate for every mine level now** (empire 85k M/h): :10/:9 metal stays home for their own mines; :1 exports crystal only. `empire/planets/*.md`.
+3. **Defence lane** (015, second priority): :10/:9 gauss to 10 + LSD from their own crystal once their crystal 20s are queued; capital LSD + silo 2 + 10 ABM when crystal is slack; :3/:14 shipyard 6 + class wall later. If `fleet.incoming` from engin: `simulate_combat`, deploy the 62 LF away, alert the Commander.
+4. **Leaderboard** every 12 h (08:00Z / 20:00Z): `leaderboard(limit=500)` → `intel/leaderboard/<ts>.json`, run `growth.py`; note engin's score vs our 5× threshold.
+5. **Status report** at cycle 68 (every 4th) with the alliance skim (four things only; chat is trade talk).
+Later: :1 robotics 9 (102k/31k/51k D — deut from :14); :14 robotics 8; lab 9 at the capital (start research from :10's lab 1 while it builds — confirmed 14:33Z 09-18); espionage 6 unlocks nothing we need.
 
 ## Questions for the Commander
-- none open (crystal split answered by the 20:55Z priority: mines first).
-- From round 2 (`reports/research/…round-2.md` → Open questions): moon attempts (Commander-only, recommend not now); dark matter — boost :3 (100 DM) vs rush nanite vs hoard (recommend hoard until nanite).
+- none open. Standing priority: planet 6 + crystal mining first, defence second (20:55Z 09-18).
 
-## Uncommitted strategy/doc changes awaiting approval
-- none (014 and 015 are committed as `proposed`; their DOCTRINE diffs are applied on the Commander's answer).
+## Uncommitted strategy changes awaiting approval
+- none. (013's "frozen" table is clarified in `empire/planets/G5-S316-P1.md` 03:50Z — crystal levels compete empire-wide by payback while crystal gates; fold into `strategy/decisions/013` when the Commander confirms.)
+
+## What changed this session (2026-09-17T18:40Z → 09-19T08:12Z, cycles 49–66)
+- Planet 6 founded 18:59Z 09-17 and taken to **crystal 21** in 33 h (`empire/planets/G5-S316-P1.md`, `ops/colonies/G5-S316-P1.md`); empire crystal 46k → ~72k C/h.
+- Decisions 013 (organs), 014 (roadmap in lanes), 015 (class walls) written and accepted; research round 2 (`reports/research/2026-09-17T19-35Z_round-2.md`); AGENTS.md records how the Commander wants to be asked.
+- Research: 11 levels landed (laser 10 → impulse 4); colony-lab trick confirmed (P4).
+- Walls: 1.7M idle metal spent — RL caps everywhere, shipyard 6 on :10/:9, 9 + 6 gauss, HL/LL/ion; rank 75 → 28.
+- Intel: leaderboard snapshots 4× (`intel/leaderboard/`, `growth.py`); engin probe 07:03Z 09-19 (`intel/players/engin.md`). `tools/ov.py` summarises `empire_overview`.
