@@ -18,3 +18,5 @@ Non-aggression is BJACK-wide (strategy/ALLIANCE.md) — we do not retaliate or p
 
 ## 23:03Z — albaycasey (BTC, 5:305:5) probed the capital too
 Three BTC accounts probing us in one day looks like target-picking, not curiosity. Same wake: an attack `fleet.incoming` → deploy the capital's ships to :10, alert the Commander. Raise with the Commander whether to mention it in BJACK chat (the pact is BJACK-wide; BTC probing BJACK is at least worth a line from necati).
+
+- 23:03:46–23:04:06Z: albaycasey's sweep hit capital, :10, :3, :9, :14 — **all five caught** (`planet.spied caught: true`). No `planet.spied` event arrived for Furukhai's four flights at 22:42Z: his scans most likely succeeded (higher espionage tech — see intel/players/Furukhai.md).
