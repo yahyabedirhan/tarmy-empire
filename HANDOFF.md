@@ -1,9 +1,9 @@
-# Handoff — 2026-09-18T21:05Z (cycle 61, session running)
+# Handoff — 2026-09-19T03:55Z (cycle 64, session running)
 
 ## Do this first
 Run `/empire-cycle`. Standing priority (Commander 20:55Z): **planet 6 + crystal mining first, defence second.** Commander is away until 09-18 and trusts the Lieutenant to decide alone. In this order:
-1. **Research: weapons 9 → 02:44:05Z 09-19 (260888).** Then computer 8 (51.2k C / 76.8k D) → 9 → 10 (nanite gate). Done today: plasma 1–5 (19:12Z), hyperspace 4 (20:46Z). **Keep ≥ 60k C and ≥ 200k M at the capital** before draining planets into a colony level — the slot idled 51 min at 19:12Z for want of it. Plasma 1–4 landed 14:41–16:34Z (+4 % M / +2.6 % C empire-wide). **Colony-lab trick confirmed (P4):** research can be started from :10's lab 1 while the capital lab is busy/idle — lab 9 at the capital no longer idles the slot.
-2. **:1 crystal 21 → 03:47:25Z 09-19 (260370).** 7 satellites (+448 E). After 21: `codex` crystal 22 (≈ 930k M / 465k C) — compare with :3 crystal 21 (290k C) and plasma 6 (128k C) before feeding again; no shuttles to :1 until then.
+1. **Research: computer 8 → 04:06:03Z (263972).** Then computer 9 (102.4k C / 153.6k D — deut from :14/:9/:10 tanks, ~600k banked) → 10 (nanite gate). Done: weapons 9 (02:44Z), hyperspace 4, plasma 1–5, armour 10.
+2. **Crystal lane, ranked by payback (013 clarification, 03:50Z):** capital crystal 19 (113.3k C + 6 satellites, 80 h, 1 field) → :10 crystal 20 (181.3k C, 95 h) → :9 crystal 20 (same) → :3 crystal 21 (290k C, 120 h) → :1 crystal 22 (928k M / 464k C, 135 h). **:1 is now the crystal exporter** (~22k C/h, nothing to spend on): 2 LC built at 04:13Z, 2 more when 45k M lands (87851, 04:06Z); 50k C per LC pair per trip. Walls on :10/:9 pause at 6 gauss each until their crystal 20s are bought (mining first).
 3. **23:46:51Z :3 crystal 20 lands** → robotics 6–7 queued behind it (→ 00:23Z); robotics 8 needs 15.4k C; crystal 21 (290k C) only when :1's levels cost more per C/h than it.
 4. Walls (second priority, metal-only parts): :10 has 150 RL / 5 HL / SSD; :9 150 RL; capital 200 RL; :3 52; :14 40. Next crystal-priced batches (LL/HL/ion/gauss/LSD) only from crystal left after :1 and research — none tonight.
 5. **08:00Z** leaderboard snapshot (`intel/leaderboard/`, run `growth.py`).
