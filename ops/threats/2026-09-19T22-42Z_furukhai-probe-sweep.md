@@ -15,3 +15,6 @@ status: watching
 - No attack by 06:00Z 09-20 → close as `probe only`.
 ## BTC pact
 Non-aggression is BJACK-wide (strategy/ALLIANCE.md) — we do not retaliate or probe back; if he attacks, the Commander decides whether to raise it in alliance chat.
+
+## 23:03Z — albaycasey (BTC, 5:305:5) probed the capital too
+Three BTC accounts probing us in one day looks like target-picking, not curiosity. Same wake: an attack `fleet.incoming` → deploy the capital's ships to :10, alert the Commander. Raise with the Commander whether to mention it in BJACK chat (the pact is BJACK-wide; BTC probing BJACK is at least worth a line from necati).
