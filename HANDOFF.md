@@ -1,10 +1,9 @@
-# Handoff — 2026-09-20T13:45Z (session stopped by the Commander after cycle 75; commander MCP locked out since 12:25Z)
+# Handoff — 2026-09-20T13:50Z (session stopped by the Commander after cycle 75)
 
 ## Do this first
-1. **Confirm the commander MCP is authenticated** — every call since 12:25:16Z returned `http 401: invalid token` (`queue_research`, `research_levels`, `empire_overview`, `fleets`); `next_event` still delivered events. Not in `docs/mcp/COMMANDER.md` → Troubleshooting. If `empire_overview` still 401s, stop and tell the Commander; nothing in the loop can fix it.
-2. Run `/empire-cycle`. First call: **`queue_research(tech="plasma")` 7** (256k C; the capital held ~345k C at 12:25Z) — the research slot has been idle since HD 4 landed 12:25:16Z.
-3. **Spread the capital's stock**: it held ~200k M / ~345k C / ~350k D at 12:25Z and **Furukhai (BTC, rank 7, 13 battleships, 5:314:8) scanned all six planets at 12:51Z** (only :10's probe caught). Capital wall 200 RL / 10 LL / 2 gauss / SSD / LSD — sim vs 13 BS + 20 CR was 4 draws / 1 loss (`ops/threats/2026-09-19T22-42Z_furukhai-probe-sweep.md`). Move deut/crystal that plasma 7 does not need to :10 (strongest wall) or lock it in a probe batch; check `fleets` for anything inbound.
-4. Then the normal loop: :10/:9 metal → capital for nanite 1 (1M M / 500k C / 100k D; robotics 10 + computer 10 done); :3 crystal 21 landed 14:36:31Z → shipyard 2–4 queued behind it → LL ×30 (45k M / 15k C); 20:00Z leaderboard.
+1. Run `/empire-cycle`. First call: **`queue_research(tech="plasma")` 7** (256k C; the capital held ~345k C at 12:25Z) — the research slot has been idle since HD 4 landed 12:25:16Z (the previous session's commander token expired at 12:25Z; the Commander re-authenticated at 13:50Z — a fresh session picks the new token up).
+2. **Spread the capital's stock**: it held ~200k M / ~345k C / ~350k D at 12:25Z and **Furukhai (BTC, rank 7, 13 battleships, 5:314:8) scanned all six planets at 12:51Z** (only :10's probe caught). Capital wall 200 RL / 10 LL / 2 gauss / SSD / LSD — sim vs 13 BS + 20 CR was 4 draws / 1 loss (`ops/threats/2026-09-19T22-42Z_furukhai-probe-sweep.md`). Move deut/crystal that plasma 7 does not need to :10 (strongest wall) or lock it in a probe batch; check `fleets` for anything inbound.
+3. Then the normal loop: :10/:9 metal → capital for nanite 1 (1M M / 500k C / 100k D; robotics 10 + computer 10 done); :3 crystal 21 landed 14:36:31Z → shipyard 2–4 queued behind it → LL ×30 (45k M / 15k C); 20:00Z leaderboard.
 
 ## Where we are (last full read 11:40Z; events until 13:45Z)
 - Six planets GROWING, factor 1. **albaycasey (BTC, rank 23) raided :3 and :9 at 06:01/06:07Z** with 31 and 228 ships (33 BC / 14 BS / 69 CR…, tech W6/S6/A10): walls fell (70 % rebuilt), 87 satellites lost and rebought, loot ≈ 165k (116k D). 190k C hidden in a probe batch and refunded. `ops/defence/2026-09-20T05-35Z_albaycasey-attack-p3-p9.md`.
@@ -37,4 +36,4 @@
 - Raided by albaycasey (BTC) 06:01/06:07Z — `ops/defence/…`; lessons drafted. Furukhai and engin probing; BTC intent recorded in `intel/players/`.
 - Leaderboard snapshots 19:56Z, 08:00Z; status reports 19:58Z, 07:22Z.
 - Commander built a colony ship 19:14Z (TUI).
-- 12:25Z: commander MCP token expired — session ended blocked.
+- 12:25Z: commander MCP token expired (`http 401: invalid token` on every call; `next_event` kept delivering) — 1.4 h of idle research slot; re-authenticated by the Commander 13:50Z.
