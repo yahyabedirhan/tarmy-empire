@@ -1,0 +1,3208 @@
+{
+ "taken_at": "2026-09-20T08:00Z",
+ "limit": 500,
+ "players": [
+  {
+   "rank": 1,
+   "user_id": 3418,
+   "username": "aranella",
+   "score": 137758,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 2,
+   "user_id": 3434,
+   "username": "intruder",
+   "score": 129716,
+   "alliance": "BTC"
+  },
+  {
+   "rank": 3,
+   "user_id": 3908,
+   "username": "necati",
+   "score": 118986,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 4,
+   "user_id": 1,
+   "username": "cobanov",
+   "score": 109560,
+   "alliance": "BTC"
+  },
+  {
+   "rank": 5,
+   "user_id": 3596,
+   "username": "engin",
+   "score": 109112,
+   "alliance": "BTC"
+  },
+  {
+   "rank": 6,
+   "user_id": 3430,
+   "username": "tarla",
+   "score": 93508,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 7,
+   "user_id": 3752,
+   "username": "Furukhai",
+   "score": 82164,
+   "alliance": "BTC"
+  },
+  {
+   "rank": 8,
+   "user_id": 3487,
+   "username": "Cosmus",
+   "score": 73888,
+   "alliance": "BTC"
+  },
+  {
+   "rank": 9,
+   "user_id": 3889,
+   "username": "merttoprak",
+   "score": 71047,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 10,
+   "user_id": 3407,
+   "username": "ege",
+   "score": 67504,
+   "alliance": "BTC"
+  },
+  {
+   "rank": 11,
+   "user_id": 3477,
+   "username": "ekintkara",
+   "score": 61913,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 12,
+   "user_id": 3980,
+   "username": "NeC",
+   "score": 60233,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 13,
+   "user_id": 3449,
+   "username": "Safak",
+   "score": 50181,
+   "alliance": "BTC"
+  },
+  {
+   "rank": 14,
+   "user_id": 3531,
+   "username": "general",
+   "score": 48632,
+   "alliance": "BTC"
+  },
+  {
+   "rank": 15,
+   "user_id": 4040,
+   "username": "avaz",
+   "score": 47171,
+   "alliance": "BTC"
+  },
+  {
+   "rank": 16,
+   "user_id": 3478,
+   "username": "gmemik",
+   "score": 43729,
+   "alliance": "BTC"
+  },
+  {
+   "rank": 17,
+   "user_id": 3419,
+   "username": "emre-tarhan",
+   "score": 43454,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 18,
+   "user_id": 4118,
+   "username": "zgr",
+   "score": 43110,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 19,
+   "user_id": 3976,
+   "username": "EfeBaslilar",
+   "score": 42992,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 20,
+   "user_id": 3483,
+   "username": "tweisdorf",
+   "score": 42746,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 21,
+   "user_id": 3433,
+   "username": "AytuRed",
+   "score": 41342
+  },
+  {
+   "rank": 22,
+   "user_id": 4125,
+   "username": "mnzv",
+   "score": 37626,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 23,
+   "user_id": 3696,
+   "username": "albaycasey",
+   "score": 35917,
+   "alliance": "BTC"
+  },
+  {
+   "rank": 24,
+   "user_id": 3453,
+   "username": "notmar",
+   "score": 32629
+  },
+  {
+   "rank": 25,
+   "user_id": 3450,
+   "username": "Oguzhan",
+   "score": 32365,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 26,
+   "user_id": 4101,
+   "username": "egemengurallar",
+   "score": 28700,
+   "alliance": "SPQR"
+  },
+  {
+   "rank": 27,
+   "user_id": 3719,
+   "username": "zaphodbeeblebrox",
+   "score": 26025,
+   "alliance": "BTC"
+  },
+  {
+   "rank": 28,
+   "user_id": 3698,
+   "username": "omer",
+   "score": 26006,
+   "alliance": "BTC"
+  },
+  {
+   "rank": 29,
+   "user_id": 3913,
+   "username": "DenizYoldas",
+   "score": 25372,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 30,
+   "user_id": 3816,
+   "username": "yabepa",
+   "score": 25109,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 31,
+   "user_id": 339,
+   "username": "harda69",
+   "score": 20064,
+   "alliance": "DAUGHT"
+  },
+  {
+   "rank": 32,
+   "user_id": 375,
+   "username": "akirkwood2007",
+   "score": 19538
+  },
+  {
+   "rank": 33,
+   "user_id": 67,
+   "username": "Posborne67",
+   "score": 19086,
+   "alliance": "ORDR"
+  },
+  {
+   "rank": 34,
+   "user_id": 350,
+   "username": "mnassar47",
+   "score": 18811
+  },
+  {
+   "rank": 35,
+   "user_id": 310,
+   "username": "yang29",
+   "score": 18800,
+   "alliance": "CARTEL"
+  },
+  {
+   "rank": 36,
+   "user_id": 1644,
+   "username": "Mituuddin",
+   "score": 18729
+  },
+  {
+   "rank": 37,
+   "user_id": 1042,
+   "username": "kgunnarsdottir",
+   "score": 18606,
+   "alliance": "CROSSR"
+  },
+  {
+   "rank": 38,
+   "user_id": 252,
+   "username": "asta7",
+   "score": 18376
+  },
+  {
+   "rank": 39,
+   "user_id": 292,
+   "username": "grantvigil",
+   "score": 18069
+  },
+  {
+   "rank": 40,
+   "user_id": 180,
+   "username": "darcys",
+   "score": 17972,
+   "alliance": "CARTEL"
+  },
+  {
+   "rank": 41,
+   "user_id": 300,
+   "username": "tegan-d",
+   "score": 17839,
+   "alliance": "RISING"
+  },
+  {
+   "rank": 42,
+   "user_id": 670,
+   "username": "rh1998",
+   "score": 17724,
+   "alliance": "CNCLV"
+  },
+  {
+   "rank": 43,
+   "user_id": 1404,
+   "username": "jing-song",
+   "score": 17660
+  },
+  {
+   "rank": 44,
+   "user_id": 879,
+   "username": "olafur_j",
+   "score": 17469,
+   "alliance": "HORNET"
+  },
+  {
+   "rank": 45,
+   "user_id": 237,
+   "username": "jkoch",
+   "score": 17446
+  },
+  {
+   "rank": 46,
+   "user_id": 3464,
+   "username": "MertD",
+   "score": 17320,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 47,
+   "user_id": 649,
+   "username": "lei14",
+   "score": 17160
+  },
+  {
+   "rank": 48,
+   "user_id": 496,
+   "username": "hollowlane",
+   "score": 17073
+  },
+  {
+   "rank": 49,
+   "user_id": 278,
+   "username": "gunnar13",
+   "score": 17056,
+   "alliance": "CROSSR"
+  },
+  {
+   "rank": 50,
+   "user_id": 80,
+   "username": "Bhalloran84",
+   "score": 17031,
+   "alliance": "BRNNG"
+  },
+  {
+   "rank": 51,
+   "user_id": 783,
+   "username": "harriet8",
+   "score": 16848
+  },
+  {
+   "rank": 52,
+   "user_id": 872,
+   "username": "Ra1981",
+   "score": 16704,
+   "alliance": "BRNNG"
+  },
+  {
+   "rank": 53,
+   "user_id": 521,
+   "username": "hannah3",
+   "score": 16663
+  },
+  {
+   "rank": 54,
+   "user_id": 232,
+   "username": "Figtree1993",
+   "score": 16461,
+   "alliance": "CARTEL"
+  },
+  {
+   "rank": 55,
+   "user_id": 1179,
+   "username": "KETTLEBLACK97",
+   "score": 16365
+  },
+  {
+   "rank": 56,
+   "user_id": 348,
+   "username": "Jack_Kahu",
+   "score": 16199,
+   "alliance": "MERIDI"
+  },
+  {
+   "rank": 57,
+   "user_id": 731,
+   "username": "ad1979",
+   "score": 16198
+  },
+  {
+   "rank": 58,
+   "user_id": 856,
+   "username": "HP8",
+   "score": 16179
+  },
+  {
+   "rank": 59,
+   "user_id": 4255,
+   "username": "Neptun",
+   "score": 16110,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 60,
+   "user_id": 655,
+   "username": "ella9",
+   "score": 16099
+  },
+  {
+   "rank": 61,
+   "user_id": 693,
+   "username": "junebug4",
+   "score": 16090,
+   "alliance": "APACT"
+  },
+  {
+   "rank": 62,
+   "user_id": 194,
+   "username": "astas",
+   "score": 16044,
+   "alliance": "FSETTL"
+  },
+  {
+   "rank": 63,
+   "user_id": 250,
+   "username": "stefanolafsson",
+   "score": 16022,
+   "alliance": "CMPNY"
+  },
+  {
+   "rank": 64,
+   "user_id": 669,
+   "username": "aislam",
+   "score": 15843,
+   "alliance": "ORBIT"
+  },
+  {
+   "rank": 65,
+   "user_id": 173,
+   "username": "brickyardcrew",
+   "score": 15757
+  },
+  {
+   "rank": 66,
+   "user_id": 789,
+   "username": "RB80",
+   "score": 15730
+  },
+  {
+   "rank": 67,
+   "user_id": 632,
+   "username": "dfuentes",
+   "score": 15713
+  },
+  {
+   "rank": 68,
+   "user_id": 556,
+   "username": "camille95",
+   "score": 15657,
+   "alliance": "MERIDI"
+  },
+  {
+   "rank": 69,
+   "user_id": 1647,
+   "username": "kd73",
+   "score": 15508
+  },
+  {
+   "rank": 70,
+   "user_id": 962,
+   "username": "aa1977",
+   "score": 15480
+  },
+  {
+   "rank": 71,
+   "user_id": 1780,
+   "username": "naokiy",
+   "score": 15448,
+   "alliance": "MERIDI"
+  },
+  {
+   "rank": 72,
+   "user_id": 741,
+   "username": "JNASH",
+   "score": 15437,
+   "alliance": "CNCLV"
+  },
+  {
+   "rank": 73,
+   "user_id": 4257,
+   "username": "luna",
+   "score": 15397,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 74,
+   "user_id": 553,
+   "username": "shanice_rosario",
+   "score": 15389
+  },
+  {
+   "rank": 75,
+   "user_id": 1023,
+   "username": "fm87",
+   "score": 15360,
+   "alliance": "MERIDI"
+  },
+  {
+   "rank": 76,
+   "user_id": 1328,
+   "username": "aa1972",
+   "score": 15297,
+   "alliance": "ASSMBL"
+  },
+  {
+   "rank": 77,
+   "user_id": 853,
+   "username": "Zahidhossain",
+   "score": 15255
+  },
+  {
+   "rank": 78,
+   "user_id": 70,
+   "username": "zj1995",
+   "score": 15247,
+   "alliance": "CARTEL"
+  },
+  {
+   "rank": 79,
+   "user_id": 428,
+   "username": "tane75",
+   "score": 15150,
+   "alliance": "FSETTL"
+  },
+  {
+   "rank": 80,
+   "user_id": 744,
+   "username": "nneka83",
+   "score": 15076
+  },
+  {
+   "rank": 81,
+   "user_id": 1581,
+   "username": "zoew",
+   "score": 15021,
+   "alliance": "FALLIN"
+  },
+  {
+   "rank": 82,
+   "user_id": 471,
+   "username": "ruoxi86",
+   "score": 15019
+  },
+  {
+   "rank": 83,
+   "user_id": 4258,
+   "username": "Cleanthes",
+   "score": 14925,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 84,
+   "user_id": 1066,
+   "username": "fatima_l",
+   "score": 14909
+  },
+  {
+   "rank": 85,
+   "user_id": 412,
+   "username": "redcedar1976",
+   "score": 14900
+  },
+  {
+   "rank": 86,
+   "user_id": 3415,
+   "username": "emreilhan",
+   "score": 14879,
+   "alliance": "CLTN"
+  },
+  {
+   "rank": 87,
+   "user_id": 1405,
+   "username": "angus83",
+   "score": 14828,
+   "alliance": "CURREN"
+  },
+  {
+   "rank": 88,
+   "user_id": 1459,
+   "username": "Dprasetyo",
+   "score": 14773
+  },
+  {
+   "rank": 89,
+   "user_id": 522,
+   "username": "kaya1",
+   "score": 14712
+  },
+  {
+   "rank": 90,
+   "user_id": 1556,
+   "username": "pinecone_5",
+   "score": 14678,
+   "alliance": "SWANDE"
+  },
+  {
+   "rank": 91,
+   "user_id": 776,
+   "username": "hilltop_3",
+   "score": 14665,
+   "alliance": "CROSSR"
+  },
+  {
+   "rank": 92,
+   "user_id": 1161,
+   "username": "paperkite79",
+   "score": 14639,
+   "alliance": "APACT"
+  },
+  {
+   "rank": 93,
+   "user_id": 1091,
+   "username": "Salameri",
+   "score": 14581,
+   "alliance": "CURREN"
+  },
+  {
+   "rank": 94,
+   "user_id": 419,
+   "username": "qing_1977",
+   "score": 14366
+  },
+  {
+   "rank": 95,
+   "user_id": 1158,
+   "username": "xc88",
+   "score": 14352
+  },
+  {
+   "rank": 96,
+   "user_id": 1163,
+   "username": "tianyux",
+   "score": 14316
+  },
+  {
+   "rank": 97,
+   "user_id": 3473,
+   "username": "shubines",
+   "score": 14284,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 98,
+   "user_id": 3838,
+   "username": "Svobodennn",
+   "score": 14232,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 99,
+   "user_id": 37,
+   "username": "ngata48",
+   "score": 14224
+  },
+  {
+   "rank": 100,
+   "user_id": 229,
+   "username": "jn8",
+   "score": 14081
+  },
+  {
+   "rank": 101,
+   "user_id": 415,
+   "username": "noelleyamashiro",
+   "score": 14070
+  },
+  {
+   "rank": 102,
+   "user_id": 692,
+   "username": "Kashifrizvi",
+   "score": 14037
+  },
+  {
+   "rank": 103,
+   "user_id": 815,
+   "username": "sbiswas8",
+   "score": 14015
+  },
+  {
+   "rank": 104,
+   "user_id": 1637,
+   "username": "Denise4",
+   "score": 13992
+  },
+  {
+   "rank": 105,
+   "user_id": 473,
+   "username": "farmhand1991",
+   "score": 13931
+  },
+  {
+   "rank": 106,
+   "user_id": 1289,
+   "username": "diegoreyna",
+   "score": 13901
+  },
+  {
+   "rank": 107,
+   "user_id": 1933,
+   "username": "rabia_memon",
+   "score": 13790,
+   "alliance": "CVNNT"
+  },
+  {
+   "rank": 108,
+   "user_id": 624,
+   "username": "am99",
+   "score": 13728,
+   "alliance": "RSRISI"
+  },
+  {
+   "rank": 109,
+   "user_id": 1393,
+   "username": "lg91",
+   "score": 13595,
+   "alliance": "SWANDE"
+  },
+  {
+   "rank": 110,
+   "user_id": 1786,
+   "username": "nettlescrew",
+   "score": 13574,
+   "alliance": "CNCLV"
+  },
+  {
+   "rank": 111,
+   "user_id": 84,
+   "username": "sahmed56",
+   "score": 13408
+  },
+  {
+   "rank": 112,
+   "user_id": 709,
+   "username": "Rk8",
+   "score": 13281
+  },
+  {
+   "rank": 113,
+   "user_id": 866,
+   "username": "Ky82",
+   "score": 13126,
+   "alliance": "FSETTL"
+  },
+  {
+   "rank": 114,
+   "user_id": 1292,
+   "username": "Rhargreaves",
+   "score": 13121,
+   "alliance": "SRAVEN"
+  },
+  {
+   "rank": 115,
+   "user_id": 1143,
+   "username": "maria_naqvi",
+   "score": 13084
+  },
+  {
+   "rank": 116,
+   "user_id": 1157,
+   "username": "FALZAABI71",
+   "score": 13021
+  },
+  {
+   "rank": 117,
+   "user_id": 394,
+   "username": "js1973",
+   "score": 12988,
+   "alliance": "CARTEL"
+  },
+  {
+   "rank": 118,
+   "user_id": 728,
+   "username": "Ddunmore",
+   "score": 12885
+  },
+  {
+   "rank": 119,
+   "user_id": 949,
+   "username": "malik",
+   "score": 12878
+  },
+  {
+   "rank": 120,
+   "user_id": 248,
+   "username": "halldor95",
+   "score": 12840
+  },
+  {
+   "rank": 121,
+   "user_id": 392,
+   "username": "Shota52",
+   "score": 12726
+  },
+  {
+   "rank": 122,
+   "user_id": 59,
+   "username": "myamamoto",
+   "score": 12720
+  },
+  {
+   "rank": 123,
+   "user_id": 9,
+   "username": "matheus_r",
+   "score": 12654,
+   "alliance": "WNDRRS"
+  },
+  {
+   "rank": 124,
+   "user_id": 322,
+   "username": "Figtree1998",
+   "score": 12635
+  },
+  {
+   "rank": 125,
+   "user_id": 1044,
+   "username": "INDAH_SUSANTO",
+   "score": 12626,
+   "alliance": "CMPNY"
+  },
+  {
+   "rank": 126,
+   "user_id": 2189,
+   "username": "birchwood1",
+   "score": 12558
+  },
+  {
+   "rank": 127,
+   "user_id": 721,
+   "username": "mccr7",
+   "score": 12471
+  },
+  {
+   "rank": 128,
+   "user_id": 800,
+   "username": "ns2005",
+   "score": 12448,
+   "alliance": "BRNNG"
+  },
+  {
+   "rank": 129,
+   "user_id": 87,
+   "username": "yalrashed",
+   "score": 12290,
+   "alliance": "CMPNY"
+  },
+  {
+   "rank": 130,
+   "user_id": 28,
+   "username": "dd2003",
+   "score": 12190
+  },
+  {
+   "rank": 131,
+   "user_id": 1321,
+   "username": "indah45",
+   "score": 12134
+  },
+  {
+   "rank": 132,
+   "user_id": 291,
+   "username": "mm84",
+   "score": 12129
+  },
+  {
+   "rank": 133,
+   "user_id": 657,
+   "username": "gabriela96",
+   "score": 12109,
+   "alliance": "BRRAVE"
+  },
+  {
+   "rank": 134,
+   "user_id": 4256,
+   "username": "mars",
+   "score": 12098,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 135,
+   "user_id": 793,
+   "username": "Tkarim",
+   "score": 12079
+  },
+  {
+   "rank": 136,
+   "user_id": 198,
+   "username": "csandoval",
+   "score": 12077,
+   "alliance": "SRAVEN"
+  },
+  {
+   "rank": 137,
+   "user_id": 1671,
+   "username": "vp1988",
+   "score": 12028,
+   "alliance": "HLLW"
+  },
+  {
+   "rank": 138,
+   "user_id": 2314,
+   "username": "mn1978",
+   "score": 12002
+  },
+  {
+   "rank": 139,
+   "user_id": 1146,
+   "username": "eh72",
+   "score": 11930,
+   "alliance": "HLLW"
+  },
+  {
+   "rank": 140,
+   "user_id": 277,
+   "username": "trem",
+   "score": 11897
+  },
+  {
+   "rank": 141,
+   "user_id": 391,
+   "username": "Anvil",
+   "score": 11852,
+   "alliance": "CROSSR"
+  },
+  {
+   "rank": 142,
+   "user_id": 14,
+   "username": "xiaoyuma",
+   "score": 11851,
+   "alliance": "FSETTL"
+  },
+  {
+   "rank": 143,
+   "user_id": 608,
+   "username": "priya_n",
+   "score": 11848
+  },
+  {
+   "rank": 144,
+   "user_id": 467,
+   "username": "Kaylap",
+   "score": 11838
+  },
+  {
+   "rank": 145,
+   "user_id": 1865,
+   "username": "as1992",
+   "score": 11776
+  },
+  {
+   "rank": 146,
+   "user_id": 1090,
+   "username": "shuang_82",
+   "score": 11751,
+   "alliance": "FSETTL"
+  },
+  {
+   "rank": 147,
+   "user_id": 3534,
+   "username": "alexandernative",
+   "score": 11725,
+   "alliance": "BTC"
+  },
+  {
+   "rank": 148,
+   "user_id": 405,
+   "username": "alya2000",
+   "score": 11700
+  },
+  {
+   "rank": 149,
+   "user_id": 4123,
+   "username": "mgk",
+   "score": 11635,
+   "alliance": "CRSSNT"
+  },
+  {
+   "rank": 150,
+   "user_id": 326,
+   "username": "moorland_39",
+   "score": 11602,
+   "alliance": "CMPNY"
+  },
+  {
+   "rank": 151,
+   "user_id": 3138,
+   "username": "Hn82",
+   "score": 11537,
+   "alliance": "BRRAVE"
+  },
+  {
+   "rank": 152,
+   "user_id": 296,
+   "username": "backroadclub",
+   "score": 11481,
+   "alliance": "FALLIN"
+  },
+  {
+   "rank": 153,
+   "user_id": 683,
+   "username": "xzhang1",
+   "score": 11474
+  },
+  {
+   "rank": 154,
+   "user_id": 197,
+   "username": "erin4",
+   "score": 11420
+  },
+  {
+   "rank": 155,
+   "user_id": 370,
+   "username": "Jz98",
+   "score": 11265
+  },
+  {
+   "rank": 156,
+   "user_id": 1997,
+   "username": "lena_werner",
+   "score": 11250,
+   "alliance": "VNGRD"
+  },
+  {
+   "rank": 157,
+   "user_id": 796,
+   "username": "shirin_32",
+   "score": 11204
+  },
+  {
+   "rank": 158,
+   "user_id": 1594,
+   "username": "deshawn_n",
+   "score": 11110,
+   "alliance": "BRRAVE"
+  },
+  {
+   "rank": 159,
+   "user_id": 255,
+   "username": "oakintola23",
+   "score": 11090
+  },
+  {
+   "rank": 160,
+   "user_id": 545,
+   "username": "tane-h",
+   "score": 11013,
+   "alliance": "FSETTL"
+  },
+  {
+   "rank": 161,
+   "user_id": 843,
+   "username": "bk5",
+   "score": 10975,
+   "alliance": "ARROW"
+  },
+  {
+   "rank": 162,
+   "user_id": 2993,
+   "username": "ko95",
+   "score": 10959
+  },
+  {
+   "rank": 163,
+   "user_id": 1844,
+   "username": "mb1974",
+   "score": 10821
+  },
+  {
+   "rank": 164,
+   "user_id": 79,
+   "username": "mwolf87",
+   "score": 10758
+  },
+  {
+   "rank": 165,
+   "user_id": 1022,
+   "username": "Lupita45",
+   "score": 10753
+  },
+  {
+   "rank": 166,
+   "user_id": 2000,
+   "username": "pearc8",
+   "score": 10753
+  },
+  {
+   "rank": 167,
+   "user_id": 178,
+   "username": "ks1981",
+   "score": 10743
+  },
+  {
+   "rank": 168,
+   "user_id": 137,
+   "username": "Yusufd",
+   "score": 10725,
+   "alliance": "FALLIN"
+  },
+  {
+   "rank": 169,
+   "user_id": 507,
+   "username": "cw1995",
+   "score": 10718
+  },
+  {
+   "rank": 170,
+   "user_id": 569,
+   "username": "Priya-Whitaker",
+   "score": 10706,
+   "alliance": "BRNNG"
+  },
+  {
+   "rank": 171,
+   "user_id": 1597,
+   "username": "marisol_lindgren",
+   "score": 10664
+  },
+  {
+   "rank": 172,
+   "user_id": 245,
+   "username": "kerem_59",
+   "score": 10633,
+   "alliance": "SWANDE"
+  },
+  {
+   "rank": 173,
+   "user_id": 258,
+   "username": "almei",
+   "score": 10594,
+   "alliance": "CNCLV8"
+  },
+  {
+   "rank": 174,
+   "user_id": 1182,
+   "username": "ridl97",
+   "score": 10562
+  },
+  {
+   "rank": 175,
+   "user_id": 1199,
+   "username": "fatema-roy",
+   "score": 10467
+  },
+  {
+   "rank": 176,
+   "user_id": 809,
+   "username": "baran_yildiz",
+   "score": 10441,
+   "alliance": "WNDRRS"
+  },
+  {
+   "rank": 177,
+   "user_id": 257,
+   "username": "hando1972",
+   "score": 10312
+  },
+  {
+   "rank": 178,
+   "user_id": 128,
+   "username": "boweny",
+   "score": 10307
+  },
+  {
+   "rank": 179,
+   "user_id": 3298,
+   "username": "nliu",
+   "score": 10286,
+   "alliance": "SRAVEN"
+  },
+  {
+   "rank": 180,
+   "user_id": 2122,
+   "username": "hmatsumoto",
+   "score": 10275,
+   "alliance": "ORDER"
+  },
+  {
+   "rank": 181,
+   "user_id": 1633,
+   "username": "mm1972",
+   "score": 10183
+  },
+  {
+   "rank": 182,
+   "user_id": 73,
+   "username": "Marleneb",
+   "score": 10157
+  },
+  {
+   "rank": 183,
+   "user_id": 964,
+   "username": "onurerdogan",
+   "score": 10149,
+   "alliance": "VNGRD"
+  },
+  {
+   "rank": 184,
+   "user_id": 1931,
+   "username": "Mmiah81",
+   "score": 10149
+  },
+  {
+   "rank": 185,
+   "user_id": 3973,
+   "username": "tuiw",
+   "score": 10128,
+   "alliance": "BTC"
+  },
+  {
+   "rank": 186,
+   "user_id": 46,
+   "username": "riku96",
+   "score": 10124
+  },
+  {
+   "rank": 187,
+   "user_id": 758,
+   "username": "aisha20",
+   "score": 10066
+  },
+  {
+   "rank": 188,
+   "user_id": 537,
+   "username": "jiaqi_66",
+   "score": 10020
+  },
+  {
+   "rank": 189,
+   "user_id": 1313,
+   "username": "NC86",
+   "score": 9974
+  },
+  {
+   "rank": 190,
+   "user_id": 462,
+   "username": "quarryman",
+   "score": 9949
+  },
+  {
+   "rank": 191,
+   "user_id": 931,
+   "username": "Rafiq_7",
+   "score": 9931
+  },
+  {
+   "rank": 192,
+   "user_id": 284,
+   "username": "oliviangata",
+   "score": 9906,
+   "alliance": "PKKING"
+  },
+  {
+   "rank": 193,
+   "user_id": 336,
+   "username": "yewande5",
+   "score": 9877
+  },
+  {
+   "rank": 194,
+   "user_id": 1794,
+   "username": "copperwire8",
+   "score": 9876
+  },
+  {
+   "rank": 195,
+   "user_id": 1790,
+   "username": "kenta_yamamoto",
+   "score": 9815
+  },
+  {
+   "rank": 196,
+   "user_id": 614,
+   "username": "mb73",
+   "score": 9812,
+   "alliance": "TERMIN"
+  },
+  {
+   "rank": 197,
+   "user_id": 1095,
+   "username": "sarslan21",
+   "score": 9751,
+   "alliance": "FRRW"
+  },
+  {
+   "rank": 198,
+   "user_id": 3981,
+   "username": "Chaos",
+   "score": 9749,
+   "alliance": "AGENTS"
+  },
+  {
+   "rank": 199,
+   "user_id": 177,
+   "username": "dk1982",
+   "score": 9557
+  },
+  {
+   "rank": 200,
+   "user_id": 497,
+   "username": "Kelechi_Adebayo",
+   "score": 9536,
+   "alliance": "APACT"
+  },
+  {
+   "rank": 201,
+   "user_id": 77,
+   "username": "obinna_o",
+   "score": 9523,
+   "alliance": "RISING"
+  },
+  {
+   "rank": 202,
+   "user_id": 4132,
+   "username": "egello",
+   "score": 9496,
+   "alliance": "AGENTS"
+  },
+  {
+   "rank": 203,
+   "user_id": 940,
+   "username": "fbhatti",
+   "score": 9432
+  },
+  {
+   "rank": 204,
+   "user_id": 1059,
+   "username": "Emi_H",
+   "score": 9423,
+   "alliance": "ATHUND"
+  },
+  {
+   "rank": 205,
+   "user_id": 218,
+   "username": "amnaa",
+   "score": 9355,
+   "alliance": "SWANDE"
+  },
+  {
+   "rank": 206,
+   "user_id": 1170,
+   "username": "cn1990",
+   "score": 9301
+  },
+  {
+   "rank": 207,
+   "user_id": 570,
+   "username": "nele-b",
+   "score": 9288,
+   "alliance": "FALLIN"
+  },
+  {
+   "rank": 208,
+   "user_id": 330,
+   "username": "rbennett",
+   "score": 9207
+  },
+  {
+   "rank": 209,
+   "user_id": 1277,
+   "username": "tdwyer",
+   "score": 9176
+  },
+  {
+   "rank": 210,
+   "user_id": 233,
+   "username": "eh73",
+   "score": 9169,
+   "alliance": "APACT"
+  },
+  {
+   "rank": 211,
+   "user_id": 714,
+   "username": "felipes",
+   "score": 9156
+  },
+  {
+   "rank": 212,
+   "user_id": 901,
+   "username": "Anguskirkby",
+   "score": 9123,
+   "alliance": "CNCLV"
+  },
+  {
+   "rank": 213,
+   "user_id": 637,
+   "username": "sh93",
+   "score": 9048,
+   "alliance": "VNGRD"
+  },
+  {
+   "rank": 214,
+   "user_id": 2101,
+   "username": "haoran-x",
+   "score": 9013
+  },
+  {
+   "rank": 215,
+   "user_id": 3479,
+   "username": "yapistiricek1",
+   "score": 8958,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 216,
+   "user_id": 259,
+   "username": "kiankim",
+   "score": 8903
+  },
+  {
+   "rank": 217,
+   "user_id": 890,
+   "username": "isla_a",
+   "score": 8839,
+   "alliance": "FRRW"
+  },
+  {
+   "rank": 218,
+   "user_id": 3267,
+   "username": "latifa76",
+   "score": 8834
+  },
+  {
+   "rank": 219,
+   "user_id": 1847,
+   "username": "femi-b",
+   "score": 8825
+  },
+  {
+   "rank": 220,
+   "user_id": 264,
+   "username": "Xu6",
+   "score": 8788,
+   "alliance": "WLVS"
+  },
+  {
+   "rank": 221,
+   "user_id": 547,
+   "username": "Nferraro",
+   "score": 8726
+  },
+  {
+   "rank": 222,
+   "user_id": 620,
+   "username": "hamada",
+   "score": 8684
+  },
+  {
+   "rank": 223,
+   "user_id": 61,
+   "username": "tyronep",
+   "score": 8651
+  },
+  {
+   "rank": 224,
+   "user_id": 3105,
+   "username": "rmolla",
+   "score": 8611
+  },
+  {
+   "rank": 225,
+   "user_id": 1165,
+   "username": "rafael1977",
+   "score": 8528
+  },
+  {
+   "rank": 226,
+   "user_id": 442,
+   "username": "fa1979",
+   "score": 8491
+  },
+  {
+   "rank": 227,
+   "user_id": 188,
+   "username": "Ninthgearhouse",
+   "score": 8480
+  },
+  {
+   "rank": 228,
+   "user_id": 81,
+   "username": "am2001",
+   "score": 8468
+  },
+  {
+   "rank": 229,
+   "user_id": 58,
+   "username": "mw1974",
+   "score": 8453
+  },
+  {
+   "rank": 230,
+   "user_id": 2689,
+   "username": "femi_8",
+   "score": 8425
+  },
+  {
+   "rank": 231,
+   "user_id": 1344,
+   "username": "Deniz_Kaya",
+   "score": 8423,
+   "alliance": "CNCLV"
+  },
+  {
+   "rank": 232,
+   "user_id": 377,
+   "username": "tunde_n",
+   "score": 8372
+  },
+  {
+   "rank": 233,
+   "user_id": 172,
+   "username": "ceren_o3",
+   "score": 8312
+  },
+  {
+   "rank": 234,
+   "user_id": 2184,
+   "username": "kalmansoori27",
+   "score": 8302,
+   "alliance": "SWANDE"
+  },
+  {
+   "rank": 235,
+   "user_id": 697,
+   "username": "saltflat1979",
+   "score": 8256
+  },
+  {
+   "rank": 236,
+   "user_id": 2164,
+   "username": "Nm89",
+   "score": 8251,
+   "alliance": "FALLIN"
+  },
+  {
+   "rank": 237,
+   "user_id": 169,
+   "username": "Am1978",
+   "score": 8245
+  },
+  {
+   "rank": 238,
+   "user_id": 842,
+   "username": "Ap1994",
+   "score": 8228,
+   "alliance": "HORNET"
+  },
+  {
+   "rank": 239,
+   "user_id": 718,
+   "username": "mitche5",
+   "score": 8196
+  },
+  {
+   "rank": 240,
+   "user_id": 2803,
+   "username": "Marcus98",
+   "score": 8174
+  },
+  {
+   "rank": 241,
+   "user_id": 576,
+   "username": "sb1984",
+   "score": 8151
+  },
+  {
+   "rank": 242,
+   "user_id": 3695,
+   "username": "NGF98",
+   "score": 8124,
+   "alliance": "VNGRD"
+  },
+  {
+   "rank": 243,
+   "user_id": 686,
+   "username": "chiamakao",
+   "score": 8084
+  },
+  {
+   "rank": 244,
+   "user_id": 240,
+   "username": "gcorrigan43",
+   "score": 8077
+  },
+  {
+   "rank": 245,
+   "user_id": 641,
+   "username": "Halameri",
+   "score": 8072,
+   "alliance": "FALLIN"
+  },
+  {
+   "rank": 246,
+   "user_id": 2834,
+   "username": "paperkite32",
+   "score": 8046,
+   "alliance": "CLTN"
+  },
+  {
+   "rank": 247,
+   "user_id": 1888,
+   "username": "neleb",
+   "score": 8036
+  },
+  {
+   "rank": 248,
+   "user_id": 183,
+   "username": "ELIFY1979",
+   "score": 8021,
+   "alliance": "IRNGRY"
+  },
+  {
+   "rank": 249,
+   "user_id": 1327,
+   "username": "df91",
+   "score": 8015
+  },
+  {
+   "rank": 250,
+   "user_id": 2034,
+   "username": "Khan4",
+   "score": 7998
+  },
+  {
+   "rank": 251,
+   "user_id": 1137,
+   "username": "qing-8",
+   "score": 7938
+  },
+  {
+   "rank": 252,
+   "user_id": 1297,
+   "username": "jamal-4",
+   "score": 7923
+  },
+  {
+   "rank": 253,
+   "user_id": 39,
+   "username": "Enriquez",
+   "score": 7886
+  },
+  {
+   "rank": 254,
+   "user_id": 1285,
+   "username": "hinai93",
+   "score": 7871,
+   "alliance": "SWANDE"
+  },
+  {
+   "rank": 255,
+   "user_id": 323,
+   "username": "Skrause",
+   "score": 7839
+  },
+  {
+   "rank": 256,
+   "user_id": 578,
+   "username": "eprasetyo3",
+   "score": 7826,
+   "alliance": "APACT"
+  },
+  {
+   "rank": 257,
+   "user_id": 2400,
+   "username": "heinarsdottir",
+   "score": 7790
+  },
+  {
+   "rank": 258,
+   "user_id": 3480,
+   "username": "yapistiricek2",
+   "score": 7770,
+   "alliance": "BJACK"
+  },
+  {
+   "rank": 259,
+   "user_id": 2874,
+   "username": "qing60",
+   "score": 7756
+  },
+  {
+   "rank": 260,
+   "user_id": 2576,
+   "username": "Caio74",
+   "score": 7692,
+   "alliance": "ARROW"
+  },
+  {
+   "rank": 261,
+   "user_id": 1481,
+   "username": "Rinawatanabe",
+   "score": 7648,
+   "alliance": "VNGRD"
+  },
+  {
+   "rank": 262,
+   "user_id": 559,
+   "username": "fa1981",
+   "score": 7636,
+   "alliance": "FSETTL"
+  },
+  {
+   "rank": 263,
+   "user_id": 4259,
+   "username": "gok",
+   "score": 7600,
+   "alliance": "SYNACK"
+  },
+  {
+   "rank": 264,
+   "user_id": 1616,
+   "username": "rawirin",
+   "score": 7579,
+   "alliance": "ARROW"
+  },
+  {
+   "rank": 265,
+   "user_id": 121,
+   "username": "jx81",
+   "score": 7559
+  },
+  {
+   "rank": 266,
+   "user_id": 465,
+   "username": "friedakrause",
+   "score": 7556,
+   "alliance": "ARROW"
+  },
+  {
+   "rank": 267,
+   "user_id": 1190,
+   "username": "Yamaz",
+   "score": 7521,
+   "alliance": "SWANDE"
+  },
+  {
+   "rank": 268,
+   "user_id": 33,
+   "username": "karnardottir",
+   "score": 7448,
+   "alliance": "WNDRRS"
+  },
+  {
+   "rank": 269,
+   "user_id": 524,
+   "username": "abeltran1984",
+   "score": 7439,
+   "alliance": "CLTN"
+  },
+  {
+   "rank": 270,
+   "user_id": 626,
+   "username": "terrellh",
+   "score": 7375,
+   "alliance": "ARROW"
+  },
+  {
+   "rank": 271,
+   "user_id": 338,
+   "username": "Kevink",
+   "score": 7366
+  },
+  {
+   "rank": 272,
+   "user_id": 146,
+   "username": "woodsmoke1972",
+   "score": 7340
+  },
+  {
+   "rank": 273,
+   "user_id": 3256,
+   "username": "nneka_6",
+   "score": 7311
+  },
+  {
+   "rank": 274,
+   "user_id": 184,
+   "username": "kevin_1",
+   "score": 7306,
+   "alliance": "MERIDI"
+  },
+  {
+   "rank": 275,
+   "user_id": 998,
+   "username": "yiran_75",
+   "score": 7302
+  },
+  {
+   "rank": 276,
+   "user_id": 917,
+   "username": "novot1",
+   "score": 7293,
+   "alliance": "CNCLV"
+  },
+  {
+   "rank": 277,
+   "user_id": 217,
+   "username": "zb95",
+   "score": 7284,
+   "alliance": "STTLRS"
+  },
+  {
+   "rank": 278,
+   "user_id": 334,
+   "username": "overcastclub",
+   "score": 7275
+  },
+  {
+   "rank": 279,
+   "user_id": 2448,
+   "username": "brodie_prescott",
+   "score": 7274,
+   "alliance": "CROSSR"
+  },
+  {
+   "rank": 280,
+   "user_id": 3124,
+   "username": "sandpiper-2001",
+   "score": 7252,
+   "alliance": "CROSSR"
+  },
+  {
+   "rank": 281,
+   "user_id": 43,
+   "username": "qing_10",
+   "score": 7181
+  },
+  {
+   "rank": 282,
+   "user_id": 3914,
+   "username": "Berkay",
+   "score": 7118,
+   "alliance": "MIT"
+  },
+  {
+   "rank": 283,
+   "user_id": 4193,
+   "username": "Nayirov",
+   "score": 7117,
+   "alliance": "TRUST"
+  },
+  {
+   "rank": 284,
+   "user_id": 943,
+   "username": "io89",
+   "score": 7110
+  },
+  {
+   "rank": 285,
+   "user_id": 1499,
+   "username": "alfie_hurst",
+   "score": 7087
+  },
+  {
+   "rank": 286,
+   "user_id": 1702,
+   "username": "barslan",
+   "score": 7085,
+   "alliance": "DAWN"
+  },
+  {
+   "rank": 287,
+   "user_id": 1497,
+   "username": "lamppostlabs",
+   "score": 7081
+  },
+  {
+   "rank": 288,
+   "user_id": 1582,
+   "username": "Blueline82",
+   "score": 7074,
+   "alliance": "WNDRRS"
+  },
+  {
+   "rank": 289,
+   "user_id": 1126,
+   "username": "colton-t",
+   "score": 7068
+  },
+  {
+   "rank": 290,
+   "user_id": 4035,
+   "username": "lafayette",
+   "score": 7013,
+   "alliance": "OPA"
+  },
+  {
+   "rank": 291,
+   "user_id": 120,
+   "username": "wlarkin",
+   "score": 6998
+  },
+  {
+   "rank": 292,
+   "user_id": 182,
+   "username": "OBUTT",
+   "score": 6948
+  },
+  {
+   "rank": 293,
+   "user_id": 487,
+   "username": "Finn_1980",
+   "score": 6923
+  },
+  {
+   "rank": 294,
+   "user_id": 478,
+   "username": "trevor4",
+   "score": 6922
+  },
+  {
+   "rank": 295,
+   "user_id": 1466,
+   "username": "baran_45",
+   "score": 6905
+  },
+  {
+   "rank": 296,
+   "user_id": 1060,
+   "username": "ns99",
+   "score": 6860
+  },
+  {
+   "rank": 297,
+   "user_id": 909,
+   "username": "fhu89",
+   "score": 6828,
+   "alliance": "DAWN"
+  },
+  {
+   "rank": 298,
+   "user_id": 1101,
+   "username": "Marnarsson",
+   "score": 6826
+  },
+  {
+   "rank": 299,
+   "user_id": 908,
+   "username": "eyilmaz",
+   "score": 6726
+  },
+  {
+   "rank": 300,
+   "user_id": 35,
+   "username": "mituh",
+   "score": 6725
+  },
+  {
+   "rank": 301,
+   "user_id": 208,
+   "username": "Ns1985",
+   "score": 6690
+  },
+  {
+   "rank": 302,
+   "user_id": 997,
+   "username": "finn91",
+   "score": 6685
+  },
+  {
+   "rank": 303,
+   "user_id": 346,
+   "username": "danaa",
+   "score": 6639
+  },
+  {
+   "rank": 304,
+   "user_id": 273,
+   "username": "Saba_72",
+   "score": 6619
+  },
+  {
+   "rank": 305,
+   "user_id": 134,
+   "username": "fu99",
+   "score": 6609,
+   "alliance": "DCCOMP"
+  },
+  {
+   "rank": 306,
+   "user_id": 22,
+   "username": "seze20",
+   "score": 6608
+  },
+  {
+   "rank": 307,
+   "user_id": 1432,
+   "username": "tariq8",
+   "score": 6601
+  },
+  {
+   "rank": 308,
+   "user_id": 1312,
+   "username": "Camilacarvalho",
+   "score": 6534
+  },
+  {
+   "rank": 309,
+   "user_id": 541,
+   "username": "colton-sandoval",
+   "score": 6525
+  },
+  {
+   "rank": 310,
+   "user_id": 444,
+   "username": "Ali7",
+   "score": 6503
+  },
+  {
+   "rank": 311,
+   "user_id": 1216,
+   "username": "birchwoodyard",
+   "score": 6501
+  },
+  {
+   "rank": 312,
+   "user_id": 69,
+   "username": "agus_halim",
+   "score": 6495
+  },
+  {
+   "rank": 313,
+   "user_id": 1922,
+   "username": "sandpiper2006",
+   "score": 6478
+  },
+  {
+   "rank": 314,
+   "user_id": 671,
+   "username": "ay1993",
+   "score": 6472,
+   "alliance": "HORNET"
+  },
+  {
+   "rank": 315,
+   "user_id": 679,
+   "username": "Tokoye",
+   "score": 6467
+  },
+  {
+   "rank": 316,
+   "user_id": 2654,
+   "username": "Tasnimdas",
+   "score": 6443,
+   "alliance": "LANCE"
+  },
+  {
+   "rank": 317,
+   "user_id": 71,
+   "username": "rutko1984",
+   "score": 6421
+  },
+  {
+   "rank": 318,
+   "user_id": 130,
+   "username": "clara_1",
+   "score": 6420
+  },
+  {
+   "rank": 319,
+   "user_id": 1530,
+   "username": "hkavanagh",
+   "score": 6392
+  },
+  {
+   "rank": 320,
+   "user_id": 223,
+   "username": "sparrowyard",
+   "score": 6385
+  },
+  {
+   "rank": 321,
+   "user_id": 135,
+   "username": "leticiamartins",
+   "score": 6383,
+   "alliance": "CLTN"
+  },
+  {
+   "rank": 322,
+   "user_id": 822,
+   "username": "BACA8",
+   "score": 6380
+  },
+  {
+   "rank": 323,
+   "user_id": 441,
+   "username": "ca2003",
+   "score": 6376
+  },
+  {
+   "rank": 324,
+   "user_id": 1296,
+   "username": "ekaplan",
+   "score": 6364
+  },
+  {
+   "rank": 325,
+   "user_id": 4381,
+   "username": "90M",
+   "score": 6350
+  },
+  {
+   "rank": 326,
+   "user_id": 1836,
+   "username": "qz1986",
+   "score": 6325,
+   "alliance": "LANCE"
+  },
+  {
+   "rank": 327,
+   "user_id": 2391,
+   "username": "tarslan",
+   "score": 6315,
+   "alliance": "CNCLV8"
+  },
+  {
+   "rank": 328,
+   "user_id": 2510,
+   "username": "BCABRERA",
+   "score": 6308
+  },
+  {
+   "rank": 329,
+   "user_id": 228,
+   "username": "Cabr1978",
+   "score": 6298
+  },
+  {
+   "rank": 330,
+   "user_id": 3341,
+   "username": "yshimizu",
+   "score": 6259
+  },
+  {
+   "rank": 331,
+   "user_id": 659,
+   "username": "paige96",
+   "score": 6257
+  },
+  {
+   "rank": 332,
+   "user_id": 3156,
+   "username": "coldbrew_98",
+   "score": 6256
+  },
+  {
+   "rank": 333,
+   "user_id": 139,
+   "username": "kc77",
+   "score": 6205
+  },
+  {
+   "rank": 334,
+   "user_id": 2166,
+   "username": "cnowak",
+   "score": 6183
+  },
+  {
+   "rank": 335,
+   "user_id": 196,
+   "username": "hannah_w",
+   "score": 6180
+  },
+  {
+   "rank": 336,
+   "user_id": 799,
+   "username": "arnard7",
+   "score": 6178
+  },
+  {
+   "rank": 337,
+   "user_id": 1634,
+   "username": "sa94",
+   "score": 6150
+  },
+  {
+   "rank": 338,
+   "user_id": 3819,
+   "username": "dekalog",
+   "score": 6135,
+   "alliance": "APACT"
+  },
+  {
+   "rank": 339,
+   "user_id": 2624,
+   "username": "lukas_krause",
+   "score": 6045
+  },
+  {
+   "rank": 340,
+   "user_id": 4036,
+   "username": "rocinante",
+   "score": 6014,
+   "alliance": "OPA"
+  },
+  {
+   "rank": 341,
+   "user_id": 29,
+   "username": "ccardoso1",
+   "score": 5979
+  },
+  {
+   "rank": 342,
+   "user_id": 602,
+   "username": "angusb",
+   "score": 5976
+  },
+  {
+   "rank": 343,
+   "user_id": 923,
+   "username": "nw88",
+   "score": 5976
+  },
+  {
+   "rank": 344,
+   "user_id": 2533,
+   "username": "gkirkwood",
+   "score": 5895,
+   "alliance": "VNGRD"
+  },
+  {
+   "rank": 345,
+   "user_id": 3459,
+   "username": "Erkan",
+   "score": 5874,
+   "alliance": "BTC"
+  },
+  {
+   "rank": 346,
+   "user_id": 1218,
+   "username": "Grant-Denning",
+   "score": 5866
+  },
+  {
+   "rank": 347,
+   "user_id": 349,
+   "username": "SURYAN",
+   "score": 5860
+  },
+  {
+   "rank": 348,
+   "user_id": 1870,
+   "username": "tegan1982",
+   "score": 5850,
+   "alliance": "WNDRRS"
+  },
+  {
+   "rank": 349,
+   "user_id": 1828,
+   "username": "hsultan41",
+   "score": 5848,
+   "alliance": "SWANDE"
+  },
+  {
+   "rank": 350,
+   "user_id": 389,
+   "username": "annekemeyer",
+   "score": 5841
+  },
+  {
+   "rank": 351,
+   "user_id": 495,
+   "username": "brodie_d",
+   "score": 5833
+  },
+  {
+   "rank": 352,
+   "user_id": 3296,
+   "username": "hina_ito",
+   "score": 5829
+  },
+  {
+   "rank": 353,
+   "user_id": 57,
+   "username": "kruge9",
+   "score": 5807
+  },
+  {
+   "rank": 354,
+   "user_id": 438,
+   "username": "rafaelg",
+   "score": 5798,
+   "alliance": "FSETTL"
+  },
+  {
+   "rank": 355,
+   "user_id": 97,
+   "username": "mk1974",
+   "score": 5795,
+   "alliance": "RWOLVE"
+  },
+  {
+   "rank": 356,
+   "user_id": 710,
+   "username": "rubyi",
+   "score": 5785
+  },
+  {
+   "rank": 357,
+   "user_id": 2240,
+   "username": "Niklas97",
+   "score": 5784
+  },
+  {
+   "rank": 358,
+   "user_id": 1349,
+   "username": "anaya6",
+   "score": 5780
+  },
+  {
+   "rank": 359,
+   "user_id": 2590,
+   "username": "SZYMAN",
+   "score": 5780
+  },
+  {
+   "rank": 360,
+   "user_id": 2536,
+   "username": "YP2003",
+   "score": 5765
+  },
+  {
+   "rank": 361,
+   "user_id": 983,
+   "username": "saeed7",
+   "score": 5756,
+   "alliance": "VNGRD"
+  },
+  {
+   "rank": 362,
+   "user_id": 266,
+   "username": "es1994",
+   "score": 5737,
+   "alliance": "CARTEL"
+  },
+  {
+   "rank": 363,
+   "user_id": 341,
+   "username": "hina_1985",
+   "score": 5722
+  },
+  {
+   "rank": 364,
+   "user_id": 102,
+   "username": "mizanurs",
+   "score": 5701
+  },
+  {
+   "rank": 365,
+   "user_id": 2093,
+   "username": "Papad7",
+   "score": 5664
+  },
+  {
+   "rank": 366,
+   "user_id": 588,
+   "username": "Cinderpath1972",
+   "score": 5632
+  },
+  {
+   "rank": 367,
+   "user_id": 481,
+   "username": "Bolaji_E",
+   "score": 5621
+  },
+  {
+   "rank": 368,
+   "user_id": 483,
+   "username": "rikuhashimoto",
+   "score": 5609
+  },
+  {
+   "rank": 369,
+   "user_id": 82,
+   "username": "rumah",
+   "score": 5608,
+   "alliance": "APACT"
+  },
+  {
+   "rank": 370,
+   "user_id": 2447,
+   "username": "peatbogyard",
+   "score": 5595
+  },
+  {
+   "rank": 371,
+   "user_id": 567,
+   "username": "simatu5",
+   "score": 5586
+  },
+  {
+   "rank": 372,
+   "user_id": 99,
+   "username": "rochoa",
+   "score": 5571
+  },
+  {
+   "rank": 373,
+   "user_id": 532,
+   "username": "adey21",
+   "score": 5561
+  },
+  {
+   "rank": 374,
+   "user_id": 1368,
+   "username": "isiddiqui8",
+   "score": 5559
+  },
+  {
+   "rank": 375,
+   "user_id": 1614,
+   "username": "zeppelin",
+   "score": 5547
+  },
+  {
+   "rank": 376,
+   "user_id": 617,
+   "username": "finnp",
+   "score": 5544,
+   "alliance": "VULTUR"
+  },
+  {
+   "rank": 377,
+   "user_id": 684,
+   "username": "snassar2",
+   "score": 5542,
+   "alliance": "FALLIN"
+  },
+  {
+   "rank": 378,
+   "user_id": 20,
+   "username": "thoro",
+   "score": 5518,
+   "alliance": "BSTN"
+  },
+  {
+   "rank": 379,
+   "user_id": 280,
+   "username": "sparrow",
+   "score": 5516
+  },
+  {
+   "rank": 380,
+   "user_id": 1078,
+   "username": "nsolano",
+   "score": 5496
+  },
+  {
+   "rank": 381,
+   "user_id": 1167,
+   "username": "glasshouseclub",
+   "score": 5489
+  },
+  {
+   "rank": 382,
+   "user_id": 272,
+   "username": "park2008",
+   "score": 5478
+  },
+  {
+   "rank": 383,
+   "user_id": 916,
+   "username": "Ngozi2006",
+   "score": 5477,
+   "alliance": "CROSSR"
+  },
+  {
+   "rank": 384,
+   "user_id": 1227,
+   "username": "katrin6",
+   "score": 5472
+  },
+  {
+   "rank": 385,
+   "user_id": 452,
+   "username": "miguel_gill",
+   "score": 5438
+  },
+  {
+   "rank": 386,
+   "user_id": 2061,
+   "username": "Fangl",
+   "score": 5433
+  },
+  {
+   "rank": 387,
+   "user_id": 3909,
+   "username": "Bunduk",
+   "score": 5433
+  },
+  {
+   "rank": 388,
+   "user_id": 1760,
+   "username": "GLASSHOUSE1996",
+   "score": 5429
+  },
+  {
+   "rank": 389,
+   "user_id": 256,
+   "username": "Tallgrasshouse",
+   "score": 5402
+  },
+  {
+   "rank": 390,
+   "user_id": 794,
+   "username": "sofia7",
+   "score": 5399,
+   "alliance": "VCOMPA"
+  },
+  {
+   "rank": 391,
+   "user_id": 410,
+   "username": "stonefruitco",
+   "score": 5381
+  },
+  {
+   "rank": 392,
+   "user_id": 216,
+   "username": "kruger",
+   "score": 5380
+  },
+  {
+   "rank": 393,
+   "user_id": 2191,
+   "username": "habibuddin",
+   "score": 5372,
+   "alliance": "HLLW"
+  },
+  {
+   "rank": 394,
+   "user_id": 3188,
+   "username": "greyhound8",
+   "score": 5347
+  },
+  {
+   "rank": 395,
+   "user_id": 174,
+   "username": "dbaker2",
+   "score": 5342
+  },
+  {
+   "rank": 396,
+   "user_id": 511,
+   "username": "farrel7",
+   "score": 5341,
+   "alliance": "SRAVEN"
+  },
+  {
+   "rank": 397,
+   "user_id": 406,
+   "username": "hendrag3",
+   "score": 5324,
+   "alliance": "FSETTL"
+  },
+  {
+   "rank": 398,
+   "user_id": 1252,
+   "username": "llin1974",
+   "score": 5317
+  },
+  {
+   "rank": 399,
+   "user_id": 62,
+   "username": "bz93",
+   "score": 5312
+  },
+  {
+   "rank": 400,
+   "user_id": 963,
+   "username": "danny_4",
+   "score": 5294,
+   "alliance": "CLTN"
+  },
+  {
+   "rank": 401,
+   "user_id": 143,
+   "username": "Chloehollis",
+   "score": 5288
+  },
+  {
+   "rank": 402,
+   "user_id": 282,
+   "username": "md1986",
+   "score": 5272
+  },
+  {
+   "rank": 403,
+   "user_id": 1141,
+   "username": "magnu2",
+   "score": 5262,
+   "alliance": "RWOLVE"
+  },
+  {
+   "rank": 404,
+   "user_id": 574,
+   "username": "chloe9",
+   "score": 5258
+  },
+  {
+   "rank": 405,
+   "user_id": 775,
+   "username": "aoyelaran",
+   "score": 5246
+  },
+  {
+   "rank": 406,
+   "user_id": 1653,
+   "username": "paperkiteco",
+   "score": 5245,
+   "alliance": "CROSSR"
+  },
+  {
+   "rank": 407,
+   "user_id": 1893,
+   "username": "ra73",
+   "score": 5197
+  },
+  {
+   "rank": 408,
+   "user_id": 2850,
+   "username": "Sofia_1976",
+   "score": 5195
+  },
+  {
+   "rank": 409,
+   "user_id": 734,
+   "username": "Kevinh",
+   "score": 5144
+  },
+  {
+   "rank": 410,
+   "user_id": 3087,
+   "username": "minji_1996",
+   "score": 5126
+  },
+  {
+   "rank": 411,
+   "user_id": 460,
+   "username": "karolinam72",
+   "score": 5119
+  },
+  {
+   "rank": 412,
+   "user_id": 1595,
+   "username": "Tnowak",
+   "score": 5119
+  },
+  {
+   "rank": 413,
+   "user_id": 3162,
+   "username": "knash",
+   "score": 5108
+  },
+  {
+   "rank": 414,
+   "user_id": 206,
+   "username": "xweiss",
+   "score": 5102
+  },
+  {
+   "rank": 415,
+   "user_id": 298,
+   "username": "sitip",
+   "score": 5094
+  },
+  {
+   "rank": 416,
+   "user_id": 1623,
+   "username": "Delaney_B",
+   "score": 5065
+  },
+  {
+   "rank": 417,
+   "user_id": 678,
+   "username": "chloe_delaney",
+   "score": 5064,
+   "alliance": "CMPNY"
+  },
+  {
+   "rank": 418,
+   "user_id": 1259,
+   "username": "Aa1979",
+   "score": 5050
+  },
+  {
+   "rank": 419,
+   "user_id": 12,
+   "username": "quietriverco",
+   "score": 5038,
+   "alliance": "SNSILV"
+  },
+  {
+   "rank": 420,
+   "user_id": 132,
+   "username": "fqureshi29",
+   "score": 5033
+  },
+  {
+   "rank": 421,
+   "user_id": 3121,
+   "username": "ta1",
+   "score": 5010
+  },
+  {
+   "rank": 422,
+   "user_id": 568,
+   "username": "agus5",
+   "score": 4995,
+   "alliance": "BRRAVE"
+  },
+  {
+   "rank": 423,
+   "user_id": 2614,
+   "username": "paperkite",
+   "score": 4982,
+   "alliance": "CNCLV"
+  },
+  {
+   "rank": 424,
+   "user_id": 1123,
+   "username": "bree_r",
+   "score": 4977
+  },
+  {
+   "rank": 425,
+   "user_id": 390,
+   "username": "es1977",
+   "score": 4965
+  },
+  {
+   "rank": 426,
+   "user_id": 1708,
+   "username": "salmarri1",
+   "score": 4958
+  },
+  {
+   "rank": 427,
+   "user_id": 3350,
+   "username": "Saeed_S",
+   "score": 4942
+  },
+  {
+   "rank": 428,
+   "user_id": 164,
+   "username": "sb80",
+   "score": 4933
+  },
+  {
+   "rank": 429,
+   "user_id": 3321,
+   "username": "moreir",
+   "score": 4907
+  },
+  {
+   "rank": 430,
+   "user_id": 384,
+   "username": "ZF1990",
+   "score": 4896
+  },
+  {
+   "rank": 431,
+   "user_id": 317,
+   "username": "dpierce",
+   "score": 4887
+  },
+  {
+   "rank": 432,
+   "user_id": 374,
+   "username": "tylerc",
+   "score": 4885
+  },
+  {
+   "rank": 433,
+   "user_id": 3424,
+   "username": "Playmaker",
+   "score": 4881
+  },
+  {
+   "rank": 434,
+   "user_id": 874,
+   "username": "yousefalqasimi",
+   "score": 4854
+  },
+  {
+   "rank": 435,
+   "user_id": 2035,
+   "username": "Tyronew",
+   "score": 4853
+  },
+  {
+   "rank": 436,
+   "user_id": 598,
+   "username": "Bk85",
+   "score": 4847
+  },
+  {
+   "rank": 437,
+   "user_id": 1651,
+   "username": "cdelaney",
+   "score": 4826,
+   "alliance": "BRNNG"
+  },
+  {
+   "rank": 438,
+   "user_id": 2309,
+   "username": "ob1993",
+   "score": 4806
+  },
+  {
+   "rank": 439,
+   "user_id": 2613,
+   "username": "butt2",
+   "score": 4787
+  },
+  {
+   "rank": 440,
+   "user_id": 2985,
+   "username": "Dimaspratama",
+   "score": 4780,
+   "alliance": "CARTEL"
+  },
+  {
+   "rank": 441,
+   "user_id": 1636,
+   "username": "lupita_hakobyan",
+   "score": 4773
+  },
+  {
+   "rank": 442,
+   "user_id": 1732,
+   "username": "kenta_watanabe",
+   "score": 4766
+  },
+  {
+   "rank": 443,
+   "user_id": 17,
+   "username": "ub96",
+   "score": 4762,
+   "alliance": "CLTN"
+  },
+  {
+   "rank": 444,
+   "user_id": 600,
+   "username": "ngata70",
+   "score": 4742
+  },
+  {
+   "rank": 445,
+   "user_id": 3334,
+   "username": "hohe1984",
+   "score": 4733
+  },
+  {
+   "rank": 446,
+   "user_id": 16,
+   "username": "jf2007",
+   "score": 4732
+  },
+  {
+   "rank": 447,
+   "user_id": 243,
+   "username": "yusuf_simatupang",
+   "score": 4729
+  },
+  {
+   "rank": 448,
+   "user_id": 2365,
+   "username": "ss2006",
+   "score": 4720
+  },
+  {
+   "rank": 449,
+   "user_id": 535,
+   "username": "stonefruitworks",
+   "score": 4719
+  },
+  {
+   "rank": 450,
+   "user_id": 1231,
+   "username": "Za1976",
+   "score": 4693,
+   "alliance": "MERIDI"
+  },
+  {
+   "rank": 451,
+   "user_id": 1665,
+   "username": "Dy1999",
+   "score": 4690,
+   "alliance": "VANGUA"
+  },
+  {
+   "rank": 452,
+   "user_id": 1765,
+   "username": "STONEFRUIT_99",
+   "score": 4678
+  },
+  {
+   "rank": 453,
+   "user_id": 1938,
+   "username": "kato1998",
+   "score": 4662
+  },
+  {
+   "rank": 454,
+   "user_id": 1679,
+   "username": "Ameliaw",
+   "score": 4656
+  },
+  {
+   "rank": 455,
+   "user_id": 1105,
+   "username": "ANWOSU",
+   "score": 4648
+  },
+  {
+   "rank": 456,
+   "user_id": 1049,
+   "username": "Id94",
+   "score": 4647,
+   "alliance": "TERMIN"
+  },
+  {
+   "rank": 457,
+   "user_id": 1913,
+   "username": "fazevedo52",
+   "score": 4636,
+   "alliance": "BRNNG"
+  },
+  {
+   "rank": 458,
+   "user_id": 668,
+   "username": "johannaw9",
+   "score": 4601
+  },
+  {
+   "rank": 459,
+   "user_id": 2413,
+   "username": "ra98",
+   "score": 4582
+  },
+  {
+   "rank": 460,
+   "user_id": 23,
+   "username": "Amoretti",
+   "score": 4560
+  },
+  {
+   "rank": 461,
+   "user_id": 1271,
+   "username": "aa89",
+   "score": 4553
+  },
+  {
+   "rank": 462,
+   "user_id": 1821,
+   "username": "skrause83",
+   "score": 4551,
+   "alliance": "APACT"
+  },
+  {
+   "rank": 463,
+   "user_id": 1303,
+   "username": "hollowlaneworks",
+   "score": 4535
+  },
+  {
+   "rank": 464,
+   "user_id": 308,
+   "username": "Camila_79",
+   "score": 4525
+  },
+  {
+   "rank": 465,
+   "user_id": 1560,
+   "username": "FREEM4",
+   "score": 4516,
+   "alliance": "TERMIN"
+  },
+  {
+   "rank": 466,
+   "user_id": 295,
+   "username": "gs80",
+   "score": 4500
+  },
+  {
+   "rank": 467,
+   "user_id": 186,
+   "username": "brickyard1987",
+   "score": 4494
+  },
+  {
+   "rank": 468,
+   "user_id": 1851,
+   "username": "mb1988",
+   "score": 4486
+  },
+  {
+   "rank": 469,
+   "user_id": 857,
+   "username": "backroad1984",
+   "score": 4484
+  },
+  {
+   "rank": 470,
+   "user_id": 2364,
+   "username": "katrin-jonsdottir",
+   "score": 4478,
+   "alliance": "SWANDE"
+  },
+  {
+   "rank": 471,
+   "user_id": 2294,
+   "username": "lampposthq",
+   "score": 4456
+  },
+  {
+   "rank": 472,
+   "user_id": 2607,
+   "username": "fb1984",
+   "score": 4435
+  },
+  {
+   "rank": 473,
+   "user_id": 324,
+   "username": "bpereira",
+   "score": 4432,
+   "alliance": "VULTUR"
+  },
+  {
+   "rank": 474,
+   "user_id": 1214,
+   "username": "dk90",
+   "score": 4429,
+   "alliance": "BRRAVE"
+  },
+  {
+   "rank": 475,
+   "user_id": 3447,
+   "username": "Yolgezer",
+   "score": 4404
+  },
+  {
+   "rank": 476,
+   "user_id": 2094,
+   "username": "leotulloch",
+   "score": 4394
+  },
+  {
+   "rank": 477,
+   "user_id": 1666,
+   "username": "cabr",
+   "score": 4391,
+   "alliance": "CLTN"
+  },
+  {
+   "rank": 478,
+   "user_id": 293,
+   "username": "Zoe87",
+   "score": 4373,
+   "alliance": "HLLW"
+  },
+  {
+   "rank": 479,
+   "user_id": 161,
+   "username": "matheus_rodrigues",
+   "score": 4367,
+   "alliance": "BSTN"
+  },
+  {
+   "rank": 480,
+   "user_id": 1206,
+   "username": "Lferraro",
+   "score": 4357
+  },
+  {
+   "rank": 481,
+   "user_id": 76,
+   "username": "esperanza_hollenbeck",
+   "score": 4356
+  },
+  {
+   "rank": 482,
+   "user_id": 2416,
+   "username": "rinan",
+   "score": 4326,
+   "alliance": "ARROW"
+  },
+  {
+   "rank": 483,
+   "user_id": 115,
+   "username": "hhollis",
+   "score": 4324
+  },
+  {
+   "rank": 484,
+   "user_id": 347,
+   "username": "nathan1989",
+   "score": 4318
+  },
+  {
+   "rank": 485,
+   "user_id": 593,
+   "username": "rsantoso",
+   "score": 4305
+  },
+  {
+   "rank": 486,
+   "user_id": 926,
+   "username": "tahmed",
+   "score": 4301
+  },
+  {
+   "rank": 487,
+   "user_id": 3217,
+   "username": "Zhan80",
+   "score": 4298,
+   "alliance": "BSTN"
+  },
+  {
+   "rank": 488,
+   "user_id": 4141,
+   "username": "sapiens",
+   "score": 4298,
+   "alliance": "MIT"
+  },
+  {
+   "rank": 489,
+   "user_id": 3208,
+   "username": "Sabbir49",
+   "score": 4295
+  },
+  {
+   "rank": 490,
+   "user_id": 520,
+   "username": "Arif36",
+   "score": 4293
+  },
+  {
+   "rank": 491,
+   "user_id": 106,
+   "username": "ah2003",
+   "score": 4290
+  },
+  {
+   "rank": 492,
+   "user_id": 302,
+   "username": "hc1984",
+   "score": 4286
+  },
+  {
+   "rank": 493,
+   "user_id": 189,
+   "username": "bagus-s1990",
+   "score": 4284
+  },
+  {
+   "rank": 494,
+   "user_id": 26,
+   "username": "eo1988",
+   "score": 4259
+  },
+  {
+   "rank": 495,
+   "user_id": 2404,
+   "username": "maya_b",
+   "score": 4247
+  },
+  {
+   "rank": 496,
+   "user_id": 2260,
+   "username": "gizem_k",
+   "score": 4228
+  },
+  {
+   "rank": 497,
+   "user_id": 554,
+   "username": "Arnard79",
+   "score": 4193
+  },
+  {
+   "rank": 498,
+   "user_id": 752,
+   "username": "mariana_lima",
+   "score": 4182,
+   "alliance": "SWANDE"
+  },
+  {
+   "rank": 499,
+   "user_id": 1524,
+   "username": "bbarbosa44",
+   "score": 4177,
+   "alliance": "CLTN"
+  },
+  {
+   "rank": 500,
+   "user_id": 335,
+   "username": "nettles80",
+   "score": 4171
+  }
+ ]
+}
