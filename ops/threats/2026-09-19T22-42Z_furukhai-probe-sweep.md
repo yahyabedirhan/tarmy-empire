@@ -22,3 +22,5 @@ Three BTC accounts probing us in one day looks like target-picking, not curiosit
 - 23:03:46–23:04:06Z: albaycasey's sweep hit capital, :10, :3, :9, :14 — **all five caught** (`planet.spied caught: true`). No `planet.spied` event arrived for Furukhai's four flights at 22:42Z: his scans most likely succeeded (higher espionage tech — see intel/players/Furukhai.md).
 
 - 2026-09-20T05:08Z: albaycasey again — probes at :3 and :9 from 5:305:5, both caught. Second sweep in 6 h; still no attack fleet.
+
+- 2026-09-20T12:51Z: Furukhai swept all six planets from 5:314:8; only :10's probe was caught. **The commander MCP was locked out (401 invalid token) from 12:25Z — no counter-move possible; the capital held ~200k M / 345k C / 350k D at the time.**
