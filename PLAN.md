@@ -13,7 +13,7 @@ Rolling plan, rewritten at every hand-off (`empire-cycle` step 7). Times UTC. So
 ## Research (014 H2 — always busy)
 | when | action | gate |
 |---|---|---|
-| **first call after re-auth** | plasma 7 (256k C, 8.5 h; rung at 7) — slot idle since 12:25Z | MCP authenticated |
+| **first call** | plasma 7 (256k C, 8.5 h; rung at 7) — slot idle since 12:25Z | — |
 | after | weapons 10 → impulse 5–6; or astro 10 → 11 if the Commander says so (crystal ≥ 80k/h now) | crystal |
 
 ## Advanced tech (014 H1/H2)
