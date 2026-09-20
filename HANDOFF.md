@@ -1,6 +1,8 @@
-# Handoff — 2026-09-20T07:25Z (cycle 72, mid-session)
+# Handoff — 2026-09-20T12:28Z (cycle 75 — BLOCKED: commander MCP token expired)
 
 ## Do this first
+**Every commander call returns `http 401: invalid token` since 12:25Z** (`queue_research`, `research_levels`, `empire_overview`; `next_event` still returns empty lists). Not in `docs/mcp/COMMANDER.md` → Troubleshooting. The Commander must re-authenticate the commander MCP (tarmy login) — nothing in the loop can fix it. **The research slot is idle since 12:25:16Z (HD 4 landed): the first call after re-auth is `queue_research(tech="plasma")` 7 (256k C; capital holds ~345k C).** Then the normal cycle.
+
 Run `/empire-cycle`. **albaycasey (BTC) raided :3 and :9 at 06:01/06:07Z** (`ops/defence/2026-09-20T05-35Z_albaycasey-attack-p3-p9.md`) — walls 70 % rebuilt, satellites rebought, deut now flows to the capital every cycle. On any attack `fleet.incoming`: fly the target's cargo + stocks to :10 or the capital, lock crystal in a probe batch (cancel after for the refund), alert the Commander. Next: **12:25:13Z HD 4 lands → `queue_research(tech="plasma")` 7 (256k C — ship from :1/:10)**; :10/:9 metal → capital for nanite 1 (1M M); 14:36:31Z :3 crystal 21 lands. 08:00Z leaderboard snapshot.
 
 ## Where we are
