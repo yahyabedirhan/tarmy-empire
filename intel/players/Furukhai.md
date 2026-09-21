@@ -4,7 +4,7 @@ alliance: BTC (galaxy tag 2026-09-19T22:42Z; was none on 09-11)
 planets: [5:313:12, 5:314:4, 5:314:5, 5:314:8]
 rank: top 100 — invested score 14 293 on 2026-09-10 (aranella, leaderboard)
 activity: active
-last_updated: 2026-09-20T19:14Z
+last_updated: 2026-09-21T19:17Z
 ---
 ## Pattern
 Deep-mined active account two systems from us. 5:314:8 holds a real fleet: **13 battleships**, plus cruisers (aranella's sim, chat 475/517: "sorun duvar değil onun 13 zırhlısı"). Real espionage tech: drops probes from espionage-4 accounts (Svobodennn, chat 676; our own scans read high counter). Named by Svobodennn as one of two "real threats" in the neighbourhood (the other: omer, BTC).
@@ -17,3 +17,4 @@ Scans 5:313:12, 5:314:4, 5:314:5 (all `avoid`). No contact, no attacks either wa
 - 2026-09-20T12:51Z: swept all six of our planets (only :10's probe caught).
 - 2026-09-20T18:04Z: probed the capital (3 probes) and :14 (1 probe) from 5:314:8; both detected and destroyed.
 - 2026-09-20T19:14Z: our return scan on 5:314:8 (Bakim) — info level 1/5, probe lost (counter 95%). Stock M 3.4M / C 1.12M / D 1.25M, far above ours: confirmed avoid, no fleet/defence visibility.
+- 2026-09-21: struck :1+:3 (09:37Z, 345k C looted), probed all six (12:13Z, no strike), struck the capital (16:33Z, loot held to 31k). Alliance-mate aranella probed all four of his planets 19:15Z (alliance chat msg 1993, BJACK): main fleet at 5:314:8 is **100 battlecruiser, 166 armoured (unclear ship type — "zırhlı"), 43 destroyer, 158 cruiser, 25 bomber, 135 large_cargo, 90 recycler**, plus 20 interplanetary missiles + 40 anti-ballistic on that planet. The 70-cruiser strikes hitting us are a small slice of this. His other three planets (:4, :5, :7) hold no fleet, walls 78–324 RL. Confirms: nowhere near affordable to fight, evacuation/vault is the only defence at our scale.
