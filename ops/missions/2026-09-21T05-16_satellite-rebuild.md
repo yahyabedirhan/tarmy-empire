@@ -1,10 +1,10 @@
 ---
 slug: satellite-rebuild
-status: done
+status: running
 model: haiku
-agent: a0280f0e30b2f142f (round 1), a9a1b2b6ed3b59633 (round 2)
+agent: a0280f0e30b2f142f (round 1), a9a1b2b6ed3b59633 (round 2), a72bf2f34bcf30e6d (round 3)
 opened: 2026-09-21T05:16Z
-closed: 2026-09-21T06:10Z
+closed:
 wake: production_factor == 1 on all four planets, or 60 solar_satellite queued per planet, or 40 minutes elapsed
 ---
 ## Brief
