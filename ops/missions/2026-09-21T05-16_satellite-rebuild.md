@@ -1,10 +1,10 @@
 ---
 slug: satellite-rebuild
-status: done
+status: running
 model: haiku
-agent: a0280f0e30b2f142f
+agent: a0280f0e30b2f142f (round 1), a9a1b2b6ed3b59633 (round 2)
 opened: 2026-09-21T05:16Z
-closed: 2026-09-21T05:56Z
+closed:
 wake: production_factor == 1 on all four planets, or 60 solar_satellite queued per planet, or 40 minutes elapsed
 ---
 ## Brief
@@ -24,8 +24,11 @@ Do not touch anything except `solar_satellite` builds on these four planets. Do 
 
 REPORT: write the section below and end.
 
-## Report
+## Report (round 1)
 result: Mission completed at 40-minute limit. Three planets (5080, 5288, 5587) successfully rebuilt solar satellites to 0.898, 0.826, 0.823 production_factor respectively. Planet 5755 remained blocked on deuterium resources (0.642 production_factor, 0 satellites added). Goal of 1.0 production_factor not reached within 40-minute window but production significantly restored across the three buildable planets.
+
+## Round 2 (05:56Z) — Lieutenant
+Lieutenant shuttled 50k D from :14 to :3 (fleet 100946, landed 05:49Z) and queued 5 more satellites there directly. Re-spawning the same mission (round 2) to finish all four planets to production_factor 1.0, now that :3 is unblocked.
 
 calls made:
 - empire_overview: 2 (at 10 min and 40 min checkpoints)
