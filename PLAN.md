@@ -1,49 +1,47 @@
-# Plan — next 24 h from 2026-09-20T19:16Z, in lanes
+# Plan — next 24 h from 2026-09-21T05:16Z, in lanes
 
-Rolling plan, rewritten at every hand-off (`empire-cycle` step 7). Times UTC. Sources: decisions 013 (roles), 014 (roadmap, accepted), 015 (walls) — **standing priority (Commander 20:55Z 09-18): planet 6 + crystal mining first, defence second**. Metal is the empire gate now; crystal is slack.
+Rolling plan, rewritten at every hand-off (`empire-cycle` step 7). Times UTC. **Recovery mode**: Furukhai (BTC) swept all five populated planets 20:18-21:20Z 09-20 — every wall and every satellite gone. Commander's direction: rebuild energy + walls, stay quiet, no retaliation. Standing priority (planet 6 + crystal mining first, defence second) is paused until recovery closes.
 
-## Mining (crystal levels ranked empire-wide by payback — 013 clarification)
+## Energy (top priority — nothing else until factor 1)
 | when | where | action | gate |
 |---|---|---|---|
-| when metal allows | :10 | metal_mine 21 (200k M / 50k C) — energy fixed by solar_plant 19 this cycle | metal (short ~4k, +25k/h) |
-| when metal allows | :9 | metal_mine 20 (133k M / 33k C) — energy fixed by solar_plant 19 this cycle | metal (short ~3k, +23k/h) |
-| when metal allows | :1 | crystal_mine 22 (928k M / 464k C, 135 h) — next crystal rung by payback | metal (:1 has only metal_mine 6) |
-| after | capital | crystal_mine 20 (363k M / 181k C) | metal |
-| every cycle | all | pools ≥ 80 % cap; energy spare ≥ 0 before any mine | — |
+| now | capital, :10, :9, :3 | solar_satellite batches, top off queue slots as they free (5-deep limit per planet) | crystal + deuterium |
+| when metal/deut allow | :3 | deut shuttle needed — its own synth can't keep up with satellite demand (0.05k D/h) | logistics |
+| after factor 1 | all four | resume the normal doctrine order (storage → mines → facilities) | — |
 
-## Research (014 H2 — always busy)
-| when | action | gate |
-|---|---|---|
-| running | plasma 7 (256k C) → lands **2026-09-21T03:43:49Z** | — |
-| after | weapons 10 → impulse 5–6; or astro 10 → 11 if the Commander says so (crystal ≥ 80k/h — trigger fired) | crystal |
-
-## Advanced tech (014 H1/H2)
+## Defence (rebuild toward prior levels, cheapest first)
 | when | where | action | gate |
 |---|---|---|---|
-| when 1M M | capital | nanite 1 (1M / 500k / 100k; rung the_nanites) — :10/:9 metal every cycle (~48k/h) | ~15 h |
-| when metal/crystal allow | :14 | deuterium_synthesizer 17 (148k M / 49k C) — planet is poor, needs a shuttle | metal + crystal |
+| after energy | capital | RL toward 200 (currently 140), then LL, gauss, domes | metal |
+| after energy | :10 | RL toward 149 (currently 100), then LL/HL/ion/gauss/dome | metal |
+| after energy | :9 | RL toward 107 (currently 81), then LL/HL/ion/gauss/dome | metal |
+| after energy | :3 | RL toward 81 (currently 58), then LL | metal |
+| — | :1 | RL toward 50 (currently 44) | metal |
+| never rebuild | all | more RL beyond prior levels — 015 confirmed empire-wide: no affordable wall stops a real fleet | — |
 
-## Defence (015 — second priority)
-| when | where | action | gate |
-|---|---|---|---|
-| on attack `fleet.incoming` | any | fly cargo + stocks out, lock crystal in a probe batch, alert | — |
-| **watch ~19:34–19:49Z** | capital / :14 | BTC recon-to-strike pattern (~90 min after Furukhai's 18:04Z probe) — no fleet inbound yet | — |
-| after the raid | :9 | wall rebuilt to 107 RL / 15 LL / 3 HL / 4 ion / 6 gauss / SSD — no refill beyond LSD until BTC's intent is known | — |
-| when metal is slack | :14 / :1 | +25 RL per 50k M (walls 85 / 50 now) | metal |
-| later | capital | silo 1–2 + 10 ABM when metal is slack (missile_silo needs shipyard 9, landing 20:20:05Z) | metal |
-
-## Logistics (013 rule 4)
+## Fleet (only after walls are back)
 | when | action |
 |---|---|
-| every cycle | deut on :10/:9/:14 → capital 700k tank (raid lesson); crystal on :10/:9/:1 → capital research |
-| every cycle | :10/:9 metal → capital (nanite 1) |
-| 20:00Z / 08:00Z | `leaderboard` snapshot → `intel/leaderboard/<ts>.json`; growth in the status report |
+| later | replace lost fleet (62 LF, ~13 LC/SC, 2 recyclers, up to 9 probes) — do not rebuild before the energy/wall gate closes |
+| later, Commander's call | new colony ship (10k M/20k C/10k D) — the astro 10/11 plan is on hold until this is revisited |
+
+## Research (014 H2 — unaffected, keep it busy)
+| when | action | gate |
+|---|---|---|
+| landed | plasma 7 (03:43Z 09-21, quest paid) | — |
+| next | weapons 10 → impulse 5-6 | crystal (recovery competes for it — deprioritize research crystal spend below satellites) |
+
+## Logistics
+| when | action |
+|---|---|
+| every cycle | metal/crystal/deut sweep continues, but now feeding satellite/wall rebuilds first, not mines |
+| once | :3 needs a deuterium delivery for satellites — check :14's 161k D pool first |
 
 ## Alliance / intel
 | when | action |
 |---|---|
-| cycle 76 (done) | status report + alliance skim — flagged BTC recon-to-strike pattern from necati/NeC |
-| open | **BTC raided us (albaycasey)** — Commander decides whether BJACK is told; Furukhai probed us again 18:04Z, scan on 5:314:8 confirms `avoid` (huge stock) |
-| cycle 80 | next status report |
+| done 05:08Z | Reported both attacks to BJACK alliance chat in Turkish, matching their style |
+| open | necati/BJACK reply on the pact question (asked twice now, 06:10Z 09-20 and today) |
+| watch | Furukhai's fleet composition now known: recon wave (cruiser+cargo) then a heavier reserve (bomber+cruiser+destroyer+cargo) for the highest-value target — assume he can do this again |
 
-Idle on purpose: terraformer; moon (Commander-only); raids (parked, no clean farm target); IPM; trades. Astro 10/11 waits on the Commander's go (trigger fired).
+Idle on purpose: terraformer; moon; raids; IPM; trades; astro 10/11 (colony ship lost, revisit only if the Commander raises it).
