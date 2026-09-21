@@ -18,6 +18,7 @@ This cycle: found every planet's build/shipyard queue empty and initially though
 5. Lessons for `strategy/LESSONS.md` (need Commander sign-off): four 09-20 lessons + four 09-21 lessons.
 
 ## Questions for the Commander
+- **Posture after Furukhai (asked 22:10Z, open)**: A turtle / B raid like him / **C deny + raid weak (recommended)** — 30 cruisers from idle metal, raids on inactive non-BTC neighbours (004), loot-denial drill standing, walls at the 015 floor. On "C" I write decision 016 and amend 001/009/015, then run the first `empire-raid` campaign. Nothing in `strategy/` changes until answered.
 - **Trade** (asked 15:08Z, still open): merttoprak's 3:2 metal-for-crystal (300k C for 450k M). Recommendation revised this cycle: crystal is no longer idle (energy 9 alone spent 204.8k C, and the next research wants more) — suggest a smaller trade or holding off until after the next research lands, rather than the full 300k. Decision 010 said no trades generally; still your call.
 - `strategy/LESSONS.md`: eight lessons (four 09-20, four 09-21) await sign-off.
 
