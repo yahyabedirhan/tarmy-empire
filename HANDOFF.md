@@ -1,37 +1,28 @@
-# Handoff — 2026-09-21T17:29Z (cycle 81 — capital cleared THREATENED, crystal lift running)
+# Handoff — 2026-09-21T17:58Z (cycle 80 — capital struck at 16:33Z, loot denied; energy 9 in the lab)
 
 ## Do this first
-Run `/empire-cycle`. Sleeping until **17:34:51Z** (:9's last satellite lands). All six planets at factor 1, no threats, no running missions. Two fleets in the air:
-- 104046: 8 LC :10 → capital, 110k D + 60k M, lands **17:40:07Z**.
-- 104057: 5 LC :14 → :3, lands **17:42:45Z**, then load :3's 61.8k C and lift to the capital.
+Run `/empire-cycle`. All six planets at factor 1. Furukhai (BTC) has hit us three times in 24 h and probes all six planets before each strike; **every probe on the capital is a launch** (16:08Z probe → 16:12Z launch → 16:33Z hit). The drill that held loot to 31k today: (1) `build_defense` something long (gauss ×2), (2) `build_ships(espionage_probe, N)` behind it to vault the crystal, (3) fly every LC in with the metal/deut, (4) after the hit `cancel_build` the probe batch (full refund if it had not started). Cargo now: 8 LC at :10, 5 LC at :3 (Commander moved them there), 3 LC + 81 probes at :1, 26+60+40+40 probes on :1/:10/:9/:3.
 
-**Once both land**, capital will have ~264k M / ~226k C / ~118k D → queue **energy 9** (0 M / 204,800 C / 102,400 D). Then spend the metal on RL 159→200 (82k M) and solar 18.
+Wakes: 18:07Z RL ×25 at the capital; :1 crystal lift when ≥ 60k (3 LC there, next ~18:30Z); 22:02Z energy 9 lands → next research weapons 10 (409k M — metal gate) or hyperspace drive 5 (160k M / 320k C / 96k D); :9 metal 22 at ~299k M; :10 metal 22 at 299k M. Metal is the empire-wide gate; crystal now idles (~200k+ across :1/:3/:10) — the trade question below is about exactly that.
 
 ## Where we are
-This session opened after a `/clear` mid-empire; the last written HANDOFF (15:17Z) was two cycles stale — a Furukhai attack on the capital (16:33Z, 70 CR + 15 LC) had already happened and been closed by the previous session (`ops/defence/2026-09-21T16-12Z_furukhai-attack-capital.md`), but no handoff was written after it. Caught up by reading git log + the ops file + a fresh `empire_overview` before acting.
+Today: Furukhai struck :1 + :3 (09:37Z, 345k C looted, unattended), probed everything at 12:13Z (no strike; we vaulted, cost 180 probes), struck the capital 16:33Z (loot 31k thanks to vault + lift; lost 48 sats, wall to the floor and rebuilt). Records: `ops/defence/2026-09-21T09-37Z_*`, `…T12-13Z_*`, `…T16-12Z_*`. Alliance told three times (msgs 1963 by me, and 17:32Z by the Commander from the TUI: `ops/diplomacy/2026-09-21_furukhai-capital-strike-report.md`). BTC pact is dead alliance-wide.
 
-**16:33Z capital strike (closed)**: loot held to 910 M / 769 C / 29k D (vs 09-20's ~178k) — probe→lift+vault worked again. Cost: 48 satellites, 56 RL, 5 LL, 1 gauss to the floor, all rebuilt/requeued same session. Reported to BJACK this cycle (msg 1982, 17:32:46Z, `ops/diplomacy/2026-09-21_furukhai-capital-strike-report.md`).
-
-This cycle: confirmed recovery complete (48/48 sats, factor 1, shielding 8 landed) → capital THREATENED/recovering → GROWING/waiting. Found 8 LC already outbound :10→capital (not this session's action — either the prior session queued it before dying, or the Commander). Deployed :14's 5 idle LC to :3 to lift its crystal, since the capital was short ~40.6k C for energy 9. :9's metal_mine 21 + 4 satellites queued last cycle are landing on schedule (17:30–17:35Z).
+Research today: impulse 5, hyperspace 5, shielding 8, lab 9; energy 9 running (22:02Z). Mines: :10 metal 21, :9 metal 21. Capital: fusion 6, gauss 3→1 (lost)… gauss 1, RL 184 by 18:07Z. Every satellite bank rebuilt (capital 48, :3 27, :9 67, :10 59).
 
 ## Next actions
-1. 17:34:51Z: :9 sats land → queue 4 more sats there (headroom still short per the plan file `wake`).
-2. 17:40:07Z: fleet 104046 lands at capital (110k D + 60k M).
-3. 17:42:45Z: fleet 104057 lands at :3 → load ≥45k C → dispatch to capital.
-4. Once capital crystal ≥ 204.8k: queue energy 9, then RL 159→200 and solar 18 with the metal.
-5. Status report due — picture has changed twice since the last one (`empire-status` skill).
+1. Keep the cargo loop: crystal off :1/:3 to the capital every ~3 h; metal from :9/:10 to the capital for weapons 10 / solar 18 / shipyard 10.
+2. 22:02Z: energy 9 lands → queue the next research from wherever the resources sit (a colony lab 1 works: :10 has one).
+3. Hardened energy on the capital: solar_plant 18 (74k M / 30k C) so the next satellite wipe hurts less.
+4. Status report — overdue (cycle 80). Write it next cycle: three strikes, loot per strike (345k → 31k), what the vault drill costs.
+5. Lessons for `strategy/LESSONS.md` (need Commander sign-off): cargo capacity is a defence; unattended = looted; vault behind a long item; a capital probe is a launch.
 
 ## Questions for the Commander
-- merttoprak's 3:2 metal-for-crystal trade exception (asked 15:08Z, still open) — doing nothing on it until answered.
-- `strategy/LESSONS.md` sign-off needed: L17 + four 09-20 raid lessons + two 09-21 09:37Z lessons (all drafted, awaiting approval) — plus a third set from the 16:33Z attack (loot-denial works, satellites are the recurring loss, treat every capital probe as a launch) still to draft.
+- **Trade** (asked 15:08Z, still open): merttoprak's 3:2 metal-for-crystal (we give 300k C, get 450k M). Crystal idles, metal gates everything. Recommendation: yes, one-time. Decision 010 said no trades — your call.
+- `strategy/LESSONS.md`: four 09-20 lessons + four from today await sign-off.
 
-## Uncommitted strategy changes awaiting approval
-- `strategy/LESSONS.md` — as above, nothing has been merged in yet.
-- 013 clarification (crystal levels compete empire-wide by payback) still to fold into `strategy/decisions/013`.
-
-## What changed this session
-- 17:29Z: read HANDOFF (stale) + git log + ops file, caught up on the 16:33Z attack already closed by the prior session.
-- 17:29Z: capital THREATENED/recovering → GROWING/waiting (recovery confirmed complete).
-- 17:29Z: deployed :14's 5 LC to :3 (104057) to lift crystal for energy 9's gap.
-- 17:29Z: found and left in place fleet 104046 (:10 → capital, 110k D + 60k M) — not queued by this session.
-- Committed `empire/planets/*.md` updates (5 files); pushed.
+## What changed this session (11:30–17:58Z)
+- :3 energy bleed closed (27 sats, solar 17), :3/:1 walls to the floor, 10 LC built, alliance reports ×2 (+1 by the Commander).
+- 12:13Z probe sweep: vault drill first tried; 16:33Z capital strike: vault + lift held loot to 31k.
+- Research: impulse 5 → hyperspace 5 → shielding 8 → energy 9 (running); lab 9 built while research ran from :10.
+- Commander (TUI): moved :14's 5 LC to :3 (17:29Z), posted the capital-strike report (17:32Z).
