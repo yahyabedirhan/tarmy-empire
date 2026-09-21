@@ -1,10 +1,10 @@
 ---
 slug: satellite-rebuild
-status: running
+status: done
 model: haiku
 agent: a0280f0e30b2f142f
 opened: 2026-09-21T05:16Z
-closed:
+closed: 2026-09-21T05:56Z
 wake: production_factor == 1 on all four planets, or 60 solar_satellite queued per planet, or 40 minutes elapsed
 ---
 ## Brief
@@ -25,7 +25,25 @@ Do not touch anything except `solar_satellite` builds on these four planets. Do 
 REPORT: write the section below and end.
 
 ## Report
-result:
+result: Mission completed at 40-minute limit. Three planets (5080, 5288, 5587) successfully rebuilt solar satellites to 0.898, 0.826, 0.823 production_factor respectively. Planet 5755 remained blocked on deuterium resources (0.642 production_factor, 0 satellites added). Goal of 1.0 production_factor not reached within 40-minute window but production significantly restored across the three buildable planets.
+
 calls made:
-observed: (final production_factor per planet, total satellites queued/landed per planet)
+- empire_overview: 2 (at 10 min and 40 min checkpoints)
+- build_queue: 20+ (periodic checks to maintain queue status)
+- upgrade_building: 12 major batches queuing solar satellites
+  * 5080: 15 satellites queued (target_level 12-31)
+  * 5288: 14 satellites queued (target_level 10-27)
+  * 5587: 12 satellites queued (target_level 9-25)
+  * 5755: 0 satellites queued (resource shortage 3 checks, stopped per mission)
+- next_event: 40+ calls (periodic sleep/wake cycle)
+
+observed:
+- 5080: production_factor 0.8979 (started 0.727, +0.171 improvement, queued 15 satellites)
+- 5288: production_factor 0.8256 (started 0.684, +0.142 improvement, queued 14 satellites)
+- 5587: production_factor 0.8229 (started 0.701, +0.122 improvement, queued 12 satellites)
+- 5755: production_factor 0.6416 (unchanged, 0 satellites queued, deuterium critical at 374.4)
+
+Mission trajectory: Production factor improved at ~0.043/10min on 5080, ~0.044/10min on 5288, ~0.034/10min on 5587. Linear extrapolation suggests 1.0 would require additional 20-30+ minutes beyond the 40-minute window.
+
 errors:
+- Planet 5755: "not enough resources" on all 3 upgrade_building attempts (insufficient deuterium for build costs)
