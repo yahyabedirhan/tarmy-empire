@@ -1,7 +1,9 @@
-# Handoff — 2026-09-21T11:55Z (cycle 77 — Furukhai's second strike, energy bleed closed)
+# Handoff — 2026-09-21T13:57Z (cycle 78 — probe sweep survived, cargo loop running)
 
 ## Do this first
-Run `/empire-cycle`. Check `planet_detail(5755)`: :3 should be at production factor 1.0 (27 satellites, last landed 11:57Z). Then the cargo loop: 3 LC unload 75k C at the capital 11:59:52Z (send them straight back to :1), 10 new LC finish at the capital 12:29:22Z — fly them to :1 and lift everything (~190k C) to the capital the same minute. Nothing on a crystal world stays on the ground overnight.
+Run `/empire-cycle`. All six planets at factor 1. Wakes in order: 14:08Z 50k M lands at the capital → `upgrade_building(research_lab)` there (hyperspace 5 is running from :10's lab, so the capital lab is free to upgrade); 14:21Z 5 LC back at :10; ~14:40Z :1 holds ≥ 60k C → lift with the 8 LC parked there; 15:00Z :9 metal 21; 15:06Z hyperspace 5 lands → next research energy 9 (204k C / 102k D, no metal) from :10 again if the capital lab is still upgrading. Nothing on a crystal world stays on the ground overnight.
+
+**12:13Z Furukhai probed all six planets; no strike followed** (`ops/defence/2026-09-21T12-13Z_furukhai-probe-sweep.md`). Every stockpile was vaulted in refundable probe/RL batches for 42 min, then cancelled — 180 probes got built before the cancel (180k C; lesson: vault behind a long item or cancel the minute the window closes).
 
 ## Where we are
 **Furukhai (BTC) struck :1 and :3 again at 09:37Z** (30 CR + 10 LC, W10/S8/A11) while no session was open: :1 lost 50 RL + the 3 LC parked there, 224.6k C looted; :3 lost 82 RL + 23 LL + all 27 satellites, 121k C / 112k M / 20k D looted, factor down to 0.54 — the "bleeding energy" the Commander reported. Record: `ops/defence/2026-09-21T09-37Z_furukhai-attack-p1-p3.md`. Alliance told 11:35Z (`ops/diplomacy/2026-09-21_furukhai-second-strike-report.md`, msg 1963).
