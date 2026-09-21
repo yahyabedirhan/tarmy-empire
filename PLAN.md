@@ -1,52 +1,50 @@
-# Plan — next 24 h from 2026-09-21T06:35Z, in lanes
+# Plan — next 24 h from 2026-09-21T11:55Z, in lanes
 
-Rolling plan, rewritten at every hand-off (`empire-cycle` step 7). Times UTC. **Recovery closed** — all six planets at production factor 1.0 as of 06:31Z after Furukhai's (BTC) full-empire sweep. Resuming standard doctrine: decision 013 (roles), 014 (roadmap), 015 (walls) — standing priority (planet 6 + crystal mining first, defence second) is back in effect, secondary defense catch-up folded into the normal ladder rather than treated as an emergency.
+Rolling plan, rewritten at every hand-off (`empire-cycle` step 7). Times UTC. Furukhai (BTC) farms :1 and :3 whenever crystal sits on them; the BTC pact is over on the alliance side. Standing priority (planet 6 + crystal mining first, defence second) holds, but **logistics is now part of defence**: crystal leaves the crystal worlds every cycle.
+
+## Logistics (the new first lane)
+| when | action | gate |
+|---|---|---|
+| 11:59Z | 3 LC unload 75k C at capital → deploy back to :1 | — |
+| 12:29Z | 10 LC done at capital → :1, lift ~190k C → capital | — |
+| after | :14 deut (133k) → capital; :9/:10 metal → :14 (148k for synth 17) and → capital (weapons 10 / nanite) | LC free |
+| every cycle | crystal off :1 and :3; nothing stays overnight | — |
+
+## Energy
+| when | where | action |
+|---|---|---|
+| 11:57Z | :3 | 27 sats landed → factor 1; solar_plant 17 12:33Z |
+| 13:13Z | :9 | metal 20 lands, 4 sats follow → +1 sat |
+| 13:46Z | :10 | metal 21 lands, 4 sats follow → +3 sats |
 
 ## Mining (crystal levels ranked empire-wide by payback — 013 clarification)
 | when | where | action | gate |
 |---|---|---|---|
-| when metal allows | :10 | metal_mine 21 | metal |
-| when metal allows | :9 | metal_mine 20 | metal |
-| when metal allows | :1 | crystal_mine 22 (928k M / 464k C) | metal (:1 has only metal_mine 6) |
-| after | capital | crystal_mine 20 (363k M / 181k C) | metal |
+| queued | :10 | metal_mine 21 (13:46Z) | — |
+| queued | :9 | metal_mine 20 (13:13Z) | — |
+| when metal allows | :14 | deut synth 17 (148k M) | LC shipment |
+| when 928k M | :1 / :3 | crystal_mine 22 | metal — far off |
 
 ## Research (014 H2 — always busy)
 | when | action | gate |
 |---|---|---|
-| landed 03:43Z | plasma 7 | — |
-| next | weapons 10 → impulse 5-6 | crystal |
+| 13:39Z | impulse 5 lands | — |
+| next | weapons 10 (409k M / 102k C) | metal at the capital |
 
-## Advanced tech / facilities
-| when | where | action | gate |
-|---|---|---|---|
-| when 1M M | capital | nanite 1 (1M / 500k / 100k; rung the_nanites) | ~metal accumulation |
-
-## Defence (015 — catch-up, not emergency)
-| when | where | action | gate |
-|---|---|---|---|
-| as metal/crystal allow | capital | LL (9→10), gauss (0→2), domes (0→2) | metal + crystal |
-| as metal/crystal allow | :10 | LL (13→20), HL (9→10), ion (4→5), gauss (7→8) | metal + crystal |
-| as metal/crystal allow | :9 | LL (10→15), gauss (4→6) | metal + crystal |
-| as metal/crystal allow | :3 | LL (23→30) | metal + crystal |
-| never rebuild beyond prior | all | 015 confirmed empire-wide: no affordable wall stops a real fleet — hold at prior levels, don't overbuild | — |
-
-## Fleet (Commander's call on timing)
-| when | action |
-|---|---|
-| Commander's call | replace the lost fleet — cargo ships first (logistics), a new colony ship only if the Commander wants to revisit astro 10/11 |
-
-## Logistics
-| when | action |
-|---|---|
-| every cycle | metal/crystal/deut sweep resumes normal routing (capital nanite, colony mines, capital deut tank) |
-| watch | :3's deut synth is only level 1 — a shuttle from :14 was needed this recovery; consider a small bump if this recurs |
+## Defence (015 floor — rebuilt after each strike, never beyond prior)
+| when | where | action |
+|---|---|---|
+| → 12:30Z | :1 | RL ×23 (→ 57) |
+| → 13:02Z | :3 | RL ×27 (→ 82), LL ×9 (→ 23) |
+| → 12:12Z | :10 | LL ×7, gauss ×1, HL ×1 |
+| → 12:29Z | :9 | LL ×5, gauss ×2 |
+| → 12:30Z | capital | LL ×1 |
 
 ## Alliance / intel
 | when | action |
 |---|---|
-| done 05:08Z | Reported both Furukhai attacks to BJACK in Turkish |
-| open | necati/BJACK reply on the pact question |
-| doctrine | L17: don't espionage-scan an account already marked `avoid` — routine neighbourhood-watch scans now skip those |
-| cycle 80 | next status report — fold in the full incident + recovery numbers |
+| done 11:35Z | reported the 09:37Z strike (msg 1963) |
+| watch | engin [BTC, 5:298] probed us 10:44–10:57Z; probe → launch ≤ 20 min (necati) |
+| next cycle | status report (picture changed) |
 
-Idle on purpose: terraformer; moon; raids; IPM; trades; astro 10/11 and new colony ship (Commander's call only).
+Idle on purpose: terraformer; moon; raids; IPM; trades; astro 10/11 and a new colony ship (Commander's call only).

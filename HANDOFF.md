@@ -1,32 +1,38 @@
-# Handoff — 2026-09-21T06:45Z (cycle 76 recovery complete, doctrine updated)
+# Handoff — 2026-09-21T11:55Z (cycle 77 — Furukhai's second strike, energy bleed closed)
 
 ## Do this first
-Run `/empire-cycle`. Recovery is done — all six planets at production factor 1.0. Resume normal doctrine: energy is fixed everywhere, so go straight to storage/mine/facility decisions per `empire-farm`. Research slot is free (plasma 7 landed 03:43Z) — queue weapons 10 next (014 H2). Full current-state snapshot: `reports/status/2026-09-21T06-40Z.md`.
+Run `/empire-cycle`. Check `planet_detail(5755)`: :3 should be at production factor 1.0 (27 satellites, last landed 11:57Z). Then the cargo loop: 3 LC unload 75k C at the capital 11:59:52Z (send them straight back to :1), 10 new LC finish at the capital 12:29:22Z — fly them to :1 and lift everything (~190k C) to the capital the same minute. Nothing on a crystal world stays on the ground overnight.
 
 ## Where we are
-**Recovered from Furukhai's (BTC) full-empire sweep** (20:18-21:20Z 09-20): all six planets back to production factor 1.0, walls rebuilt to/above prior rocket-launcher levels (capital 215, :10 156, :9 107, :3 82, :1 50, :14 85 unchanged). Secondary defense (lasers/gauss/domes) still short of prior levels on capital/:10/:9/:3 — not urgent, fold into the normal doctrine ladder. The lost fleet (colony ship, 62 LF, ~13 LC/SC, 2 recyclers, up to 9 probes) has NOT been replaced — no ships anywhere except :14's and :1's 3 LC each. Full incident + recovery: `ops/defence/2026-09-20T19-57Z_*.md`, `ops/defence/2026-09-20T21-13Z_*.md`, `ops/missions/2026-09-21T05-16_satellite-rebuild.md` (3 soldier rounds, ~06:32Z close). Score 26 722, rank 30 (unaffected by the raid — score tracks levels, not stockpile).
+**Furukhai (BTC) struck :1 and :3 again at 09:37Z** (30 CR + 10 LC, W10/S8/A11) while no session was open: :1 lost 50 RL + the 3 LC parked there, 224.6k C looted; :3 lost 82 RL + 23 LL + all 27 satellites, 121k C / 112k M / 20k D looted, factor down to 0.54 — the "bleeding energy" the Commander reported. Record: `ops/defence/2026-09-21T09-37Z_furukhai-attack-p1-p3.md`. Alliance told 11:35Z (`ops/diplomacy/2026-09-21_furukhai-second-strike-report.md`, msg 1963).
 
-**Doctrine changed this session** (`strategy/ALLIANCE.md`, Commander direction): we now report a critical attack — especially BTC's — to BJACK chat unasked, one message per incident, in the channel's own terse Turkish shorthand (`ops/diplomacy/2026-09-21_furukhai-sweep-report.md` is the worked example this was modeled on and the precedent going forward). Everything else about the alliance is unchanged (quiet, no trades, no oversharing of our own stockpile/fleet).
+**Fixed this cycle**: :3 back to 27 satellites (all 27 queued by 11:53Z, last lands 11:57Z) + solar_plant 17 behind them (12:33Z) + RL/LL to the 015 floor (13:02Z). First cargo since the sweep: 10 LC at the capital (12:29Z); :14's 3 LC moved to :1 with 40k M / 20k D, lifted 75k C to the capital, RL ×23 queued at :1. :10 metal 21 (13:46Z) + :9 metal 20 (13:13Z) with satellites behind, secondary defence topped to the 015 floor on both. Impulse 5 in the lab (13:39Z).
+
+**Alliance chat (read 11:35Z)**: the BTC pact is over (merttoprak 06:40Z) — BTC hit necati, DenizYoldas, EfeBaslilar, tarla the same day. necati corrected the recon-to-strike rule: counter starts when a probe lands, launch within ~20 min, arrival by distance. engin [BTC, 5:298] probed four of our planets 10:44–10:57Z; his 388-ship fleet was bound for galaxy 3, nothing inbound on us as of 11:55Z.
+
+The soldier spawned for the satellite loop (haiku) could not call the MCP and made zero game calls (`ops/missions/2026-09-21T11-33_satellite-rebuild-p3.md`, failed); the loop was run inline. Don't re-spawn for this — inline is cheaper.
 
 ## Next actions
-1. Resume normal per-planet doctrine (energy fixed, mines/facilities next) — capital nanite 1 still waits on 1M M.
-2. Rebuild the lost fleet (cargo ships first, for logistics) once walls/secondary-defense catch up — Commander's call on a new colony ship.
-3. Research: weapons 10 → impulse 5-6 (014 H2), lab is free now.
-4. :3's deuterium synth is only level 1 (poor deut role fit for a crystal world) — the satellite recovery needed a shuttle from :14; consider whether :3 needs its own small synth bump to avoid repeating this.
-5. Status report due at cycle 80 (every 4th) — fold in the full incident + recovery numbers.
-Later: secondary defense (LL/HL/ion/gauss/domes) back to prior levels as metal/crystal allow.
+1. 11:59Z: 3 LC land at the capital → deploy them back to :1 (13 min) for a second 75k C lift.
+2. 12:29Z: 10 LC done → :1 → capital with everything; then :14 → capital with deuterium (133k D idle there) and metal from :9/:10 to :14 for deut synth 17 (148k M).
+3. 13:13Z / 13:46Z: metal mines land on :9 / :10 → queue 1 / 3 more satellites each to cover the new draw.
+4. 13:39Z: impulse 5 lands → weapons 10 (409k M / 102k C) needs metal at the capital; route :9/:10 metal there with the LC.
+5. Every cycle: crystal off :1 and :3 to the capital. Capital nanite 1 (1M M) still the metal sink.
+6. Status report due (cycle 80 by count, but the picture changed enough — write one next cycle).
 
 ## Questions for the Commander
-- necati/BJACK reply on the pact question — sent Turkish report 05:08Z 09-21, no reply yet.
-- Approve `strategy/LESSONS.md` — L17 (don't scan `avoid` accounts) was added this session per your direct instruction; the four 09-20 raid lessons are still pending your sign-off.
-- New colony ship / astro 10-11: on hold, only revisit if you raise it.
+- BTC pact is dead on the alliance side. Furukhai farms :1/:3 whenever crystal sits there (twice in 13 h). Options: (a) cargo shuttle every cycle + keep sessions open longer (current), (b) crystal storage stays low on purpose and mines pause — no, (c) ask the alliance for a joint response. Recommendation: (a), plus report each strike as we now do.
+- Approve `strategy/LESSONS.md` — L17 committed; the four 09-20 raid lessons and today's ("cargo capacity is a defence", "an unattended empire cannot evacuate") still need your sign-off before they go in.
+- necati/BJACK reply on the pact question: moot now that the pact is over; drop it.
 
 ## Uncommitted strategy changes awaiting approval
-- `strategy/LESSONS.md` — four 09-20 raid lessons (satellites are the soft belly, deut has no sink, the queue is a vault, 015 walls are a floor) still awaiting sign-off. L17 (added this session) was committed on your direct instruction.
-- 013 clarification 03:50Z 09-19 (crystal levels compete empire-wide by payback) still to fold into `strategy/decisions/013`.
+- `strategy/LESSONS.md` — four 09-20 raid lessons still pending; two new ones from `ops/defence/2026-09-21T09-37Z_*` not yet drafted there.
+- 013 clarification (crystal levels compete empire-wide by payback) still to fold into `strategy/decisions/013`.
 
 ## What changed this session
-- Cycle 76: refilled every empty queue (research + all 6 planets), plasma 7 landed.
-- 20:18-21:20Z 09-20: Furukhai (BTC) swept all five populated planets — full incident in `ops/defence/`. Alliance notified in Turkish 05:08Z.
-- L17 added to `strategy/LESSONS.md`: don't espionage-scan an account already marked `avoid`.
-- Recovery: 3 soldier rounds rebuilt every satellite (05:16-06:32Z); walls rebuilt in parallel via the defense queue line. All six planets confirmed at factor 1.0 as of 06:31Z.
+- 11:30Z: found :3 at factor 0.54 after Furukhai's 09:37Z strike; 27 satellites re-queued in rounds of 5, done 11:57Z.
+- 11:31Z: impulse 5 queued; 10 LC queued at the capital; :14's 3 LC deployed to :1 with 40k M / 20k D.
+- 11:33Z: :10 metal 21 + 4 sats + LL 7 / gauss 1 / HL 1; :9 metal 20 + 4 sats + LL 5 / gauss 2; capital LL 1.
+- 11:35Z: alliance report 1963 sent (standing doctrine).
+- 11:46Z: 75k C :1 → capital (102623, 11:59Z); RL ×23 at :1.
+- 11:53Z: :3 solar_plant 17, RL ×27, LL ×9.
