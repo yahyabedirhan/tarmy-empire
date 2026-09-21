@@ -1,28 +1,27 @@
-# Handoff — 2026-09-21T17:58Z (cycle 80 — capital struck at 16:33Z, loot denied; energy 9 in the lab)
+# Handoff — 2026-09-21T18:30Z (cycle 82 — energy 9 confirmed running, crystal/metal swept to capital)
 
 ## Do this first
-Run `/empire-cycle`. All six planets at factor 1. Furukhai (BTC) has hit us three times in 24 h and probes all six planets before each strike; **every probe on the capital is a launch** (16:08Z probe → 16:12Z launch → 16:33Z hit). The drill that held loot to 31k today: (1) `build_defense` something long (gauss ×2), (2) `build_ships(espionage_probe, N)` behind it to vault the crystal, (3) fly every LC in with the metal/deut, (4) after the hit `cancel_build` the probe batch (full refund if it had not started). Cargo now: 8 LC at :10, 5 LC at :3 (Commander moved them there), 3 LC + 81 probes at :1, 26+60+40+40 probes on :1/:10/:9/:3.
+Run `/empire-cycle`. All six planets at factor 1. Every build/shipyard queue in the empire is empty except the account's research slot (energy 9, lands **22:02:06Z**). `build_queue` (per-planet and top-level) does not surface research — use `research_tree().in_progress` to check what's actually running, not `build_queue`, or you'll think the lab is idle when it isn't (as this cycle briefly did).
 
-Wakes: 18:07Z RL ×25 at the capital; :1 crystal lift when ≥ 60k (3 LC there, next ~18:30Z); 22:02Z energy 9 lands → next research weapons 10 (409k M — metal gate) or hyperspace drive 5 (160k M / 320k C / 96k D); :9 metal 22 at ~299k M; :10 metal 22 at 299k M. Metal is the empire-wide gate; crystal now idles (~200k+ across :1/:3/:10) — the trade question below is about exactly that.
+Wakes: 18:42:04Z fleet 104354 (8 LC, 115k C + 85k D) lands at capital from :10; 18:42:19Z fleet 104355 (5 LC, 28k C + 97k M) lands at capital from :3 — both fund the research after energy 9. 22:02:06Z energy 9 lands → queue hyperspace drive 5 (160k M / 320k C / 96k D) or weapons 10 (409.6k M / 102.4k C), whichever the capital can afford by then (capital's own production of ~12.2k C/h and ~3.8k D/h closes any remaining gap in a few hours).
 
 ## Where we are
-Today: Furukhai struck :1 + :3 (09:37Z, 345k C looted, unattended), probed everything at 12:13Z (no strike; we vaulted, cost 180 probes), struck the capital 16:33Z (loot 31k thanks to vault + lift; lost 48 sats, wall to the floor and rebuilt). Records: `ops/defence/2026-09-21T09-37Z_*`, `…T12-13Z_*`, `…T16-12Z_*`. Alliance told three times (msgs 1963 by me, and 17:32Z by the Commander from the TUI: `ops/diplomacy/2026-09-21_furukhai-capital-strike-report.md`). BTC pact is dead alliance-wide.
+Furukhai (BTC) struck three times today (09:37Z :1+:3, 12:13Z probe-only, 16:33Z capital — loot held to 31k by the vault-and-lift drill). All fully recovered, factor 1 everywhere. Status report written and posted this cycle: `reports/status/2026-09-21T18-30Z.md` (rank 30, score 28 464, Δ+1 742 since the last report).
 
-Research today: impulse 5, hyperspace 5, shielding 8, lab 9; energy 9 running (22:02Z). Mines: :10 metal 21, :9 metal 21. Capital: fusion 6, gauss 3→1 (lost)… gauss 1, RL 184 by 18:07Z. Every satellite bank rebuilt (capital 48, :3 27, :9 67, :10 59).
+This cycle: found every planet's build/shipyard queue empty and initially thought energy 9 wasn't running (build_queue returned `[]` everywhere) — `research_tree` confirmed it is, landing 22:02:06Z as the previous handoff said (its frontmatter had a typo, `2026-09-22`, fixed). Since nothing else was queueable anywhere (every colony's crystal/deuterium/metal had just been drained by the prior cargo rounds), dispatched :10's 8 LC and :3's 5 LC to the capital (see Wakes above) to pre-fund whatever research comes after energy 9, rather than let the fleet sit idle.
 
 ## Next actions
-1. Keep the cargo loop: crystal off :1/:3 to the capital every ~3 h; metal from :9/:10 to the capital for weapons 10 / solar 18 / shipyard 10.
-2. 22:02Z: energy 9 lands → queue the next research from wherever the resources sit (a colony lab 1 works: :10 has one).
-3. Hardened energy on the capital: solar_plant 18 (74k M / 30k C) so the next satellite wipe hurts less.
-4. Status report — overdue (cycle 80). Write it next cycle: three strikes, loot per strike (345k → 31k), what the vault drill costs.
-5. Lessons for `strategy/LESSONS.md` (need Commander sign-off): cargo capacity is a defence; unattended = looted; vault behind a long item; a capital probe is a launch.
+1. 22:02Z: energy 9 lands → check capital's on-hand M/C/D against hyperspace drive 5 and weapons 10's prices, queue whichever is affordable (or nearest to it).
+2. :1 has ~80k crystal sitting idle with no LC of its own — the next LC that frees up (capital's 13, once they return from this trip) should swing by :1 before the next research, not just :10/:3.
+3. No mobile combat fleet exists anywhere in the empire (all lost to the 09-20/09-21 raids) — flag to the Commander once research is unblocked; not urgent while nothing but cargo runs.
+4. Status report next due in ~4 cycles (this one just ran).
+5. Lessons for `strategy/LESSONS.md` (need Commander sign-off): four 09-20 lessons + four 09-21 lessons.
 
 ## Questions for the Commander
-- **Trade** (asked 15:08Z, still open): merttoprak's 3:2 metal-for-crystal (we give 300k C, get 450k M). Crystal idles, metal gates everything. Recommendation: yes, one-time. Decision 010 said no trades — your call.
-- `strategy/LESSONS.md`: four 09-20 lessons + four from today await sign-off.
+- **Trade** (asked 15:08Z, still open): merttoprak's 3:2 metal-for-crystal (300k C for 450k M). Recommendation revised this cycle: crystal is no longer idle (energy 9 alone spent 204.8k C, and the next research wants more) — suggest a smaller trade or holding off until after the next research lands, rather than the full 300k. Decision 010 said no trades generally; still your call.
+- `strategy/LESSONS.md`: eight lessons (four 09-20, four 09-21) await sign-off.
 
-## What changed this session (11:30–17:58Z)
-- :3 energy bleed closed (27 sats, solar 17), :3/:1 walls to the floor, 10 LC built, alliance reports ×2 (+1 by the Commander).
-- 12:13Z probe sweep: vault drill first tried; 16:33Z capital strike: vault + lift held loot to 31k.
-- Research: impulse 5 → hyperspace 5 → shielding 8 → energy 9 (running); lab 9 built while research ran from :10.
-- Commander (TUI): moved :14's 5 LC to :3 (17:29Z), posted the capital-strike report (17:32Z).
+## What changed this session (18:26–18:30Z)
+- Confirmed energy 9 is running (research_tree, not build_queue) and fixed a stale wake-date typo on the capital's planet file.
+- Dispatched 13 LC empire-wide (:10's 8, :3's 5) carrying 143k crystal / 85k deuterium / 97k metal to the capital, since nothing else was queueable anywhere this cycle.
+- Wrote and committed the overdue status report (`reports/status/2026-09-21T18-30Z.md`).
