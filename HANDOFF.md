@@ -1,7 +1,9 @@
-# Handoff — 2026-09-21T13:57Z (cycle 78 — probe sweep survived, cargo loop running)
+# Handoff — 2026-09-21T15:17Z (cycle 79 — lab 9 up, research chained through :10)
 
 ## Do this first
-Run `/empire-cycle`. All six planets at factor 1. Wakes in order: 14:08Z 50k M lands at the capital → `upgrade_building(research_lab)` there (hyperspace 5 is running from :10's lab, so the capital lab is free to upgrade); 14:21Z 5 LC back at :10; ~14:40Z :1 holds ≥ 60k C → lift with the 8 LC parked there; 15:00Z :9 metal 21; 15:06Z hyperspace 5 lands → next research energy 9 (204k C / 102k D, no metal) from :10 again if the capital lab is still upgrading. Nothing on a crystal world stays on the ground overnight.
+Run `/empire-cycle`. All six planets at factor 1, every queue that can be filled is filled; metal is the empire-wide gate. Wakes: 15:20Z 45k C lands at the capital; 17:23Z shielding 8 lands → queue **energy 9** (204k C / 102k D) from the capital (lab 9); 17:30Z :9 metal 21 lands → 4 more satellites there; ~17:00Z lift :1's crystal again (6 LC parked there, 5 LC at :10, 2 LC on the run). Research trick in use: a research started from :10's lab 1 leaves the capital lab free to upgrade (014 construction note) — used for hyperspace 5 and shielding 8 today.
+
+**Open question to the Commander (15:08Z)**: merttoprak's 3:2 metal-for-crystal offer (300k C → 450k M). Decision 010 said no trades; asked for a one-time exception because crystal idles at ~480k on the capital while weapons 10 / nanite wait on metal. Do nothing on it until answered.
 
 **12:13Z Furukhai probed all six planets; no strike followed** (`ops/defence/2026-09-21T12-13Z_furukhai-probe-sweep.md`). Every stockpile was vaulted in refundable probe/RL batches for 42 min, then cancelled — 180 probes got built before the cancel (180k C; lesson: vault behind a long item or cancel the minute the window closes).
 
