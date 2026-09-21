@@ -1,50 +1,42 @@
-# Plan — next 24 h from 2026-09-21T11:55Z, in lanes
+# Plan — next 24 h from 2026-09-21T17:29Z, in lanes
 
-Rolling plan, rewritten at every hand-off (`empire-cycle` step 7). Times UTC. Furukhai (BTC) farms :1 and :3 whenever crystal sits on them; the BTC pact is over on the alliance side. Standing priority (planet 6 + crystal mining first, defence second) holds, but **logistics is now part of defence**: crystal leaves the crystal worlds every cycle.
+Rolling plan, rewritten at every hand-off (`empire-cycle` step 7). Times UTC. Furukhai (BTC) has now hit the capital twice (09-20, 09-21 16:33Z) and :1/:3 twice — probe-to-strike is 3–20 min, so every capital probe gets treated as a launch (loot-denial: lift + vault within 15 min). Standing priority (planet 6 + crystal mining first, defence second) holds; logistics is part of defence.
 
-## Logistics (the new first lane)
+## Logistics
 | when | action | gate |
 |---|---|---|
-| 11:59Z | 3 LC unload 75k C at capital → deploy back to :1 | — |
-| 12:29Z | 10 LC done at capital → :1, lift ~190k C → capital | — |
-| after | :14 deut (133k) → capital; :9/:10 metal → :14 (148k for synth 17) and → capital (weapons 10 / nanite) | LC free |
-| every cycle | crystal off :1 and :3; nothing stays overnight | — |
+| 17:40:07Z | 8 LC land at capital (104046): 110k D + 60k M | — |
+| 17:42:45Z | 5 LC land at :3 (104057) → load 61.8k C → capital, closes the crystal gap for energy 9 | — |
+| every cycle | crystal off :1 and :3; deuterium off :14; nothing stays overnight | LC free |
 
-## Energy
-| when | where | action |
-|---|---|---|
-| 11:57Z | :3 | 27 sats landed → factor 1; solar_plant 17 12:33Z |
-| 13:13Z | :9 | metal 20 lands, 4 sats follow → +1 sat |
-| 13:46Z | :10 | metal 21 lands, 4 sats follow → +3 sats |
-
-## Mining (crystal levels ranked empire-wide by payback — 013 clarification)
+## Energy / Research (014 H2 — always busy)
 | when | where | action | gate |
 |---|---|---|---|
-| queued | :10 | metal_mine 21 (13:46Z) | — |
-| queued | :9 | metal_mine 20 (13:13Z) | — |
+| 17:34:51Z | :9 | 4 sats (60–63) land | — |
+| after | :9 | queue 4 more sats, close remaining headroom | — |
+| after crystal lift | capital | queue energy 9 (0 M / 204.8k C / 102.4k D) | ~40.6k more C |
+| after energy 9 | capital | RL 159→200 (82k M), solar 18 | metal from 104046 |
+| queued | capital | weapons 10 (409k M / 102k C) — still short on metal | metal sweep |
+
+## Mining
+| when | where | action | gate |
+|---|---|---|---|
+| far off | :10 | crystal 21 (~580k M) | — |
+| far off | :9 | metal 22 (~300k M) | — |
 | when metal allows | :14 | deut synth 17 (148k M) | LC shipment |
 | when 928k M | :1 / :3 | crystal_mine 22 | metal — far off |
 
-## Research (014 H2 — always busy)
-| when | action | gate |
-|---|---|---|
-| 13:39Z | impulse 5 lands | — |
-| next | weapons 10 (409k M / 102k C) | metal at the capital |
-
 ## Defence (015 floor — rebuilt after each strike, never beyond prior)
-| when | where | action |
-|---|---|---|
-| → 12:30Z | :1 | RL ×23 (→ 57) |
-| → 13:02Z | :3 | RL ×27 (→ 82), LL ×9 (→ 23) |
-| → 12:12Z | :10 | LL ×7, gauss ×1, HL ×1 |
-| → 12:29Z | :9 | LL ×5, gauss ×2 |
-| → 12:30Z | capital | LL ×1 |
+Capital wall currently: 159 RL / 5 LL / 1 gauss / 1 SSD / 48 sats — all at or above floor after the 16:33Z strike. :1/:3/:9/:10 all at their floors. Nothing queued; watch for the next probe wave.
 
 ## Alliance / intel
 | when | action |
 |---|---|
-| done 11:35Z | reported the 09:37Z strike (msg 1963) |
-| watch | engin [BTC, 5:298] probed us 10:44–10:57Z; probe → launch ≤ 20 min (necati) |
-| next cycle | status report (picture changed) |
+| done | 16:33Z capital strike recorded and reported to BJACK (msg 1982, 17:32:46Z) |
+| next cycle | status report due (picture changed twice since last one) |
+
+## Open with the Commander (batched, non-urgent)
+- merttoprak's 3:2 metal-for-crystal trade exception (asked 15:08Z) — still unanswered, doing nothing on it.
+- `strategy/LESSONS.md` sign-off: L17 + four 09-20 raid lessons + two 09-21 09:37Z lessons, still pending; a third set from the 16:33Z capital attack (loot-denial worked, satellites are the recurring loss, treat every capital probe as a launch) needs drafting too.
 
 Idle on purpose: terraformer; moon; raids; IPM; trades; astro 10/11 and a new colony ship (Commander's call only).
